@@ -1,0 +1,679 @@
+# Gnome-dictionary eesti keele tõlge.
+# Estonian translation of Gnome-dictionary.
+# Was part of gnome-utils before.
+#
+# Copyright (C) 1999, 2002, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007–2011 The GNOME Project.
+# This file is distributed under the same license as the gnome-utils package.
+#
+# Lauris Kaplinski <lauris ariman ee>, 1999.
+# Tõivo Leedjärv <toivo linux ee>, 2002.
+# Ivar Smolin <okul linux ee>, 2005–2011.
+# Priit Laes <amd store20 com>, 2005.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-09-11 19:16+0000\n"
+"PO-Revision-Date: 2013-09-11 23:03+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Default Dictionary Server"
+msgstr "Vaikimisi sõnaraamatuserver"
+
+msgid "Dictionary"
+msgstr "Sõnaraamat"
+
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Sõnade definitsioonide ja kirjaviiside otsimine onlain-sõnaraamatust"
+
+msgid "word;synonym;definition;spelling;"
+msgstr "sõna;sõnaraamat;sõnastik;sünonüüm;antonüüm;definitsioon;õigekiri;"
+
+msgid "Preferences"
+msgstr "Eelistused"
+
+msgid "Help"
+msgstr "Abi"
+
+msgid "About Dictionary"
+msgstr "Sõnaraamatust lähemalt"
+
+msgid "Quit"
+msgstr "Lõpeta"
+
+msgid "_File"
+msgstr "_Fail"
+
+msgid "_New"
+msgstr "_Uus"
+
+msgid "_Save a Copy..."
+msgstr "_Salvesta koopia.."
+
+msgid "P_review"
+msgstr "_Eelvaade"
+
+msgid "_Print"
+msgstr "_Prindi"
+
+msgid "_Close"
+msgstr "_Sulge"
+
+msgid "_Edit"
+msgstr "_Redaktor"
+
+msgid "_Copy"
+msgstr "_Kopeeri"
+
+msgid "Select _All"
+msgstr "_Vali kõik"
+
+msgid "_Find"
+msgstr "_Otsi"
+
+msgid "Find Ne_xt"
+msgstr "Otsi _järgmist"
+
+msgid "Find Pre_vious"
+msgstr "Otsi ee_lmist"
+
+msgid "_View"
+msgstr "_Vaade"
+
+msgid "_Sidebar"
+msgstr "_Külgpaan"
+
+msgid "S_tatusbar"
+msgstr "_Olekuriba"
+
+msgid "Similar _Words"
+msgstr "_Sarnased sõnad"
+
+msgid "Dictionary Sources"
+msgstr "Sõnaraamatuallikad"
+
+msgid "Available _Dictionaries"
+msgstr "Saadaolevad _sõnastikud"
+
+msgid "Available St_rategies"
+msgstr "Saadaolevad st_rateegiad"
+
+msgid "_Go"
+msgstr "_Liikumine"
+
+msgid "_Previous Definition"
+msgstr "_Eelmine definitsioon"
+
+msgid "_Next Definition"
+msgstr "_Järgmine definitsioon"
+
+msgid "_First Definition"
+msgstr "E_simene definitsioon"
+
+msgid "_Last Definition"
+msgstr "_Viimane definitsioon"
+
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Vali sõnaraamat, millest sõnu otsida:"
+
+msgid "Source"
+msgstr "Allikas"
+
+msgid "_Print font:"
+msgstr "_Printimise kirjatüüp:"
+
+msgid "Print"
+msgstr "Printimine"
+
+msgid "_Description:"
+msgstr "_Kirjeldus:"
+
+msgid "_Transport:"
+msgstr "_Transport:"
+
+msgid "H_ostname:"
+msgstr "H_osti nimi:"
+
+msgid "_Port:"
+msgstr "_Port:"
+
+msgid "Source Name"
+msgstr "Allika nimi"
+
+msgid "Dictionaries"
+msgstr "Sõnaraamatud"
+
+msgid "Strategies"
+msgstr "Strateegiad"
+
+msgid "The default database to use"
+msgstr "Andmebaas, mida vaikimisi kasutada"
+
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Sõnaraamatuserveris vaikimisi allikana kasutatava üksiku andmebaasi või meta-"
+"andmebaasi nimi. Hüüumärk (\"!\") tähendab, et otsing teostatakse üle kõigi "
+"sõnaraamatuallikas olevate andmebaaside"
+
+msgid "The default search strategy to use"
+msgstr "Vaikimisi kasutatav otsingustrateegia"
+
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"Sõnaraamatuallika puhul vaikimisi kasutatav otsingustrateegia (võimaluse "
+"korral). Vaikimisi strateegia on 'exact', mis tähendab täpsete vastete "
+"otsingut."
+
+msgid "The font to be used when printing"
+msgstr "Printimiseks kasutatav kirjatüüp"
+
+msgid "The font to be used when printing a definition."
+msgstr "Definitsiooni printimiseks kasutatav kirjatüüp."
+
+msgid "The name of the dictionary source used"
+msgstr "Kasutuseloleva sõnaraamatu allika nimi"
+
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr "Sõnadefinitsioonide hankimiseks kasutatav sõnaraamatuallikas."
+
+msgid "Spanish Dictionaries"
+msgstr "Hispaaniakeelsed sõnaraamatud"
+
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Longdo Tai-Inglise sõnaraamatud"
+
+msgid "Client Name"
+msgstr "Kliendi nimi"
+
+msgid "The name of the client of the context object"
+msgstr "Kontekstiobjekti kliendi nimi"
+
+msgid "Hostname"
+msgstr "Hosti nimi"
+
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Sõnaraamatuserveri hostinimi"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "The port of the dictionary server to connect to"
+msgstr "Sõnaraamatuserveri port, kuhu tuleb ühenduda"
+
+msgid "Status"
+msgstr "Olek"
+
+msgid "The status code as returned by the dictionary server"
+msgstr "Sõnaraamatuserverist tagastatud olekukood"
+
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "Sõnaraamatuserveriga asukohas '%s:%d' pole ühendust"
+
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr "Tõrge hostimine '%s' lahendamisel: sobivat ressurssi ei leitud"
+
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "Tõrge hosti '%s' lahendamisel: %s"
+
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "Tõrge hosti '%s' lahendamisel: hosti ei leitud"
+
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Sõnaraamatuserveriga asukohas '%s:%d' pole võimalik ühenduda. Server andis "
+"vastuseks koodi %d (teenus ei tööta)"
+
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"Sõnaraamatuserveri vastust pole võimalik analüüsida\n"
+": '%s'"
+
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "'%s' definitsioone ei leitud"
+
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "Vigane andmebaas '%s'"
+
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "Vigane strateegia '%s'"
+
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Vigane käsk '%s'"
+
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "Vigased parameetrid käsule '%s'"
+
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Sõnaraamatuserveris '%s' ei leitud ühtegi andmebaasi"
+
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "Sõnaraamatuserverist asukohaga '%s' ei leitud strateegiaid"
+
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Tõrge ühendumisel sõnaraamatuserveriga '%s:%d'"
+
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"Viga serverist tuleva vastuse lugemisel:\n"
+"%s"
+
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "Sõnaraamatuserveriga '%s:%d' ühendumisel ületati ajapiirang"
+
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Sõnaraamatuserverile pole hostinime määratud"
+
+#, c-format
+msgid "Unable to create socket"
+msgstr "Soklit pole võimalik luua"
+
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Kanalit pole võimalik mitteblokeeruvaks muuta: %s"
+
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Sõnaraamatuserveriga aadressil '%s:%d' pole võimalik ühenduda"
+
+msgid "Local Only"
+msgstr "Ainult kohalikud"
+
+msgid "Whether the context uses only local dictionaries or not"
+msgstr ""
+"Kas kontekstid peavad kasutama ainult kohalikke sõnaraamatuid või mitte"
+
+msgid "Reload the list of available databases"
+msgstr "Saadaolevate andmebaaside loetelu uuestilaadimine"
+
+msgid "Clear the list of available databases"
+msgstr "Saadaolevate andmebaaside loetelu puhastamine"
+
+msgid "Error while matching"
+msgstr "Viga sobivuste arvutamisel"
+
+msgid "Not found"
+msgstr "Ei leitud"
+
+msgid "F_ind:"
+msgstr "_Otsing:"
+
+msgid "_Previous"
+msgstr "_Eelmine"
+
+msgid "_Next"
+msgstr "_Järgmine"
+
+msgid "Error while looking up definition"
+msgstr "Viga definitsiooni otsimisel"
+
+msgid "Another search is in progress"
+msgstr "Parasjagu toimub teine otsing"
+
+msgid "Please wait until the current search ends."
+msgstr "Palun oota kuni käesolev otsing lõpetab."
+
+msgid "Error while retrieving the definition"
+msgstr "Viga definitsiooni vastuvõtmisel"
+
+msgid "Filename"
+msgstr "Failinimi"
+
+msgid "The filename used by this dictionary source"
+msgstr "Selle sõnaraamatuallika poolt kasutatav failinimi"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "The display name of this dictionary source"
+msgstr "Selle sõnaraamatuallika ekraaninimi"
+
+msgid "Description"
+msgstr "Kirjeldus"
+
+msgid "The description of this dictionary source"
+msgstr "Sõnaraamatuallika kirjeldus"
+
+msgid "Database"
+msgstr "Andmebaas"
+
+msgid "The default database of this dictionary source"
+msgstr "Selle sõnaraamatuallika vaikimisi andmebaas"
+
+msgid "Strategy"
+msgstr "Strateegia"
+
+msgid "The default strategy of this dictionary source"
+msgstr "Selle sõnaraamatuallika vaikimisi strateegia"
+
+msgid "Transport"
+msgstr "Transport"
+
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Selle sõnaraamatuallika transpordimehhanism"
+
+msgid "Context"
+msgstr "Kontekst"
+
+msgid "The GdictContext bound to this source"
+msgstr "Selle allikaga seotud GdictContext"
+
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "Vigane transpordiliik '%d'"
+
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "Gruppi '%s' ei leitud sõnaraamatu allika kirjeldusest"
+
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr "Lähtekirjeldusest pole võtit '%s' võimalik leida: %s"
+
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "Sõnastiku kirjelduste lähtefailist pole võtit '%s' võimalik leida: %s"
+
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "Sõnaraamatuallikal pole nime"
+
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "Sõnaraamatuallikal '%s' on vigane transport '%s'"
+
+msgid "Reload the list of available sources"
+msgstr "Saadaolevate allikate loetelu uuestilaadimine"
+
+msgid "Paths"
+msgstr "Rajad"
+
+msgid "Search paths used by this object"
+msgstr "Selle objekti poolt kasutatavad otsingurajad"
+
+msgid "Sources"
+msgstr "Allikad"
+
+msgid "Dictionary sources found"
+msgstr "Leitud sõnaraamatuallikad"
+
+msgid "Clear the list of similar words"
+msgstr "Sarnaste sõnade loetelu puhastamine"
+
+msgid "The GdictContext object used to get the word definition"
+msgstr "GdictContext objekt, mida kasutatakse sõna definitsiooni hankimiseks"
+
+msgid "The database used to query the GdictContext"
+msgstr "Andmebaasid GdictContext päringute jaoks"
+
+msgid "The strategy used to query the GdictContext"
+msgstr "Strateegiad GdictContext päringute jaoks"
+
+msgid "Reload the list of available strategies"
+msgstr "Saadaolevate strateegiate loetelu uuestilaadimine"
+
+msgid "Clear the list of available strategies"
+msgstr "Saadaolevate strateegiate loetelu puhastamine"
+
+msgid "GDict debugging flags to set"
+msgstr "GDict'i jaoks määratavad silumislipud"
+
+msgid "FLAGS"
+msgstr "LIPUD"
+
+msgid "GDict debugging flags to unset"
+msgstr "GDict'i jaoks nullitavad silumislipud"
+
+msgid "GDict Options"
+msgstr "GDict'i valikud"
+
+msgid "Show GDict Options"
+msgstr "GDict'i valikute näitamine"
+
+msgid "translator-credits"
+msgstr ""
+"Lauris Kaplinski <lauris ariman ee>, 1999.\n"
+"Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Ivar Smolin <okul linux ee>, 2005–2011.\n"
+"Priit Laes <amd store20 com>, 2005."
+
+msgid "Look up words in dictionaries"
+msgstr "Sõnade otsimine sõnaraamatutest"
+
+msgid "Words to look up"
+msgstr "Otsitavad sõnad"
+
+msgid "WORD"
+msgstr "SÕNA"
+
+msgid "Words to match"
+msgstr "Sobivad sõnad"
+
+msgid "Dictionary source to use"
+msgstr "Kasutatav sõnaraamatuallikas"
+
+msgid "NAME"
+msgstr "NIMI"
+
+msgid "Database to use"
+msgstr "Kasutatav andmebaas"
+
+msgid "Strategy to use"
+msgstr "Kasutatav strateegia"
+
+msgid "WORDS"
+msgstr "SÕNAD"
+
+msgid "Dictionary Preferences"
+msgstr "Sõnaraamatu eelistused"
+
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "Abiteabe kuvamisel tekkis viga"
+
+#. create the new option context
+msgid " - Look up words in dictionaries"
+msgstr " - Sõnade otsimine sõnaraamatust"
+
+msgid "Edit Dictionary Source"
+msgstr "Sõnaraamatuallika redigeerimine"
+
+msgid "Add Dictionary Source"
+msgstr "Sõnaraamatuallika lisamine"
+
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Kas eemaldada \"%s\""
+
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "Sõnaraamatuallikas eemaldatakse sellest loetelust jäädavalt."
+
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Allikat %s pole võimalik eemaldada"
+
+msgid "Add a new dictionary source"
+msgstr "Uue sõnaraamatuallika lisamine"
+
+msgid "Remove the currently selected dictionary source"
+msgstr "Hetkel valitud sõnaraamatuallika eemaldamine"
+
+msgid "Edit the currently selected dictionary source"
+msgstr "Hetkel valitud sõnaraamatuallika muutmine"
+
+msgid "Set the font used for printing the definitions"
+msgstr "Definitsiooni printimiseks kirjatüübi määramine"
+
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Eelvaadet pole võimalik kuvada: %s"
+
+msgid "Unable to create a source file"
+msgstr "Lähtefaili pole võimalik luua"
+
+msgid "Unable to save source file"
+msgstr "Lähtefaili pole võimalik salvestada"
+
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "'%s' otsimine..."
+
+msgid "No definitions found"
+msgstr "Definitsioone ei leitud"
+
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Leiti üks definitsioon"
+msgstr[1] "Leiti %d definitsiooni"
+
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Sõnaraamatuallikat nimega '%s' pole saadaval"
+
+msgid "Unable to find dictionary source"
+msgstr "Sõnaraamatuallikat pole võimalik leida"
+
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Allikas '%s' jaoks pole konteksti saadaval"
+
+msgid "Unable to create a context"
+msgstr "Konteksti pole võimalik luua"
+
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - sõnaraamat"
+
+msgid "Save a Copy"
+msgstr "Koopia salvestamine"
+
+msgid "Untitled document"
+msgstr "Pealkirjata dokument"
+
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Viga '%s' kirjutamisel"
+
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Sõnaraamatuallikas `%s' on valitud"
+
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "Strateegia `%s' on valitud"
+
+#, c-format
+msgid "Database `%s' selected"
+msgstr "Andmebaas `%s' on valitud"
+
+#, c-format
+msgid "Word `%s' selected"
+msgstr "Sõna `%s' on valitud"
+
+#. speller
+msgid "Double-click on the word to look up"
+msgstr "Sõna otsimiseks tee sellel topeltklõps"
+
+#. strat-chooser
+msgid "Double-click on the matching strategy to use"
+msgstr "Sobiva strateegia valimiseks tee sellel topeltklõps"
+
+#. source-chooser
+msgid "Double-click on the source to use"
+msgstr "Allika valimiseks tee sellel topeltklõps"
+
+#. db-chooser
+msgid "Double-click on the database to use"
+msgstr "Andmebaasi valimiseks tee sellel topeltklõps"
+
+msgid "Look _up:"
+msgstr "_Otsing:"
+
+msgid "Similar words"
+msgstr "Sarnased sõnad"
+
+msgid "Available dictionaries"
+msgstr "Saadaolevad sõnastikud"
+
+msgid "Available strategies"
+msgstr "Saadaolevad strateegiad"
+
+msgid "Dictionary sources"
+msgstr "Sõnaraamatuallikad"
+
+#~ msgid "Available _Databases"
+#~ msgstr "Saadaolevad _andmebaasid"
+
+#~ msgid "New look up"
+#~ msgstr "Uus otsing"
+
+#~ msgid "Preview this document"
+#~ msgstr "Selle dokumendi eelvaatlemine"
+
+#~ msgid "_Print..."
+#~ msgstr "_Prindi..."
+
+#~ msgid "Print this document"
+#~ msgstr "Selle dokumendi printimine"
+
+#~ msgid "Find a word or phrase in the document"
+#~ msgstr "Dokumendist sõna või fraasi otsimine"
+
+#~ msgid "Go to the previous definition"
+#~ msgstr "Eelmisele definitsioonile liikumine"
+
+#~ msgid "Go to the next definition"
+#~ msgstr "Järgmisele definitsioonile liikumine"
+
+#~ msgid "Go to the first definition"
+#~ msgstr "Esimesele definitsioonile liikumine"
+
+#~ msgid "Go to the last definition"
+#~ msgstr "Viimasele definitsioonile liikumine"
+
+#~ msgid "_Contents"
+#~ msgstr "_Sisukord"
+
+#~ msgid "_About"
+#~ msgstr "_Programmist lähemalt"

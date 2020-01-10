@@ -1,0 +1,141 @@
+GNOME Dictionary 3.14.2                                               2014-11-10
+================================================================================
+Application
+ * Use g_timeout_add_seconds() for multi-second timeouts (Emmanuele Bassi)
+
+Translations
+ * kk (Baurzhan Muftakhidinov)
+
+GNOME Dictionary 3.14.1                                               2014-10-12
+================================================================================
+Application
+ * Fix #737626: expand sidebar (Michael Catanzaro)
+
+Translations
+ * fa (Arash Mousavi), te (Krishnababu Krothapalli), pt_BR (Rafael Ferreira),
+   bn_IN (Saibal Ray)
+
+GNOME Dictionary 3.14.0                                               2014-09-22
+================================================================================
+
+ * Translation updates
+
+GNOME Dictionary 3.13.92                                              2014-09-18
+================================================================================
+
+ * Translation updates
+ * Added AppData file
+
+GNOME Dictionary 3.11.0                                              2013-03-18
+================================================================================
+
+  • Code fixes by Michael Catanzaro, Florian Müllner, Robert Roth,
+  Seán de Búrca, Antono Vasiljev
+
+  • User documentation fixes by Andika Triwidada, Alexandre Franke
+
+  • Thanks to our translation team, we have updates in French, Polish,
+  Portuguese, Indonesian, Russian, Chinese, Latvian, Korean, Slovenian,
+  Catalan, Norwegian, Italian, Ukranian, Galician, Kannada, Brazilian, German,
+  Czech, Hebrew, LIthuanian, Assamese, Tajik, Spanish, Finnish, Brazilian
+  Portuguese, Esperanto, Tamil, Greek, Persian, Friulian, Japense, Punjabi,
+  Basque, Danish, Korean, Estonian, Vietnamese, Belarusian, Serbian, Irish,
+  Hungarian and Solvak.
+
+GNOME Dictionary 3.10.0						     2013-10-06
+================================================================================
+  • Code fixes:
+
+Alexandre Franke: Fix typo
+Andika Triwidada:
+      Fix #706556, tag typo
+      Fixed typo in string
+Antono Vasiljev: Fix bugzilla product in .desktop file
+Florian Müllner: sidebar: Do not select unrealized menu items
+Nguyễn Thái Ngọc Duy:
+      po/vi.po: import from Damned Lies
+      po/vi.po: revert two strings, committed by accident previously
+Piotr Drąg: Fix broken tags in German help translation
+Robert Roth: Fix Ctrl+A and Ctrl+C in the search field
+Seán de Búrca:Fix autogen and configure
+
+  • Translation updates:
+
+Many thanks to our translators: 
+
+Andika Triwidada, Alexnadre Franke, A S Alam,
+Aman, António Lima, Balázs Úr, Changwoo Ryu, Daniel Korostil, Daniel Mustieles,
+Enrico Nicoletto, Fabio Tomat, Fran Diéguez, Ihar Hrachyshka, Inaki Larranaga
+Murgoitio, Jiro Matsuzawa, Kenneth Nielsen, Mattias Põldaru, Pavol Klačanský,
+Rūdolfs Mazurs, Seán de Búrca, Timo Jyrinki, Trần Ngọc Quân, Мирослав Николић
+
+for adding/updating translations in:
+
+Indonesian, French, Punjabi, Portuguese, Hungarian, Korean, Ukrainian, Spanish,
+Brazilian Portuguese, Friulian, Galician, Belarusian, Basque, Japanese, Danish,
+Estonian, Slovak, Latvian, Irish, Finnish, Vietnamese and Serbian.
+
+GNOME Dictionary 3.9.0                                                2013-08-21
+================================================================================
+
+  • Translation updates:
+  Tajik, Spanish, Gujarati, Breton, Hebrew, Galician, Russian, Tranditional
+  Chinese, Slovenian, Brazillian Portuguese.
+
+GNOME Dictionary 3.6.0                                                2012-09-25
+================================================================================
+
+ * Translation updates
+
+
+GNOME Dictionary 3.5.2                                                2012-06-05
+================================================================================
+
+  • First unstable release for the 3.5 cycle
+
+  • Drop usage of deprecated methods [Ignacio Casal Quinteiro]
+
+  • Use the new GMenu API
+  This gives Dictionary an application menu. [Florian Müllner]
+
+  • Translation updates:
+  Russian, Indonesian, French, German, Spanish, Galician, Catalan, Belarusian,
+  Norwegian bokmål, Czech, Slovenian, Telugu, Hebrew, Simplified Chinese,
+  Serbian.
+
+Many thanks to:
+
+  Florian Müllner, Ignacio Casal Quinteiro, Andika Triwidada, Bruno Brouard,
+  Aleksej Kabanov, Christian Kirbach, Daniel Mustieles, Fran Diéguez, Gil
+  Forcada, Ihar Hrachyshka, Kjartan Maraas, Marek Černocký, Martin Srebotnjak,
+  Piotr Drąg, Sasi Bhushan, Yaron Shahrabani, tuhaihe, Мирослав Николић
+
+GNOME Dictionary 3.4.0                                                2012-03-26
+================================================================================
+
+  • First stable release of the 3.4 cycle
+
+  • Use XDG configuration directories to store the dictionary data
+  Instead of storing the dictionary data into the old $HOME/.gnome2 prefix,
+  the Dictionary now uses $XDG_CONFIG_HOME/gnome-dictionary; this allows
+  proper redirection of the configuration, as well as dropping the gnome2
+  prefix in the Brave New Gnome 3.x World™. The existing data is migrated
+  without user intervention. [Antono Vasiljev]
+
+  • Translation updates
+  Arabic, Bulgarian, Ukrainian, Galician, Belarusian, Norwegian bokmål,
+  Telugu, Estonian, Vietnamese, Assamese, Crimean Tatar (Crimean Turkish),
+  Khmer, Gujarati, Finnish.
+
+Many thanks to:
+
+  Krishnababu Krothapalli, Nguyễn Thái Ngọc Duy, Abderrahim Kitouni,
+  Alexander Shopov, Antono Vasiljev, Daniel Korostil, Fran Diéguez,
+  Ihar Hrachyshka, Kjartan Maraas, Mattias Põldaru, Nilamdyuti Goswami,
+  Reşat SABIQ, Seng Sutha, Sweta Kothari, Timo Jyrinki.
+
+GNOME Dictionary 3.3.2						      2011-10-25
+================================================================================
+
+  • First unstable release of the 3.3 cycle.
+  • First release after the split from GNOME Utilities.

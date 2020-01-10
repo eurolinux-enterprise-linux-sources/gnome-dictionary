@@ -1,0 +1,980 @@
+# translation of gnome-utils to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils 2.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2005-03-28 19:35-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"Language: rw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/default.desktop.in.h:1
+#, fuzzy
+msgid "Default Dictionary Server"
+msgstr "a"
+
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_COLLATE_DICTIONARY.text
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_INDEXENTRY_DICTIONARY.text
+#: ../data/spanish.desktop.in.h:1
+#, fuzzy
+msgid "Spanish Dictionaries"
+msgstr "Inkoranyamagambo"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr ""
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+#, fuzzy
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Amagambo in kiri kuri interineti Inkoranyamagambo"
+
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_COLLATE_DICTIONARY.text
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_INDEXENTRY_DICTIONARY.text
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "Inkoranyamagambo"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+#, fuzzy
+msgid "The default database to use"
+msgstr "Gushaka Kuri Gukoresha"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+#, fuzzy
+msgid "The default search strategy to use"
+msgstr "Gushaka Kuri Gukoresha"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+#, fuzzy
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Izina: Bya Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri "
+"Inkoranyamagambo Gushaka Byose Ububikoshingiro in a Seriveri"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+#, fuzzy
+msgid "The name of the dictionary source used"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+#: ../data/gnome-dictionary-preferences.ui.h:1
+#, fuzzy
+msgid "Print"
+msgstr "Gucapa"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr ""
+
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+#: ../data/gnome-dictionary-preferences.ui.h:3
+#, fuzzy
+msgid "_Print font:"
+msgstr "Gucapa"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr ""
+
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_COLLATE_DICTIONARY.text
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_INDEXENTRY_DICTIONARY.text
+#: ../data/gnome-dictionary-source.ui.h:1
+#, fuzzy
+msgid "Dictionaries"
+msgstr "Inkoranyamagambo"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+#, fuzzy
+msgid "H_ostname:"
+msgstr "Izina:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+#, fuzzy
+msgid "Source Name"
+msgstr "Izina ry'ubuturo"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Strategies"
+msgstr ""
+
+#: ../data/gnome-dictionary-source.ui.h:6
+#, fuzzy
+msgid "_Description:"
+msgstr "Umwirondoro:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+#, fuzzy
+msgid "_Port:"
+msgstr "Impagikiro:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:283
+#, fuzzy
+msgid "Client Name"
+msgstr "Izina ry'ubuturo"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:297
+#, fuzzy
+msgid "Hostname"
+msgstr "Izina ry'ubuturo"
+
+#: ../libgdict/gdict-client-context.c:298
+#, fuzzy
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+# framework/source\services\logindialog.src:RID_DLG_LOGIN.RID_FT_SECURITYPROXYPORT.text
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Umuyoboro"
+
+#: ../libgdict/gdict-client-context.c:312
+#, fuzzy
+msgid "The port of the dictionary server to connect to"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:328
+#, fuzzy
+msgid "The status code as returned by the dictionary server"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:777
+#, fuzzy, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "A Umukiriya kugirango Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1196
+#, fuzzy, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1300
+#, fuzzy, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1748
+#, fuzzy, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "A Umukiriya kugirango Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1860
+#, fuzzy, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "A Umukiriya kugirango Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1894
+#, fuzzy, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "A Umukiriya kugirango Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, fuzzy, c-format
+msgid "Unable to create socket"
+msgstr "Kuri Kurema"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1986
+#, fuzzy, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr ""
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr ""
+
+#: ../libgdict/gdict-database-chooser.c:378
+#, fuzzy
+msgid "Reload the list of available databases"
+msgstr "Kuri Kwagura Cyangwa Gusenyuka Urutonde Bya Bihari Amahitamo"
+
+#: ../libgdict/gdict-database-chooser.c:390
+#, fuzzy
+msgid "Clear the list of available databases"
+msgstr "Kuri Kwagura Cyangwa Gusenyuka Urutonde Bya Bihari Amahitamo"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+#, fuzzy
+msgid "Error while matching"
+msgstr "i"
+
+# # LOCALIZATION NOTE (matchesFound):  do not localize %S
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+#, fuzzy
+msgid "Not found"
+msgstr "Nta bihuje byabonetse"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:1329
+#, fuzzy
+msgid "_Previous"
+msgstr "Shaka ibibanjirije"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2512
+#, fuzzy
+msgid "Error while looking up definition"
+msgstr "Gukora: %s%s Igikorwa"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2594
+#, fuzzy
+msgid "Error while retrieving the definition"
+msgstr "KIGEZWEHO Insobanuro"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:233
+#, fuzzy
+msgid "The filename used by this dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Izina"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-source.c:260
+#, fuzzy
+msgid "Description"
+msgstr "Umwirondoro:"
+
+#: ../libgdict/gdict-source.c:261
+#, fuzzy
+msgid "The description of this dictionary source"
+msgstr "Bya iyi Icyinjijwe"
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Label.Inscription.Database.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Envelope.Inscription.Database.text
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "Ububikoshingiro"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:303
+#, fuzzy
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_INPUTHELP.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_ERROR.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+#, fuzzy
+msgid "Context"
+msgstr "Ibigize"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-source-chooser.c:295
+#, fuzzy
+msgid "Reload the list of available sources"
+msgstr "Kuri Kwagura Cyangwa Gusenyuka Urutonde Bya Bihari Amahitamo"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:185
+#, fuzzy
+msgid "Dictionary sources found"
+msgstr "Seriveri"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr ""
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr ""
+
+#: ../libgdict/gdict-speller.c:384
+#, fuzzy
+msgid "The database used to query the GdictContext"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr ""
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+#, fuzzy
+msgid "Reload the list of available strategies"
+msgstr "Kuri Kwagura Cyangwa Gusenyuka Urutonde Bya Bihari Amahitamo"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+#, fuzzy
+msgid "Clear the list of available strategies"
+msgstr "Kuri Kwagura Cyangwa Gusenyuka Urutonde Bya Bihari Amahitamo"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_COLLATE_DICTIONARY.text
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_INDEXENTRY_DICTIONARY.text
+#: ../libgdict/gdict-utils.c:157
+#, fuzzy
+msgid "GDict Options"
+msgstr "Inkoranyamagambo"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr ""
+
+#: ../src/gdict-about.c:55
+#, fuzzy
+msgid "translator-credits"
+msgstr "Umusemuzi"
+
+#: ../src/gdict-about.c:57
+#, fuzzy
+msgid "Look up words in dictionaries"
+msgstr "ijambo in Inkoranyamagambo"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+#, fuzzy
+msgid "Words to look up"
+msgstr "Cyiza GUSHAKISHA"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr ""
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr ""
+
+#: ../src/gdict-app.c:74
+#, fuzzy
+msgid "Dictionary source to use"
+msgstr "Seriveri"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr ""
+
+# sw/source\ui\fldui\fldui.src:STR_DBNAMEFLD.text
+#: ../src/gdict-app.c:80
+#, fuzzy
+msgid "Database to use"
+msgstr "Izina ry'ububikoshingiro"
+
+#: ../src/gdict-app.c:86
+#, fuzzy
+msgid "Strategy to use"
+msgstr "Gushaka Kuri Gukoresha"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr ""
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+#, fuzzy
+msgid " - Look up words in dictionaries"
+msgstr "ijambo in Inkoranyamagambo"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+#, fuzzy
+msgid "Edit Dictionary Source"
+msgstr "a"
+
+#: ../src/gdict-pref-dialog.c:305
+#, fuzzy
+msgid "Add Dictionary Source"
+msgstr "a"
+
+# padmin/source\padialog.src:RID_PADIALOG.RID_PA_BTN_DEL.text
+#: ../src/gdict-pref-dialog.c:350
+#, fuzzy, c-format
+msgid "Remove \"%s\"?"
+msgstr "Gukuraho..."
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:382
+#, fuzzy, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Kuri Kuri APAREYE"
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, fuzzy, c-format
+msgid "There was an error while displaying help"
+msgstr "Ikosa Ifashayobora"
+
+#: ../src/gdict-pref-dialog.c:643
+#, fuzzy
+msgid "Add a new dictionary source"
+msgstr "a"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr ""
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, fuzzy, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Kuri Kuri APAREYE"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+#, fuzzy
+msgid "Unable to create a source file"
+msgstr "Kuri Kurema"
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+#, fuzzy
+msgid "Unable to save source file"
+msgstr "Kuri Gufungura"
+
+#: ../src/gdict-window.c:311
+#, fuzzy, c-format
+msgid "Searching for '%s'..."
+msgstr "kugirango"
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+#, fuzzy
+msgid "No definitions found"
+msgstr "Idosiye Byabonetse"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:520
+#, fuzzy
+msgid "Unable to find dictionary source"
+msgstr "Ububikoshingiro Kuri Gukoresha in Inkoranyamagambo Seriveri"
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:540
+#, fuzzy
+msgid "Unable to create a context"
+msgstr "Kuri Kurema"
+
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_COLLATE_DICTIONARY.text
+# #-#-#-#-#  svtools.pot (Gnome 2.12)  #-#-#-#-#
+# svtools/source\control\ctrlbox.src:STR_SVT_INDEXENTRY_DICTIONARY.text
+#: ../src/gdict-window.c:599
+#, fuzzy, c-format
+msgid "%s - Dictionary"
+msgstr "Inkoranyamagambo"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr ""
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr ""
+
+#: ../src/gdict-window.c:993
+#, fuzzy, c-format
+msgid "Error while writing to '%s'"
+msgstr "Komandi:"
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr ""
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr ""
+
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLEDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\macrodlg.src:RID_MACROCHOOSER.RID_PB_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_EDIT.text
+#: ../src/gdict-window.c:1281
+#, fuzzy
+msgid "_Edit"
+msgstr "Guhindura"
+
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_VIEW.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLVIEW.text
+#: ../src/gdict-window.c:1282
+#, fuzzy
+msgid "_View"
+msgstr "Kureba"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr ""
+
+#: ../src/gdict-window.c:1284
+#, fuzzy
+msgid "_Help"
+msgstr "Ifashayobora"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr ""
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr ""
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr ""
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr ""
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr ""
+
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (Gnome 2.12)  #-#-#-#-#
+#: ../src/gdict-window.c:1293
+#, fuzzy
+msgid "_Print..."
+msgstr "Gucapa"
+
+#: ../src/gdict-window.c:1294
+#, fuzzy
+msgid "Print this document"
+msgstr "OYA Kubika Inyandiko"
+
+# #-#-#-#-#  padmin.pot (Gnome 2.12)  #-#-#-#-#
+# padmin/source\padialog.src:RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.text
+# #-#-#-#-#  padmin.pot (Gnome 2.12)  #-#-#-#-#
+# padmin/source\padialog.src:RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.text
+#: ../src/gdict-window.c:1301
+#, fuzzy
+msgid "Select _All"
+msgstr "Hitamo byose"
+
+#: ../src/gdict-window.c:1304
+#, fuzzy
+msgid "Find a word or phrase in the document"
+msgstr "a ijambo in Umwandiko"
+
+#: ../src/gdict-window.c:1306
+#, fuzzy
+msgid "Find Ne_xt"
+msgstr "Shaka ibikurikira"
+
+#: ../src/gdict-window.c:1308
+#, fuzzy
+msgid "Find Pre_vious"
+msgstr "Shaka ibibanjirije"
+
+#: ../src/gdict-window.c:1310
+#, fuzzy
+msgid "_Preferences"
+msgstr "Ibyahiswemo"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+#, fuzzy
+msgid "_Previous Definition"
+msgstr "Shaka ibibanjirije"
+
+#: ../src/gdict-window.c:1315
+#, fuzzy
+msgid "Go to the previous definition"
+msgstr "KIGEZWEHO Insobanuro"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1317
+#, fuzzy
+msgid "Go to the next definition"
+msgstr "KIGEZWEHO Insobanuro"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1319
+#, fuzzy
+msgid "Go to the first definition"
+msgstr "KIGEZWEHO Insobanuro"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1321
+#, fuzzy
+msgid "Go to the last definition"
+msgstr "KIGEZWEHO Insobanuro"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr ""
+
+#: ../src/gdict-window.c:1326
+#, fuzzy
+msgid "Dictionary Sources"
+msgstr "Seriveri"
+
+#: ../src/gdict-window.c:1328
+#, fuzzy
+msgid "Available _Databases"
+msgstr "Amahitamo"
+
+#: ../src/gdict-window.c:1330
+#, fuzzy
+msgid "Available St_rategies"
+msgstr "Amahitamo"
+
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_INPUTHELP.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_ERROR.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
+#. Help menu
+#: ../src/gdict-window.c:1334
+#, fuzzy
+msgid "_Contents"
+msgstr "Ibigize"
+
+#: ../src/gdict-window.c:1336
+#, fuzzy
+msgid "_About"
+msgstr "Bigyanye"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr ""
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr ""
+
+#: ../src/gdict-window.c:1414
+#, fuzzy, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "ijambo Icyinjijwe"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr ""
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr ""
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr ""
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr ""
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+#, fuzzy
+msgid "Double-click on the matching strategy to use"
+msgstr "Gushaka Kuri Gukoresha"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr ""
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr ""
+
+#: ../src/gdict-window.c:1700
+#, fuzzy
+msgid "Look _up:"
+msgstr "Byakozwe"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr ""
+
+#: ../src/gdict-window.c:1788
+#, fuzzy
+msgid "Available dictionaries"
+msgstr "Amahitamo"
+
+#: ../src/gdict-window.c:1806
+#, fuzzy
+msgid "Available strategies"
+msgstr "Amahitamo"
+
+#: ../src/gdict-window.c:1822
+#, fuzzy
+msgid "Dictionary sources"
+msgstr "Seriveri"

@@ -1,0 +1,846 @@
+# Biełaruski pierakład gnome-utils.HEAD.
+# Copyright (C) 2007 Ihar Hračyška
+# Vital Khilko <dojlid@mova.org>, 2003.
+# Ales Nyakhaychyk <nab@mail.by>, 2003, 2004.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2007-10-01 23:55+0300\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian Latin <be-latin.open-tran.eu>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "Zmoŭčany słoŭnikavy server"
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "Hišpanskija słoŭniki"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Longdo tajska-anhielskija słoŭniki"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Hladzi aznačeńni j pravapis słova ŭ sieciŭnym słoŭniku"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "Słoŭnik"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+msgid "The default database to use"
+msgstr "Vykarystanaja zmoŭčanaja baza źviestak"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+msgid "The default search strategy to use"
+msgstr "Vykarystanaja zmoŭčanaja stratehija pošuku"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr "Šryft dziela drukavańnia"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr "Šryft dziela drukavańnia aznačeńnia."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Nazva zmoŭčanaj asabistaj bazy źviestak ci meta-bazy, dla słoŭnikavaj "
+"krynicy. Kličnik (\"!\") značyć, što treba šukać va ŭsich bazach źviestak z "
+"słoŭnikavaj krynicy"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"Kali jość, nazva zmoŭčanaj stratehii dla słoŭnikavaj krynicy. Zmoŭčanaj "
+"stratehijaj źjaŭlajecca \"exact\", heta značyć dakładnaje adpaviadańnie "
+"słovaŭ."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+msgid "The name of the dictionary source used"
+msgstr "Nazva vykarystanaj słoŭnikavaj krynicy"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr "Nazva słoŭnikavaj krynicy dla atrymańnia aznačeńniaŭ słovaŭ."
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "Print"
+msgstr "Vydrukuj"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr "Krynica"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "Šryft dla _druku:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Abiary słoŭnikavuju krynicu dla pošuku słovaŭ:"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+msgid "Dictionaries"
+msgstr "Słoŭniki"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "H_ostname:"
+msgstr "Nazva _kamputara:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "Source Name"
+msgstr "Nazva krynicy"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Strategies"
+msgstr "Stratehii"
+
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "_Description:"
+msgstr "_Apisańnie:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "_Port:"
+msgstr "_Port:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr "_Transpart:"
+
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "Nazva klijenta"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "Nazva klijenta kantekstnaha abjektu"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "Nazva kamputara"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Nazva kamputara z patrebnym słoŭnikavym serveram"
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Port"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "Port słoŭnikavaha servera dla spałučeńnia"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "Status"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "Statusny kod, viernuty słoŭnikavym serveram"
+
+#: ../libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "Niama spałučeńnia sa słoŭnikavym serveram na \"%s:%d\""
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+"Pamyłka pošuku dla kamputara \"%s\": nia znojdzienyja prydatnyja resursy"
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "Pamyłka pošuku dla kamputara \"%s\": %s"
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "Pamyłka pošuku dla kamputara \"%s\": kamputar nia znojdzieny"
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Niemahčyma spałučycca sa słoŭnikavym serveram na \"%s:%d\". Server adkazaŭ z "
+"kodam %d (server vyklučany)"
+
+#: ../libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"Niemahčyma zrazumieć adkaz słoŭnikavaha servera\n"
+": \"%s\""
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "Dla \"%s\" nia zmojdziena aznačeńniaŭ"
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "Niapravilnaja baza źviestak \"%s\""
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "Niapravilnaja stratehija \"%s\""
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Kiepski zahad \"%s\""
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "Kiepskija parametry dla zahadu \"%s\""
+
+#: ../libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Na słoŭnikavym servery \"%s\" nia znojdziena bazaŭ źviestak"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "Na słoŭnikavym servery \"%s\" nia znojdziena stratehij"
+
+#: ../libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Pamyłka spałučeńnia sa słoŭnikavym serveram na %s:%d"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"Pamyłka pry čytańni adkazu z servera:\n"
+"%s"
+
+#: ../libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr ""
+"Skončany termin čakańnia spałučeńnia dla słoŭnikavaha servera na \"%s:%d\""
+
+#: ../libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Nazva kamputara nie akreślenaja dla słoŭnikavaha servera"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "Niemahčyma stvaryć sokiet"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Niemahčyma zrabić kanał biazblokavym: %s"
+
+#: ../libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Niemahčyma spałučycca sa słoŭnikavym serveram na \"%s:%d\""
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "Tolki lakalnyja"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "Ci dla kantekstu vykarystoŭvajucca tolki lakalnyja słoŭniki"
+
+#: ../libgdict/gdict-database-chooser.c:378
+msgid "Reload the list of available databases"
+msgstr "Pieračytaj śpis dastupnych bazaŭ źviestak"
+
+#: ../libgdict/gdict-database-chooser.c:390
+msgid "Clear the list of available databases"
+msgstr "Ačyść śpis dastupnych bazaŭ źviestak"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+msgid "Error while matching"
+msgstr "Pamyłka pry paraŭnańni"
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "Nia znojdziena"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "_Šukaj:"
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "_Papiaredni"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "_Nastupny"
+
+#: ../libgdict/gdict-defbox.c:2512
+msgid "Error while looking up definition"
+msgstr "Pamyłka padčas pošuku aznačeńnia"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr "Vykonvajecca inšy pošuk"
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr "Pačakaj zakančeńnia dziejnaha pošuku."
+
+#: ../libgdict/gdict-defbox.c:2594
+msgid "Error while retrieving the definition"
+msgstr "Pamyłka padčas atrymańnia aznačeńnia"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "Nazva fajłu"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "Nazva fajłu dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Nazva"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "Bačnaja nazva dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "Apisańnie"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "Apisańnie dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "Baza źviestak"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "Zmoŭčanaja baza źviestak dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "Stratehija"
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "Zmoŭčanaja stratehija dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "Transpart"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Mechanizm transpartavańnia dla hetaj słoŭnikavaj krynicy"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "Kantekst"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "GdictContext, pryviazany da hetaj krynicy"
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "Niapravilny typ transpartu \"%d\""
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "U apisańni słoŭnikavaj krynicy nia znojdziena hrupy \"%s\""
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr ""
+"Niemahčyma atrymać kluč \"%s\" unutry apisańnia słoŭnikavaj krynicy: %s"
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+"Niemahčyma atrymać kluč \"%s\" unutry fajłu apisańnia słoŭnikavaj krynicy: %s"
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "Słoŭnikavaja krynica nia maje nazvy"
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "Słoŭnikavaja krynica \"%s\" maje niapravilny transpart \"%s\""
+
+#: ../libgdict/gdict-source-chooser.c:295
+msgid "Reload the list of available sources"
+msgstr "Pieračytaj śpis dastupnych krynic"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "Ściežki"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "Ściežki pošuku, vykarystanyja dla hetaha abjektu"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "Krynicy"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "Znojdzienyja słoŭnikavyja krynicy"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr "Ačyść śpis padobnych słovaŭ"
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr ""
+"Abjekt GdictContext, jaki vykarystoŭvajecca dla atrymańnia aznačeńniaŭ słovaŭ"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "Baza źviestak dla zapytańnia GdictContext"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr "Stratehija zapytańnia GdictContext"
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+msgid "Reload the list of available strategies"
+msgstr "Pieračytaj śpis dastupnych stratehij"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+msgid "Clear the list of available strategies"
+msgstr "Ačyść śpis dastupnych stratehij"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "Opcyi GDict"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "Pakažy opcyi GDict"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr "Ihar Hračyška <ihar.hrachyshka@gmail.com>"
+
+#: ../src/gdict-about.c:57
+msgid "Look up words in dictionaries"
+msgstr "Šukaj słovy ŭ słoŭnikach"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+msgid "Words to look up"
+msgstr "Słovy dla pošuku"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr ""
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr "Słovy dla paraŭnańnia"
+
+#: ../src/gdict-app.c:74
+msgid "Dictionary source to use"
+msgstr "Vykarystanaja słoŭnikavaja krynica"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr ""
+
+#: ../src/gdict-app.c:80
+msgid "Database to use"
+msgstr "Vykarystanaja baza źviestak"
+
+#: ../src/gdict-app.c:86
+msgid "Strategy to use"
+msgstr "Vykarystanaja stratehija"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr ""
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+msgid " - Look up words in dictionaries"
+msgstr " - Šukaj słovy ŭ słoŭnikach"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+msgid "Edit Dictionary Source"
+msgstr "Redahuj słoŭnikavuju krynicu"
+
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "Dadaj słoŭnikavuju krynicu"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Vydalić \"%s\"?"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "Hetaje dziejańnie vydalić słoŭnikavuju krynicu sa śpisu."
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Niemahčyma vydalić krynicu \"%s\""
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "Uźnikła pamyłka pry pakazie dapamohi"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "Dadaj novuju słoŭnikavuju krynicu"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "Vydal dziejna zaznačanuju słoŭnikavuju krynicu"
+
+#: ../src/gdict-pref-dialog.c:655
+#, fuzzy
+msgid "Edit the currently selected dictionary source"
+msgstr "Vydal dziejna zaznačanuju słoŭnikavuju krynicu"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "Akreśl šryft dla drukavańnia aznačeńniaŭ"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Niemahčyma pakazać pieradahlad: %s"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "Niemahčyma stvaryć kryničny fajł"
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+msgid "Unable to save source file"
+msgstr "Niemahčyma zapisać kryničny fajł"
+
+#: ../src/gdict-window.c:311
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "Pošuk \"%s\"..."
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+msgid "No definitions found"
+msgstr "Aznačeńni nia znojdzienyja"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "%d aznačeńnie znojdzienaje"
+msgstr[1] "%d aznačeńni znojdzienyja"
+msgstr[2] "%d aznačeńniaŭ znojdzienyja"
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Słoŭnikavaja krynica z nazvaj \"%s\" niedastupnaja"
+
+#: ../src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "Niemahčyma znajści słoŭnikavaj krynicy"
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Kantekst dla krynicy \"%s\" niedastupny"
+
+#: ../src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "Niemahčyma stvaryć kantekst"
+
+#: ../src/gdict-window.c:599
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - Słoŭnik"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "Zapišy kopiju"
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "Nienazvany dakument"
+
+#: ../src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Pamyłka padčas zapisu ŭ \"%s\""
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "Nałady słoŭnika"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr "_Fajł"
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "_Redahuj"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr "_Vyhlad"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr "_Idzi"
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "_Dapamoha"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr "_Novy"
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr "Novy pošuk"
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr "_Zapišy kopiju..."
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr "_Pieradahlad..."
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr "Pakažy pieradahlad hetaha dakumenta"
+
+#: ../src/gdict-window.c:1293
+msgid "_Print..."
+msgstr "_Vydrukuj..."
+
+#: ../src/gdict-window.c:1294
+msgid "Print this document"
+msgstr "Nadrukuj hety dakument"
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr "Zaznač _usio"
+
+#: ../src/gdict-window.c:1304
+msgid "Find a word or phrase in the document"
+msgstr "Šukaj słova ci vyraz u dakumencie"
+
+#: ../src/gdict-window.c:1306
+msgid "Find Ne_xt"
+msgstr "Šukaj _dalej"
+
+#: ../src/gdict-window.c:1308
+msgid "Find Pre_vious"
+msgstr "Šukaj _raniej"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "_Nałady"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+msgid "_Previous Definition"
+msgstr "_Papiaredniaje aznačeńnie"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr "Pierajdzi da papiaredniaha aznačeńnia"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr "_Nastupnaje aznačeńnie"
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr "Pierajdzi da nastupnaha aznačeńnia"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr "_Pieršaje aznačeńnie"
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr "Pierajdzi da pieršaha aznačeńnia"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr "_Apošniaje aznačeńnie"
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr "Pierajdzi da apošniaha aznačeńnia"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr "Padobnyja _słovy"
+
+#: ../src/gdict-window.c:1326
+msgid "Dictionary Sources"
+msgstr "Słoŭnikavyja krynicy"
+
+#: ../src/gdict-window.c:1328
+msgid "Available _Databases"
+msgstr "_Dastupnyja bazy źviestak"
+
+#: ../src/gdict-window.c:1330
+msgid "Available St_rategies"
+msgstr "Dastupnyja _stratehii"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr "_Źmieściva"
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "_Ab"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr "_Bakavaja panel"
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr "Penel _statusu"
+
+#: ../src/gdict-window.c:1414
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Abranaja słoŭnikavaja krynica \"%s\""
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "Abranaja stratehija \"%s\""
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr "Abranaja baza źviestak \"%s\""
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr "Abranaje słova \"%s\""
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr "Dvuklikni słova, kab ździejśnić pošuk"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+msgid "Double-click on the matching strategy to use"
+msgstr "Dvuklikni patrebnuju stratehiju paraŭnańnia"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr "Dvuklikni patrebnuju krynicu"
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr "Dvuklikni patrebnuju bazu źviestak"
+
+#: ../src/gdict-window.c:1700
+msgid "Look _up:"
+msgstr "Šu_kaj:"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr "Padobnyja słovy"
+
+#: ../src/gdict-window.c:1788
+msgid "Available dictionaries"
+msgstr "Dastupnyja słoŭniki"
+
+#: ../src/gdict-window.c:1806
+msgid "Available strategies"
+msgstr "Dastupnyja stratehii"
+
+#: ../src/gdict-window.c:1822
+msgid "Dictionary sources"
+msgstr "Słoŭnikavyja krynicy"

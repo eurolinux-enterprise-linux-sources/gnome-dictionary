@@ -1,0 +1,869 @@
+# translation of gnome-utils.gnome-2-14.po to Georgian
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Malkhaz Barkalaya მალხაზ ბარკალაია <maxo127@mail.ru>
+# Vladimer Sichinava ვლადიმერ სიჭინავა <alinux@siena.linux.it>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2006-03-14 00:56+0100\n"
+"Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
+"Language-Team: Georgian <gnome@inet.ge>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "ნაგულისხმევი ლექსიკონის სერვერი"
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "ესპანური ლექსიკონები"
+
+#: ../data/thai.desktop.in.h:1
+#, fuzzy
+msgid "Longdo Thai-English Dictionaries"
+msgstr "ესპანური ლექსიკონები"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+#, fuzzy
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "სიტყვების ძებნა ვებ-ლექსიკონში"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "ლექსიკონი"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+msgid "The default database to use"
+msgstr "მონაცემთა ნაგულისხმები·ბაზა"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+msgid "The default search strategy to use"
+msgstr "ძებნის ნაგულისხმები სტრატეგია"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr "ბეჭდვის ფონტის არჩევა"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr "ფონტი, რომლითაც დაიბეჭდება განმარტება."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"ნაგულისხმები ინდივიდუალური ან მეტა- მონაცემთა ბაზის სახელი, რომელიც "
+"გამოყენებულ იქნება ლექსიკონის მიერ. ძახილის ნიშნის (\"!\") შემთხვევაში "
+"გამოყენებული იქნება ყველა არსებული მონაცემთა ბაზა."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"ძებნის ნაგულისხმები სტრატეგიის არჩევა, თუ ეს შესაძლებელია. ნაგულისხმევი "
+"სტრატეგიაა 'exact', ანუ სიტყვების ზუსტი დამთხვევა."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+msgid "The name of the dictionary source used"
+msgstr ""
+"ლექსიკონის სახელი, რომელსაც წყაროდ გამოიყენებს(მე ვფიქრობ ამ ფრაზას "
+"გამომყენებლის სახელი უნდა მოსდევდეს და იმიტომ დავწერე ასე)"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+"სახელი ლექსიკონისა,·რომელიც სიტყვების·განმარტებების წყაროდ გამოიყენება."
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "Print"
+msgstr "ბეჭდვა"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr "წყარო"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "ბეჭდვის _ფონტი:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr ""
+"ლექსიკონის არჩევა·წყაროდ:(რად უნდა ეგ წყარო აქ? ლექსიკონის·არჩევა და ბასტა)"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+#, fuzzy
+msgid "Dictionaries"
+msgstr "ლექსიკონი"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "H_ostname:"
+msgstr "_ჰოსტი:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "Source Name"
+msgstr "წყაროს სახელი"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+#, fuzzy
+msgid "Strategies"
+msgstr "სტრატეგია"
+
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "_Description:"
+msgstr "_აღწერა:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "_Port:"
+msgstr "_პორტი:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr "_ტრანსპორტი"
+
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "კლიენტის სახელი"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "კონტექსტური ობიექტის კლიენტი:"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "ჰოსტის სახელიანჰოსტი"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "ლექსიკონის სერვერის ჰოსტის სახელი"
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "პორტი"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "ლექსიკონის·სერვერის·პორტი"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "სტატუსი"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "ლექსიკონის სერვერისაგან მიღებული სტატუსის კოდი"
+
+#: ../libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "ლექსიკონის სერვერი '%s:%d' არ არის მიერთებული"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr "ჰოსტი '%s' ვერ მოიძებნა. არ მოინახა შესაბამისი რესურსი."
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "ვერ მოიძებნა ჰოსტი '%s':·%s"
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "ვერ·მოიძებნა·ჰოსტი·'%s':"
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"ვერ დამყარდა კავშირი '%s:%d' ლექსიკონის სერვერთან. სერვერისაგან მიღებულია "
+"კოდი %d (სერვერი არ ფუნქციონირებს)"
+
+#: ../libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"სერვერისაგან მიღებულია გაურკვეველი პასუხი\n"
+":·'%s'"
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "არ მოიძებნა რაიმე განსაზღვრება'%s'-სათვის"
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "შეცდომა მონაცემთა ბაზაში '%s'"
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "არასწორია სტრატეგია '%s'"
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "არასწორია ბრძანება '%s'"
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "არასწორია პარამეტრები ბრძანებისა '%s'"
+
+#: ../libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "ლექსიკონის სერვერზე მონაცემთა ბაზები ვერ მოინახა: '%s'"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "ლექსიკონის·სერვერზე·სტრატეგია ვერ მოინახა:·'%s'"
+
+#: ../libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "ლექსიკონის·სერვერთან დაკავშირება ვერ მოხერხდა:%s:%d"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"შეცდომა სერვერის პასუხის კითხვისას:\n"
+"%s"
+
+#: ../libgdict/gdict-client-context.c:1860
+#, fuzzy, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "ლექსიკონის·სერვერთან დაკავშირება ვერ მოხერხდა:%s:%d"
+
+#: ../libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "ლექსიკონის სერვერის ჰოსტის სახელი არ არის განსაზღვრული"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "სოკეტის შექმნა არ ხერხდება"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "არხისათვის ვერ ხერხდება არაბლოკირებადობის მინიჭება:%s"
+
+#: ../libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "ვერ ხერხდება ლექსიკონის სერვერთან დაკავშირება: '%s:%d'"
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "მხოლოდ ლოკალურები"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "კონტექსტმა მხოლოდ ლოკალური ლექსიკონები გამოიყენოს თუ არა"
+
+#: ../libgdict/gdict-database-chooser.c:378
+#, fuzzy
+msgid "Reload the list of available databases"
+msgstr "დაწკაპეთ პირობების სიის გასაშლელად/დასაკეცად."
+
+#: ../libgdict/gdict-database-chooser.c:390
+#, fuzzy
+msgid "Clear the list of available databases"
+msgstr "დაწკაპეთ პირობების სიის გასაშლელად/დასაკეცად."
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+#, fuzzy
+msgid "Error while matching"
+msgstr "შეცდომა '%s'-ში ჩაწერისას"
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "ვერ მოიძებნა"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "_ძებნა:"
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "_წინა"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "_წინ"
+
+#: ../libgdict/gdict-defbox.c:2512
+msgid "Error while looking up definition"
+msgstr "შეცდომა განსაზღვრების ძებნისას"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr "ძებნის სხვა პროცესია გაშვებული"
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr "მოითმინეთ მიმდინარე ძებნის პროცესის დამთავრებამდე."
+
+#: ../libgdict/gdict-defbox.c:2594
+msgid "Error while retrieving the definition"
+msgstr "შეცდომა განსაზღვრების მიღებისას"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "ფაილის სახელი"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "ლექსიკონის·წყაროს ფაილის სახელი"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "სახელი"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "ამ ლექსიკონის წყაროს ეკრანული სახელი"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "აღწერა"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "ამ·ლექსიკონის·წყაროს·აღწერა"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "მონაცემთა ბაზა"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "ამ·ლექსიკონის·წყაროს·ნაგულისხმები მონაცემთა ბაზა"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "სტრატეგია"
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "ამ·ლექსიკონის·წყაროს·ნაგულისხმები სტრატეგია"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "ტრანსპორტი"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "ტრანსპორტის მექანიზმი ლექსიკონის წყაროსათვის"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "კონტექსტი"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "ამ·წყაროს·GdictContext-ბმა"
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "ტრანსპორტირების არასწორი სახე '%d'"
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "ლექსიკონის·წყაროს·განსაზღვრებაში '%s' ჯგუფი ვერ მოინახა"
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr "ვერ·მოინახა·გასაღები·%s ლექსიკონის·წყაროს·განსაზღვრებაში: %s"
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "ვერ მოინახა გასაღები %s·ლექსიკონის წყაროს განსაზღვრების ფაილში:·%s"
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "ლექსიკონის წყაროს სახელი არ გააჩნია"
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "ლექსიკონის '%s'· წყაროს·აქვს არასწორი ტრანსპორტი '%s'"
+
+#: ../libgdict/gdict-source-chooser.c:295
+#, fuzzy
+msgid "Reload the list of available sources"
+msgstr "ვერ·მოიძებნა·კონტექსტი ლექსიკონის·წყაროსათვის '%s'"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "გეზი"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "ამ ობიექტის გეზის ძებნა"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "წყაროები"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "ლექსიკონის შესატყვისთა წყარო ნაპოვნია"
+
+#: ../libgdict/gdict-speller.c:353
+#, fuzzy
+msgid "Clear the list of similar words"
+msgstr "ლექსიკონის სიტყვის ფერი"
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr "სიტყვის განმარტების მისაღებად GdictContext ობიექტის არჩევა"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "GdictContext-სათვის მონაცემთა ბაზის არჩევა"
+
+#: ../libgdict/gdict-speller.c:391
+#, fuzzy
+msgid "The strategy used to query the GdictContext"
+msgstr "GdictContext-სათვის მონაცემთა ბაზის არჩევა"
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+#, fuzzy
+msgid "Reload the list of available strategies"
+msgstr "დაწკაპეთ პირობების სიის გასაშლელად/დასაკეცად."
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+#, fuzzy
+msgid "Clear the list of available strategies"
+msgstr "დაწკაპეთ პირობების სიის გასაშლელად/დასაკეცად."
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:157
+#, fuzzy
+msgid "GDict Options"
+msgstr "ლექსიკონის პარამეტრები"
+
+#: ../libgdict/gdict-utils.c:158
+#, fuzzy
+msgid "Show GDict Options"
+msgstr "ლექსიკონის პარამეტრები"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr ""
+"Malkhaz Barkalaya <maxo127@mail.ru>Vladimer Sichinava <alinux@siena.linux.it>"
+
+#: ../src/gdict-about.c:57
+msgid "Look up words in dictionaries"
+msgstr "სიტყვების ძებნა ლექსიკონებში"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+msgid "Words to look up"
+msgstr "საძიებელი სიტყვები"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr ""
+
+#: ../src/gdict-app.c:68
+#, fuzzy
+msgid "Words to match"
+msgstr "საძიებელი სიტყვები"
+
+#: ../src/gdict-app.c:74
+msgid "Dictionary source to use"
+msgstr "ლექსიკონის წყარო"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr ""
+
+#: ../src/gdict-app.c:80
+msgid "Database to use"
+msgstr "მონაცემთა ბაზა"
+
+#: ../src/gdict-app.c:86
+#, fuzzy
+msgid "Strategy to use"
+msgstr "სტრატეგია"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr ""
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+msgid " - Look up words in dictionaries"
+msgstr " ·-·ლექსიკონები·სიტყვების·საძიებლად"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+#, fuzzy
+msgid "Edit Dictionary Source"
+msgstr "ლექსიკონის·წყაროს დამატება"
+
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "ლექსიკონის·წყაროს დამატება"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "წავშალოთ \"%s\"?"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "ლექსიკონის წყარო საბოლოოდ იქნება ამოშლილი."
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "'%s' წყაროს ამოშლა არ ხერხდება."
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "შეცდომა დახმარების ჩვენებისას"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "ახალი წყაროს დამატება"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "მონიშნული წყაროს ამოშლა"
+
+#: ../src/gdict-pref-dialog.c:655
+#, fuzzy
+msgid "Edit the currently selected dictionary source"
+msgstr "მონიშნული წყაროს ამოშლა"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "განსაზღვრებების დასაბეჭდად გამოყენებული შრიფტი"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, fuzzy, c-format
+msgid "Unable to display the preview: %s"
+msgstr "%s მოწყობილობაზე ჩაწერა ვერ ხერხდება"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "წყაროს ფაილი არ იხსნება"
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+msgid "Unable to save source file"
+msgstr "წყაროს·ფაილის შენახვა არ ხერხდება"
+
+#: ../src/gdict-window.c:311
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "'%s'-ს ძებნაში..."
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+msgid "No definitions found"
+msgstr "განსაზღვრება ვერ მოიძებნა"
+
+#: ../src/gdict-window.c:345
+#, fuzzy, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "ნაპოვნია შესატყვისი"
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "ვერ მოიძებნა ლექსიკონის წყარო სახელად '%s'"
+
+#: ../src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "ვერ·მოიძებნა·ლექსიკონის·წყარო"
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "ვერ·მოიძებნა·კონტექსტი ლექსიკონის·წყაროსათვის '%s'"
+
+#: ../src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "კონტექსტი ვერ შეიქმნა"
+
+#: ../src/gdict-window.c:599
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - ლექსიკონი"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "ასლის შენახვა"
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "უსახელო დოკუმენტი"
+
+#: ../src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "შეცდომა '%s'-ში ჩაწერისას"
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "ლექსიკონის პარამეტრები"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr "_ფაილი"
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "_დამუშავება"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr "_ხედი"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr "_წინ"
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "_დახმარება"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr "_ახალი"
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr "მორიგი ძებნა"
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr "_ასლის შენახვა"
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr ""
+
+#: ../src/gdict-window.c:1292
+#, fuzzy
+msgid "Preview this document"
+msgstr "ბეჭდვა"
+
+#: ../src/gdict-window.c:1293
+msgid "_Print..."
+msgstr "_ბეჭდვა..."
+
+#: ../src/gdict-window.c:1294
+msgid "Print this document"
+msgstr "ბეჭდვა"
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr "მონიშნე _ყველა"
+
+#: ../src/gdict-window.c:1304
+msgid "Find a word or phrase in the document"
+msgstr "სიტყვის ან ფრაზის ძებნა დოკუმენტში"
+
+#: ../src/gdict-window.c:1306
+msgid "Find Ne_xt"
+msgstr "შემდეგის _ძებნა"
+
+#: ../src/gdict-window.c:1308
+msgid "Find Pre_vious"
+msgstr "_წინას ძებნა"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "_პარამეტრები"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+msgid "_Previous Definition"
+msgstr "_წინა განსაზღვრება"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr "_გადასვლა წინა განსაზღვრებაზე"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr "_შემდეგი განსაზღვრება"
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr "გადასვლა შემდეგ·განსაზღვრებაზე"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr "_პირველი განსაზღვრება"
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr "გადასვლა პირველ·განსაზღვრებაზე"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr "_ბოლო განსაზღვრება"
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr "გადასვლა ბოლო·განსაზღვრებაზე"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr ""
+
+#: ../src/gdict-window.c:1326
+#, fuzzy
+msgid "Dictionary Sources"
+msgstr "ლექსიკონის·წყაროს დამატება"
+
+#: ../src/gdict-window.c:1328
+#, fuzzy
+msgid "Available _Databases"
+msgstr "დაშვებული პარამეტრები"
+
+#: ../src/gdict-window.c:1330
+#, fuzzy
+msgid "Available St_rategies"
+msgstr "დაშვებული პარამეტრები"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr "_შინაარსი"
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "_შესახებ"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr ""
+
+#: ../src/gdict-window.c:1349
+#, fuzzy
+msgid "S_tatusbar"
+msgstr "_სტატუსის პანელი"
+
+#: ../src/gdict-window.c:1414
+#, fuzzy, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "ლექსიკონის წყარო"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr ""
+
+#: ../src/gdict-window.c:1455
+#, fuzzy, c-format
+msgid "Database `%s' selected"
+msgstr "მონაცემთა ბაზა"
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr ""
+
+#. speller
+#: ../src/gdict-window.c:1500
+#, fuzzy
+msgid "Double-click on the word to look up"
+msgstr "შეიყვანეთ საძიებელი სიტყვა"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+msgid "Double-click on the matching strategy to use"
+msgstr ""
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+#, fuzzy
+msgid "Double-click on the source to use"
+msgstr "ლექსიკონის წყარო"
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+#, fuzzy
+msgid "Double-click on the database to use"
+msgstr "მონაცემთა ნაგულისხმები·ბაზა"
+
+#: ../src/gdict-window.c:1700
+msgid "Look _up:"
+msgstr "_ძებნა:"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr ""
+
+#: ../src/gdict-window.c:1788
+#, fuzzy
+msgid "Available dictionaries"
+msgstr "დაშვებული პარამეტრები"
+
+#: ../src/gdict-window.c:1806
+#, fuzzy
+msgid "Available strategies"
+msgstr "დაშვებული პარამეტრები"
+
+#: ../src/gdict-window.c:1822
+#, fuzzy
+msgid "Dictionary sources"
+msgstr "ლექსიკონის შესატყვისთა წყარო ნაპოვნია"

@@ -1,0 +1,849 @@
+# translation of gnome-utils.HEAD.ar.po to Arabic
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011.
+# Anas Afif Emad <anas.e87@gmail.com, 2008.
+# Abderrahim Kitouni <a.kitouni@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-18 16:00+0100\n"
+"PO-Revision-Date: 2012-03-18 16:02+0100\n"
+"Last-Translator: Abderrahim Kitouni <a.kitouni@gmail.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "خادوم القاموس الافتراضي"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:238 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "القاموس"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "ابحث عن تعريف وإملاء الكلمات في قاموس علخط"
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "ا_ختر مصدر قاموس للبحث عن الكلمات:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "المصدر"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "_خط الطبع:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "اطبع"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "ال_وصف:"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "الن_قل:"
+
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "ا_سم المستضيف:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "_Port:"
+msgstr "ال_منفذ:"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "اسم المصدر"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "القواميس"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "الاستراتيجيات"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+msgid "The default database to use"
+msgstr "قاعدة البيانات التي ستستخدم افتراضيا"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"اسم قاعدة البيانات أو ميتا-قاعدة بيانات الفرديّة لتستعمل في مصدر القاموس. "
+"علامة التعجب (\"!\") تعني أن يبحث قاموس-جنوم جميع قواعد البيانات الموجودة في "
+"مصدر القاموس."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The default search strategy to use"
+msgstr "استراتيجية البحث الافتراضية المستخدمة"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"اسم استراتيجية البحث الافتراضية للإستعمال على مصدر قاموس، إذا كان متوفّرا. "
+"الالاستراتيجية الافتراضية هي 'exact' ، أي مطابقة كلية للكلمات."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid "The font to be used when printing"
+msgstr "الخط المستعمل أثناء الطباعة"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid "The font to be used when printing a definition."
+msgstr "الخط المستعمل أثناء طباعة التعريفات."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+msgid "The name of the dictionary source used"
+msgstr "اسم مصدر القاموس المستعمل"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr "اسم مصدر القاموس المستعمل للحصول على تعاريف الكلمات."
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "قواميس أسبانية"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "قواميس لونجدو تايلاندي-إنجليزي"
+
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "اسم العميل"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "اسم عميل السياق"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "اسم المستضيف"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "اسم خادوم القاموس الذي سيتّصل به"
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "المنفذ"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "منفذ خادوم القاموس الذي سيتّصل به"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "الحالة"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "رمز الحالة المرجع من خادوم القاموس"
+
+#: ../libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "لا اتّصال بخادوم القاموس على '%s:%d'"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr "فشل إيجاد اسم الخادوم '%s': لا موارد مناسبة موجودة"
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "فشل الاتصال بالمستضيف '%s'‏: %s "
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "فشل إيجاد المستضيف '%s': المستضيف غير موجود"
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"لا يمكن الاتصال بخادوم القاموس على '%s:%d'. أجاب الخادوم بالرمز %d (الخادوم "
+"متوقف)"
+
+#: ../libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"تعذّر تحليل إجابة خادوم القاموس\n"
+": '%s'"
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "لا تعريف ل‍ '%s'"
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "قاعدة البيانات غير صحيحة '%s'"
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "استراتجية  غير صحيحة '%s'"
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "أمر سيئ  '%s'"
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "خيارات سيّئة للأمر '%s'"
+
+#: ../libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "لا قاعدة بيانات موجودة في خادوم القاموس '%s'"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "لا استراتيحيات موجودة على خادوم القاموس في  '%s'"
+
+#: ../libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "فشل الاتصال بخادوم القواميس %s:%d"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"خطأ عند قراءة الإجابة من الخادوم:\n"
+"%s"
+
+#: ../libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "مهلة الاتصال بخادوم القواميس في %s:%d"
+
+#: ../libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "لا اسم مستضيف محدّد لخادوم قواميس"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "تعذّر انشاء المقبس"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "تعذّر تحديد القناة كغير مسدِّدة: %s "
+
+#: ../libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "لا يمكن الاتصال بخادوم القواميس على %s:%d"
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "محليا فقط"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "إذا كان السياق يستعمل قواميس محلّية فقط أم لا"
+
+#: ../libgdict/gdict-database-chooser.c:378
+msgid "Reload the list of available databases"
+msgstr "أعد تحميل قائمة قواعد البيانات المتوفّرة"
+
+#: ../libgdict/gdict-database-chooser.c:390
+msgid "Clear the list of available databases"
+msgstr "امسح قائمة قواعد البيانات المتوفرة"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+msgid "Error while matching"
+msgstr "حدث خطأ خلال المطابقة"
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "غير موجود"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "اب_حث:"
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "ال_سابق"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "ال_تالي"
+
+#: ../libgdict/gdict-defbox.c:2512
+msgid "Error while looking up definition"
+msgstr "خطأ عند البحث عن التعريف"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr "هناك بحث آخر قيد التنفيذ"
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr "رجاء الانتظار حتى إنهاء البحث الحالي"
+
+#: ../libgdict/gdict-defbox.c:2594
+msgid "Error while retrieving the definition"
+msgstr "خطأ عند جلب عن التعريف"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "اسم الملف"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "اسم الملف المستعمل من طرف مصدر القاموس"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "الاسم"
+
+#: ../libgdict/gdict-source.c:247
+msgid "The display name of this dictionary source"
+msgstr "الاسم المعروض لمصدر القاموس هذا"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "الوصف"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "وصف مصدر القاموس"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "قاعدة بيانات"
+
+#: ../libgdict/gdict-source.c:275
+msgid "The default database of this dictionary source"
+msgstr "قاعدة البيانات الافتراضية لمصدر القاموس هذا"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "الاستراتيجية"
+
+#: ../libgdict/gdict-source.c:289
+msgid "The default strategy of this dictionary source"
+msgstr "الاستراتيجية الافتراضية لمصدر القاموس هذا"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "النقل"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "آلية النقل المستعملة من مصدر القاموس"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "السياق"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "GdictContext المقيّد بهذا المصدر"
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "نوع نقل غير سليم  '%d'"
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "لا مجموعة  '%s' موجودة داخل تعريف مصدر القاموس"
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr "لا يمكن أخذ مفتاح '%s' داخل تعريف مصدر القاموس: %s"
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "لا يمكن أخذ مفتاح '%s' داخل ملف تعريف مصدر القاموس: %s"
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "لا اسم لمصدر القاموس"
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "مصدر القاموس '%s' يملك نقل سيّء '%s'"
+
+#: ../libgdict/gdict-source-chooser.c:295
+msgid "Reload the list of available sources"
+msgstr "أعد تحميل قائمة المصادر المتوفرة"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "المسارات"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "مسارات البحث المستعملة منه"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "المصادر"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "مصادر القاموس الموجودة"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr "امسح قائمة الكلمات المشابهة"
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr "GdictContext المستعمل للحصول على تعريف الكلمة"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "قاعدة البيانات التي ستستعمل لسؤال GdictContext"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr "الاستراتيجية المستعملة للبحث في GdictContext"
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+msgid "Reload the list of available strategies"
+msgstr "أعد تحميل قائمة الإستراتيجيات المتوفرة"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+msgid "Clear the list of available strategies"
+msgstr "امسح قائمة الإستراتيجيات المتوفرة"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr "شارات تنقيح GDict التي ستضبط"
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr "شارات"
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr "شارات تنقيح GDict التي ستُصفّر"
+
+#: ../libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "خيارات ج‌قاموس"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "اعرض خيارات ج‌قاموس"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr ""
+"فريق عربآيز للترجمة http://www.arabeyes.org :\n"
+"يوسف رفه\t\t<yousef@raffah.com>\n"
+"جهاد عفيفي\t<djihed@gmail.com>\n"
+"خالد حسني\t<khaledhosny@eglug.org>\n"
+"أنس عفيف عماد\t<anas.e87@gmail.com>"
+
+#: ../src/gdict-about.c:57
+msgid "Look up words in dictionaries"
+msgstr "ابحث عن تعاريف الكلمات في القاموس"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+msgid "Words to look up"
+msgstr "الكلمات المبحوث عنها"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr "كلمة"
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr "كلمات المطابقة"
+
+#: ../src/gdict-app.c:74
+msgid "Dictionary source to use"
+msgstr "مصدر القاموس الذي سيستعمل"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr "اسم"
+
+#: ../src/gdict-app.c:80
+msgid "Database to use"
+msgstr "قاعدة البيانات المستعملة"
+
+#: ../src/gdict-app.c:86
+msgid "Strategy to use"
+msgstr "الاستراتيجية المستعملة"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr "كلمات"
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+msgid " - Look up words in dictionaries"
+msgstr "- ابحث عن تعاريف الكلمات في القاموس"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+msgid "Edit Dictionary Source"
+msgstr "حرّر مصدر القاموس"
+
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "أضف مصدر قاموس"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "أأحذف \"%s\"؟"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "سيحذف هذا مصدر القاموس من القائمة نهائيا."
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "لا يمكن حذف المصدر  '%s'"
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:477
+#: ../src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "حدث خطأ عند عرض محتويات المساعدة"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "أضِف مصدر قاموس جديد"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "احذف مصدر القاموس المحدد حاليا"
+
+#: ../src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr "حرِّر مصدر القاموس المحدد حاليا"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "حدّد الخط المستعمل لطباعة التعاريف"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "لا يمكن عرض المعاينة: %s"
+
+#: ../src/gdict-source-dialog.c:342 ../src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "لا يمكن إنشاء ملف مصدر"
+
+#: ../src/gdict-source-dialog.c:358 ../src/gdict-source-dialog.c:450
+msgid "Unable to save source file"
+msgstr "لا يمكن حفظ ملف المصدر"
+
+#: ../src/gdict-window.c:311
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "البحث عن '%s'..."
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+msgid "No definitions found"
+msgstr "لم يُعثر على أي تعريفات"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "لا تعريفات"
+msgstr[1] "وُجِد تعريف واحد"
+msgstr[2] "وُجِد تعريفان"
+msgstr[3] "وُجِدت %Id تعريفات"
+msgstr[4] "وُجِد %Id تعريفا"
+msgstr[5] "وُجِد %Id تعريف"
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "لا مصدر قاموس متوفر باسم  '%s'"
+
+#: ../src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "لا يمكن إيجاد مصدر القاموس"
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "لا سياق متوفّر للمصدر '%s'"
+
+#: ../src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "لا يمكن إنشاء سياق"
+
+#: ../src/gdict-window.c:599
+#, c-format
+msgid "%s - Dictionary"
+msgstr "‏%s - قاموس"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "احفظ نسخة"
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "مستند غير مسمّى"
+
+#: ../src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "خطأ أثناء الكتابة في '%s'"
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "تفضيلات القاموس"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr "_ملف"
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "ت_حرير"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr "_عرض"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr "ا_ذهب"
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "م_ساعدة"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr "_جديد"
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr "بحث جديد"
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr "ا_حفظ نسخة..."
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr "_عاين..."
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr "عاين هذا المستند"
+
+#: ../src/gdict-window.c:1293
+msgid "_Print..."
+msgstr "ا_طبع..."
+
+#: ../src/gdict-window.c:1294
+msgid "Print this document"
+msgstr "اطبع هذا المستند"
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr "اخت_ر الكل"
+
+#: ../src/gdict-window.c:1304
+msgid "Find a word or phrase in the document"
+msgstr "ابحث عن كلمة أو جملة في المستند"
+
+#: ../src/gdict-window.c:1306
+msgid "Find Ne_xt"
+msgstr "ابحث عن الت_الي"
+
+#: ../src/gdict-window.c:1308
+msgid "Find Pre_vious"
+msgstr "ابحث عن ال_سابق"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "ال_تفضيلات"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+msgid "_Previous Definition"
+msgstr "التعريف ال_سابق"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr "اذهب إلى التعريف السابق"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr "التعريف ال_تالي"
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr "اذهب إلى التعريف التالي"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr "التعريف الأ_وّل"
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr "اذهب إلى التعريف الأول"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr "التعريف الأ_خير"
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr "اذهب إلى التعريف الأخير"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr "كلمات _مشابهة"
+
+#: ../src/gdict-window.c:1326
+msgid "Dictionary Sources"
+msgstr "مصادر القاموس"
+
+#: ../src/gdict-window.c:1328
+msgid "Available _Databases"
+msgstr "قواعد البيانات الم_توفرة"
+
+#: ../src/gdict-window.c:1330
+msgid "Available St_rategies"
+msgstr "الا_ستراتيجيّات المتوفرة"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr "الم_حتويات"
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "_عن"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr "الشريط ال_جانبي"
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr "شريط ال_حالة"
+
+#: ../src/gdict-window.c:1414
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "مصدر القاموس `%s' المُحدد"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "اختيرت الاستراتيجيّة `%s'"
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr "اختيرت قاعدة البيانات `%s'"
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr "اختيرت ىالكلمة `%s'"
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr "انقر مرتين على الكلمة للبحث عنها"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+msgid "Double-click on the matching strategy to use"
+msgstr "انقر مرتين على الاستراتيجيّة المطابقة للتستخدم"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr "انقر مرتين على المصدر لتستخدمه"
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr "انقر مرتين على قاعدة البيانات للتستخدم"
+
+#: ../src/gdict-window.c:1700
+msgid "Look _up:"
+msgstr "ا_بحث"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr "كلمات مشابهة"
+
+#: ../src/gdict-window.c:1788
+msgid "Available dictionaries"
+msgstr "القواميس المتوفرة"
+
+#: ../src/gdict-window.c:1806
+msgid "Available strategies"
+msgstr "الاستراتيجيات المتوفرة"
+
+#: ../src/gdict-window.c:1822
+msgid "Dictionary sources"
+msgstr "مصادر القاموس"

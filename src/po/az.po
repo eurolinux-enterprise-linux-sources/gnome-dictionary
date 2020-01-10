@@ -1,0 +1,903 @@
+# translation of gnome-utils.HEAD.az.po to Azerbaijani
+# translation of gnome-utils.HEAD.po to Azerbaijani Turkish
+# Copyright (C) 2000,2003, 2004 Free Software Foundation, Inc.
+# Vasif Ismailoglu MD <azerb_linux@hotmail.com>, 2000.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
+# Metin Amiroff <metin@karegen.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.HEAD.az\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2004-08-17 21:21+0300\n"
+"Last-Translator: Metin Amiroff <metin@karegen.com>\n"
+"Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"net>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../data/default.desktop.in.h:1
+#, fuzzy
+msgid "Default Dictionary Server"
+msgstr "Lüğət vericisi"
+
+#: ../data/spanish.desktop.in.h:1
+#, fuzzy
+msgid "Spanish Dictionaries"
+msgstr "Lüğət"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr ""
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+#, fuzzy
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Sözü internetdəki lüğətdə axtar"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "Lüğət"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+#, fuzzy
+msgid "The default database to use"
+msgstr "İşlədiləcək axtarış taktikası"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+#, fuzzy
+msgid "The default search strategy to use"
+msgstr "İşlədiləcək axtarış taktikası"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+#, fuzzy
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Lüğət vericisində axtarılacaq spesifik verilənlər bazası. ! işarəsi bütün "
+"verilənlər bazalarının axtarılacağı mənasına gəlir"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+#, fuzzy
+msgid "The name of the dictionary source used"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+#, fuzzy
+msgid "Print"
+msgstr "_Qapı:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr ""
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+#, fuzzy
+msgid "_Print font:"
+msgstr "_Qapı:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr ""
+
+#: ../data/gnome-dictionary-source.ui.h:1
+#, fuzzy
+msgid "Dictionaries"
+msgstr "Lüğət"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+#, fuzzy
+msgid "H_ostname:"
+msgstr "_Qeyd adı:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+#, fuzzy
+msgid "Source Name"
+msgstr "Qovşaq adı"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+#, fuzzy
+msgid "Strategies"
+msgstr "Axtarış s_trategiyası:"
+
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "_Description:"
+msgstr "_İzahat:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "_Port:"
+msgstr "_Qapı:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:283
+#, fuzzy
+msgid "Client Name"
+msgstr "Qovşaq adı"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:297
+#, fuzzy
+msgid "Hostname"
+msgstr "Qovşaq adı"
+
+#: ../libgdict/gdict-client-context.c:298
+#, fuzzy
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Qapı"
+
+#: ../libgdict/gdict-client-context.c:312
+#, fuzzy
+msgid "The port of the dictionary server to connect to"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:328
+#, fuzzy
+msgid "The status code as returned by the dictionary server"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-client-context.c:777
+#, fuzzy, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "MIT lüğət vericisi üçün alıcı."
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1196
+#, fuzzy, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1300
+#, fuzzy, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1748
+#, fuzzy, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "MIT lüğət vericisi üçün alıcı."
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1860
+#, fuzzy, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "MIT lüğət vericisi üçün alıcı."
+
+#: ../libgdict/gdict-client-context.c:1894
+#, fuzzy, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "MIT lüğət vericisi üçün alıcı."
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, fuzzy, c-format
+msgid "Unable to create socket"
+msgstr "Fayl sistemi düzgün yaradıla bilmədi."
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1986
+#, fuzzy, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr ""
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr ""
+
+#: ../libgdict/gdict-database-chooser.c:378
+#, fuzzy
+msgid "Reload the list of available databases"
+msgstr "Axtarış seçimləri siyahısını açar ya da bağlayar"
+
+#: ../libgdict/gdict-database-chooser.c:390
+#, fuzzy
+msgid "Clear the list of available databases"
+msgstr "Axtarış seçimləri siyahısını açar ya da bağlayar"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+#, fuzzy
+msgid "Error while matching"
+msgstr "Xəsərli bloklar yoxlanırkən xəta."
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+#, fuzzy
+msgid "Not found"
+msgstr "Eynisi tapıla bilmədi"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:1329
+#, fuzzy
+msgid "_Previous"
+msgstr "_Xassələr"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2512
+#, fuzzy
+msgid "Error while looking up definition"
+msgstr "Verilən gedişat icra edilərkən xəta yarandı: %s"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2594
+#, fuzzy
+msgid "Error while retrieving the definition"
+msgstr "Verilən gedişat icra edilərkən xəta yarandı: %s"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:233
+#, fuzzy
+msgid "The filename used by this dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Ad"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-source.c:260
+#, fuzzy
+msgid "Description"
+msgstr "İzahat:"
+
+#: ../libgdict/gdict-source.c:261
+#, fuzzy
+msgid "The description of this dictionary source"
+msgstr "Bunun izahı ."
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "Verilənlər Bazası"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+#, fuzzy
+msgid "Strategy"
+msgstr "Axtarış s_trategiyası:"
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:303
+#, fuzzy
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-source-chooser.c:295
+#, fuzzy
+msgid "Reload the list of available sources"
+msgstr "Axtarış seçimləri siyahısını açar ya da bağlayar"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr ""
+
+#: ../libgdict/gdict-source-loader.c:185
+#, fuzzy
+msgid "Dictionary sources found"
+msgstr "Lüğət vericisi"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr ""
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr ""
+
+#: ../libgdict/gdict-speller.c:384
+#, fuzzy
+msgid "The database used to query the GdictContext"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr ""
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+#, fuzzy
+msgid "Reload the list of available strategies"
+msgstr "Axtarış seçimləri siyahısını açar ya da bağlayar"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+#, fuzzy
+msgid "Clear the list of available strategies"
+msgstr "Axtarış seçimləri siyahısını açar ya da bağlayar"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:157
+#, fuzzy
+msgid "GDict Options"
+msgstr "İzləmə Seçimləri"
+
+#: ../libgdict/gdict-utils.c:158
+#, fuzzy
+msgid "Show GDict Options"
+msgstr "Daha çox seçim göstər"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr ""
+"Vasif İsmailoğlu <linuxaz@azerimail.net>\n"
+"Mətin Əmirov <metin@karegen.com>\n"
+"\n"
+"Tərcümə işləri üzrə yazışma siyahısı ünvanımız:\n"
+"<translation-team-az@lists.sourceforge.net>"
+
+#: ../src/gdict-about.c:57
+#, fuzzy
+msgid "Look up words in dictionaries"
+msgstr "Söz lüğətdə axtarılır"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+#, fuzzy
+msgid "Words to look up"
+msgstr "Ağıllı axtarışı işlət"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr ""
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr ""
+
+#: ../src/gdict-app.c:74
+#, fuzzy
+msgid "Dictionary source to use"
+msgstr "Lüğət vericisi"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr ""
+
+#: ../src/gdict-app.c:80
+#, fuzzy
+msgid "Database to use"
+msgstr "Verilənlər Bazası Adı"
+
+#: ../src/gdict-app.c:86
+#, fuzzy
+msgid "Strategy to use"
+msgstr "İşlədiləcək axtarış taktikası"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr ""
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+#, fuzzy
+msgid " - Look up words in dictionaries"
+msgstr "Söz lüğətdə axtarılır"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+#, fuzzy
+msgid "Edit Dictionary Source"
+msgstr "Lüğət vericisi"
+
+#: ../src/gdict-pref-dialog.c:305
+#, fuzzy
+msgid "Add Dictionary Source"
+msgstr "Lüğət vericisi"
+
+#: ../src/gdict-pref-dialog.c:350
+#, fuzzy, c-format
+msgid "Remove \"%s\"?"
+msgstr "_Sil"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:382
+#, fuzzy, c-format
+msgid "Unable to remove source '%s'"
+msgstr "%s avadanlığına yaza bilmədim"
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, fuzzy, c-format
+msgid "There was an error while displaying help"
+msgstr ""
+"Yardım göstərildiyi an xəta yarandı:\n"
+"%s"
+
+#: ../src/gdict-pref-dialog.c:643
+#, fuzzy
+msgid "Add a new dictionary source"
+msgstr "Lüğət vericisi"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr ""
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, fuzzy, c-format
+msgid "Unable to display the preview: %s"
+msgstr "%s avadanlığına yaza bilmədim"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+#, fuzzy
+msgid "Unable to create a source file"
+msgstr "Fayl sistemi düzgün yaradıla bilmədi."
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+#, fuzzy
+msgid "Unable to save source file"
+msgstr "Qeyd faylını aça bilmədim !\n"
+
+#: ../src/gdict-window.c:311
+#, fuzzy, c-format
+msgid "Searching for '%s'..."
+msgstr "Faylları Axtar"
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+#, fuzzy
+msgid "No definitions found"
+msgstr "Heç bir fayl tapıla bilmədi"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:520
+#, fuzzy
+msgid "Unable to find dictionary source"
+msgstr "Lüğət vericisində istifadə ediləcək verilənlər bazası."
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:540
+#, fuzzy
+msgid "Unable to create a context"
+msgstr "Fayl sistemi düzgün yaradıla bilmədi."
+
+#: ../src/gdict-window.c:599
+#, fuzzy, c-format
+msgid "%s - Dictionary"
+msgstr "Lüğət"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr ""
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr ""
+
+#: ../src/gdict-window.c:993
+#, fuzzy, c-format
+msgid "Error while writing to '%s'"
+msgstr "(%s) əmri yaradılırkən xəta: %s."
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "Lüğət Seçimləri"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr ""
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "_Düzəlt"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr ""
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr ""
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "_Yardım"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr ""
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr ""
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr ""
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr ""
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr ""
+
+#: ../src/gdict-window.c:1293
+#, fuzzy
+msgid "_Print..."
+msgstr "_Qapı:"
+
+#: ../src/gdict-window.c:1294
+#, fuzzy
+msgid "Print this document"
+msgstr "Sənəd qeyd edilə bilmədi."
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr ""
+
+#: ../src/gdict-window.c:1304
+#, fuzzy
+msgid "Find a word or phrase in the document"
+msgstr "Mətni _daxil edir"
+
+#: ../src/gdict-window.c:1306
+#, fuzzy
+msgid "Find Ne_xt"
+msgstr "Axtar"
+
+#: ../src/gdict-window.c:1308
+#, fuzzy
+msgid "Find Pre_vious"
+msgstr "_Xassələr"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "_Seçimlər"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+#, fuzzy
+msgid "_Previous Definition"
+msgstr "_Xassələr"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr ""
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr ""
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr ""
+
+#: ../src/gdict-window.c:1326
+#, fuzzy
+msgid "Dictionary Sources"
+msgstr "Lüğət Seçimləri"
+
+#: ../src/gdict-window.c:1328
+#, fuzzy
+msgid "Available _Databases"
+msgstr "Mövcud _seçimlər:"
+
+#: ../src/gdict-window.c:1330
+#, fuzzy
+msgid "Available St_rategies"
+msgstr "Mövcud _seçimlər:"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr ""
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "_Haqqında"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr ""
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr ""
+
+#: ../src/gdict-window.c:1414
+#, fuzzy, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Lüğət Seçimləri"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr ""
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr ""
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr ""
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr ""
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+#, fuzzy
+msgid "Double-click on the matching strategy to use"
+msgstr "İşlədiləcək axtarış taktikası"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr ""
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr ""
+
+#: ../src/gdict-window.c:1700
+#, fuzzy
+msgid "Look _up:"
+msgstr "_Axtarış"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr ""
+
+#: ../src/gdict-window.c:1788
+#, fuzzy
+msgid "Available dictionaries"
+msgstr "Mövcud _seçimlər:"
+
+#: ../src/gdict-window.c:1806
+#, fuzzy
+msgid "Available strategies"
+msgstr "Mövcud _seçimlər:"
+
+#: ../src/gdict-window.c:1822
+#, fuzzy
+msgid "Dictionary sources"
+msgstr "Lüğət vericisi"

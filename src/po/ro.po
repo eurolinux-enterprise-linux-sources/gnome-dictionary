@@ -1,0 +1,859 @@
+# translation of gnome-utils.gnome-2-14.ro.po to Română
+# translation of gnome-utils.HEAD.ro.po to
+# Romanian translation for GNOME Utils
+# Copyright (C) 1999,2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+# Iustin Pop <iusty@geocities.com>
+# Dan Damian <dand@dnttm.ro>, 1999, 2001.
+# Mugurel Tudor <mugurelu@gnome.ro>, 2002-2004, 2005, 2006.
+# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-14.ro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2011-03-16 18:19+0200\n"
+"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "Server dicționar implicit"
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "Dicționare spaniole"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Dicționare Longdo Thai-English"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr ""
+"Verifică definițiile și ortografia unui cuvânt într-un dicționar online"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "Dicționar"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+msgid "The default database to use"
+msgstr "Baza de date implicită"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+msgid "The default search strategy to use"
+msgstr "Strategia de căutare folosită implicit"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr "Fontul folosit la tipărire"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr "Fontul folosit la tipărirea unei definiții."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Numele bazei de date individuale implicite sau meta-baza de date de folosit "
+"pe o sursă de dicționare. Un semn de exclamare („!”) specifică faptul că "
+"toate bazele de date prezente într-o sursă de dicționare ar trebui să fie "
+"căutate"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"Numele strategiei implicite pentru căutare de folosit pe o sursă de "
+"dicționare, dacă este disponibilă. Strategia implicită este „exact”, adică o "
+"potrivire exactă pentru cuvinte."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+msgid "The name of the dictionary source used"
+msgstr "Numele sursei de dicționare folosită"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+"Numele sursei de dicționare folosită pentru a găsi definiții pentru cuvinte."
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "Print"
+msgstr "Tipărire"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr "Sursă"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "Font ti_părire:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr "Alegeți un dicționar _sursă pentru căutarea cuvintelor:"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+msgid "Dictionaries"
+msgstr "Dicționare"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "H_ostname:"
+msgstr "Nume _gazdă:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "Source Name"
+msgstr "Nume sursă"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Strategies"
+msgstr "Strategii"
+
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "_Description:"
+msgstr "_Descriere:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "_Port:"
+msgstr "_Port:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr "_Transport:"
+
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "Nume client"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "Numele clientului pentru obiectul contextual"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "Nume gazdă"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Numele gazdă al serverul dicționar pentru conectare"
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Port"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "Portul serverului dicționar pentru conectare"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "Stare"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "Codul de stare returnat de serverul dicționar"
+
+#: ../libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "Nici o conexiune către serverul dicționar de la „%s:%d”"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+"Căutarea a eșuat pentru numele gazdă „%s”: nici o resursă potrivită găsită"
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "Căutarea a eșuat pentru gazda „%s”: %s"
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "Căutarea a eșuat pentru gazda „%s”: gazda nu a putut fi găsită"
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Nu s-a putut realiza conectarea la serverul dicționar de la „%s:%d”. "
+"Serverul a răspuns cu codul %d (serverul este nefuncțional)"
+
+#: ../libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"Nu s-a putut analiza răspunsul serverului dicționar\n"
+": „%s”"
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "Nici o definiție găsită pentru „%s”"
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "„%s” nu este o bază de date validă"
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "„%s” ne este o strategie validă"
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Comandă greșită „%s”"
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "Parametri greșiți pentru comanda „%s”"
+
+#: ../libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Nici o bază de date găsită pe serverul dicționar de la „%s”"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "Nici o strategie găsită pe serverul dicționar de la „%s”"
+
+#: ../libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Conectare eșuată la serverul dicționar de la %s: %d"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"Eroare la citirea răspunsului de la server:\n"
+"%s"
+
+#: ../libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr ""
+"Limită de timp depășită pentru conexiunea la serverul de dicționare „%s:%d”"
+
+#: ../libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Nici un nume gazdă definit pentru serverul dicționar"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "Nu s-a putut crea socketul"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Nu s-a putut configura canalul ca nonblocant: %s"
+
+#: ../libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Nu s-a putut realiza conectarea la serverul dicționar de la „%s:%d”"
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "Doar local"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "Dacă să se folosească doar dicționare locale în context sau nu"
+
+#: ../libgdict/gdict-database-chooser.c:378
+msgid "Reload the list of available databases"
+msgstr "Reîncarcă lista bazelor de date disponibile"
+
+#: ../libgdict/gdict-database-chooser.c:390
+msgid "Clear the list of available databases"
+msgstr "Șterge lista bazelor de date disponibile"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+msgid "Error while matching"
+msgstr "Eroare în timpul potrivirii"
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "Nu a fost găsit"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "Cau_tă:"
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "_Precedent"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "_Următorul"
+
+#: ../libgdict/gdict-defbox.c:2512
+msgid "Error while looking up definition"
+msgstr "Eroare la căutarea definiției"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr "O altă căutare este pornită"
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr "Vă rugăm așteptați până când căutarea curentă se termină."
+
+#: ../libgdict/gdict-defbox.c:2594
+msgid "Error while retrieving the definition"
+msgstr "Eroare la obținerea definiției"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "Nume fișier"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "Numele de fișier folosit de acest dicționar sursă"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Nume"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "Numele afișat de acest dicționar sursă"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "Descriere"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "Descrierea acestui dicționar sursă"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "Bază de date"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "Baza de date implicită pentru acest dicționar sursă"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "Strategie"
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "Strategia implicită pentru acest dicționar sursă"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "Transport"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Mecanismul de transport folosit de acest dicționar sursă"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "Context"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "GdictContext legat de această sursă"
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "Tip de transport „%d” nevalid"
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "Nici un grup „%s” găsit în definiția dicționarului sursă"
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr "Nu s-a putut obține cheia „%s” din definiția dicționarului sursă: %s"
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+"Nu s-a putut obține cheia „%s” din fișierul de definiție al dicționarului "
+"sursă: %s"
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "Dicționarul sursă nu are nume"
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "Dicționarul sursă „%s” nu are transportul valid „%s”"
+
+#: ../libgdict/gdict-source-chooser.c:295
+msgid "Reload the list of available sources"
+msgstr "Reîncarcă lista de surse disponibile"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "Căi"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "Căile de căutare folosite de acest obiect"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "Surse"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "Dicționare sursă găsite"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr "Curăță lista cuvintelor similare"
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr "Obiectul GdictContext folosit pentru a obține definiția cuvântului"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "Baza de date folosită pentru interogarea GdictContext"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr "Strategia folosită pentru interogarea GdictContext"
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+msgid "Reload the list of available strategies"
+msgstr "Reîncarcă lista de strategii disponibile"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+msgid "Clear the list of available strategies"
+msgstr "Curăță lista strategiilor disponibile"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr "Marcaje depanare GDict de definit"
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr "MARCAJE"
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr "Marcaje depanare GDict de șters"
+
+#: ../libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "Opțiuni GDict"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "Afișează opțiunile GDict"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr ""
+"Iustin Pop <iusty@geocities.com>\n"
+"Dan Damian <dand@dnttm.ro>\n"
+"Mugurel Tudor <mugurelu@gnome.ro>\n"
+"\n"
+"Contribuții Launchpad:\n"
+"  Adi Roiban https://launchpad.net/~adiroiban\n"
+"  Alex Eftimie https://launchpad.net/~alexeftimie\n"
+"  Ionuț Jula https://launchpad.net/~ionutjula"
+
+#: ../src/gdict-about.c:57
+msgid "Look up words in dictionaries"
+msgstr "Caută cuvinte în dicționare"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+msgid "Words to look up"
+msgstr "Cuvinte de căutat"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr "CUVÂNT"
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr "Cuvinte de potrivit"
+
+#: ../src/gdict-app.c:74
+msgid "Dictionary source to use"
+msgstr "Dicționar sursă de folosit"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr "NUME"
+
+#: ../src/gdict-app.c:80
+msgid "Database to use"
+msgstr "Bază de date de folosit"
+
+#: ../src/gdict-app.c:86
+msgid "Strategy to use"
+msgstr "Strategie de folosit"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr "CUVINTE"
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+msgid " - Look up words in dictionaries"
+msgstr " - Caută cuvinte în dicționare"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+msgid "Edit Dictionary Source"
+msgstr "Editează sursă dicționar"
+
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "Adaugă dicționar sursă"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Șterge „%s”?"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "Aceasta va șterge permanent dicționarul sursă din listă."
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Nu s-a putut șterge sursa „%s”"
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "A intervenit o eroare la afișarea ajutorului"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "Adaugă un nou dicționar sursă"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "Șterge dicționarul sursă selectat"
+
+#: ../src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr "Editează sursa de dicționar selectată"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "Setează fontul folosit pentru tipărirea definițiilor"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Nu s-a putut afișa previzualizarea: %s"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "Nu s-a putut crea un fișier sursă"
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+msgid "Unable to save source file"
+msgstr "Nu s-a putut salva fișierul sursă"
+
+#: ../src/gdict-window.c:311
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "Se caută după „%s”..."
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+msgid "No definitions found"
+msgstr "Nici o definiție găsită"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "O definiție găsită"
+msgstr[1] "%d definiții găsite"
+msgstr[2] "%d de definiții găsite"
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Nici un dicționar sursă disponibil cu numele „%s”"
+
+#: ../src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "Nu s-a putut găsi dicționarul sursă"
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Nici un context disponibil pentru sursa „%s”"
+
+#: ../src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "Nu s-a putut crea un context"
+
+#: ../src/gdict-window.c:599
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - Dicționar"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "Salvează o copie"
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "Document fără nume"
+
+#: ../src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Eroare la scrierea către „%s”"
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "Preferințe dicționar"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr "_Fișier"
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "_Editare"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr "_Vizualizare"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr "_Du-te la"
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "_Ajutor"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr "_Nou"
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr "Căutare nouă"
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr "_Salvează o copie..."
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr "P_revizualizare..."
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr "Previzualizează acest document"
+
+#: ../src/gdict-window.c:1293
+msgid "_Print..."
+msgstr "Ti_părește..."
+
+#: ../src/gdict-window.c:1294
+msgid "Print this document"
+msgstr "Tipărește acest document"
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr "Selecte_ază tot"
+
+#: ../src/gdict-window.c:1304
+msgid "Find a word or phrase in the document"
+msgstr "Caută un cuvânt sau o frază în acest document"
+
+#: ../src/gdict-window.c:1306
+msgid "Find Ne_xt"
+msgstr "Caută _următor"
+
+#: ../src/gdict-window.c:1308
+msgid "Find Pre_vious"
+msgstr "Caută p_recedent"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "_Preferințe"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+msgid "_Previous Definition"
+msgstr "Definiție _precedentă"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr "Du-te la definiția precedentă"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr "Definiție _următoare"
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr "Du-te la următoarea definiție"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr "Pri_ma definiție"
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr "Du-te la prima definiție"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr "U_ltima definiție"
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr "Du-te la ultima definiție"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr "Cu_vinte similare"
+
+#: ../src/gdict-window.c:1326
+msgid "Dictionary Sources"
+msgstr "Surse dicționar"
+
+#: ../src/gdict-window.c:1328
+msgid "Available _Databases"
+msgstr "Baze de _date disponibile"
+
+#: ../src/gdict-window.c:1330
+msgid "Available St_rategies"
+msgstr "St_rategii disponibile"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr "_Conținut"
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "_Despre"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr "Bara _laterală"
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr "Bară de s_tare"
+
+#: ../src/gdict-window.c:1414
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Sursă „%s” dicționar selectată"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "Strategia „%s” selectată"
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr "Baza de date „%s” selectată"
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr "Cuvântul „%s” selectat"
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr "Dublu-clic pe cuvântul de căutat"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+msgid "Double-click on the matching strategy to use"
+msgstr "Dublu-clic pe strategia ce va fi folosită"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr "Dublu clic pe sursa folosită"
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr "Dublu-clic pe baza de date ce va fi folosită"
+
+#: ../src/gdict-window.c:1700
+msgid "Look _up:"
+msgstr "Ca_ută:"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr "Cuvinte similare"
+
+#: ../src/gdict-window.c:1788
+msgid "Available dictionaries"
+msgstr "Dicționare disponibile"
+
+#: ../src/gdict-window.c:1806
+msgid "Available strategies"
+msgstr "Strategii disponibile"
+
+#: ../src/gdict-window.c:1822
+msgid "Dictionary sources"
+msgstr "Surse dicționar"

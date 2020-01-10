@@ -1,0 +1,1150 @@
+# Czech translation of gnome-utils help.
+# Copyright (C) 2009 the author(s) of gnome-utils.
+# This file is distributed under the same license as the gnome-utils help.
+#
+# Petr Kovar <pknbe@volny.cz>, 2009.
+# Marek Černocký <marek@manet.cz>, 2009, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils gnome-2-28\n"
+"POT-Creation-Date: 2014-01-02 06:52+0000\n"
+"PO-Revision-Date: 2014-03-27 18:20+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "text"
+msgid "Dictionary"
+msgstr "Slovník"
+
+#. (itstool) path: credit/name
+#: C/index.page:11 C/definition.page:11 C/dictionary-select.page:11
+#: C/find.page:10 C/introduction.page:10 C/keyboard-shortcuts.page:11
+#: C/pref.page:9 C/print-font.page:11 C/print.page:12
+#: C/prob-retrieving-definition.page:11 C/save-definition.page:10
+#: C/similar-words.page:11 C/source-add-local.page:11
+#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
+#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+msgid "Sindhu S"
+msgstr "Sindhu S"
+
+#. (itstool) path: credit/years
+#: C/index.page:13 C/definition.page:13 C/definition.page:18
+#: C/dictionary-select.page:13 C/dictionary-select.page:18 C/find.page:12
+#: C/find.page:17 C/introduction.page:12 C/introduction.page:17
+#: C/keyboard-shortcuts.page:13 C/keyboard-shortcuts.page:18
+#: C/print-font.page:13 C/print-font.page:18 C/print.page:14 C/print.page:19
+#: C/prob-retrieving-definition.page:13 C/prob-retrieving-definition.page:18
+#: C/save-definition.page:12 C/save-definition.page:17 C/similar-words.page:13
+#: C/similar-words.page:18 C/source-add-local.page:13
+#: C/sources-default.page:12 C/sources-default.page:17
+#: C/sources-delete.page:13 C/sources-delete.page:18 C/sources-edit.page:12
+#: C/sources-edit.page:17 C/sources.page:14 C/sources.page:19
+#: C/sources-select.page:14 C/sources-select.page:19 C/text-copy.page:13
+#: C/text-copy.page:18
+msgid "2013"
+msgstr "2013"
+
+#. (itstool) path: info/desc
+#: C/index.page:18
+msgid "Look up word definitions in <app>Dictionary</app>."
+msgstr "Vyhledávajte definice slov ve <app>Slovníku</app>."
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Dictionary Help"
+msgstr "<_:media-1/> Nápověda ke Slovníku"
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "Features"
+msgstr "Funkce"
+
+#. (itstool) path: section/title
+#: C/index.page:30
+msgid "Preferences"
+msgstr "Předvolby"
+
+#. (itstool) path: section/title
+#: C/index.page:34
+msgid "Common problems and solutions"
+msgstr "Běžné problémy a jejich řešení"
+
+#. (itstool) path: credit/name
+#: C/definition.page:16 C/dictionary-select.page:16 C/find.page:15
+#: C/introduction.page:15 C/keyboard-shortcuts.page:16 C/print-font.page:16
+#: C/print.page:17 C/prob-retrieving-definition.page:16
+#: C/save-definition.page:15 C/similar-words.page:16 C/sources-default.page:15
+#: C/sources-delete.page:16 C/sources-edit.page:15 C/sources.page:17
+#: C/sources-select.page:17 C/text-copy.page:16
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#. (itstool) path: info/desc
+#: C/definition.page:23
+msgid "Find the definition of a word or term."
+msgstr "Jak najít definici slova nebo výrazu."
+
+#. (itstool) path: page/title
+#: C/definition.page:27
+msgid "Look up a word or term"
+msgstr "Vyhledávání slov nebo výrazů"
+
+#. (itstool) path: page/p
+#: C/definition.page:29
+msgid ""
+"You can use <app>Dictionary</app> to look up the meaning of a <em>term</em>. "
+"A term can be a single word such as <input>apple</input> or a compound word "
+"such as <input>chopping board</input>. The search result may also show you "
+"the origin, importance and usage of a word. To look up a term:"
+msgstr ""
+"<app>Slovník</app> můžete využít k vyhledání vyznamu nějakého <em>výrazu</"
+"em>. Výrazem může být jednotlivé slovo, jako třeba <input>jablko</input>, "
+"nebo spojení slov, jako třeba <input>kuchyňské prkénko</input>. Ve "
+"vysledcích můžete také najít původ, důležitost a rozšíření daného slova. "
+"Výraz vhledáte takto:"
+
+#. (itstool) path: item/p
+#: C/definition.page:37
+msgid ""
+"Type in the term that you want to search for next to <gui>Look up</gui>."
+msgstr "Do pole <gui>Hledat</gui> napiše výraz, který chcete vyhledat."
+
+#. (itstool) path: item/p
+#: C/definition.page:41
+msgid ""
+"Press <key>Return</key> or <gui style=\"button\">Look up:</gui> to search."
+msgstr ""
+"Vyhledání spusťte zmáčknutím <key>Enter</key> nebo <gui style=\"button"
+"\">Hledat</gui>."
+
+#. (itstool) path: page/p
+#: C/definition.page:46
+msgid ""
+"<app>Dictionary</app> will search your selected dictionary source and show "
+"you the result from the first dictionary in the source. To view results from "
+"the other dictionaries that are in the same source, select <link xref="
+"\"similar-words\"><guiseq><gui style=\"menu\">View</gui> <gui style="
+"\"menuitem\">Similar Words</gui></guiseq></link> to pop up a sidebar that "
+"shows all the results."
+msgstr ""
+"<app>Slovník</app> bude hledat ve vámi vybraném zdroji slovníků a zobrazí "
+"výsledek z prvního slovníku v tomto zdroji. Pro zobrazení výsledků z jiného "
+"slovníku v tomtéž zdroji vyberte <link xref=\"similar-words\"><guiseq><gui "
+"style=\"menu\">Zobrazit</gui> <gui style=\"menuitem\">Podobná slova</gui></"
+"guiseq></link>. Objeví se postranní panel, ve kterém jsou zobrazeny všechny "
+"výsledky."
+
+#. (itstool) path: page/title
+#: C/dictionary-select.page:25
+msgid "Select a different dictionary"
+msgstr "Výběr jiného slovníku"
+
+#. (itstool) path: page/p
+#: C/dictionary-select.page:27
+msgid ""
+"A single <link xref=\"sources\">dictionary source</link> may have many "
+"different dictionaries. You can search any of these dictionaries."
+msgstr ""
+"Jeden <link xref=\"sources\">zdroj slovníků</link> může obsahovat řadu "
+"různých slovníků. Hledat můžete v kterémkoliv z nich."
+
+#. (itstool) path: steps/title
+#: C/dictionary-select.page:32
+msgid "Select a dictionary"
+msgstr "Výběr slovníku"
+
+#. (itstool) path: item/p
+#: C/dictionary-select.page:34
+msgid ""
+"Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem"
+"\">Available Databases</gui></guiseq>. A sidebar listing the available "
+"dictionaries for your currently selected dictionary source will open."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Zobrazit</gui> <gui style=\"menuitem"
+"\">Dostupné slovníky</gui></guiseq>. Otevře se postranní panel se seznamem "
+"dostupných slovníků v aktuálně vybrané zdroji slovníků."
+
+#. (itstool) path: item/p
+#: C/dictionary-select.page:40
+msgid "Click twice on the dictionary that you want to use."
+msgstr "Klikněte dvojitě na slovník, který chcete použít."
+
+#. (itstool) path: page/p
+#: C/dictionary-select.page:44
+msgid ""
+"The next term that you <link xref=\"definition\">look up</link> will show "
+"the result only from the selected dictionary."
+msgstr ""
+"Pro následující výraz, který budete <link xref=\"definition\">hledat</link>, "
+"se zobrazí výsledky z tohoto vybraného slovníku."
+
+#. (itstool) path: note/p
+#: C/dictionary-select.page:48
+msgid ""
+"Your dictionary selection will not be remembered next time you use "
+"<app>Dictionary</app>."
+msgstr ""
+"Výběr slovníku se nezapamatovává pro příští spuštění <app>Slovníku</app>."
+
+#. (itstool) path: info/desc
+#: C/find.page:22
+msgid "Find text in a definition."
+msgstr "Jak najít text v rámci definice."
+
+#. (itstool) path: page/title
+#. (itstool) path: td/p
+#: C/find.page:26 C/keyboard-shortcuts.page:74
+msgid "Search within a definition"
+msgstr "Hledání v definici"
+
+#. (itstool) path: page/p
+#: C/find.page:28
+msgid ""
+"Some dictionary entries can be very long and can contain many results, so "
+"you may wish to search them to find the section that is relevant to you."
+msgstr ""
+"Některé položky ve slovníku mohou být hodně dlouhé a obsahovat řadu "
+"výsledků, takže pak můžete chtít v nich vyhledat část, která vás zajímá."
+
+#. (itstool) path: steps/title
+#: C/find.page:32
+msgid "To find definitions:"
+msgstr "Definici vyhledáte takto:"
+
+#. (itstool) path: item/p
+#: C/find.page:34
+msgid ""
+"Select <guiseq><gui style=\"menu\">Edit</gui> <gui style=\"menuitem\">Find</"
+"gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Upravit</gui> <gui style=\"menuitem"
+"\">Najít</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/find.page:38
+msgid ""
+"The <gui>Find</gui> bar will appear at the bottom of the <app>Dictionary</"
+"app> window. Type in your search term to search within the definition that "
+"is currently displayed."
+msgstr ""
+"V dolní části okna <app>Slovníku</app> se objeví <gui>vyhledávací lišta</"
+"gui>. Napište do ní výraz, který chcete najít v rámci právě zobrazené "
+"definice."
+
+#. (itstool) path: item/p
+#: C/find.page:43
+msgid ""
+"Click <gui style=\"button\">Previous</gui> or <gui style=\"button\">Next</"
+"gui> to scroll through the results. The search will not wrap around: in "
+"other words, it will not go to the top of the page when you are on the last "
+"result and click <gui style=\"button\">Next</gui>."
+msgstr ""
+"Kliknutím na <gui style=\"button\">Předchozí</gui> nebo <gui style=\"button"
+"\">Následující</gui> můžete přecházet mezi výsledky. Při hledání se "
+"nepřechází přes okraj, tzn. že když jste na posledním výsledku a kliknete na "
+"<gui style=\"button\">Následující</gui> nepřejdete na začátek na první "
+"výsledek."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+msgstr ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+
+#. (itstool) path: info/desc
+#: C/introduction.page:22
+msgid "What is <app>Dictionary</app>?"
+msgstr "Co je to <app>Slovník</app>?"
+
+#. (itstool) path: page/title
+#: C/introduction.page:26
+msgid "Introduction"
+msgstr "Úvod"
+
+#. (itstool) path: page/p
+#: C/introduction.page:28
+msgid ""
+"<app>Dictionary</app> is an application for looking up term definitions. It "
+"searches for definitions using an online <app>DICT</app> server. The default "
+"<app>DICT</app> server is at <sys href=\"http://dict.org\">http://dict.org</"
+"sys>."
+msgstr ""
+"<app>Slovník</app> je aplikace sloužící k vyhledávání definic výrazů. "
+"Využívá k tomu on-line servery <app>DICT</app>. Výchozím serverem <app>DICT</"
+"app> je <sys href=\"http://dict.org\">http://dict.org</sys>."
+
+#. (itstool) path: page/p
+#: C/introduction.page:33
+msgid ""
+"Start using <app>Dictionary</app> by <link xref=\"definition\">looking up a "
+"definition</link>!"
+msgstr ""
+"Začněte <app>Slovník</app> používat jednoduše tak, že si <link xref="
+"\"definition\">vyhledáte definici</link>."
+
+#. (itstool) path: figure/title
+#: C/introduction.page:37
+msgid "Dictionary"
+msgstr "Slovník"
+
+#. (itstool) path: media/p
+#: C/introduction.page:39
+msgid "Screenshot showing the <app>Dictionary</app> main window."
+msgstr "Snímek obrazovky s hlavním oknem aplikace <app>Slovník</app>."
+
+#. (itstool) path: info/desc
+#: C/keyboard-shortcuts.page:23
+msgid ""
+"You can use keyboard shortcuts to navigate around <app>Dictionary</app> more "
+"efficiently."
+msgstr ""
+"Jak používat klávesové zkratky pro rychlejší práci se <app>Slovníkem</app>."
+
+#. (itstool) path: page/title
+#: C/keyboard-shortcuts.page:27
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#. (itstool) path: page/p
+#: C/keyboard-shortcuts.page:29
+msgid ""
+"Keyboard shortcuts are combinations of keys that you can use instead of "
+"navigating through the menu. The following shortcuts are available:"
+msgstr ""
+"Klávesové zkratky jsou kombinace kláves, které můžete použít namísto "
+"nabídek. K dispozici jsou následující klávesové zkratky:"
+
+#. (itstool) path: table/title
+#: C/keyboard-shortcuts.page:33
+msgid "Navigate around <app>Dictionary</app>"
+msgstr "Práce s aplikací <app>Slovník</app>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:36 C/keyboard-shortcuts.page:68
+#: C/keyboard-shortcuts.page:92 C/keyboard-shortcuts.page:120
+msgid "Action"
+msgstr "Činnost"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:37 C/keyboard-shortcuts.page:69
+#: C/keyboard-shortcuts.page:93 C/keyboard-shortcuts.page:121
+msgid "Shortcut"
+msgstr "Klávesová zkratka"
+
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/keyboard-shortcuts.page:42 C/print.page:36
+msgid "Print preview"
+msgstr "Náhled tisku"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:43
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>P</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>P</key></keyseq>"
+
+#. (itstool) path: td/p
+#. (itstool) path: section/title
+#: C/keyboard-shortcuts.page:46 C/print.page:67
+msgid "Print"
+msgstr "Tisk"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:47
+msgid "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>P</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:50
+msgid "View sidebar"
+msgstr "Zobrazit postranní panel"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:51
+msgid "<key>F9</key>"
+msgstr "<key>F9</key>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:54
+msgid "Open a new <app>Dictionary</app> window"
+msgstr "Otevřít nové okno se <app>Slovníkem</app>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:55
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:58
+msgid "Close current <app>Dictionary</app> window"
+msgstr "Zavřít aktuální okno se <app>Slovníkem</app>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:59
+msgid "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>W</key></keyseq>"
+
+#. (itstool) path: table/title
+#: C/keyboard-shortcuts.page:65
+msgid "Search shortcuts"
+msgstr "Klávesové zkratky hledání"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:75
+msgid "<key>/</key> or <keyseq><key>Ctrl</key><key>F</key></keyseq>"
+msgstr "<key>/</key> nebo <keyseq><key>Ctrl</key><key>F</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:78
+msgid "Find next"
+msgstr "Najít následující"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:79
+msgid "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>G</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:82
+msgid "Find previous"
+msgstr "Najít předchozí"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:83
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>G</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>G</key></keyseq>"
+
+#. (itstool) path: table/title
+#: C/keyboard-shortcuts.page:89
+msgid "Navigate within a definition"
+msgstr "Pohyb po definicích"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:98
+msgid "Previous definition"
+msgstr "Předchozí definice"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:99
+msgid "<keyseq><key>Ctrl</key><key>Page Up</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Page Up</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:102
+msgid "Next definition"
+msgstr "Následující definice"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:103
+msgid "<keyseq><key>Ctrl</key><key>Page Down</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Page Down</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:106
+msgid "First definition"
+msgstr "První definice"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:107
+msgid "<keyseq><key>Ctrl</key><key>Home</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Home</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:110
+msgid "Last definition"
+msgstr "Poslední definice"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:111
+msgid "<keyseq><key>Ctrl</key><key>End</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>End</key></keyseq>"
+
+#. (itstool) path: table/title
+#: C/keyboard-shortcuts.page:117
+msgid "<app>Dictionary</app> definitions shortcuts:"
+msgstr "Klávesové zkratky <app>slovníkových</app> definic"
+
+#. (itstool) path: td/p
+#. (itstool) path: page/title
+#: C/keyboard-shortcuts.page:126 C/similar-words.page:27
+msgid "Similar words"
+msgstr "Podobná slova"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:127
+msgid "<keyseq><key>Ctrl</key><key>T</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>T</key></keyseq>"
+
+#. (itstool) path: td/p
+#. (itstool) path: page/title
+#: C/keyboard-shortcuts.page:130 C/sources.page:28
+msgid "Dictionary sources"
+msgstr "Zdroje slovníků"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:131
+msgid "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>D</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:134
+msgid "Available databases"
+msgstr "Dostupné databáze"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:135
+msgid "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>B</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:138
+msgid "Available strategies"
+msgstr "Dostupné strategie"
+
+#. (itstool) path: td/p
+#: C/keyboard-shortcuts.page:139
+msgid "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>R</key></keyseq>"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "http://creativecommons.org/licenses/by-sa/3.0/"
+msgstr "http://creativecommons.org/licenses/by-sa/3.0/"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid ""
+"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License. To view a copy of this license, visit <_:link-1/> or send "
+"a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, "
+"California, 94041, USA."
+msgstr ""
+"Tato práce ji licencována pro Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License. Kopii licence můžete získat na <_:link-1/> nebo pošlete "
+"písemnou žádost na Creative Commons, 444 Castro Street, Suite 900, Mountain "
+"View, California, 94041, USA."
+
+#. (itstool) path: info/desc
+#: C/pref.page:15
+msgid "Manage your preferences."
+msgstr "Jak si upravit předvolby."
+
+#. (itstool) path: page/title
+#: C/pref.page:18
+msgid "<app>Dictionary</app> preferences"
+msgstr "Předvolby <app>Slovníku</app>"
+
+#. (itstool) path: info/desc
+#: C/print-font.page:23
+msgid "Select the font for printing definitions."
+msgstr "Jak vybrat písmo pro tisk definic."
+
+#. (itstool) path: page/title
+#: C/print-font.page:27
+msgid "Print font"
+msgstr "Písmo tisku"
+
+#. (itstool) path: page/p
+#: C/print-font.page:29
+msgid ""
+"You can change the default font face and size that are used for printing the "
+"definitions."
+msgstr ""
+"Můžete si změnit výchozí typ a velikost písma, které se použije při tisku "
+"definice."
+
+#. (itstool) path: steps/title
+#: C/print-font.page:33
+msgid "Change the font"
+msgstr "Změna písma"
+
+#. (itstool) path: item/p
+#: C/print-font.page:35
+msgid ""
+"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui style=\"menuitem"
+"\">Preferences</gui> <gui style=\"tab\">Print</gui></guiseq>."
+msgstr ""
+"Zvolte <guiseq><gui style=\"menu\">Slovník</gui> <gui style=\"menuitem"
+"\">Předvolby</gui> <gui style=\"tab\">Tisk</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/print-font.page:40
+msgid "Click font selector button."
+msgstr "Klikněte na tlačítko pro výběr písma."
+
+#. (itstool) path: item/p
+#: C/print-font.page:43
+msgid "Select the font that you wish to use."
+msgstr "Vyberte písmo, které si přejete používat."
+
+#. (itstool) path: item/p
+#: C/print-font.page:46
+msgid ""
+"Drag the slider to the right to increase the font size or left to decrease "
+"it. Alternatively, you can type in the font size in the text box, or use the "
+"<gui>-</gui> and <gui>+</gui> buttons to decrease and increase the font size."
+msgstr ""
+"Posunem táhla doprava zvětšete nebo doleva zmenšete velikost písma. Případně "
+"můžete velikost uvést přímo číselně ve vedlejším poli nebo použít tlačítka "
+"<gui>-</gui> a <gui>+</gui> pro postupné zmenšování či zvětšování."
+
+#. (itstool) path: item/p
+#: C/print-font.page:52
+msgid "Click <gui style=\"button\">Select</gui> to save your font settings."
+msgstr ""
+"Kliknutím na <gui style=\"button\">Vybrat</gui> nastavení písma uložíte."
+
+#. (itstool) path: page/p
+#: C/print-font.page:56
+msgid ""
+"The definition is not reflowed for printing, so if you choose a large font "
+"size, some of the text may be cut off."
+msgstr ""
+"Definice se pro potřebu tisku znovu nezalamují, takže pokud zvolíte příliš "
+"velké písmo, může být část textu oříznutá."
+
+#. (itstool) path: info/desc
+#: C/print.page:24
+msgid "Print preview and print definitions."
+msgstr "Jak si zobrazit náhled tisku a vytisknout definici."
+
+#. (itstool) path: page/title
+#: C/print.page:28
+msgid "Print a definition"
+msgstr "Tisk definice"
+
+#. (itstool) path: page/p
+#: C/print.page:30
+msgid ""
+"You can print a definition to paper or a file. Before printing, you should "
+"preview the definition as it would be printed to check that the text fits "
+"onto the page, especially if you have changed the <link xref=\"print-font"
+"\">print font</link> size."
+msgstr ""
+"Definici můžete vytisknout na papír nebo do souboru. Než začnete tisknout, "
+"můžete si zobrazit náhled, jak bude vytisknutá definice vypadat a jestli se "
+"vleze na stránku, hlavně pokud jste změnili velikost <link xref=\"print-font"
+"\">písma tisku</link>."
+
+#. (itstool) path: item/p
+#: C/print.page:40
+msgid ""
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem"
+"\">Preview</gui></guiseq>."
+msgstr ""
+"Zvolte <guiseq><gui style=\"menu\">Soubor</gui> <gui style=\"menuitem"
+"\">Náhled</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/print.page:44
+msgid ""
+"A print preview window will open which will show you the definition exactly "
+"as it will be printed."
+msgstr ""
+"Otevře se okno s náhledem, na kterém uvidíte definici přesně tak, jak se "
+"vytiskne."
+
+#. (itstool) path: item/p
+#: C/print.page:48
+msgid "Use the toolbar to browse pages, adjust zoom level and page width."
+msgstr ""
+"Použijte nástrojovu lištu k procházení stránek a změně přiblížení a šířky "
+"stránky."
+
+#. (itstool) path: item/p
+#: C/print.page:52
+msgid ""
+"Click the <gui style=\"button\">Print this document</gui> to print the "
+"definition or close the window to end the preview."
+msgstr ""
+"Až si náhled prohlédnete, vytiskněte definici kliknutím na <gui style="
+"\"button\">Vytisknout tento dokument</gui> nebo okno jen zavřete."
+
+#. (itstool) path: note/p
+#: C/print.page:58
+msgid ""
+"The print button in the toolbar may not always work. If it does not work for "
+"you, close the window and select <guiseq><gui style=\"menu\">File</gui> <gui "
+"style=\"menuitem\">Print</gui></guiseq>."
+msgstr ""
+"Tiskové tlačítko na nástrojové liště nemusí vždy fungovat. Pokud nefunguje, "
+"zavřete okno a vyberte <guiseq><gui style=\"menu\">Soubor</gui> <gui style="
+"\"menuitem\">Tisk</gui></guiseq>."
+
+#. (itstool) path: section/p
+#: C/print.page:69
+msgid ""
+"You need to <link href=\"help:gnome-help/printing\">have a printer set up</"
+"link> to be able to print to paper."
+msgstr ""
+"Abyste mohli tisknout na papír, <link href=\"help:gnome-help/printing"
+"\">musíte mít nastavenou tiskárnu</link>."
+
+#. (itstool) path: item/p
+#: C/print.page:74
+msgid ""
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem\">Print</"
+"gui> <gui style=\"tab\">General</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Soubor</gui> <gui style=\"menuitem"
+"\">Tisk</gui> <gui style=\"tab\">Obecné</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/print.page:79
+msgid ""
+"Select the printer that you want to use from the list of printers or select "
+"<gui href=\"help:gnome-help/print-to-file\">Print to File</gui>."
+msgstr ""
+"V seznamu dostupných tiskáren vyberte tiskárnu, kterou chcete použít, nebo "
+"vyberte <gui href=\"help:gnome-help/print-to-file\">Tisknout do souboru</"
+"gui>."
+
+#. (itstool) path: item/p
+#: C/print.page:84
+msgid ""
+"Chose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"link>."
+msgstr ""
+"Podle potřeby upravte <link href=\"help:gnome-help/printing#paper"
+"\">nastavení tisku</link>."
+
+#. (itstool) path: item/p
+#: C/print.page:88
+msgid "Press <gui style=\"button\">Print</gui> to print the definition."
+msgstr ""
+"Zmáčknutím tlačítka <gui style=\"button\">Tisk</gui> definici vytisknete."
+
+#. (itstool) path: info/desc
+#: C/prob-retrieving-definition.page:23
+msgid "<sys>Error while retrieving definitions</sys>."
+msgstr "<sys>Chyba při získávání definice</sys>."
+
+#. (itstool) path: page/title
+#: C/prob-retrieving-definition.page:27
+msgid "Cannot find definitions"
+msgstr "Nelze najít definici"
+
+#. (itstool) path: page/p
+#: C/prob-retrieving-definition.page:29
+msgid ""
+"If you see the error message <sys>Error while retrieving definition</sys> "
+"when looking up a definition from any of the <link xref=\"sources-select"
+"\">selected dictionaries</link>, the problem is more likely one of the "
+"following:"
+msgstr ""
+"V případě, že se při hledání definice ve <link xref=\"sources-select"
+"\">vybraných slovnících</link> setkáte s hlášením <sys>Chyba při získávání "
+"definice</sys>, může být příčinou něco z následujícího:"
+
+#. (itstool) path: item/p
+#: C/prob-retrieving-definition.page:36
+msgid ""
+"One or more of the selected <app>DICT</app> servers that are used to look up "
+"definitions may not be working. You can try waiting a while before <link "
+"xref=\"definition\">looking up</link> the definition again."
+msgstr ""
+"Jeden nebo více vybraných serverů <app>DICT</app>, které k hledání "
+"využíváte, je mimo provoz. Zkuste nějakou chvíli počkat a pak definici <link "
+"xref=\"definition\">vyhledat</link> znovu."
+
+#. (itstool) path: item/p
+#: C/prob-retrieving-definition.page:42
+msgid ""
+"You may not have a working Internet connection. For <app>Dictionary</app> to "
+"look up terms, your computer <link href=\"help:gnome-help/net\">must be able "
+"to connect</link> to <sys href=\"http://dict.org\">dict.org</sys>."
+msgstr ""
+"Nefunguje vám připojení k Internetu. Aby <app>Slovník</app> mohl vyhledávat "
+"výrazy, můsí být váš počítač <link href=\"help:gnome-help/net\">připojen</"
+"link> k <sys href=\"http://dict.org\">dict.org</sys>."
+
+#. (itstool) path: info/desc
+#: C/save-definition.page:22
+msgid "Save a copy of a definition to a text file."
+msgstr "Jak uložit kopii definice do textového souboru."
+
+#. (itstool) path: page/title
+#: C/save-definition.page:26
+msgid "Save a definition"
+msgstr "Uložení definice"
+
+#. (itstool) path: page/p
+#: C/save-definition.page:28
+msgid ""
+"You can save a definition to a text file. This may be useful if you want to "
+"use it outside of <app>Dictionary</app>."
+msgstr ""
+"Definici můžete uložit do textového souboru. To se může hodit, pokud ji "
+"chcete použít někde mimo <app>Slovník</app>."
+
+#. (itstool) path: steps/title
+#: C/save-definition.page:32
+msgid "To save a definition:"
+msgstr "Když chcete definici uložit:"
+
+#. (itstool) path: item/p
+#: C/save-definition.page:34
+msgid ""
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem\">Save a "
+"Copy…</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Soubor</gui> <gui style=\"menuitem"
+"\">Uložit kopii…</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/save-definition.page:38
+msgid ""
+"Chose where you want to save the definition to and a name for the file. You "
+"may want to add a <file>.txt</file> file extension to the end of the file "
+"name."
+msgstr ""
+"Zvolte, kam definici chcete uložit a název pro soubor. Za název souboru je "
+"vhodné přidat příponu <file>.txt</file>."
+
+#. (itstool) path: item/p
+#: C/save-definition.page:43
+msgid "Press <gui style=\"button\">Save</gui> to save the definition."
+msgstr ""
+"Zmáčknutím tlačítka <gui style=\"button\">Uložit</gui> definici uložíte."
+
+#. (itstool) path: info/desc
+#: C/similar-words.page:23
+msgid "View related results in other dictionaries."
+msgstr "Jak zobrazit související výsledky v jiných slovnících."
+
+#. (itstool) path: page/p
+#: C/similar-words.page:29
+msgid ""
+"<app>Dictionary</app> will only display the definition from one of your "
+"dictionaries. To check if there are search results in other dictionaries:"
+msgstr ""
+"<app>Slovník</app> zobrazuje v jednu chvíli definici jen z jednoho slovníku. "
+"Pokud chcete zkontrolovat, jestli nebyla nalezena i v jiných slovnících:"
+
+#. (itstool) path: item/p
+#: C/similar-words.page:34
+msgid "<link xref=\"definition\">Look up</link> the desired term."
+msgstr "<link xref=\"definition\">Vyhledejte</link> požadovaný výraz."
+
+#. (itstool) path: item/p
+#: C/similar-words.page:37
+msgid ""
+"If the sidebar is not already visible, select <guiseq><gui style=\"menu"
+"\">View</gui> <gui style=\"menuitem\">Similar Words</gui></guiseq>."
+msgstr ""
+"V případě, že není zobrazen postranní panel, vyberte <guiseq><gui style="
+"\"menu\">Zobrazit</gui> <gui style=\"menuitem\">Podobná slova</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/similar-words.page:42
+msgid ""
+"The <gui>Similar Words</gui> sidebar will show search results from other "
+"dictionaries in your selected dictionary source. To view the similar word, "
+"double click on the entry."
+msgstr ""
+"V postranním panelu <gui>Podobná slova</gui> jsou zobrazeny výsledky z "
+"jiných slovníků ve vámi vybraném zdroji slovníků. Dvojitým kliknutím na "
+"položku si podobné slovo zobrazíte."
+
+#. (itstool) path: page/title
+#: C/source-add-local.page:20
+msgid "Add local dictionary sources"
+msgstr "Přidání místního zdroje slovníků"
+
+#. (itstool) path: page/title
+#: C/sources-default.page:24
+msgid "Set a default dictionary source"
+msgstr "Nastavení výchozího zdroje slovníků"
+
+#. (itstool) path: page/p
+#: C/sources-default.page:26
+msgid ""
+"When you first use <app>Dictionary</app>, it should have some pre-installed "
+"dictionaries that you can use. You can change the default <link xref="
+"\"sources\">dictionary source</link> to one that you would prefer to use "
+"instead."
+msgstr ""
+"Když použijete <app>Slovník</app> poprvé, mělo by v něm být pár "
+"předinstalovaných slovníků, které můžete hned používat. Můžete si upravit, "
+"který <link xref=\"sources\">zdroj slovníků</link> se má upřednostňovat a "
+"používat místo nich."
+
+#. (itstool) path: steps/title
+#: C/sources-default.page:32
+msgid "Change the default dictionary source:"
+msgstr "Když chcete změnit výchozí zdroj slovníků:"
+
+#. (itstool) path: item/p
+#: C/sources-default.page:34
+msgid ""
+"Select <guiseq><gui><app>Dictionary</app></gui> <gui style=\"menu"
+"\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui><app>Slovník</app></gui> <gui style=\"menu\">Předvolby</"
+"gui> <gui style=\"tab\">Zdroj</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/sources-default.page:39
+msgid "Select the dictionary source that you want to set as the default."
+msgstr "Vyberte zdroj slovníků, který chcete použít jako výchozí."
+
+#. (itstool) path: item/p
+#: C/sources-default.page:42
+msgid "Your change will be saved automatically."
+msgstr "Vaše změny se uloží automaticky."
+
+#. (itstool) path: page/title
+#: C/sources-delete.page:25
+msgid "Delete a dictionary source"
+msgstr "Smazání zdroje slovníků"
+
+#. (itstool) path: page/p
+#: C/sources-delete.page:27
+msgid ""
+"If you no longer need a specific <link xref=\"sources\">dictionary source</"
+"link> or if one stops working for you, you may want to delete it."
+msgstr ""
+"Pokud některý konkrétní <link xref=\"sources\">zdroj slovníků</link> již "
+"nepotřebujete nebo vám přestal fungovat, můžete jej smazat."
+
+#. (itstool) path: steps/title
+#: C/sources-delete.page:32
+msgid "Delete a dictionary source:"
+msgstr "Smazání se provede takto:"
+
+#. (itstool) path: item/p
+#: C/sources-delete.page:34
+msgid ""
+"Select <guiseq><gui style=\"menu\"><app>Dictionary</app></gui> <gui style="
+"\"menuitem\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\"><app>Slovník</app></gui> <gui style="
+"\"menuitem\">Předvolby</gui> <gui style=\"tab\">Zdroj</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/sources-delete.page:39
+msgid "Select the dictionary source that you want to delete."
+msgstr "Vyberte zdroj slovníků, který si přejete smazat."
+
+#. (itstool) path: item/p
+#: C/sources-delete.page:42
+msgid "Press <gui style=\"button\">Remove</gui>."
+msgstr "Zmáčkněte <gui style=\"button\">Odstranit</gui>."
+
+#. (itstool) path: item/p
+#: C/sources-delete.page:45
+msgid ""
+"A dialog will pop up asking you to confirm that you wish to permanently "
+"delete the selected source. Once you confirm, the source will be deleted."
+msgstr ""
+"Objeví se dialogové okno požadující potvrzení, že vybraný zdroj slovníků "
+"chcete trvale smazat. Pokud to potvrdíte, bude vymazán."
+
+#. (itstool) path: page/title
+#: C/sources-edit.page:24
+msgid "Edit a dictionary source"
+msgstr "Úprava zdroje slovníků"
+
+#. (itstool) path: page/p
+#: C/sources-edit.page:26
+msgid ""
+"You can customize a <link xref=\"sources\">dictionary source</link> to "
+"update details such as its description or remote address."
+msgstr ""
+"U <link xref=\"sources\">zdroje slovníků</link> si můžete upravit jednotlivé "
+"údaje, jako je popis nebo adresa v síti."
+
+#. (itstool) path: steps/title
+#: C/sources-edit.page:30
+msgid "To edit a dictionary source:"
+msgstr "Když chcete zdroj slovníků upravit:"
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:32
+msgid ""
+"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui style=\"menuitem"
+"\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Slovník</gui> <gui style=\"menuitem"
+"\">Předvolby</gui> <gui style=\"tab\">Zdroj</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:37
+msgid "Double click on the dictionary source you want to edit."
+msgstr "Dvojitě klikněte na zdroj slovníků, který chcete upravit."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:40
+msgid "You can edit the following fields:"
+msgstr "Upravit můžete následující pole:"
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:43
+msgid ""
+"<gui>Description</gui> is the name of the source as it will be displayed to "
+"you."
+msgstr "<gui>Popis</gui> je název zdroje, který se vám bude zobrazovat."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:47
+msgid "<gui>Transport</gui> is the type of server."
+msgstr "<gui>Přenos</gui> je typ serveru."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:50
+msgid "<gui>Hostname</gui> is the location of the dictionary source."
+msgstr "<gui>Název počítače</gui> je umístění zdroje slovníku."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:55
+msgid "<gui>Port</gui>."
+msgstr "<gui>Port</gui>."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:60
+msgid ""
+"View the dictionaries that are available in the dictionary source by "
+"selecting the <gui style=\"tab\">Dictionaries</gui> tab."
+msgstr ""
+"Na kartě <gui style=\"tab\">Slovníky</gui> se můžete podívat, které slovníky "
+"jsou v daném zdroji slovníků dostupné."
+
+#. (itstool) path: item/p
+#: C/sources-edit.page:64
+msgid "Press <gui style=\"button\">Close</gui> to save the settings."
+msgstr ""
+"Zmáčknutím tlačítka <gui style=\"button\">Zavřít</gui> nastavení uložíte."
+
+#. (itstool) path: info/desc
+#: C/sources.page:24
+msgid "Manage various dictionary sources."
+msgstr "Jak provádět správu různých zdrojů slovníků."
+
+#. (itstool) path: page/p
+#: C/sources.page:30
+msgid ""
+"<app>Dictionary</app> uses <em>dictionary sources</em> to look up words that "
+"you search for. Dictionary sources are collections of one or more dictionary "
+"databases which are usually online, but can be installed on your machine as "
+"well."
+msgstr ""
+"<app>Slouvník</app> využívá k vyhledání zadaných výrazů <em>zdroje slovníků</"
+"em>. Zdroje slovníků jsou sady jedné nebo více slovníkových databází, "
+"obvykle dostupných on-line, ale je možné se je nainstalovat i přímo na svůj "
+"počítač."
+
+#. (itstool) path: section/title
+#: C/sources.page:36
+msgid "Manage your dictionary sources"
+msgstr "Správa vašich zdrojů slovníků"
+
+#. (itstool) path: page/title
+#: C/sources-select.page:26
+msgid "Select a dictionary source"
+msgstr "Výběr zdroje slovníků"
+
+#. (itstool) path: page/p
+#: C/sources-select.page:28
+msgid ""
+"You can change the <link xref=\"sources\">dictionary source</link> that you "
+"are currently using without changing your default preferences."
+msgstr ""
+"Můžete si změnit <link xref=\"sources\">zdroj slovníků</link>, který chcete "
+"zrovna použít, aniž byste museli měnit své výchozí předvolby."
+
+#. (itstool) path: steps/title
+#: C/sources-select.page:32
+msgid "Temporarily change the dictionary source:"
+msgstr "Dočasná změna zdroje slovníků se provede následovně:"
+
+#. (itstool) path: item/p
+#: C/sources-select.page:34
+msgid ""
+"Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem"
+"\">Dictionary Sources</gui></guiseq>."
+msgstr ""
+"Vyberte <guiseq><gui style=\"menu\">Zobrazit</gui> <gui style=\"menuitem"
+"\">Zdroje slovníků</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/sources-select.page:38
+msgid "Double click on the dictionary source that you want to use."
+msgstr "Dvojitě klikněte na zdroj slovníků, který chcete použít."
+
+#. (itstool) path: info/desc
+#: C/text-copy.page:23
+msgid "Select and copy a definition to another application."
+msgstr "Jak vybrat a zkopírovat definici do jiné aplikace."
+
+#. (itstool) path: page/title
+#: C/text-copy.page:27
+msgid "Copy definition"
+msgstr "Kopírování definice"
+
+#. (itstool) path: page/p
+#: C/text-copy.page:29
+msgid ""
+"You can copy and paste definitions from <app>Dictionary</app> to another "
+"application."
+msgstr ""
+"Definici můžete ve <app>Slovníku</app> zkopírovat a následně vložit do jiné "
+"aplikace."
+
+#. (itstool) path: steps/title
+#: C/text-copy.page:33
+msgid "Copy a definition"
+msgstr "Kopírování definice"
+
+#. (itstool) path: item/p
+#: C/text-copy.page:35
+msgid ""
+"Select the text that you want to copy in <app>Dictionary</app>. "
+"Alternatively, you can select the whole definition using <guiseq><gui style="
+"\"menu\">Edit</gui> <gui style=\"menuitem\">Select All</gui></guiseq>."
+msgstr ""
+"Vyberte ve <app>Slovníku</app> text, který chcete kopírovat. Případně můžete "
+"vybrat úplně celou definici pomocí <guiseq><gui style=\"menu\">Upravit</gui> "
+"<gui style=\"menuitem\">Vybrat vše</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/text-copy.page:41
+msgid ""
+"Select <guiseq><gui style=\"menu\">Edit</gui> <gui style=\"menuitem\">Copy</"
+"gui></guiseq>."
+msgstr ""
+"Zvolte <guiseq><gui style=\"menu\">Upravit</gui> <gui style=\"menuitem"
+"\">Kopírovat</gui></guiseq>."
+
+#. (itstool) path: item/p
+#: C/text-copy.page:45
+msgid ""
+"Paste the text into another application. This can usually be done using the "
+"<keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut or through "
+"one of the menus."
+msgstr ""
+"Vložte text do jiné aplikace. Obvykle se to dělá pomocí klávesové zkratky "
+"<keyseq><key>Ctrl</key> <key>V</key></keyseq> nebo příslušné nabídky."

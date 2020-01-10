@@ -1,0 +1,858 @@
+# translation of gnome-utils.HEAD.mk.po to Macedonian
+# translation of gnome-utils.HEAD.mk.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Dimitar Indovski <dime@gord.com.mk>, 2002.
+# Stojan Pesov <ekofobic@usa.net>, 2002.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2002.
+# Kostovski Jovan <chombium@freemail.com.mk>, 2003.
+# Darko Nikolovski <darkon@macedonia.homelinux.org>, 2003.
+# Vladislav Bidikov <bidikovi@mail.com.mk>, 2003.
+# Arangel Angov <ufo@linux.net.mk>, 2004, 2007, 2008.
+# Арангел Ангов <ufo@linux.net.mk>, 2005.
+# Jovan Naumovski <jovan@lugola.net>, 2006, 2007, 2008.
+# Arangel Angov <arangel@linux.net.mk>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.HEAD.mk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:35-0400\n"
+"PO-Revision-Date: 2008-09-25 00:38+0200\n"
+"Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural= n==1 || n%10==1 ? 0 : 1\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "Стандарден сервер за речник"
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "Шпански речници"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Longdo Тајландско-Англиски Речници"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:1
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Пребарувај зборови во онлајн речник"
+
+#: ../data/gnome-dictionary.desktop.in.in.h:2 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:233 ../src/gdict-window.c:601 ../src/gdict-window.c:1894
+msgid "Dictionary"
+msgstr "Речник"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+msgid "The default database to use"
+msgstr "Стандардната база на податоци за употреба"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+msgid "The default search strategy to use"
+msgstr "Стандардната стратегија на пребарување"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+msgid "The font to be used when printing"
+msgstr "Фонтот кој ќе биде употребен при печатење"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+msgid "The font to be used when printing a definition."
+msgstr "Фонтот кој ќе биде употребен при печатење на дефиниција."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"Име на базата на податоци за користење на серверот за речници! Дефинира дали "
+"gnome речникот треба да ги пребарува сите бази на податоци на даден сервер. "
+"Извичникот (\"!\") значи дека сите бази на податоци  во изворот на речникот "
+"ќе бидат пребарани."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"Името на стандардната стратегија на пребарување кои ќе се употребат на "
+"изворот на речникот, ако е достапен. Стандардната стратегија е „исто“, "
+"односно ги наоѓа истите зборови."
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+msgid "The name of the dictionary source used"
+msgstr "База на податоци за користење од серверот на речници"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+"Името на изворот на речникот употребен за добивање на дефиниции за зборовите."
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "Print"
+msgstr "Печати"
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "Source"
+msgstr "Извор"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "_Печати со фонт:"
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Изберете извор на речникот за барање на зборови:"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+msgid "Dictionaries"
+msgstr "Речници"
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "H_ostname:"
+msgstr "И_ме на хост:"
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "Source Name"
+msgstr "Име на хост"
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Strategies"
+msgstr "Стратегии"
+
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "_Description:"
+msgstr "_Опис:"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "_Port:"
+msgstr "_Портa:"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "_Transport:"
+msgstr "_Транспорт:"
+
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "Име на клиент"
+
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "Името на клиентот на предметот од контекстот"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "Име на хост"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "База на податоци за користење од серверот на речници."
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Порта"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "Портата за поврзување на серверот на речници."
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "Статус"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "Статусен код од серверот на речникот."
+
+#: ../libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "Не сум поврзан со серверот на речници на '%s:%d'"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+"Барањето не успеа за името на хостот '%s': не се пронајдени соодветни ресурси"
+
+#: ../libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "Барањето не успеа за хостот '%s': %s"
+
+#: ../libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "Барањето не успеа за хостот '%s': хостот не е пронајден"
+
+#: ../libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Не можам да се поврзам со серверот на речникот '%s:%d'. Серверот одговори со "
+"код %d (Серверот не работи)"
+
+#: ../libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+"Не можам да го анализирам одговорот од серверот за речници\n"
+": '%s'"
+
+#: ../libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "Не се пронајдени дефиниции за '%s'"
+
+#: ../libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "Невалидна база на податоци '%s'"
+
+#: ../libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "Невалидна стратегија '%s'"
+
+#: ../libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Неточна команда '%s'"
+
+#: ../libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "Неточни параметри за командата '%s'"
+
+#: ../libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Нема бази на податоци на серверот за речници на '%s'"
+
+#: ../libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "Не се пронајдени стратегии серверот за речници '%s'"
+
+#: ../libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Поврзувањето со серверот за речници  %s:%d не успеа"
+
+#: ../libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"Грешка при читањето на одговорот од серверот:\n"
+"%s"
+
+#: ../libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "Поврзувањето со серверот за речници „%s:%d“ не успеа"
+
+#: ../libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Клиент за серверот за речници"
+
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "Не можам да креирам сокет"
+
+#: ../libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Не можам да го поставам каналот како неблокирачки: %s"
+
+#: ../libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Не можам да се поврзам со серверот за речници на '%s:%d'"
+
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "Само локално"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "Дали контекстот употребува само локални речници или не"
+
+#: ../libgdict/gdict-database-chooser.c:378
+msgid "Reload the list of available databases"
+msgstr "Превчитај ја листата на достапни бази на податоци"
+
+#: ../libgdict/gdict-database-chooser.c:390
+msgid "Clear the list of available databases"
+msgstr "Исчисти ја листата со достапни бази на податоци"
+
+#: ../libgdict/gdict-database-chooser.c:837 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:785
+msgid "Error while matching"
+msgstr "Грешка при совпаѓањето"
+
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "Нема пронајдени совпаѓања"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "Н_ајди:"
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "Претходно"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "_Напред"
+
+#: ../libgdict/gdict-defbox.c:2512
+msgid "Error while looking up definition"
+msgstr "Грешка при барањето на дефиницијата: %s"
+
+#: ../libgdict/gdict-defbox.c:2554 ../libgdict/gdict-speller.c:736
+msgid "Another search is in progress"
+msgstr "Во тек е друго барање"
+
+#: ../libgdict/gdict-defbox.c:2555 ../libgdict/gdict-speller.c:737
+msgid "Please wait until the current search ends."
+msgstr "Почекајте додека не заврши тековното барање."
+
+#: ../libgdict/gdict-defbox.c:2594
+msgid "Error while retrieving the definition"
+msgstr "Грешка при добивањето на дефиниција"
+
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "Име на датотека"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "Името на датотеката користено од овој извор на речник"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Име"
+
+#: ../libgdict/gdict-source.c:247
+#, fuzzy
+msgid "The display name of this dictionary source"
+msgstr "Прикажаното име на овој извор на речник"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "Опис"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "Описот за овој извор на речник"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "База на податоци"
+
+#: ../libgdict/gdict-source.c:275
+#, fuzzy
+msgid "The default database of this dictionary source"
+msgstr "Стандардната база на податоци на овој извор на речник"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "Стратегија "
+
+#: ../libgdict/gdict-source.c:289
+#, fuzzy
+msgid "The default strategy of this dictionary source"
+msgstr "Стандардната стратегија на овој извор на речник"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "Транспорт"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Механизмот за транспорт користен од овој извор на речник"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "Содржини"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "GdictContext поврзан за овој извор"
+
+#: ../libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "Невалиден тип за транспорт '%d'"
+
+#: ../libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "Не е пронајдена '%s' група во дефинирањето на изворот на речникот"
+
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr ""
+"Не можам да го земам '%s' клучот во дефиницијата на изворот на речникот: %s"
+
+#: ../libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+"Не можам да го земам '%s' клучот во датотеката со дефиницијата на изворот на "
+"речникот: %s"
+
+#: ../libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "Изворот на речникот нема име"
+
+#: ../libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "Изворот на речникот '%s' има невалиден транспорт - '%s'"
+
+#: ../libgdict/gdict-source-chooser.c:295
+msgid "Reload the list of available sources"
+msgstr "Освежи ја листата на достапни стратегии"
+
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "Патеки"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "Патеки за барање употребени од овој предмет"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "Извори"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "Пронајдени извори на речници"
+
+#: ../libgdict/gdict-speller.c:353
+msgid "Clear the list of similar words"
+msgstr "Исчисти ја листата со слични зборови"
+
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr "GdictContext предметот употребен за добивање на дефиниција за зборот"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "База на податоци користена за пополнување на GdictContext"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr "Стратегијата користена за пребарување на GdictContext"
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+msgid "Reload the list of available strategies"
+msgstr "Превчитај ја листата на достапни стратегии"
+
+#: ../libgdict/gdict-strategy-chooser.c:373
+msgid "Clear the list of available strategies"
+msgstr "Исчисти ја листата со достапни стратегии"
+
+#: ../libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "GDict опции"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "Пoкажи опции на GDict"
+
+#: ../src/gdict-about.c:55
+msgid "translator-credits"
+msgstr ""
+"Арангел Ангов\n"
+"ufo@linux.net.mk"
+
+#: ../src/gdict-about.c:57
+msgid "Look up words in dictionaries"
+msgstr "Пребарувам зборови во речниците"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
+msgid "Words to look up"
+msgstr "Зборови за пребарување"
+
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
+msgid "WORD"
+msgstr ""
+
+#: ../src/gdict-app.c:68
+msgid "Words to match"
+msgstr "Зборови за совпаѓање"
+
+#: ../src/gdict-app.c:74
+msgid "Dictionary source to use"
+msgstr "Извор на речник за употреба"
+
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
+msgid "NAME"
+msgstr ""
+
+#: ../src/gdict-app.c:80
+msgid "Database to use"
+msgstr "Име на базата за употреба"
+
+#: ../src/gdict-app.c:86
+msgid "Strategy to use"
+msgstr "Стратегија за употреба"
+
+#: ../src/gdict-app.c:91
+msgid "WORDS"
+msgstr ""
+
+#. create the new option context
+#: ../src/gdict-app.c:143
+msgid " - Look up words in dictionaries"
+msgstr " - Пребарувај збор во речник"
+
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
+msgid "Edit Dictionary Source"
+msgstr "Уреди извор на сервер"
+
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "Додај извор на сервер"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Отстрани \"%s\"?"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "Ова ќе го избриши изворот на речникот од листата."
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Не можам да го остранам изворот '%s'"
+
+#: ../src/gdict-pref-dialog.c:496 ../src/gdict-source-dialog.c:479
+#: ../src/gdict-window.c:1245
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "Се појави грешка при обидот за прикажување на помош"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "Додај нов извор на речник"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "Отстрани го избраниот извор на речник"
+
+#: ../src/gdict-pref-dialog.c:655
+#, fuzzy
+msgid "Edit the currently selected dictionary source"
+msgstr "Отстрани го избраниот извор на речник"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "Постави го фонтот кој е употребен за испишување на дефинициите"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Не успеав да го прикажам прегледот %s"
+
+#: ../src/gdict-source-dialog.c:341 ../src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "Не можам да креирам изворна датотека"
+
+#: ../src/gdict-source-dialog.c:359 ../src/gdict-source-dialog.c:452
+msgid "Unable to save source file"
+msgstr "Не можам да ја зачувам изворната датотека"
+
+#: ../src/gdict-window.c:311
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "Барам '%s'..."
+
+#: ../src/gdict-window.c:343 ../src/gdict-window.c:400
+msgid "No definitions found"
+msgstr "Не се пронајдени дефиниции"
+
+#: ../src/gdict-window.c:345
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Пронајдена е %d дефиниција"
+msgstr[1] "Пронајдени се %d дефиниции"
+msgstr[2] "Пронајдени се %d дефиниции"
+
+#: ../src/gdict-window.c:516
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Нема извор на речник со име '%s'"
+
+#: ../src/gdict-window.c:520
+msgid "Unable to find dictionary source"
+msgstr "Не можам да пронајдам сервер на речници."
+
+#: ../src/gdict-window.c:536
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Нема достапна содржина од изворот '%s'"
+
+#: ../src/gdict-window.c:540
+msgid "Unable to create a context"
+msgstr "Не можам да креирам содржина"
+
+#: ../src/gdict-window.c:599
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - Речник"
+
+#: ../src/gdict-window.c:962
+msgid "Save a Copy"
+msgstr "Зачувај копија"
+
+#: ../src/gdict-window.c:972
+msgid "Untitled document"
+msgstr "Неименуван документ"
+
+#: ../src/gdict-window.c:993
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Грешка при запишувањето во '%s'"
+
+#: ../src/gdict-window.c:1098
+msgid "Dictionary Preferences"
+msgstr "Параметри на речник"
+
+#: ../src/gdict-window.c:1280
+msgid "_File"
+msgstr "_Датотека"
+
+#: ../src/gdict-window.c:1281
+msgid "_Edit"
+msgstr "_Уреди"
+
+#: ../src/gdict-window.c:1282
+msgid "_View"
+msgstr "_Поглед"
+
+#: ../src/gdict-window.c:1283
+msgid "_Go"
+msgstr "_Оди"
+
+#: ../src/gdict-window.c:1284
+msgid "_Help"
+msgstr "_Помош"
+
+#. File menu
+#: ../src/gdict-window.c:1287
+msgid "_New"
+msgstr "_Нов"
+
+#: ../src/gdict-window.c:1288
+msgid "New look up"
+msgstr "Ново барање"
+
+#: ../src/gdict-window.c:1289
+msgid "_Save a Copy..."
+msgstr "_Зачувај копија..."
+
+#: ../src/gdict-window.c:1291
+msgid "P_review..."
+msgstr "П_реглед..."
+
+#: ../src/gdict-window.c:1292
+msgid "Preview this document"
+msgstr "Прегледај го овој документ"
+
+#: ../src/gdict-window.c:1293
+msgid "_Print..."
+msgstr "_Печати..."
+
+#: ../src/gdict-window.c:1294
+msgid "Print this document"
+msgstr "Испечати го овој документ"
+
+#: ../src/gdict-window.c:1301
+msgid "Select _All"
+msgstr "Избери _сѐ"
+
+#: ../src/gdict-window.c:1304
+msgid "Find a word or phrase in the document"
+msgstr "Најди збор во документот"
+
+#: ../src/gdict-window.c:1306
+msgid "Find Ne_xt"
+msgstr "Најди сле_дно"
+
+#: ../src/gdict-window.c:1308
+msgid "Find Pre_vious"
+msgstr "Најди пре_тходно"
+
+#: ../src/gdict-window.c:1310
+msgid "_Preferences"
+msgstr "_Параметри"
+
+#. Go menu
+#: ../src/gdict-window.c:1314
+msgid "_Previous Definition"
+msgstr "_Претходна дефиниција"
+
+#: ../src/gdict-window.c:1315
+msgid "Go to the previous definition"
+msgstr "Оди до претходната дефиниција"
+
+#: ../src/gdict-window.c:1316
+msgid "_Next Definition"
+msgstr "_Следна дефиниција"
+
+#: ../src/gdict-window.c:1317
+msgid "Go to the next definition"
+msgstr "Оди до следната дефиниција"
+
+#: ../src/gdict-window.c:1318
+msgid "_First Definition"
+msgstr "_Прва дефиниција"
+
+#: ../src/gdict-window.c:1319
+msgid "Go to the first definition"
+msgstr "Оди до првата дефиниција"
+
+#: ../src/gdict-window.c:1320
+msgid "_Last Definition"
+msgstr "_Последна дефиниција"
+
+#: ../src/gdict-window.c:1321
+msgid "Go to the last definition"
+msgstr "Оди до последната дефиниција"
+
+#. View menu
+#: ../src/gdict-window.c:1324
+msgid "Similar _Words"
+msgstr "Слични _зборови"
+
+#: ../src/gdict-window.c:1326
+msgid "Dictionary Sources"
+msgstr "Извори на речници"
+
+#: ../src/gdict-window.c:1328
+msgid "Available _Databases"
+msgstr "Достапни _бази со податоци"
+
+#: ../src/gdict-window.c:1330
+msgid "Available St_rategies"
+msgstr "Достапни ст_ратегии"
+
+#. Help menu
+#: ../src/gdict-window.c:1334
+msgid "_Contents"
+msgstr "_Содржини"
+
+#: ../src/gdict-window.c:1336
+msgid "_About"
+msgstr "З_а"
+
+#. View menu
+#: ../src/gdict-window.c:1347
+msgid "_Sidebar"
+msgstr "_Странична лента"
+
+#: ../src/gdict-window.c:1349
+msgid "S_tatusbar"
+msgstr "С_татусна лента"
+
+#: ../src/gdict-window.c:1414
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Избран е изворот на речникот `%s'"
+
+#: ../src/gdict-window.c:1435
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "Избрана е стратегијата`%s'"
+
+#: ../src/gdict-window.c:1455
+#, c-format
+msgid "Database `%s' selected"
+msgstr "Базата `%s' е избрана"
+
+#: ../src/gdict-window.c:1475
+#, c-format
+msgid "Word `%s' selected"
+msgstr "Зборот `%s' е избран"
+
+#. speller
+#: ../src/gdict-window.c:1500
+msgid "Double-click on the word to look up"
+msgstr "Двоен клик на зборот за негово барање во речник"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1506
+msgid "Double-click on the matching strategy to use"
+msgstr "Двоен клик на стратегијата за нејзино употребување"
+
+#. source-chooser
+#: ../src/gdict-window.c:1511
+msgid "Double-click on the source to use"
+msgstr "Двоен клик на изворот за да го користите"
+
+#. db-chooser
+#: ../src/gdict-window.c:1520
+msgid "Double-click on the database to use"
+msgstr "Двоен клик на базата со податоци за нејзино употребување"
+
+#: ../src/gdict-window.c:1700
+msgid "Look _up:"
+msgstr "Преба_рај:"
+
+#: ../src/gdict-window.c:1775
+msgid "Similar words"
+msgstr "Слични зборови"
+
+#: ../src/gdict-window.c:1788
+msgid "Available dictionaries"
+msgstr "Достапни речници"
+
+#: ../src/gdict-window.c:1806
+msgid "Available strategies"
+msgstr "Достапни стратегии"
+
+#: ../src/gdict-window.c:1822
+msgid "Dictionary sources"
+msgstr "Извори на речници"
