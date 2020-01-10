@@ -40,6 +40,7 @@
 #include "gdict-context-private.h"
 #include "gdict-debug.h"
 #include "gdict-utils.h"
+#include "gdict-version.h"
 #include "gdict-private.h"
 
 guint gdict_major_version = GDICT_MAJOR_VERSION;
@@ -87,7 +88,7 @@ gdict_arg_no_debug_cb (const char *key,
                            G_N_ELEMENTS (gdict_debug_keys));
   return TRUE;
 }
-#endif /* GDICT_ENABLE_DEBUG */
+#endif /* CLUTTER_ENABLE_DEBUG */
 
 static GOptionEntry gdict_args[] = {
 #ifdef GDICT_ENABLE_DEBUG
@@ -105,11 +106,13 @@ pre_parse_hook (GOptionContext  *context,
                 gpointer         data,
                 GError         **error)
 {
+  const char *env_string;
+
   if (gdict_is_initialized)
     return TRUE;
 
 #ifdef GDICT_ENABLE_DEBUG
-  const char *env_string = g_getenv ("GDICT_DEBUG");
+  env_string = g_getenv ("GDICT_DEBUG");
   if (env_string != NULL)
     {
       gdict_debug_flags =
@@ -117,6 +120,8 @@ pre_parse_hook (GOptionContext  *context,
                               gdict_debug_keys,
                               G_N_ELEMENTS (gdict_debug_keys));
     }
+#else
+  env_string = NULL;
 #endif /* GDICT_ENABLE_DEBUG */
 
   return TRUE;
@@ -128,18 +133,17 @@ post_parse_hook (GOptionContext  *context,
                  gpointer         data,
                  GError         **error)
 {
-  if (gdict_is_initialized)
-    return TRUE;
+  gdict_is_initialized = TRUE;
 
   return TRUE;
 }
 
 /**
- * gdict_get_option_group: (skip)
+ * gdict_get_option_group:
  *
  * FIXME
  *
- * Return value: (transfer full): FIXME
+ * Return value: FIXME
  *
  * Since: 0.12
  */
@@ -284,7 +288,7 @@ get_toplevel_window (GtkWidget *widget)
  * gdict_show_error_dialog:
  * @widget: the widget that emits the error
  * @title: the primary error message
- * @message: (nullable): the secondary error message or %NULL
+ * @message: the secondary error message or %NULL
  *
  * Creates and shows an error dialog bound to @widget.
  *
@@ -325,25 +329,4 @@ _gdict_show_gerror_dialog (GtkWidget   *widget,
   show_error_dialog (get_toplevel_window (widget), title, error->message);
       
   g_error_free (error);
-}
-
-/**
- * gdict_init:
- * @argc: FIXME
- * @argv: FIXME
- *
- * FIXME
- *
- * Since: 0.12
- */
-void
-gdict_init (gint    *argc,
-            gchar ***argv)
-{
-  if (gdict_is_initialized)
-    return;
-
-  gdict_debug_init (argc, argv);
-
-  gdict_is_initialized = TRUE;
 }

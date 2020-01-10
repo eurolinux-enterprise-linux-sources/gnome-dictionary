@@ -1,6 +1,6 @@
 <page xmlns="http://projectmallard.org/1.0/"
       type="task"
-      id="save-definition">
+      id="save-text">
 
   <info>
     <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="candidate"/>
@@ -35,7 +35,7 @@
       <gui style="menuitem">Save a Copy…</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Choose where you want to save the definition to and a name for the
+      <p>Chose where you want to save the definition to and a name for the
       file. You may want to add a <file>.txt</file> file extension to the end
       of the file name.</p>
     </item>

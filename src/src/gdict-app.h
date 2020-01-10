@@ -22,7 +22,8 @@
 #define __GDICT_APP_H__
 
 #include <gtk/gtk.h>
-#include "gdict.h"
+#include <libgdict/gdict.h>
+
 #include "gdict-window.h"
 
 G_BEGIN_DECLS
@@ -34,21 +35,21 @@ G_BEGIN_DECLS
 typedef struct _GdictApp         GdictApp;
 typedef struct _GdictAppClass    GdictAppClass;
 
+
 struct _GdictApp
 {
-  GtkApplication parent_instance;
+  GObject parent_instance;
+
+  GtkApplication *app;
 
   GdictSourceLoader *loader;
 };
 
-struct _GdictAppClass
-{
-  GtkApplicationClass parent_class;
-};
 
-GType gdict_app_get_type (void) G_GNUC_CONST;
+GType      gdict_app_get_type    (void) G_GNUC_CONST;
 
-GApplication *gdict_app_new (void);
+void       gdict_main            (int *argc, char ***argv);
+void       gdict_cleanup         (void);
 
 G_END_DECLS
 

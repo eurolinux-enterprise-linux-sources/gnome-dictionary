@@ -39,7 +39,10 @@
 #include "gdict-pref-dialog.h"
 #include "gdict-common.h"
 
-#define GDICT_PREFERENCES_UI 	"/org/gnome/Dictionary/gdict-pref-dialog.ui"
+#define GDICT_PREFERENCES_UI 	PKGDATADIR "/gnome-dictionary-preferences.ui"
+
+#define DEFAULT_MIN_WIDTH 	220
+#define DEFAULT_MIN_HEIGHT 	330
 
 /*******************
  * GdictPrefDialog *
@@ -63,20 +66,24 @@ struct _GdictPrefDialog
   GtkBuilder *builder;
 
   GSettings *settings;
-
-  gchar *print_font;
+  
   gchar *active_source;
   GdictSourceLoader *loader;
   GtkListStore *sources_list;
-
+  
   /* direct pointers to widgets */
-  GtkWidget *preferences_root;
-  GtkWidget *preferences_notebook;
-  GtkWidget *sources_treeview;
-  GtkWidget *add_button;
-  GtkWidget *remove_button;
-  GtkWidget *edit_button;
+  GtkWidget *notebook;
+  
+  GtkWidget *sources_view;
+  GtkWidget *sources_add;
+  GtkWidget *sources_remove;
+  GtkWidget *sources_edit;
+  
+  gchar *print_font;
   GtkWidget *font_button;
+  
+  GtkWidget *help_button;
+  GtkWidget *close_button;
 };
 
 struct _GdictPrefDialogClass
@@ -91,7 +98,9 @@ enum
   PROP_SOURCE_LOADER
 };
 
-G_DEFINE_TYPE (GdictPrefDialog, gdict_pref_dialog, GTK_TYPE_DIALOG)
+
+G_DEFINE_TYPE (GdictPrefDialog, gdict_pref_dialog, GTK_TYPE_DIALOG);
+
 
 static gboolean
 select_active_source_name (GtkTreeModel *model,
@@ -109,7 +118,7 @@ select_active_source_name (GtkTreeModel *model,
     {
       GtkTreeSelection *selection;
       
-      selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_treeview));
+      selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_view));
       
       gtk_tree_selection_select_iter (selection, iter);
       
@@ -120,42 +129,11 @@ select_active_source_name (GtkTreeModel *model,
 }
 
 static void
-sources_view_cursor_changed_cb (GtkTreeView       *tree_view,
-				GdictPrefDialog   *dialog)
-{
-  GtkTreeSelection *selection;
-  GtkTreeModel *model;
-  GtkTreeIter iter;
-  GdictSource *source;
-  gboolean is_selected;
-  gchar *name;
-
-  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_treeview));
-  if (!selection)
-    return;
-
-  is_selected = gtk_tree_selection_get_selected (selection, &model, &iter);
-  if (!is_selected)
-    return;
-
-  gtk_tree_model_get (model, &iter, SOURCES_NAME_COLUMN, &name, -1);
-  if (!name)
-    return;
-  else
-    {
-      source = gdict_source_loader_get_source (dialog->loader, name);
-      gtk_widget_set_sensitive (dialog->edit_button, gdict_source_is_editable (source));
-      gtk_widget_set_sensitive (dialog->remove_button, gdict_source_is_editable (source));
-      g_object_unref (source);
-    }
-}
-
-static void
 update_sources_view (GdictPrefDialog *dialog)
 {
   const GSList *sources, *l;
   
-  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_treeview), NULL);
+  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_view), NULL);
   
   gtk_list_store_clear (dialog->sources_list);
   
@@ -186,14 +164,13 @@ update_sources_view (GdictPrefDialog *dialog)
       			  -1);
     }
 
-  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_treeview),
+  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_view),
   			   GTK_TREE_MODEL (dialog->sources_list));
   
   /* select the currently active source name */
   gtk_tree_model_foreach (GTK_TREE_MODEL (dialog->sources_list),
   			  select_active_source_name,
   			  dialog);
-  sources_view_cursor_changed_cb (GTK_TREE_VIEW(dialog->sources_treeview), dialog);
 }
 
 static void
@@ -259,10 +236,10 @@ sources_view_row_activated_cb (GtkTreeView       *tree_view,
     return;
   
   edit_dialog = gdict_source_dialog_new (GTK_WINDOW (dialog),
-					 _("View Dictionary Source"),
-					 GDICT_SOURCE_DIALOG_VIEW,
-					 dialog->loader,
-					 source_name);
+  					 _("Edit Dictionary Source"),
+  					 GDICT_SOURCE_DIALOG_EDIT,
+  					 dialog->loader,
+  					 source_name);
   gtk_dialog_run (GTK_DIALOG (edit_dialog));
 
   gtk_widget_destroy (edit_dialog);
@@ -298,29 +275,27 @@ build_sources_view (GdictPrefDialog *dialog)
   						     renderer,
   						     "active", SOURCES_ACTIVE_COLUMN,
   						     NULL);
-  gtk_tree_view_append_column (GTK_TREE_VIEW (dialog->sources_treeview), column);
+  gtk_tree_view_append_column (GTK_TREE_VIEW (dialog->sources_view), column);
 
   renderer = gtk_cell_renderer_text_new ();
   column = gtk_tree_view_column_new_with_attributes ("description",
   						     renderer,
   						     "text", SOURCES_DESCRIPTION_COLUMN,
   						     NULL);
-  gtk_tree_view_append_column (GTK_TREE_VIEW (dialog->sources_treeview), column);
+  gtk_tree_view_append_column (GTK_TREE_VIEW (dialog->sources_view), column);
   
-  gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (dialog->sources_treeview), FALSE);
-  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_treeview),
+  gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (dialog->sources_view), FALSE);
+  gtk_tree_view_set_model (GTK_TREE_VIEW (dialog->sources_view),
   			   GTK_TREE_MODEL (dialog->sources_list));
 
-  g_signal_connect (dialog->sources_treeview, "row-activated",
+  g_signal_connect (dialog->sources_view, "row-activated",
 		    G_CALLBACK (sources_view_row_activated_cb),
-		    dialog);
-  g_signal_connect (dialog->sources_treeview, "cursor-changed",
-		    G_CALLBACK (sources_view_cursor_changed_cb),
 		    dialog);
 }
 
 static void
-source_add_clicked_cb (GdictPrefDialog *dialog)
+source_add_clicked_cb (GtkWidget       *widget,
+		       GdictPrefDialog *dialog)
 {
   GtkWidget *add_dialog;
   
@@ -338,7 +313,8 @@ source_add_clicked_cb (GdictPrefDialog *dialog)
 }
 
 static void
-source_remove_clicked_cb (GdictPrefDialog *dialog)
+source_remove_clicked_cb (GtkWidget       *widget,
+			  GdictPrefDialog *dialog)
 {
   GtkTreeSelection *selection;
   GtkTreeModel *model;
@@ -346,7 +322,7 @@ source_remove_clicked_cb (GdictPrefDialog *dialog)
   gboolean is_selected;
   gchar *name, *description;
   
-  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_treeview));
+  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_view));
   if (!selection)
     return;
   
@@ -369,21 +345,29 @@ source_remove_clicked_cb (GdictPrefDialog *dialog)
       					       GTK_DIALOG_DESTROY_WITH_PARENT,
       					       GTK_MESSAGE_WARNING,
       					       GTK_BUTTONS_NONE,
-      					       _("Remove “%s”?"), description);
+      					       _("Remove \"%s\"?"), description);
       gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (confirm_dialog),
       						_("This will permanently remove the "
       						  "dictionary source from the list."));
       
-      gtk_dialog_add_button (GTK_DIALOG (confirm_dialog), _("_Cancel"), GTK_RESPONSE_CANCEL);
-      gtk_dialog_add_button (GTK_DIALOG (confirm_dialog), _("_Remove"), GTK_RESPONSE_OK);
+      gtk_dialog_add_button (GTK_DIALOG (confirm_dialog),
+      			     GTK_STOCK_CANCEL,
+      			     GTK_RESPONSE_CANCEL);
+      gtk_dialog_add_button (GTK_DIALOG (confirm_dialog),
+      			     GTK_STOCK_REMOVE,
+      			     GTK_RESPONSE_OK);
       
       gtk_window_set_title (GTK_WINDOW (confirm_dialog), "");
       
       response = gtk_dialog_run (GTK_DIALOG (confirm_dialog));
-      gtk_widget_destroy (confirm_dialog);
-
       if (response == GTK_RESPONSE_CANCEL)
-        goto out;
+        {
+          gtk_widget_destroy (confirm_dialog);
+          
+          goto out;
+        }
+      
+      gtk_widget_destroy (confirm_dialog);
     }
   
   if (gdict_source_loader_remove_source (dialog->loader, name))
@@ -393,7 +377,7 @@ source_remove_clicked_cb (GdictPrefDialog *dialog)
       GtkWidget *error_dialog;
       gchar *message;
       
-      message = g_strdup_printf (_("Unable to remove source “%s”"),
+      message = g_strdup_printf (_("Unable to remove source '%s'"),
       				 description);
       
       error_dialog = gtk_message_dialog_new (GTK_WINDOW (dialog),
@@ -416,15 +400,16 @@ out:
 }
 
 static void
-source_edit_clicked_cb (GdictPrefDialog *dialog)
+source_edit_clicked_cb (GtkButton       *button,
+                        GdictPrefDialog *dialog)
 {
   GtkTreeSelection *selection;
   GtkTreeModel *model;
   GtkTreeIter iter;
   gboolean is_selected;
-  gchar *name;
+  gchar *name, *description;
 
-  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_treeview));
+  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_view));
   if (!selection)
     return;
 
@@ -470,12 +455,12 @@ set_source_loader (GdictPrefDialog   *dialog,
 }
 
 static void
-font_button_font_set_cb (GdictPrefDialog *dialog,
-                         GtkFontButton   *font_button)
+font_button_font_set_cb (GtkWidget       *font_button,
+			 GdictPrefDialog *dialog)
 {
   const gchar *font;
   
-  font = gtk_font_button_get_font_name (font_button);
+  font = gtk_font_button_get_font_name (GTK_FONT_BUTTON (font_button));
   if (!font || font[0] == '\0')
     return;
 
@@ -489,14 +474,65 @@ font_button_font_set_cb (GdictPrefDialog *dialog,
 }
 
 static void
+response_cb (GtkDialog *dialog,
+	     gint       response_id,
+	     gpointer   user_data)
+{
+  GError *err = NULL;
+  
+  switch (response_id)
+    {
+    case GTK_RESPONSE_HELP:
+      gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
+                    "help:gnome-dictionary/pref",
+                    gtk_get_current_event_time (), &err);
+      if (err)
+	{
+          GtkWidget *error_dialog;
+	  gchar *message;
+
+	  message = g_strdup_printf (_("There was an error while displaying help"));
+	  error_dialog = gtk_message_dialog_new (GTK_WINDOW (dialog),
+      					         GTK_DIALOG_DESTROY_WITH_PARENT,
+      					         GTK_MESSAGE_ERROR,
+						 GTK_BUTTONS_OK,
+						 "%s", message);
+	  gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (error_dialog),
+			  			    "%s", err->message);
+	  gtk_window_set_title (GTK_WINDOW (error_dialog), "");
+	  
+	  gtk_dialog_run (GTK_DIALOG (error_dialog));
+      
+          gtk_widget_destroy (error_dialog);
+	  g_error_free (err);
+        }
+      
+      /* we don't want the dialog to close itself */
+      g_signal_stop_emission_by_name (dialog, "response");
+      break;
+    case GTK_RESPONSE_ACCEPT:
+    default:
+      gtk_widget_hide (GTK_WIDGET (dialog));
+      break;
+    }
+}
+
+static void
 gdict_pref_dialog_finalize (GObject *object)
 {
   GdictPrefDialog *dialog = GDICT_PREF_DIALOG (object);
+  
+  if (dialog->settings)
+    g_object_unref (dialog->settings);
+  
+  if (dialog->builder)
+    g_object_unref (dialog->builder);
 
-  g_clear_object (&dialog->settings);
-  g_clear_object (&dialog->loader);
-
-  g_free (dialog->active_source);
+  if (dialog->active_source)
+    g_free (dialog->active_source);
+  
+  if (dialog->loader)
+    g_object_unref (dialog->loader);
   
   G_OBJECT_CLASS (gdict_pref_dialog_parent_class)->finalize (object);
 }
@@ -514,7 +550,6 @@ gdict_pref_dialog_set_property (GObject      *object,
     case PROP_SOURCE_LOADER:
       set_source_loader (dialog, g_value_get_object (value));
       break;
-
     default:
       break;
     }
@@ -533,7 +568,6 @@ gdict_pref_dialog_get_property (GObject    *object,
     case PROP_SOURCE_LOADER:
       g_value_set_object (value, dialog->loader);
       break;
-
     default:
       break;
     }
@@ -543,54 +577,101 @@ static void
 gdict_pref_dialog_class_init (GdictPrefDialogClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
-
+  
   gobject_class->set_property = gdict_pref_dialog_set_property;
   gobject_class->get_property = gdict_pref_dialog_get_property;
   gobject_class->finalize = gdict_pref_dialog_finalize;
-
+  
   g_object_class_install_property (gobject_class,
   				   PROP_SOURCE_LOADER,
   				   g_param_spec_object ("source-loader",
   				   			"Source Loader",
   				   			"The GdictSourceLoader used by the application",
   				   			GDICT_TYPE_SOURCE_LOADER,
-                                                        G_PARAM_READWRITE |
-                                                        G_PARAM_CONSTRUCT_ONLY |
-                                                        G_PARAM_STATIC_STRINGS));
-
-  gtk_widget_class_set_template_from_resource (widget_class, GDICT_PREFERENCES_UI);
-
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, preferences_notebook);
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, sources_treeview);
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, add_button);
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, remove_button);
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, edit_button);
-  gtk_widget_class_bind_template_child (widget_class, GdictPrefDialog, font_button);
-
-  gtk_widget_class_bind_template_callback (widget_class, source_add_clicked_cb);
-  gtk_widget_class_bind_template_callback (widget_class, source_remove_clicked_cb);
-  gtk_widget_class_bind_template_callback (widget_class, source_edit_clicked_cb);
-  gtk_widget_class_bind_template_callback (widget_class, font_button_font_set_cb);
+  				   			(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY)));
 }
 
 static void
 gdict_pref_dialog_init (GdictPrefDialog *dialog)
 {
   gchar *font;
+  GError *error = NULL;
 
-  gtk_widget_init_template (GTK_WIDGET (dialog));
+  gtk_window_set_default_size (GTK_WINDOW (dialog),
+  			       DEFAULT_MIN_WIDTH,
+  			       DEFAULT_MIN_HEIGHT);
+    
+  gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
+  gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
+
+  /* add buttons */
+  gtk_dialog_add_button (GTK_DIALOG (dialog),
+  			 "gtk-help",
+  			 GTK_RESPONSE_HELP);
+  gtk_dialog_add_button (GTK_DIALOG (dialog),
+  			 "gtk-close",
+  			 GTK_RESPONSE_ACCEPT);
 
   dialog->settings = g_settings_new (GDICT_SETTINGS_SCHEMA);
-  dialog->active_source = g_settings_get_string (dialog->settings, GDICT_SETTINGS_SOURCE_KEY);
 
+  /* get the UI from the GtkBuilder file */
+  dialog->builder = gtk_builder_new ();
+  gtk_builder_add_from_file (dialog->builder, GDICT_PREFERENCES_UI, &error);
+
+  if (error) {
+    g_critical ("Unable to load the preferences user interface: %s", error->message);
+    g_error_free (error);
+    g_assert_not_reached ();
+  }
+
+  /* the main widget */
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
+                     GTK_WIDGET (gtk_builder_get_object (dialog->builder, "preferences_root")));
+
+  /* keep all the interesting widgets around */  
+  dialog->notebook = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "preferences_notebook"));
+  
+  dialog->sources_view = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "sources_treeview"));
   build_sources_view (dialog);
 
+  dialog->active_source = g_settings_get_string (dialog->settings, GDICT_SETTINGS_SOURCE_KEY);
+
+  dialog->sources_add = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "add_button"));
+  gtk_widget_set_tooltip_text (dialog->sources_add,
+                               _("Add a new dictionary source"));
+  g_signal_connect (dialog->sources_add, "clicked",
+  		    G_CALLBACK (source_add_clicked_cb), dialog);
+  		    
+  dialog->sources_remove = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "remove_button"));
+  gtk_widget_set_tooltip_text (dialog->sources_remove,
+                               _("Remove the currently selected dictionary source"));
+  g_signal_connect (dialog->sources_remove, "clicked",
+  		    G_CALLBACK (source_remove_clicked_cb), dialog);
+
+  dialog->sources_edit = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "edit_button"));
+  gtk_widget_set_tooltip_text (dialog->sources_edit,
+                               _("Edit the currently selected dictionary source"));
+  g_signal_connect (dialog->sources_edit, "clicked",
+                    G_CALLBACK (source_edit_clicked_cb), dialog);
+
   font = g_settings_get_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
+  dialog->font_button = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "print_font_button"));
   gtk_font_button_set_font_name (GTK_FONT_BUTTON (dialog->font_button), font);
+  gtk_widget_set_tooltip_text (dialog->font_button,
+                               _("Set the font used for printing the definitions"));
+  g_signal_connect (dialog->font_button, "font-set",
+  		    G_CALLBACK (font_button_font_set_cb), dialog);
   g_free (font);
   
-  gtk_widget_show_all (dialog->preferences_notebook);
+  gtk_widget_show_all (dialog->notebook);
+
+  /* we want to intercept the response signal before any other
+   * callbacks might be attached by the users of the
+   * GdictPrefDialog widget.
+   */
+  g_signal_connect (dialog, "response",
+		    G_CALLBACK (response_cb),
+		    NULL);
 }
 
 void
@@ -613,7 +694,6 @@ gdict_show_pref_dialog (GtkWidget         *parent,
       dialog = g_object_new (GDICT_TYPE_PREF_DIALOG,
                              "source-loader", loader,
                              "title", title,
-                             "use-header-bar", 1,
                              NULL);
       
       g_object_ref_sink (dialog);

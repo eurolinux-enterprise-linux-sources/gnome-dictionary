@@ -76,14 +76,8 @@ typedef enum {
                                          ((x) <= GDICT_STATUS_NO_STRATEGIES_PRESENT))
 
 GOptionGroup *gdict_get_option_group (void);
-void          gdict_init             (gint    *argc,
-                                      gchar ***argv);
 void          gdict_debug_init       (gint    *argc,
                                       gchar ***argv);
-
-gboolean      gdict_check_version    (guint    major,
-                                      guint    minor,
-                                      guint    micro);
 
 G_END_DECLS
 

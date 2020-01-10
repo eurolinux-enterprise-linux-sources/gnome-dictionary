@@ -22,7 +22,7 @@
 #define __GDICT_PREF_DIALOG_H__
 
 #include <gtk/gtk.h>
-#include "gdict.h"
+#include <libgdict/gdict.h>
 
 G_BEGIN_DECLS
 

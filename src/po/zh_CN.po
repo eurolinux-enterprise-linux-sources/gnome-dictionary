@@ -8,243 +8,228 @@
 # Hinker <hinkerliu@gmail.com>, 2009.
 # chiachen <luojiazhen@gmail.com>, 2011.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2011.
-# Tong Hui <tonghuix@gmail.com>, 2013.
-# Dingzhong Chen <wsxy162@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-01-20 10:40+0000\n"
-"PO-Revision-Date: 2017-01-20 18:59+0800\n"
-"Last-Translator: Qizhi Zhou <zhouqz@yahoo.com>\n"
-"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
-"Language: zh_CN\n"
+"POT-Creation-Date: 2012-05-21 10:59+0000\n"
+"PO-Revision-Date: 2012-05-24 14:07+0800\n"
+"Last-Translator: tuhaihe <1132321739qq@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
 msgstr "默认字典服务器"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
-msgid "GNOME Dictionary"
-msgstr "GNOME 字典"
-
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:2
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr "在在线字典中查阅单词定义和拼写"
-
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:3
-msgid ""
-"GNOME Dictionary is a simple dictionary application that looks up "
-"definitions of words online. Though it looks up English definitions by "
-"default, you can easily switch to Spanish or add other online dictionaries "
-"using the DICT protocol to suit your needs."
-msgstr ""
-"GNOME 字典是一款简单的在线查询单词解释的字典应用程序。虽然默认是英语释义，但"
-"您可以根据需要，使用 DICT 协议轻松切换到西班牙语或添加其他语种的在线字典。"
-
-#: ../src/gdict-app-menus.ui.h:1
-msgid "_New Window"
-msgstr "新建窗口(_N)"
-
-#: ../src/gdict-app-menus.ui.h:2
-msgid "Preferences"
-msgstr "首选项"
-
-#: ../src/gdict-app-menus.ui.h:3
-msgid "Help"
-msgstr "帮助"
-
-#: ../src/gdict-app-menus.ui.h:4
-msgid "About"
-msgstr "关于"
-
-#: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "退出"
-
-#: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy…"
-msgstr "保存副本(_S)..."
-
-#: ../src/gdict-app-menus.ui.h:7
-msgid "P_review"
-msgstr "预览(_R)"
-
-#: ../src/gdict-app-menus.ui.h:8
-msgid "_Print"
-msgstr "打印(_P)"
-
-#: ../src/gdict-app-menus.ui.h:9
-msgid "_Find"
-msgstr "查找(_F)"
-
-#: ../src/gdict-app-menus.ui.h:10
-msgid "_View"
-msgstr "查看(_V)"
-
-#: ../src/gdict-app-menus.ui.h:11
-msgid "_Sidebar"
-msgstr "侧边栏(_S)"
-
-#: ../src/gdict-app-menus.ui.h:12
-msgid "Similar _Words"
-msgstr "相似单词(_W)"
-
-#: ../src/gdict-app-menus.ui.h:13
-msgid "Dictionary Sources"
-msgstr "字典源"
-
-#: ../src/gdict-app-menus.ui.h:14
-msgid "Available St_rategies"
-msgstr "可用策略(_R)"
-
-#: ../src/gdict-app-menus.ui.h:15
-msgid "_Go"
-msgstr "转到(_G)"
-
-#: ../src/gdict-app-menus.ui.h:16
-msgid "_Previous Definition"
-msgstr "上一个定义(_P)"
-
-#: ../src/gdict-app-menus.ui.h:17
-msgid "_Next Definition"
-msgstr "下一个定义(_N)"
-
-#: ../src/gdict-app-menus.ui.h:18
-msgid "_First Definition"
-msgstr "第一个定义(_F)"
-
-#: ../src/gdict-app-menus.ui.h:19
-msgid "_Last Definition"
-msgstr "最后一个定义(_L)"
-
-#: ../src/gdict-pref-dialog.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "选择查阅单词的字典源(_S)："
-
-#: ../src/gdict-pref-dialog.ui.h:2
-msgid "Add a new dictionary source"
-msgstr "添加新的字典源"
-
-#: ../src/gdict-pref-dialog.ui.h:3
-msgid "Remove the currently selected dictionary source"
-msgstr "删除目前选中的字典源"
-
-#: ../src/gdict-pref-dialog.ui.h:4
-msgid "Edit"
-msgstr "编辑"
-
-#: ../src/gdict-pref-dialog.ui.h:5
-msgid "Edit the currently selected dictionary source"
-msgstr "删除目前选中的字典源"
-
-#: ../src/gdict-pref-dialog.ui.h:6 ../src/gdict-source-dialog.ui.h:8
-msgid "Source"
-msgstr "源"
-
-#: ../src/gdict-pref-dialog.ui.h:7
-msgid "_Print font:"
-msgstr "打印字体(_P)："
-
-#: ../src/gdict-pref-dialog.ui.h:8
-msgid "Set the font used for printing the definitions"
-msgstr "设定打印定义时所使用的字体"
-
-#: ../src/gdict-pref-dialog.ui.h:9
-msgid "Print"
-msgstr "打印"
-
-#: ../src/gdict-source-dialog.ui.h:1
-msgid "_Description"
-msgstr "描述(_D)"
-
-#: ../src/gdict-source-dialog.ui.h:2
-msgid "_Port"
-msgstr "端口(_P)"
-
-#: ../src/gdict-source-dialog.ui.h:3
-msgid "_Hostname"
-msgstr "主机名(_H)"
-
-#: ../src/gdict-source-dialog.ui.h:4
-msgid "_Transport"
-msgstr "传送(_T)"
-
-#: ../src/gdict-source-dialog.ui.h:5
-msgid "2628"
-msgstr "2628"
-
-#: ../src/gdict-source-dialog.ui.h:6
-msgid "dict.org"
-msgstr "dict.org"
-
-#: ../src/gdict-source-dialog.ui.h:7
-msgid "Source Name"
-msgstr "源名称"
-
-#: ../src/gdict-source-dialog.ui.h:9
-msgid "Dictionaries"
-msgstr "字典"
-
-#: ../src/gdict-source-dialog.ui.h:10
-msgid "Strategies"
-msgstr "策略"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
+#: ../data/gnome-dictionary.desktop.in.in.h:1 ../src/gdict-about.c:62
+#: ../src/gdict-app.c:349 ../src/gdict-window.c:545 ../src/gdict-window.c:1807
 msgid "Dictionary"
 msgstr "字典"
 
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:3
-msgid "word;synonym;definition;spelling;"
-msgstr "word;synonym;definition;spelling;单词;同义词;定义;拼写;"
+#: ../data/gnome-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "在在线字典中查阅单词定义和拼写"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:1
+#: ../data/gnome-dictionary-menus.ui.h:1
+msgid "Preferences"
+msgstr "首选项"
+
+#: ../data/gnome-dictionary-menus.ui.h:2
+msgid "Help"
+msgstr "帮助"
+
+#: ../data/gnome-dictionary-menus.ui.h:3
+msgid "About Dictionary"
+msgstr "关于字典"
+
+#: ../data/gnome-dictionary-menus.ui.h:4
+msgid "Quit"
+msgstr "退出"
+
+#: ../data/gnome-dictionary-menus.ui.h:5
+msgid "_File"
+msgstr "文件(_F)"
+
+#: ../data/gnome-dictionary-menus.ui.h:6
+msgid "_New"
+msgstr "新建(_N)"
+
+#: ../data/gnome-dictionary-menus.ui.h:7
+msgid "_Save a Copy..."
+msgstr "保存副本(_S)..."
+
+#: ../data/gnome-dictionary-menus.ui.h:8
+msgid "P_review"
+msgstr "预览(_R)"
+
+#: ../data/gnome-dictionary-menus.ui.h:9
+msgid "_Print"
+msgstr "打印(_P)"
+
+#: ../data/gnome-dictionary-menus.ui.h:10
+msgid "_Close"
+msgstr "关闭(_C)"
+
+#: ../data/gnome-dictionary-menus.ui.h:11
+msgid "_Edit"
+msgstr "编辑(_E)"
+
+#: ../data/gnome-dictionary-menus.ui.h:12
+msgid "_Copy"
+msgstr "复制(_C)"
+
+#: ../data/gnome-dictionary-menus.ui.h:13
+msgid "Select _All"
+msgstr "全选(_A)"
+
+#: ../data/gnome-dictionary-menus.ui.h:14
+msgid "_Find"
+msgstr "查找(_F)"
+
+#: ../data/gnome-dictionary-menus.ui.h:15
+msgid "Find Ne_xt"
+msgstr "查找下一个(_X)"
+
+#: ../data/gnome-dictionary-menus.ui.h:16
+msgid "Find Pre_vious"
+msgstr "查找上一个(_V)"
+
+#: ../data/gnome-dictionary-menus.ui.h:17
+msgid "_View"
+msgstr "查看(_V)"
+
+#: ../data/gnome-dictionary-menus.ui.h:18
+msgid "_Sidebar"
+msgstr "侧边栏(_S)"
+
+#: ../data/gnome-dictionary-menus.ui.h:19
+msgid "S_tatusbar"
+msgstr "状态栏(_T)"
+
+#: ../data/gnome-dictionary-menus.ui.h:20
+msgid "Similar _Words"
+msgstr "相似单词(_W)"
+
+#: ../data/gnome-dictionary-menus.ui.h:21
+msgid "Dictionary Sources"
+msgstr "字典源"
+
+#: ../data/gnome-dictionary-menus.ui.h:22
+msgid "Available _Databases"
+msgstr "可用数据库(_D)"
+
+#: ../data/gnome-dictionary-menus.ui.h:23
+msgid "Available St_rategies"
+msgstr "可用策略(_R)"
+
+#: ../data/gnome-dictionary-menus.ui.h:24
+msgid "_Go"
+msgstr "转到(_G)"
+
+#: ../data/gnome-dictionary-menus.ui.h:25
+msgid "_Previous Definition"
+msgstr "上一个定义(_P)"
+
+#: ../data/gnome-dictionary-menus.ui.h:26
+msgid "_Next Definition"
+msgstr "下一个定义(_N)"
+
+#: ../data/gnome-dictionary-menus.ui.h:27
+msgid "_First Definition"
+msgstr "第一个定义(_F)"
+
+#: ../data/gnome-dictionary-menus.ui.h:28
+msgid "_Last Definition"
+msgstr "最后一个定义(_L)"
+
+#: ../data/gnome-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "选择查阅单词的字典源(_S)："
+
+#: ../data/gnome-dictionary-preferences.ui.h:2
+#: ../data/gnome-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "源"
+
+#: ../data/gnome-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "打印字体(_P)："
+
+#: ../data/gnome-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "打印"
+
+#: ../data/gnome-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "描述(_D)："
+
+#: ../data/gnome-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "传送(_T)："
+
+#: ../data/gnome-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "主机名(_O)："
+
+#: ../data/gnome-dictionary-source.ui.h:4
+msgid "_Port:"
+msgstr "端口(_P)："
+
+#: ../data/gnome-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "源名称"
+
+#: ../data/gnome-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "字典"
+
+#: ../data/gnome-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "策略"
+
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
 msgid "The default database to use"
 msgstr "要使用的默认数据库"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:2
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (“!”) means that all the databases "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"在字典服务器上默认使用的独立数据库或元数据库名称。叹号(“!”)表示字典程序应该"
-"在给定服务器的所有数据库中搜索"
+"在字典服务器上使用的独立数据库或元数据库名称。叹号(“!”)表示字典程序应该在给定"
+"服务器的所有数据库中搜索"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:3
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
 msgid "The default search strategy to use"
 msgstr "要使用的默认搜索策略"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:4
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is “exact”, that is match exact words."
-msgstr ""
-"字典源上要使用的默认搜索策略（如果支持）。默认的策略是“exact”，即精确匹配单"
-"词。"
+"available. The default strategy is 'exact', that is match exact words."
+msgstr "字典源上要使用的默认搜索策略。默认的策略是“exact”，即精确匹配单词。"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:5
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
 msgid "The font to be used when printing"
 msgstr "打印时所使用的字体"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:6
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
 msgid "The font to be used when printing a definition."
 msgstr "打印定义时所使用的字体。"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:7
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
 msgid "The name of the dictionary source used"
 msgstr "所使用的字典源名称"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:8
+#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "用于获取单词定义的字典源名称"
@@ -257,83 +242,115 @@ msgstr "西班牙语字典"
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Longdo 泰语到英语字典"
 
-#: ../libgdict/gdict-client-context.c:775
-#, c-format
-msgid "No connection to the dictionary server at “%s:%d”"
-msgstr "“%s:%d”处的字典服务器无法连接"
+#: ../libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "客户名"
 
-#: ../libgdict/gdict-client-context.c:1058
+#: ../libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "上下文对象的客户名称"
+
+#: ../libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "主机名"
+
+#: ../libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "要连接的默认字典服务器的主机名"
+
+#: ../libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "端口"
+
+#: ../libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "要连接的字典服务器的端口"
+
+#: ../libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "状态"
+
+#: ../libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "字典服务器返回的状态代码"
+
+#: ../libgdict/gdict-client-context.c:777
 #, c-format
-msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "“%s:%d”出的字典服务器无法连接"
+
+#: ../libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "查阅主机名“%s”失败：未找到合适的资源"
 
-#: ../libgdict/gdict-client-context.c:1089
+#: ../libgdict/gdict-client-context.c:1091
 #, c-format
-msgid "Lookup failed for host “%s”: %s"
+msgid "Lookup failed for host '%s': %s"
 msgstr "查阅主机“%s”失败：%s"
 
-#: ../libgdict/gdict-client-context.c:1123
+#: ../libgdict/gdict-client-context.c:1125
 #, c-format
-msgid "Lookup failed for host “%s”: host not found"
+msgid "Lookup failed for host '%s': host not found"
 msgstr "查阅主机“%s”失败：主机未找到"
 
-#: ../libgdict/gdict-client-context.c:1175
+#: ../libgdict/gdict-client-context.c:1177
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at “%s:%d”. The server replied "
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr "无法连接到字典服务器“%s:%d”。服务器返回了代码 %d(服务器已停机)"
 
-#: ../libgdict/gdict-client-context.c:1194
+#: ../libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": “%s”"
+": '%s'"
 msgstr ""
-"无法解析字典服务器回复\n"
+"无法分析字典服务器回复\n"
 "：“%s”"
 
-#: ../libgdict/gdict-client-context.c:1223
+#: ../libgdict/gdict-client-context.c:1225
 #, c-format
-msgid "No definitions found for “%s”"
+msgid "No definitions found for '%s'"
 msgstr "未找到“%s”的定义"
 
-#: ../libgdict/gdict-client-context.c:1238
+#: ../libgdict/gdict-client-context.c:1240
 #, c-format
-msgid "Invalid database “%s”"
+msgid "Invalid database '%s'"
 msgstr "无效的数据库“%s”"
 
-#: ../libgdict/gdict-client-context.c:1253
+#: ../libgdict/gdict-client-context.c:1255
 #, c-format
-msgid "Invalid strategy “%s”"
+msgid "Invalid strategy '%s'"
 msgstr "无效的策略“%s”"
 
-#: ../libgdict/gdict-client-context.c:1268
+#: ../libgdict/gdict-client-context.c:1270
 #, c-format
-msgid "Bad command “%s”"
-msgstr "错误的命令“%s”"
+msgid "Bad command '%s'"
+msgstr "错误的名称“%s”"
 
-#: ../libgdict/gdict-client-context.c:1283
+#: ../libgdict/gdict-client-context.c:1285
 #, c-format
-msgid "Bad parameters for command “%s”"
+msgid "Bad parameters for command '%s'"
 msgstr "命令“%s”的参数错误"
 
-#: ../libgdict/gdict-client-context.c:1298
+#: ../libgdict/gdict-client-context.c:1300
 #, c-format
-msgid "No databases found on dictionary server at “%s”"
+msgid "No databases found on dictionary server at '%s'"
 msgstr "未在字典服务器“%s”找到数据库"
 
-#: ../libgdict/gdict-client-context.c:1313
+#: ../libgdict/gdict-client-context.c:1315
 #, c-format
-msgid "No strategies found on dictionary server at “%s”"
+msgid "No strategies found on dictionary server at '%s'"
 msgstr "字典服务器“%s”未找到策略"
 
-#: ../libgdict/gdict-client-context.c:1745
+#: ../libgdict/gdict-client-context.c:1748
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "连接服务器 %s:%d 失败"
 
-#: ../libgdict/gdict-client-context.c:1784
+#: ../libgdict/gdict-client-context.c:1787
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -342,118 +359,227 @@ msgstr ""
 "从服务器读取回复出错：\n"
 "%s"
 
-#: ../libgdict/gdict-client-context.c:1857
+#: ../libgdict/gdict-client-context.c:1860
 #, c-format
-msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "连接字典服务器“%s:%d”超时"
 
-#: ../libgdict/gdict-client-context.c:1891
+#: ../libgdict/gdict-client-context.c:1894
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "字典服务器未定义主机名"
 
-#: ../libgdict/gdict-client-context.c:1927
-#: ../libgdict/gdict-client-context.c:1942
+#: ../libgdict/gdict-client-context.c:1930
+#: ../libgdict/gdict-client-context.c:1945
 #, c-format
 msgid "Unable to create socket"
 msgstr "无法创建套接字"
 
-#: ../libgdict/gdict-client-context.c:1968
+#: ../libgdict/gdict-client-context.c:1971
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "无法将频道设定为非屏蔽：%s"
 
-#: ../libgdict/gdict-client-context.c:1983
+#: ../libgdict/gdict-client-context.c:1986
 #, c-format
-msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "无法连接到“%s:%d”的字典服务器"
 
-#: ../libgdict/gdict-database-chooser.c:375
+#: ../libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "只有文本"
+
+#: ../libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "上下文是否只使用本地字典"
+
+#: ../libgdict/gdict-database-chooser.c:379
 msgid "Reload the list of available databases"
 msgstr "重新装入可用数据库列表"
 
-#: ../libgdict/gdict-database-chooser.c:387
+#: ../libgdict/gdict-database-chooser.c:391
 msgid "Clear the list of available databases"
 msgstr "清除可用数据库列表"
 
-#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
-#: ../libgdict/gdict-strategy-chooser.c:775
+#: ../libgdict/gdict-database-chooser.c:838 ../libgdict/gdict-speller.c:778
+#: ../libgdict/gdict-strategy-chooser.c:786
 msgid "Error while matching"
 msgstr "匹配时出错"
 
-#: ../libgdict/gdict-defbox.c:2390
+#: ../libgdict/gdict-defbox.c:1127 ../libgdict/gdict-defbox.c:1221
+#: ../libgdict/gdict-defbox.c:1255
+msgid "Not found"
+msgstr "未找到"
+
+#: ../libgdict/gdict-defbox.c:1316
+msgid "F_ind:"
+msgstr "查找(_I)："
+
+#: ../libgdict/gdict-defbox.c:1329
+msgid "_Previous"
+msgstr "前一个(_P)"
+
+#: ../libgdict/gdict-defbox.c:1337
+msgid "_Next"
+msgstr "下一个(_N)"
+
+#: ../libgdict/gdict-defbox.c:2514
 msgid "Error while looking up definition"
 msgstr "查阅定义出错"
 
-#: ../libgdict/gdict-defbox.c:2432 ../libgdict/gdict-speller.c:725
+#: ../libgdict/gdict-defbox.c:2556 ../libgdict/gdict-speller.c:736
 msgid "Another search is in progress"
 msgstr "另外一项搜索正在进行中"
 
-#: ../libgdict/gdict-defbox.c:2433 ../libgdict/gdict-speller.c:726
+#: ../libgdict/gdict-defbox.c:2557 ../libgdict/gdict-speller.c:737
 msgid "Please wait until the current search ends."
 msgstr "请稍候，等待当前搜索结束。"
 
-#: ../libgdict/gdict-defbox.c:2472
+#: ../libgdict/gdict-defbox.c:2596
 msgid "Error while retrieving the definition"
 msgstr "获取定义出错"
 
-#: ../libgdict/gdict-source.c:433
+#: ../libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "文件名"
+
+#: ../libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "此字典源所使用的文件名"
+
+#: ../libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "名称"
+
+#: ../libgdict/gdict-source.c:247
+msgid "The display name of this dictionary source"
+msgstr "此字典源的显示名称"
+
+#: ../libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "描述"
+
+#: ../libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "此字典源的描述"
+
+#: ../libgdict/gdict-source.c:274 ../libgdict/gdict-speller.c:383
+msgid "Database"
+msgstr "数据库"
+
+#: ../libgdict/gdict-source.c:275
+msgid "The default database of this dictionary source"
+msgstr "此字典源的默认数据库"
+
+#: ../libgdict/gdict-source.c:288 ../libgdict/gdict-speller.c:390
+msgid "Strategy"
+msgstr "策略"
+
+#: ../libgdict/gdict-source.c:289
+msgid "The default strategy of this dictionary source"
+msgstr "此字典源的默认策略"
+
+#: ../libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "传送"
+
+#: ../libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "此字典源所使用的传送机制"
+
+#: ../libgdict/gdict-source.c:317 ../libgdict/gdict-speller.c:376
+msgid "Context"
+msgstr "上下文"
+
+#: ../libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "绑定到此源的 GdictContext"
+
+#: ../libgdict/gdict-source.c:413
 #, c-format
-msgid "Invalid transport type “%d”"
+msgid "Invalid transport type '%d'"
 msgstr "无效的传送类型“%d”"
 
-#: ../libgdict/gdict-source.c:461
+#: ../libgdict/gdict-source.c:441
 #, c-format
-msgid "No “%s” group found inside the dictionary source definition"
+msgid "No '%s' group found inside the dictionary source definition"
 msgstr "字典源定义中未找到“%s”组"
 
-#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
-#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
+#: ../libgdict/gdict-source.c:457 ../libgdict/gdict-source.c:481
+#: ../libgdict/gdict-source.c:505 ../libgdict/gdict-source.c:530
 #, c-format
-msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "无法在字典源定义中找到“%s”键：%s"
 
-#: ../libgdict/gdict-source.c:575
+#: ../libgdict/gdict-source.c:555
 #, c-format
 msgid ""
-"Unable to get the “%s” key inside the dictionary source definition file: %s"
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr "无法在字典源定义文件中找到“%s”键：%s"
 
-#: ../libgdict/gdict-source.c:769
+#: ../libgdict/gdict-source.c:741
 #, c-format
 msgid "Dictionary source does not have name"
 msgstr "字典源没有名称"
 
-#: ../libgdict/gdict-source.c:778
+#: ../libgdict/gdict-source.c:750
 #, c-format
-msgid "Dictionary source “%s” has invalid transport “%s”"
+msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "字典源“%s”的传送“%s”无效"
 
-#: ../libgdict/gdict-source-chooser.c:280
+#: ../libgdict/gdict-source-chooser.c:295
 msgid "Reload the list of available sources"
 msgstr "重新装入可用源列表"
 
-#: ../libgdict/gdict-speller.c:341
+#: ../libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "路径"
+
+#: ../libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "此对象所使用的搜索路径"
+
+#: ../libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "源"
+
+#: ../libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "找到的字典源"
+
+#: ../libgdict/gdict-speller.c:353
 msgid "Clear the list of similar words"
 msgstr "清除相似单词列表"
 
-#: ../libgdict/gdict-strategy-chooser.c:350
+#: ../libgdict/gdict-speller.c:377
+msgid "The GdictContext object used to get the word definition"
+msgstr "用于获得单词定义的 GdictContext 对象"
+
+#: ../libgdict/gdict-speller.c:384
+msgid "The database used to query the GdictContext"
+msgstr "用于查询 GdictContext 的数据库"
+
+#: ../libgdict/gdict-speller.c:391
+msgid "The strategy used to query the GdictContext"
+msgstr "查询 GdictContext 所使用的策略"
+
+#: ../libgdict/gdict-strategy-chooser.c:362
 msgid "Reload the list of available strategies"
 msgstr "重新装入可用的策略"
 
-#: ../libgdict/gdict-strategy-chooser.c:361
+#: ../libgdict/gdict-strategy-chooser.c:374
 msgid "Clear the list of available strategies"
 msgstr "清除可用策略列表"
 
-#: ../libgdict/gdict-utils.c:96
+#: ../libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to set"
 msgstr "要设置的 GDict 调试标志"
 
-#: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
+#: ../libgdict/gdict-utils.c:97 ../libgdict/gdict-utils.c:99
 msgid "FLAGS"
 msgstr "标志"
 
-#: ../libgdict/gdict-utils.c:98
+#: ../libgdict/gdict-utils.c:99
 msgid "GDict debugging flags to unset"
 msgstr "要取消的 GDict 调试标志"
 
@@ -465,48 +591,46 @@ msgstr "字典选项"
 msgid "Show GDict Options"
 msgstr "显示字典选项"
 
-#: ../src/gdict-about.c:53
+#: ../src/gdict-about.c:55
 msgid "translator-credits"
 msgstr ""
 "Wang Li <charlesw1234@163.com>\n"
 "Funda Wang <fundawang@linux.net.cn>\n"
-"tuhaihe <1132321739qq@gmail.com>\n"
-"Tong Hui <tonghuix@gmail.com>\n"
-"Dingzhong Chen <wsxy162@gmail.com>"
+"tuhaihe <1132321739qq@gmail.com>"
 
-#: ../src/gdict-about.c:55
+#: ../src/gdict-about.c:57
 msgid "Look up words in dictionaries"
 msgstr "在字典中查阅单词"
 
-#: ../src/gdict-app.c:47 ../src/gdict-app.c:76
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:91
 msgid "Words to look up"
 msgstr "要查阅的单词"
 
-#: ../src/gdict-app.c:47 ../src/gdict-app.c:53
+#: ../src/gdict-app.c:62 ../src/gdict-app.c:68
 msgid "WORD"
 msgstr "单词"
 
-#: ../src/gdict-app.c:53
+#: ../src/gdict-app.c:68
 msgid "Words to match"
 msgstr "要匹配的单词"
 
-#: ../src/gdict-app.c:59
+#: ../src/gdict-app.c:74
 msgid "Dictionary source to use"
 msgstr "要使用的字典源"
 
-#: ../src/gdict-app.c:59 ../src/gdict-app.c:65 ../src/gdict-app.c:71
+#: ../src/gdict-app.c:74 ../src/gdict-app.c:80 ../src/gdict-app.c:86
 msgid "NAME"
 msgstr "名称"
 
-#: ../src/gdict-app.c:65
+#: ../src/gdict-app.c:80
 msgid "Database to use"
 msgstr "要使用的数据库"
 
-#: ../src/gdict-app.c:71
+#: ../src/gdict-app.c:86
 msgid "Strategy to use"
 msgstr "要使用的策略"
 
-#: ../src/gdict-app.c:76
+#: ../src/gdict-app.c:91
 msgid "WORDS"
 msgstr "单词"
 
@@ -514,320 +638,178 @@ msgstr "单词"
 msgid "Dictionary Preferences"
 msgstr "字典首选项"
 
-#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
+#: ../src/gdict-app.c:130 ../src/gdict-pref-dialog.c:496
+#: ../src/gdict-source-dialog.c:477
+#, c-format
 msgid "There was an error while displaying help"
 msgstr "显示帮助时出错"
 
-#: ../src/gdict-pref-dialog.c:262
-msgid "View Dictionary Source"
-msgstr "查看字典源"
+#. create the new option context
+#: ../src/gdict-app.c:219
+msgid " - Look up words in dictionaries"
+msgstr " - 在字典中查阅单词"
 
-#: ../src/gdict-pref-dialog.c:328
-msgid "Add Dictionary Source"
-msgstr "添加字典源"
-
-#: ../src/gdict-pref-dialog.c:372
-#, c-format
-msgid "Remove “%s”?"
-msgstr "删除“%s”吗？"
-
-#: ../src/gdict-pref-dialog.c:374
-msgid "This will permanently remove the dictionary source from the list."
-msgstr "这将从列表中永久删除字典源。"
-
-#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
-#: ../src/gdict-window.c:824
-msgid "_Cancel"
-msgstr "取消(_C)"
-
-#: ../src/gdict-pref-dialog.c:378
-msgid "_Remove"
-msgstr "移除(_R)"
-
-#: ../src/gdict-pref-dialog.c:396
-#, c-format
-msgid "Unable to remove source “%s”"
-msgstr "无法删除源“%s”"
-
-#: ../src/gdict-pref-dialog.c:443
+#: ../src/gdict-pref-dialog.c:241 ../src/gdict-pref-dialog.c:430
 msgid "Edit Dictionary Source"
 msgstr "编辑字典源"
 
-#: ../src/gdict-print.c:239 ../src/gdict-print.c:303
+#: ../src/gdict-pref-dialog.c:305
+msgid "Add Dictionary Source"
+msgstr "添加字典源"
+
+#: ../src/gdict-pref-dialog.c:350
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "删除“%s”吗？"
+
+#: ../src/gdict-pref-dialog.c:352
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "这将从列表中永久删除字典源。"
+
+#: ../src/gdict-pref-dialog.c:382
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "无法删除源“%s”"
+
+#: ../src/gdict-pref-dialog.c:643
+msgid "Add a new dictionary source"
+msgstr "添加新的字典源"
+
+#: ../src/gdict-pref-dialog.c:649
+msgid "Remove the currently selected dictionary source"
+msgstr "删除目前选中的字典源"
+
+#: ../src/gdict-pref-dialog.c:655
+msgid "Edit the currently selected dictionary source"
+msgstr "删除目前选中的字典源"
+
+#: ../src/gdict-pref-dialog.c:663
+msgid "Set the font used for printing the definitions"
+msgstr "设定打印定义时所使用的字体"
+
+#: ../src/gdict-print.c:241 ../src/gdict-print.c:305
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "无法显示预览：%s"
 
-#: ../src/gdict-source-dialog.c:316 ../src/gdict-source-dialog.c:404
+#: ../src/gdict-source-dialog.c:342 ../src/gdict-source-dialog.c:434
 msgid "Unable to create a source file"
 msgstr "无法创建源文件"
 
-#: ../src/gdict-source-dialog.c:332 ../src/gdict-source-dialog.c:424
+#: ../src/gdict-source-dialog.c:358 ../src/gdict-source-dialog.c:450
 msgid "Unable to save source file"
 msgstr "无法保存源文件"
 
-#. we just allow closing the dialog
-#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
-msgid "_Close"
-msgstr "关闭(_C)"
-
-#: ../src/gdict-source-dialog.c:565
-msgid "_Add"
-msgstr "添加(_A)"
-
-#: ../src/gdict-source-dialog.c:573
-msgid "C_ancel"
-msgstr "取消(_A)"
-
-#. The help button is always visible
-#: ../src/gdict-source-dialog.c:655
-msgid "_Help"
-msgstr "帮助(_H)"
-
-#: ../src/gdict-window.c:415
+#: ../src/gdict-window.c:255
 #, c-format
-msgid "No dictionary source available with name “%s”"
-msgstr "没有名称为“%s”的可用字典源"
+msgid "Searching for '%s'..."
+msgstr "正在搜索“%s”..."
 
-#: ../src/gdict-window.c:419
+#: ../src/gdict-window.c:287 ../src/gdict-window.c:344
+msgid "No definitions found"
+msgstr "未找到定义"
+
+#: ../src/gdict-window.c:289
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "找到了 %d 个定义"
+
+#: ../src/gdict-window.c:460
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "名称“%s”没有可用的字典源"
+
+#: ../src/gdict-window.c:464
 msgid "Unable to find dictionary source"
 msgstr "找不到字典源"
 
-#: ../src/gdict-window.c:435
+#: ../src/gdict-window.c:480
 #, c-format
-msgid "No context available for source “%s”"
+msgid "No context available for source '%s'"
 msgstr "源“%s”没有可用的上下文"
 
-#: ../src/gdict-window.c:439
+#: ../src/gdict-window.c:484
 msgid "Unable to create a context"
 msgstr "无法创建上下文"
 
-#: ../src/gdict-window.c:498
+#: ../src/gdict-window.c:543
 #, c-format
-msgid "%s — Dictionary"
-msgstr "%s — 字典"
+msgid "%s - Dictionary"
+msgstr "%s - 字典"
 
-#: ../src/gdict-window.c:821
+#: ../src/gdict-window.c:912
 msgid "Save a Copy"
 msgstr "保存副本"
 
-#: ../src/gdict-window.c:825
-msgid "_Save"
-msgstr "保存(_S)"
-
-#: ../src/gdict-window.c:831
+#: ../src/gdict-window.c:922
 msgid "Untitled document"
 msgstr "无标题文档"
 
-#: ../src/gdict-window.c:852
+#: ../src/gdict-window.c:943
 #, c-format
-msgid "Error while writing to “%s”"
+msgid "Error while writing to '%s'"
 msgstr "写入“%s”时发生错误"
 
+#: ../src/gdict-window.c:1361
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "选中了字典源‘%s’"
+
+#: ../src/gdict-window.c:1382
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "选中了策略“%s”"
+
+#: ../src/gdict-window.c:1402
+#, c-format
+msgid "Database `%s' selected"
+msgstr "选中了数据库“%s”"
+
+#: ../src/gdict-window.c:1422
+#, c-format
+msgid "Word `%s' selected"
+msgstr "选中了单词“%s”"
+
 #. speller
-#: ../src/gdict-window.c:1213
+#: ../src/gdict-window.c:1447
 msgid "Double-click on the word to look up"
 msgstr "双击您想要查阅的单词"
 
 #. strat-chooser
-#: ../src/gdict-window.c:1219
+#: ../src/gdict-window.c:1453
 msgid "Double-click on the matching strategy to use"
 msgstr "双击要使用的匹配策略"
 
 #. source-chooser
-#: ../src/gdict-window.c:1224
+#: ../src/gdict-window.c:1458
 msgid "Double-click on the source to use"
 msgstr "双击要使用的源"
 
-#: ../src/gdict-window.c:1410
+#. db-chooser
+#: ../src/gdict-window.c:1467
+msgid "Double-click on the database to use"
+msgstr "双击您想要使用的数据库"
+
+#: ../src/gdict-window.c:1617
+msgid "Look _up:"
+msgstr "查阅(_U)："
+
+#: ../src/gdict-window.c:1692
 msgid "Similar words"
 msgstr "相似单词"
 
-#: ../src/gdict-window.c:1441
+#: ../src/gdict-window.c:1705
+msgid "Available dictionaries"
+msgstr "可用词典"
+
+#: ../src/gdict-window.c:1723
 msgid "Available strategies"
 msgstr "可用策略"
 
-#: ../src/gdict-window.c:1457
+#: ../src/gdict-window.c:1739
 msgid "Dictionary sources"
 msgstr "字典源"
-
-#~ msgid "_Save a Copy..."
-#~ msgstr "保存副本(_S)..."
-
-#~ msgid "Available _Dictionaries"
-#~ msgstr "可用词典(_D)"
-
-#~ msgid "H_ostname:"
-#~ msgstr "主机名(_O)："
-
-#~ msgid "_File"
-#~ msgstr "文件(_F)"
-
-#~ msgid "_New"
-#~ msgstr "新建(_N)"
-
-#~ msgid "_Copy"
-#~ msgstr "复制(_C)"
-
-#~ msgid "Select _All"
-#~ msgstr "全选(_A)"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "查找下一个(_X)"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "查找上一个(_V)"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "状态栏(_T)"
-
-#~ msgid "Client Name"
-#~ msgstr "客户名"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "上下文对象的客户名称"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "要连接的默认字典服务器的主机名"
-
-#~ msgid "Port"
-#~ msgstr "端口"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "要连接的字典服务器的端口"
-
-#~ msgid "Status"
-#~ msgstr "状态"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "字典服务器返回的状态代码"
-
-#~ msgid "Local Only"
-#~ msgstr "只有文本"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "上下文是否只使用本地字典"
-
-#~ msgid "Not found"
-#~ msgstr "未找到"
-
-#~ msgid "F_ind:"
-#~ msgstr "查找(_I)："
-
-#~ msgid "_Previous"
-#~ msgstr "前一个(_P)"
-
-#~ msgid "_Next"
-#~ msgstr "下一个(_N)"
-
-#~ msgid "Filename"
-#~ msgstr "文件名"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "此字典源所使用的文件名"
-
-#~ msgid "Name"
-#~ msgstr "名称"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "此字典源的显示名称"
-
-#~ msgid "Description"
-#~ msgstr "描述"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "此字典源的描述"
-
-#~ msgid "Editable"
-#~ msgstr "可编辑"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "字典源是否可编辑"
-
-#~ msgid "Database"
-#~ msgstr "数据库"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "此字典源的默认数据库"
-
-#~ msgid "Strategy"
-#~ msgstr "策略"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "此字典源的默认策略"
-
-#~ msgid "Transport"
-#~ msgstr "传送"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "此字典源所使用的传送机制"
-
-#~ msgid "Context"
-#~ msgstr "上下文"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "绑定到此源的 GdictContext"
-
-#~ msgid "Paths"
-#~ msgstr "路径"
-
-#~ msgid "Search paths used by this object"
-#~ msgstr "此对象所使用的搜索路径"
-
-#~ msgid "Sources"
-#~ msgstr "源"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "找到的字典源"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr "用于获得单词定义的 GdictContext 对象"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "用于查询 GdictContext 的数据库"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "查询 GdictContext 所使用的策略"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "正在搜索“%s”..."
-
-#~ msgid "No definitions found"
-#~ msgstr "未找到定义"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "找到了 %d 个定义"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "选中了字典源‘%s’"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "选中了策略“%s”"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "选中了数据库“%s”"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "选中了单词“%s”"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "双击您想要使用的数据库"
-
-#~ msgid "Look _up"
-#~ msgstr "查阅(_U)"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "可用词典"
-
-#~ msgid " - Look up words in dictionaries"
-#~ msgstr " - 在字典中查阅单词"
-
-#~ msgid "About Dictionary"
-#~ msgstr "关于字典"
-
-#~ msgid "Available _Databases"
-#~ msgstr "可用数据库(_D)"
 
 #~ msgid "New look up"
 #~ msgstr "新建查阅"
@@ -858,3 +840,6 @@ msgstr "字典源"
 
 #~ msgid "_Contents"
 #~ msgstr "目录(_C)"
+
+#~ msgid "_About"
+#~ msgstr "关于(_A)"

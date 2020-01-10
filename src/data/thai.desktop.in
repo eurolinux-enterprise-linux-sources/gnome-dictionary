@@ -1,7 +1,6 @@
 [Dictionary Source]
-# Translators: Do not translate the Name key
 Name=Thai
-Comment=Longdo Thai-English Dictionaries
+_Description=Longdo Thai-English Dictionaries
 Transport=dictd
 Hostname=dict.longdo.com
 Port=2628

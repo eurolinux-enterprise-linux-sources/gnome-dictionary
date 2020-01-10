@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.Dictionary
-Exec=@bindir@/gnome-dictionary --gapplication-service

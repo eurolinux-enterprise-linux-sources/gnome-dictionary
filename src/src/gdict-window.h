@@ -24,7 +24,7 @@
 #include <gio/gio.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gtk/gtk.h>
-#include "gdict.h"
+#include <libgdict/gdict.h>
 
 G_BEGIN_DECLS
 
@@ -48,15 +48,8 @@ struct _GdictWindow
 {
   GtkApplicationWindow parent_instance;
   
-  GtkWidget *header_bar;
-  GtkWidget *header_box;
   GtkWidget *main_box;
-  GtkWidget *main_pane;
-  GtkWidget *defbox_box;
-  GtkWidget *sidebar_box;
   GtkWidget *entry;
-  GtkWidget *spinner;
-  GtkWidget *stack;
   
   /* sidebar widgets */
   GtkWidget *speller;
@@ -65,8 +58,14 @@ struct _GdictWindow
   GtkWidget *source_chooser;
 
   GtkWidget *sidebar;
+  GtkWidget *sidebar_frame;
+  
   GtkWidget *defbox;
+  GtkWidget *defbox_frame;
 
+  GtkWidget *status;
+  GtkWidget *progress;
+  
   GtkEntryCompletion *completion;
   GtkListStore *completion_model;
   
@@ -105,6 +104,7 @@ struct _GdictWindow
 
   guint is_maximized      : 1;
   guint sidebar_visible   : 1;
+  guint statusbar_visible : 1;
   guint in_construction   : 1;
   
   gulong window_id;
@@ -120,7 +120,6 @@ struct _GdictWindowClass
 
 GType      gdict_window_get_type (void) G_GNUC_CONST;
 GtkWidget *gdict_window_new      (GdictWindowAction  action,
-                                  GtkApplication    *app,
 				  GdictSourceLoader *loader,
 				  const gchar       *source_name,
                                   const gchar       *database_name,
