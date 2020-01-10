@@ -3,12 +3,14 @@
 Summary: A dictionary application for GNOME
 Name:    gnome-dictionary
 Version: 3.14.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv3+ and LGPLv2+ and GFDL
 Group:   Applications/Text
 #VCS: git:git://git.gnome.org/gnome-dictionary
 Source:  http://download.gnome.org/sources/gnome-dictionary/3.14/gnome-dictionary-%{version}.tar.xz
 URL:     http://www.gnome.org/
+
+Patch0: translations.patch
 
 BuildRequires: gtk3-devel
 BuildRequires: intltool
@@ -34,6 +36,7 @@ are needed to build applications using the libgdict library.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
@@ -75,6 +78,10 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 
 
 %changelog
+* Wed Jun 29 2016 Matthias Clasen <mclasen@redhat.com> - 3.14.2-2
+- Update translations
+- Resolves: #1304290
+
 * Thu Mar 19 2015 Richard Hughes <rhughes@redhat.com> - 3.14.2-1
 - Update to 3.14.2
 - Resolves: #1174558
