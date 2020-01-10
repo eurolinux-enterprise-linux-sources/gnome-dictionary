@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GNOME Dictionary Library Reference Manual: GdictSpeller</title>
+<title>GdictSpeller: GNOME Dictionary Library Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="GNOME Dictionary Library Reference Manual">
 <link rel="up" href="ch05.html" title="Base widgets">
 <link rel="prev" href="GdictDefbox.html" title="GdictDefbox">
 <link rel="next" href="ch06.html" title="Advanced widgets">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.24 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -84,7 +84,7 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <span class="returnvalue">gchar</span> *
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GdictSpeller.html#gdict-speller-get-database" title="gdict_speller_get_database ()">gdict_speller_get_database</a> <span class="c_punctuation">()</span>
@@ -99,7 +99,7 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <span class="returnvalue">gchar</span> *
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GdictSpeller.html#gdict-speller-get-strategy" title="gdict_speller_get_strategy ()">gdict_speller_get_strategy</a> <span class="c_punctuation">()</span>
@@ -123,7 +123,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gint</span>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GdictSpeller.html#gdict-speller-count-matches" title="gdict_speller_count_matches ()">gdict_speller_count_matches</a> <span class="c_punctuation">()</span>
@@ -131,7 +131,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gchar</span> **
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
 </td>
 <td class="function_name">
 <a class="link" href="GdictSpeller.html#gdict-speller-get-matches" title="gdict_speller_get_matches ()">gdict_speller_get_matches</a> <span class="c_punctuation">()</span>
@@ -157,13 +157,13 @@
 </tr>
 <tr>
 <td class="property_type">
-<span class="type">gchar</span> *</td>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="GdictSpeller.html#GdictSpeller--database" title="The “database” property">database</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<span class="type">gchar</span> *</td>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="GdictSpeller.html#GdictSpeller--strategy" title="The “strategy” property">strategy</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -181,7 +181,7 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GdictSpeller.html#GdictSpeller-word-activated" title="The “word-activated” signal">word-activated</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -206,13 +206,12 @@
 </div>
 <div class="refsect1">
 <a name="GdictSpeller.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
-    <span class="lineart">╰──</span> GInitiallyUnowned
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> GtkWidget
             <span class="lineart">╰──</span> GtkContainer
                 <span class="lineart">╰──</span> GtkBox
-                    <span class="lineart">╰──</span> GtkVBox
-                        <span class="lineart">╰──</span> GdictSpeller
+                    <span class="lineart">╰──</span> GdictSpeller
 </pre>
 </div>
 <div class="refsect1">
@@ -236,9 +235,8 @@ gdict_speller_new (<em class="parameter"><code><span class="type">void</span></c
 <div class="refsect3">
 <a name="id-1.4.3.3.10.2.5"></a><h4>Returns</h4>
 <p> FIXME</p>
-<p></p>
 </div>
-<p class="since">Since </p>
+<p class="since">Since: </p>
 </div>
 <hr>
 <div class="refsect2">
@@ -264,9 +262,8 @@ gdict_speller_new_with_context (<em class="parameter"><code><a class="link" href
 <div class="refsect3">
 <a name="id-1.4.3.3.10.3.6"></a><h4>Returns</h4>
 <p> FIXME</p>
-<p></p>
 </div>
-<p class="since">Since </p>
+<p class="since">Since: </p>
 </div>
 <hr>
 <div class="refsect2">
@@ -297,7 +294,7 @@ gdict_speller_set_context (<em class="parameter"><code><a class="link" href="Gdi
 </tbody>
 </table></div>
 </div>
-<p class="since">Since </p>
+<p class="since">Since: </p>
 </div>
 <hr>
 <div class="refsect2">
@@ -322,17 +319,17 @@ gdict_speller_get_context (<em class="parameter"><code><a class="link" href="Gdi
 </div>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.5.6"></a><h4>Returns</h4>
-<p> a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a></p>
-<p></p>
+<p> a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since </p>
+<p class="since">Since: </p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-set-database"></a><h3>gdict_speller_set_database ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdict_speller_set_database (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>,
-                            <em class="parameter"><code>const <span class="type">gchar</span> *database</code></em>);</pre>
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *database</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.6.5"></a><h4>Parameters</h4>
@@ -356,12 +353,12 @@ gdict_speller_set_database (<em class="parameter"><code><a class="link" href="Gd
 </tbody>
 </table></div>
 </div>
-<p class="since">Since </p>
+<p class="since">Since: </p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-get-database"></a><h3>gdict_speller_get_database ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gdict_speller_get_database (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
@@ -382,16 +379,15 @@ gdict_speller_get_database (<em class="parameter"><code><a class="link" href="Gd
 <div class="refsect3">
 <a name="id-1.4.3.3.10.7.6"></a><h4>Returns</h4>
 <p> FIXME</p>
-<p></p>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-set-strategy"></a><h3>gdict_speller_set_strategy ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdict_speller_set_strategy (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>,
-                            <em class="parameter"><code>const <span class="type">gchar</span> *strategy</code></em>);</pre>
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *strategy</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.8.5"></a><h4>Parameters</h4>
@@ -415,12 +411,12 @@ gdict_speller_set_strategy (<em class="parameter"><code><a class="link" href="Gd
 </tbody>
 </table></div>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-get-strategy"></a><h3>gdict_speller_get_strategy ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gdict_speller_get_strategy (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
@@ -441,9 +437,8 @@ gdict_speller_get_strategy (<em class="parameter"><code><a class="link" href="Gd
 <div class="refsect3">
 <a name="id-1.4.3.3.10.9.6"></a><h4>Returns</h4>
 <p> FIXME</p>
-<p></p>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -466,14 +461,14 @@ gdict_speller_clear (<em class="parameter"><code><a class="link" href="GdictSpel
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-match"></a><h3>gdict_speller_match ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdict_speller_match (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>,
-                     <em class="parameter"><code>const <span class="type">gchar</span> *word</code></em>);</pre>
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.11.5"></a><h4>Parameters</h4>
@@ -497,20 +492,20 @@ gdict_speller_match (<em class="parameter"><code><a class="link" href="GdictSpel
 </tbody>
 </table></div>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-count-matches"></a><h3>gdict_speller_count_matches ()</h3>
-<pre class="programlisting"><span class="returnvalue">gint</span>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 gdict_speller_count_matches (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-speller-get-matches"></a><h3>gdict_speller_get_matches ()</h3>
-<pre class="programlisting"><span class="returnvalue">gchar</span> **
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
 gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *speller</code></em>,
-                           <em class="parameter"><code><span class="type">gsize</span> length</code></em>);</pre>
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
 <p>FIXME</p>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.13.5"></a><h4>Parameters</h4>
@@ -536,10 +531,10 @@ gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="Gdi
 </div>
 <div class="refsect3">
 <a name="id-1.4.3.3.10.13.6"></a><h4>Returns</h4>
-<p> FIXME</p>
-<p></p>
+<p> FIXME. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since FIXME</p>
+<p class="since">Since: FIXME</p>
 </div>
 </div>
 <div class="refsect1">
@@ -552,7 +547,7 @@ gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="Gdi
 <div class="refsect2">
 <a name="GdictSpellerClass"></a><h3>struct GdictSpellerClass</h3>
 <pre class="programlisting">struct GdictSpellerClass {
-  GtkVBoxClass parent_class;
+  GtkBoxClass parent_class;
 
   void (*word_activated) (GdictSpeller *speller,
 		          const gchar  *word,
@@ -578,7 +573,7 @@ gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="Gdi
 <hr>
 <div class="refsect2">
 <a name="GdictSpeller--database"></a><h3>The <code class="literal">“database”</code> property</h3>
-<pre class="programlisting">  “database”                 <span class="type">gchar</span> *</pre>
+<pre class="programlisting">  “database”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The database used to query the GdictContext.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "*"</p>
@@ -586,7 +581,7 @@ gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="Gdi
 <hr>
 <div class="refsect2">
 <a name="GdictSpeller--strategy"></a><h3>The <code class="literal">“strategy”</code> property</h3>
-<pre class="programlisting">  “strategy”                 <span class="type">gchar</span> *</pre>
+<pre class="programlisting">  “strategy”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The strategy used to query the GdictContext.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "."</p>
@@ -598,15 +593,14 @@ gdict_speller_get_matches (<em class="parameter"><code><a class="link" href="Gdi
 <a name="GdictSpeller-word-activated"></a><h3>The <code class="literal">“word-activated”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GdictSpeller.html" title="GdictSpeller"><span class="type">GdictSpeller</span></a> *gdictspeller,
-               <span class="type">gchar</span>        *arg1,
-               <span class="type">gchar</span>        *arg2,
-               <span class="type">gpointer</span>      user_data)</pre>
-<p>Flags: Run Last</p>
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.24</div>
 </body>
 </html>

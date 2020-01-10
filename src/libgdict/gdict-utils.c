@@ -88,7 +88,7 @@ gdict_arg_no_debug_cb (const char *key,
                            G_N_ELEMENTS (gdict_debug_keys));
   return TRUE;
 }
-#endif /* CLUTTER_ENABLE_DEBUG */
+#endif /* GDICT_ENABLE_DEBUG */
 
 static GOptionEntry gdict_args[] = {
 #ifdef GDICT_ENABLE_DEBUG
@@ -133,17 +133,18 @@ post_parse_hook (GOptionContext  *context,
                  gpointer         data,
                  GError         **error)
 {
-  gdict_is_initialized = TRUE;
+  if (gdict_is_initialized)
+    return TRUE;
 
   return TRUE;
 }
 
 /**
- * gdict_get_option_group:
+ * gdict_get_option_group: (skip)
  *
  * FIXME
  *
- * Return value: FIXME
+ * Return value: (transfer full): FIXME
  *
  * Since: 0.12
  */
@@ -288,7 +289,7 @@ get_toplevel_window (GtkWidget *widget)
  * gdict_show_error_dialog:
  * @widget: the widget that emits the error
  * @title: the primary error message
- * @message: the secondary error message or %NULL
+ * @message: (nullable): the secondary error message or %NULL
  *
  * Creates and shows an error dialog bound to @widget.
  *
@@ -329,4 +330,25 @@ _gdict_show_gerror_dialog (GtkWidget   *widget,
   show_error_dialog (get_toplevel_window (widget), title, error->message);
       
   g_error_free (error);
+}
+
+/**
+ * gdict_init:
+ * @argc: FIXME
+ * @argv: FIXME
+ *
+ * FIXME
+ *
+ * Since: 0.12
+ */
+void
+gdict_init (gint    *argc,
+            gchar ***argv)
+{
+  if (gdict_is_initialized)
+    return;
+
+  gdict_debug_init (argc, argv);
+
+  gdict_is_initialized = TRUE;
 }

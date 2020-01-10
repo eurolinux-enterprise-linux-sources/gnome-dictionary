@@ -36,6 +36,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 
 #include <glib/gi18n-lib.h>
 
@@ -69,6 +70,7 @@ struct _GdictSourcePrivate
   
   gchar *name;
   gchar *description;
+  gboolean editable;
   
   gchar *database;
   gchar *strategy;
@@ -85,6 +87,7 @@ enum
   PROP_FILENAME,
   PROP_NAME,
   PROP_DESCRIPTION,
+  PROP_EDITABLE,
   PROP_DATABASE,
   PROP_STRATEGY,
   PROP_TRANSPORT,
@@ -169,6 +172,9 @@ gdict_source_get_property (GObject    *object,
     case PROP_DESCRIPTION:
       g_value_set_string (value, priv->description);
       break;
+    case PROP_EDITABLE:
+      g_value_set_boolean (value, priv->editable);
+      break;
     case PROP_DATABASE:
       g_value_set_string (value, priv->database);
       break;
@@ -228,8 +234,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_FILENAME,
   				   g_param_spec_string ("filename",
-  				   			_("Filename"),
-  				   			_("The filename used by this dictionary source"),
+                                                        "Filename",
+                                                        "The filename used by this dictionary source",
   				   			NULL,
   				   			G_PARAM_READABLE));
   /**
@@ -242,8 +248,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_NAME,
   				   g_param_spec_string ("name",
-  				   			_("Name"),
-  				   			_("The display name of this dictionary source"),
+                                                        "Name",
+                                                        "The display name of this dictionary source",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -256,10 +262,24 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_DESCRIPTION,
   				   g_param_spec_string ("description",
-  				   			_("Description"),
-  				   			_("The description of this dictionary source"),
+                                                        "Description",
+                                                        "The description of this dictionary source",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
+  /**
+   * GdictSource:editable
+   *
+   * Whether the dictionary source is editable or not.
+   *
+   * Since: 1.0
+   */
+  g_object_class_install_property (gobject_class,
+  				   PROP_EDITABLE,
+  				   g_param_spec_boolean ("editable",
+                                                         "Editable",
+                                                         "Whether the dictionary source is editable or not",
+  				   			 TRUE,
+  				   			 (G_PARAM_STATIC_STRINGS | G_PARAM_READABLE)));
   /**
    * GdictSource:database
    *
@@ -270,8 +290,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_DATABASE,
   				   g_param_spec_string ("database",
-  				   			_("Database"),
-  				   			_("The default database of this dictionary source"),
+                                                        "Database",
+                                                        "The default database of this dictionary source",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -284,8 +304,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_STRATEGY,
   				   g_param_spec_string ("strategy",
-  				   			_("Strategy"),
-  				   			_("The default strategy of this dictionary source"),
+                                                        "Strategy",
+                                                        "The default strategy of this dictionary source",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -298,8 +318,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_TRANSPORT,
   				   g_param_spec_enum ("transport",
-  				   		      _("Transport"),
-  				   		      _("The transport mechanism used by this dictionary source"),
+                                                      "Transport",
+                                                      "The transport mechanism used by this dictionary source",
   				   		      GDICT_TYPE_SOURCE_TRANSPORT,
   				   		      GDICT_SOURCE_TRANSPORT_INVALID,
   				   		      (G_PARAM_READABLE | G_PARAM_WRITABLE)));
@@ -313,8 +333,8 @@ gdict_source_class_init (GdictSourceClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_CONTEXT,
   				   g_param_spec_object ("context",
-  				   			_("Context"),
-  				   			_("The GdictContext bound to this source"),
+                                                        "Context",
+                                                        "The GdictContext bound to this source",
   				   			GDICT_TYPE_CONTEXT,
   				   			G_PARAM_READABLE));
   
@@ -334,6 +354,7 @@ gdict_source_init (GdictSource *source)
   
   priv->name = NULL;
   priv->description = NULL;
+  priv->editable = TRUE;
   priv->database = NULL;
   priv->strategy = NULL;
   priv->transport = GDICT_SOURCE_TRANSPORT_INVALID;
@@ -607,6 +628,7 @@ gdict_source_load_from_file (GdictSource  *source,
 			     const gchar  *filename,
 			     GError      **error)
 {
+  struct stat stat_buf;
   GdictSourcePrivate *priv;
   GError *read_error;
   GError *parse_error;
@@ -643,6 +665,12 @@ gdict_source_load_from_file (GdictSource  *source,
   g_assert (priv->context != NULL);
   
   priv->filename = g_strdup (filename);
+
+  if (lstat (filename, &stat_buf) < 0)
+    {
+      return FALSE;
+    }
+  priv->editable = (stat_buf.st_mode & S_IWUSR) ? TRUE : FALSE;
   
   return TRUE;
 }
@@ -712,7 +740,8 @@ gdict_source_load_from_data (GdictSource  *source,
 /**
  * gdict_source_to_data:
  * @source: a #GdictSource
- * @length: return loaction for the length of the string, or %NULL
+ * @length: (out) (optional): return loaction for the length
+ *     of the string, or %NULL
  * @error: return location for a #GError or %NULL
  *
  * Outputs a dictionary source as a string.
@@ -817,7 +846,7 @@ gdict_source_get_name (GdictSource *source)
 /**
  * gdict_source_set_description:
  * @source: a #GdictSource
- * @description: a UTF-8 encoded description or %NULL
+ * @description: (nullable): a UTF-8 encoded description or %NULL
  *
  * Sets the description of @source.  If @description is %NULL, unsets the
  * currently set description.
@@ -877,9 +906,27 @@ gdict_source_get_description (GdictSource *source)
 }
 
 /**
+ * gdict_source_is_editable:
+ * @source: a #GdictSource
+ *
+ * Retrieves the is-editable property of @source.
+ *
+ * Return value: %TRUE if @source is editable.
+ *
+ * Since: 1.0
+ */
+gboolean
+gdict_source_is_editable (GdictSource *source)
+{
+  g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
+
+  return source->priv->editable;
+}
+
+/**
  * gdict_source_set_database:
  * @source: a #GdictSource
- * @database: a UTF-8 encoded database name or %NULL
+ * @database: (nullable): a UTF-8 encoded database name or %NULL
  *
  * Sets the default database of @source.  If @database is %NULL, unsets the
  * currently set database.
@@ -941,7 +988,7 @@ gdict_source_get_database (GdictSource *source)
 /**
  * gdict_source_set_strategy:
  * @source: a #GdictSource
- * @strategy: a UTF-8 encoded strategy or %NULL
+ * @strategy: (nullable): a UTF-8 encoded strategy or %NULL
  *
  * Sets the description of @source.  If @strategy is %NULL, unsets the
  * currently set strategy.
@@ -1080,7 +1127,7 @@ gdict_source_set_transportv (GdictSource          *source,
  * @transport: a valid transport
  * @first_transport_property: property for the context bound to
  *   the transport, or %NULL
- * @Varargs: property value for first property name, then additionary
+ * @...: property value for first property name, then additionary
  *   properties, ending with %NULL
  *
  * Sets @transport as the choosen transport for @source.  The @transport
@@ -1149,8 +1196,8 @@ gdict_source_get_transport (GdictSource *source)
  *
  * Gets the #GdictContext bound to @source.
  *
- * Return value: a #GdictContext for @source.  Use g_object_unref()
- *   when you don't need it anymore.
+ * Return value: (transfer full): a #GdictContext for @source.
+ *   Use g_object_unref() when you don't need it anymore.
  *
  * Since: 1.0
  */
@@ -1176,8 +1223,7 @@ gdict_source_get_context (GdictSource *source)
  * referenced copy of the context held by @source; if you want a different
  * instance, use gdict_source_get_context().
  *
- * Return value: a referenced #GdictContext.  Use g_object_unref() when
- *   finished using it.
+ * Return value: (transfer full): a referenced #GdictContext.
  *
  * Since: 1.0
  */

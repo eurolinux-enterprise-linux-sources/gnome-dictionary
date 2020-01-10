@@ -279,8 +279,8 @@ gdict_client_context_class_init (GdictClientContextClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_CLIENT_NAME,
   				   g_param_spec_string ("client-name",
-  				   			_("Client Name"),
-  				   			_("The name of the client of the context object"),
+                                                        "Client Name",
+                                                        "The name of the client of the context object",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -293,8 +293,8 @@ gdict_client_context_class_init (GdictClientContextClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_HOSTNAME,
   				   g_param_spec_string ("hostname",
-  				   			_("Hostname"),
-  				   			_("The hostname of the dictionary server to connect to"),
+                                                        "Hostname",
+                                                        "The hostname of the dictionary server to connect to",
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -307,8 +307,8 @@ gdict_client_context_class_init (GdictClientContextClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_PORT,
   				   g_param_spec_uint ("port",
-  				   		      _("Port"),
-  				   		      _("The port of the dictionary server to connect to"),
+                                                      "Port",
+                                                      "The port of the dictionary server to connect to",
   				   		      0,
   				   		      65535,
   				   		      GDICT_DEFAULT_PORT,
@@ -323,8 +323,8 @@ gdict_client_context_class_init (GdictClientContextClass *klass)
   g_object_class_install_property (gobject_class,
   				   PROP_STATUS,
   				   g_param_spec_enum ("status",
-  				   		      _("Status"),
-  				   		      _("The status code as returned by the dictionary server"),
+                                                      "Status",
+                                                      "The status code as returned by the dictionary server",
   				   		      GDICT_TYPE_STATUS_CODE,
   				   		      GDICT_STATUS_INVALID,
   				   		      G_PARAM_READABLE));
@@ -502,8 +502,8 @@ gdict_client_context_finalize (GObject *object)
 
 /**
  * gdict_client_context_new:
- * @hostname: the hostname of a dictionary server, or %NULL for the
- *    default server
+ * @hostname: (nullable): the hostname of a dictionary server,
+ *    or %NULL for the default server
  * @port: port to be used when connecting to the dictionary server,
  *    or -1 for the default port
  *
@@ -511,8 +511,7 @@ gdict_client_context_finalize (GObject *object)
  * object to connect and query the dictionary server using the Dictionary
  * Protocol as defined by RFC 2229.
  *
- * Return value: the newly created #GdictClientContext object.  You should
- *   free it using g_object_unref().
+ * Return value: (transfer full): the newly created #GdictClientContext object.
  */
 GdictContext *
 gdict_client_context_new (const gchar *hostname,
@@ -528,7 +527,7 @@ gdict_client_context_new (const gchar *hostname,
 /**
  * gdict_client_context_set_hostname:
  * @context: a #GdictClientContext
- * @hostname: the hostname of a Dictionary server, or %NULL
+ * @hostname: (nullable): the hostname of a Dictionary server, or %NULL
  *
  * Sets @hostname as the hostname of the dictionary server to be used.
  * If @hostname is %NULL, the default dictionary server will be used.
@@ -609,7 +608,7 @@ gdict_client_context_get_port (GdictClientContext *context)
 /**
  * gdict_client_context_set_client:
  * @context: a #GdictClientContext
- * @client: the client name to use, or %NULL
+ * @client: (nullable): the client name to use, or %NULL
  *
  * Sets @client as the client name to be used when advertising ourselves when
  * a connection the the dictionary server has been established.
@@ -1348,7 +1347,14 @@ gdict_client_context_parse_line (GdictClientContext *context,
        * we issue them ourselves
        */
       if ((last_cmd != CMD_CLIENT) && (last_cmd != CMD_QUIT))
-        g_signal_emit_by_name (context, "lookup-end");
+        {
+          if (last_cmd == CMD_SHOW_DB)
+            g_signal_emit_by_name (context, "database-lookup-end");
+          else if (last_cmd == CMD_DEFINE)
+            g_signal_emit_by_name (context, "definition-lookup-end");
+          else
+            g_signal_emit_by_name (context, "lookup-end");
+        }
       
       /* pop the next command from the queue */
       new_command = gdict_client_context_pop_command (context);
@@ -1394,8 +1400,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
             p = g_utf8_next_char (p);
           
           GDICT_NOTE (DICT, "server replied: %d databases found", atoi (p));
-          
-          g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
@@ -1446,8 +1450,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
             p = g_utf8_next_char (p);
           
           GDICT_NOTE (DICT, "server replied: %d strategies found", atoi (p));
-          
-          g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
@@ -1501,8 +1503,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
           
           priv->command->data = def;
           priv->command->data_destroy = (GDestroyNotify) gdict_definition_unref;
-
-          g_signal_emit_by_name (context, "lookup-start");
         }
       else if (priv->status_code == GDICT_STATUS_WORD_DB_NAME)
         {
@@ -1610,8 +1610,6 @@ gdict_client_context_parse_line (GdictClientContext *context,
             p = g_utf8_next_char (p);
           
           GDICT_NOTE (DICT, "server replied: %d matches found", atoi (p));
-
-          g_signal_emit_by_name (context, "lookup-start");
         }
       else if (0 == strcmp (buffer, "."))
         priv->command->state = S_FINISH;
@@ -2044,6 +2042,8 @@ gdict_client_context_get_databases (GdictContext  *context,
   g_return_val_if_fail (GDICT_IS_CLIENT_CONTEXT (context), FALSE);
   
   client_ctx = GDICT_CLIENT_CONTEXT (context);
+
+  g_signal_emit_by_name (context, "database-lookup-start");
   
   if (!gdict_client_context_is_connected (client_ctx))
     {
@@ -2052,6 +2052,8 @@ gdict_client_context_get_databases (GdictContext  *context,
       gdict_client_context_connect (client_ctx, &connect_error);
       if (connect_error)
         {
+          g_signal_emit_by_name (context, "lookup-end");
+
           g_propagate_error (error, connect_error);
           
           return FALSE;
@@ -2073,6 +2075,8 @@ gdict_client_context_get_strategies (GdictContext  *context,
   g_return_val_if_fail (GDICT_IS_CLIENT_CONTEXT (context), FALSE);
   
   client_ctx = GDICT_CLIENT_CONTEXT (context);
+
+  g_signal_emit_by_name (context, "lookup-start");
   
   if (!gdict_client_context_is_connected (client_ctx))
     {
@@ -2081,6 +2085,8 @@ gdict_client_context_get_strategies (GdictContext  *context,
       gdict_client_context_connect (client_ctx, &connect_error);
       if (connect_error)
         {
+          g_signal_emit_by_name (context, "lookup-end");
+
           g_propagate_error (error, connect_error);
           
           return FALSE;
@@ -2104,6 +2110,8 @@ gdict_client_context_define_word (GdictContext  *context,
   g_return_val_if_fail (GDICT_IS_CLIENT_CONTEXT (context), FALSE);
 
   client_ctx = GDICT_CLIENT_CONTEXT (context);
+
+  g_signal_emit_by_name (context, "definition-lookup-start");
   
   if (!gdict_client_context_is_connected (client_ctx))
     {
@@ -2112,6 +2120,8 @@ gdict_client_context_define_word (GdictContext  *context,
       gdict_client_context_connect (client_ctx, &connect_error);
       if (connect_error)
         {
+          g_signal_emit_by_name (context, "definition-lookup-end");
+
           g_propagate_error (error, connect_error);
           
           return FALSE;
@@ -2138,6 +2148,8 @@ gdict_client_context_match_word (GdictContext  *context,
   g_return_val_if_fail (GDICT_IS_CLIENT_CONTEXT (context), FALSE);
 
   client_ctx = GDICT_CLIENT_CONTEXT (context);
+
+  g_signal_emit_by_name (context, "lookup-start");
   
   if (!gdict_client_context_is_connected (client_ctx))
     {
@@ -2146,6 +2158,8 @@ gdict_client_context_match_word (GdictContext  *context,
       gdict_client_context_connect (client_ctx, &connect_error);
       if (connect_error)
         {
+          g_signal_emit_by_name (context, "lookup-end");
+
           g_propagate_error (error, connect_error);
           
           return FALSE;

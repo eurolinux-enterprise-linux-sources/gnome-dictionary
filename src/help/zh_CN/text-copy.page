@@ -54,7 +54,9 @@
       <p>选择<guiseq><gui style="menu">编辑</gui><gui stype="menuitem">复制</gui></guiseq>。</p>
     </item>
     <item>
-      <p>若要把文本粘贴到另一个应用程序中，可以通过使用<keyseq><key>Ctrl</key><key>P</key></keyseq>键盘快捷键或菜单来完成。</p>
+      <p>Paste the text into another application. This can usually be done
+      using the <keyseq><key>Ctrl</key><key>V</key></keyseq> keyboard shortcut
+      or through one of the menus.</p>
     </item>
   </steps>
 

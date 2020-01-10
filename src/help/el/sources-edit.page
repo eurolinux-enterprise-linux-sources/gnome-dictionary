@@ -20,6 +20,12 @@
 
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2006-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name> Νίκος Χαρωνιτάκης</mal:name>
       <mal:email>team@gnome.gr</mal:email>
       <mal:years>2006</mal:years>
@@ -43,12 +49,12 @@
   <p>Μπορείτε να προσαρμόσετε μια <link xref="sources">πηγή λεξικού</link> για να ενημερώσετε λεπτομέρειες όπως την περιγραφή του ή την απομακρυσμένη διεύθυνση.</p>
 
   <steps>
-    <title>Για επεξεργασία πηγής λεξικού:</title>
+    <title>Για να επεξεργαστείτε μια πηγή λεξικού:</title>
     <item>
       <p>Επιλέξτε <guiseq><gui style="menu">Λεξικό</gui> <gui style="menuitem">Προτιμήσεις</gui> <gui style="tab">Πηγή</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Διπλοπατήστε στην πηγή λεξικού που θέλετε να επεξεργαστείτε.</p>
+      <p>Διπλό κλικ στην πηγή λεξικού που θέλετε να επεξεργαστείτε.</p>
     </item>
     <item>
       <p>Μπορείτε να επεξεργαστείτε τα παρακάτω πεδία:</p>
@@ -60,7 +66,7 @@
           <p><gui>Μεταφορά</gui> είναι ο τύπος του εξυπηρετητή.</p>
         </item>
         <item>
-          <p><gui>Οικοδεσπότης</gui> είναι η τοποθεσία της πηγής λεξικού.</p>
+          <p><gui>Κεντρικός υπολογιστής</gui> είναι η τοποθεσία της πηγής λεξικού.</p>
         </item>
         <item>
           <!-- TODO: explain that the user should not need to set it, maybe

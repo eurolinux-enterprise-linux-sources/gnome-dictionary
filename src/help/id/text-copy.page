@@ -48,7 +48,9 @@
       <p>Pilih <guiseq><gui style="menu">Sunting</gui> <gui style="menuitem">Salin</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Tempelkan teks ke dalam aplikasi lain. Ini biasanya dapat dilakukan memakai pintasan papan tik<keyseq><key>Ctrl</key><key>P</key></keyseq> atau melalui satu dari menu.</p>
+      <p>Paste the text into another application. This can usually be done
+      using the <keyseq><key>Ctrl</key><key>V</key></keyseq> keyboard shortcut
+      or through one of the menus.</p>
     </item>
   </steps>
 

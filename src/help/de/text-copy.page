@@ -35,9 +35,15 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
-      <mal:name>Chrsitian Kirbach</mal:name>
+      <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
       <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2015</mal:years>
     </mal:credit>
   </info>
 
@@ -54,7 +60,7 @@
       <p>Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui> <gui style="menuitem">Kopieren</gui></guiseq> aus.</p>
     </item>
     <item>
-      <p>Fügen Sie den Text in eine andere Anwendung ein. Dies können Sie normalerweise durchführen, indem Sie die Tastenkombination <keyseq><key>Strg</key><key>P</key></keyseq> drücken oder durch eines der Menüs.</p>
+      <p>Fügen Sie den Text in eine andere Anwendung ein. Dies können Sie normalerweise durchführen, indem Sie die Tastenkombination <keyseq><key>Strg</key><key>V</key></keyseq> drücken oder durch eines der Menüs.</p>
     </item>
   </steps>
 

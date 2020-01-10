@@ -36,6 +36,12 @@
       <mal:email>mickael.albertus@gmail.com</mal:email>
       <mal:years>2012-2013</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonor Palazzo</mal:name>
+      <mal:email>leonor.palazzo@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
   <title>Définition d'une source de dictionnaires par défaut</title>

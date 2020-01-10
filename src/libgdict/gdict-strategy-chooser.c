@@ -44,9 +44,6 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
-#define GDICT_STRATEGY_CHOOSER_GET_PRIVATE(obj) \
-(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_STRATEGY_CHOOSER, GdictStrategyChooserPrivate))
-
 struct _GdictStrategyChooserPrivate
 {
   GtkListStore *store;
@@ -105,10 +102,7 @@ enum
 
 static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GdictStrategyChooser,
-               gdict_strategy_chooser,
-               GTK_TYPE_VBOX);
-
+G_DEFINE_TYPE_WITH_PRIVATE (GdictStrategyChooser, gdict_strategy_chooser, GTK_TYPE_BOX)
 
 static void
 set_gdict_context (GdictStrategyChooser *chooser,
@@ -316,11 +310,8 @@ gdict_strategy_chooser_constructor (GType                  type,
   chooser = GDICT_STRATEGY_CHOOSER (object);
   priv = chooser->priv;
 
-  gtk_widget_push_composite_child ();
-
   sw = gtk_scrolled_window_new (NULL, NULL);
   gtk_widget_set_hexpand(sw, TRUE);
-  gtk_widget_set_composite_name (sw, "gdict-strategy-chooser-scrolled-window");
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
 		  		  GTK_POLICY_AUTOMATIC,
 				  GTK_POLICY_AUTOMATIC);
@@ -336,7 +327,6 @@ gdict_strategy_chooser_constructor (GType                  type,
                                                      "weight", STRAT_COLUMN_CURRENT,
 						     NULL);
   priv->treeview = gtk_tree_view_new ();
-  gtk_widget_set_composite_name (priv->treeview, "gdict-strategy-chooser-treeview");
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		  	   GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
@@ -350,8 +340,7 @@ gdict_strategy_chooser_constructor (GType                  type,
 
   priv->refresh_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->refresh_button),
-		        gtk_image_new_from_stock (GTK_STOCK_REFRESH,
-						  GTK_ICON_SIZE_SMALL_TOOLBAR));
+		        gtk_image_new_from_icon_name ("view-refresh-symbolic", GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (priv->refresh_button, "clicked",
 		    G_CALLBACK (refresh_button_clicked_cb),
 		    chooser);
@@ -362,8 +351,7 @@ gdict_strategy_chooser_constructor (GType                  type,
 
   priv->clear_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->clear_button),
-		        gtk_image_new_from_stock (GTK_STOCK_CLEAR,
-						  GTK_ICON_SIZE_SMALL_TOOLBAR));
+		        gtk_image_new_from_icon_name ("edit-clear-symbolic", GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (priv->clear_button, "clicked",
 		    G_CALLBACK (clear_button_clicked_cb),
 		    chooser);
@@ -374,8 +362,6 @@ gdict_strategy_chooser_constructor (GType                  type,
 
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
-  
-  gtk_widget_pop_composite_child ();
 
   return object;
 }
@@ -424,8 +410,6 @@ gdict_strategy_chooser_class_init (GdictStrategyChooserClass *klass)
 		  G_TYPE_NONE, 2,
 		  G_TYPE_STRING,
 		  G_TYPE_STRING);
-  
-  g_type_class_add_private (gobject_class, sizeof (GdictStrategyChooserPrivate));
 }
 
 static void
@@ -433,7 +417,9 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
 {
   GdictStrategyChooserPrivate *priv;
 
-  chooser->priv = priv = GDICT_STRATEGY_CHOOSER_GET_PRIVATE (chooser);
+  chooser->priv = priv = gdict_strategy_chooser_get_instance_private (chooser);
+
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
 
   priv->results = -1;
   priv->context = NULL;
@@ -494,7 +480,7 @@ gdict_strategy_chooser_new_with_context (GdictContext *context)
  *
  * Retrieves the #GdictContext used by @chooser.
  *
- * Return value: a #GdictContext
+ * Return value: (transfer none): a #GdictContext
  *
  * Since:
  */
@@ -509,7 +495,7 @@ gdict_strategy_chooser_get_context (GdictStrategyChooser *chooser)
 /**
  * gdict_strategy_chooser_set_context:
  * @chooser: a #GdictStrategyChooser
- * @context: a #GdictContext, or %NULL to unset the context
+ * @context: (nullable): a #GdictContext, or %NULL to unset the context
  *
  * Sets the #GdictContext to be used by @chooser to retrieve the
  * list of matching strategies.
@@ -535,8 +521,9 @@ gdict_strategy_chooser_set_context (GdictStrategyChooser *chooser,
  *
  * Retrieves the list of matching strategies available.
  *
- * Return value: a string vector containing the names of the matching
- *   strategies. Use g_strfreev() to deallocate the memory when done
+ * Return value: (transfer full): a string vector containing the names
+ *   of the matching strategies. Use g_strfreev() to deallocate the memory
+ *   when done
  *
  * Since:0.9
  */
@@ -657,7 +644,10 @@ lookup_start_cb (GdictContext *context,
   GdictStrategyChooserPrivate *priv = chooser->priv;
 
   if (!priv->busy_cursor)
-    priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (chooser));
+      priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
+    }
 
   if (gtk_widget_get_window (GTK_WIDGET (chooser)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (chooser)), priv->busy_cursor);
@@ -1055,12 +1045,12 @@ gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
 /**
  * gdict_strategy_chooser_add_button:
  * @chooser: a #GdictStrategyChooser
- * @button_text: text of the button (can be a stock id)
+ * @button_text: text of the button
  *
  * Creates a new button and packs it into the #GdictStrategyChooser
  * "action area".
  *
- * Return value: the packed #GtkButton
+ * Return value: (transfer none): the packed #GtkButton
  *
  * Since: 0.10
  */
@@ -1076,7 +1066,7 @@ gdict_strategy_chooser_add_button (GdictStrategyChooser *chooser,
 
   priv = chooser->priv;
 
-  button = gtk_button_new_from_stock (button_text);
+  button = gtk_button_new_with_label (button_text);
 
   gtk_widget_set_can_default (button, TRUE);
 

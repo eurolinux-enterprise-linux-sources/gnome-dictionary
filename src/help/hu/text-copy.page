@@ -42,7 +42,7 @@
       <p>Válassza a <guiseq><gui style="menu">Szerkesztés</gui> <gui style="menuitem">Másolás</gui></guiseq> menüpontot.</p>
     </item>
     <item>
-      <p>Illessze be a szöveget egy másik alkalmazásba. Ezt általában a <keyseq><key>Ctrl</key><key>P</key></keyseq> gyorsbillentyű használatával vagy a menük egyikével teheti meg.</p>
+      <p>Illessze be a szöveget egy másik alkalmazásba. Ezt általában a <keyseq><key>Ctrl</key><key>V</key></keyseq> gyorsbillentyű használatával vagy a menük egyikével teheti meg.</p>
     </item>
   </steps>
 

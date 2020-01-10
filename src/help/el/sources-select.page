@@ -22,6 +22,12 @@
 
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2006-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name> Νίκος Χαρωνιτάκης</mal:name>
       <mal:email>team@gnome.gr</mal:email>
       <mal:years>2006</mal:years>
@@ -50,7 +56,7 @@
       <p>Επιλέξτε <guiseq><gui style="menu">Προβολή</gui> <gui style="menuitem">Πηγές λεξικού</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Διπλοπατήστε στην πηγή λεξικού που θέλετε να χρησιμοποιήσετε.</p>
+      <p>Διπλό κλικ στην πηγή λεξικού που θέλετε να χρησιμοποιήσετε.</p>
     </item>
   </steps>
 

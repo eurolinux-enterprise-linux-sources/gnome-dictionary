@@ -1,22 +1,22 @@
-%global _changelog_trimtime %(date +%s -d "1 year ago")
-
 Summary: A dictionary application for GNOME
 Name:    gnome-dictionary
-Version: 3.14.2
-Release: 2%{?dist}
+Version: 3.20.0
+Release: 1%{?dist}
 License: GPLv3+ and LGPLv2+ and GFDL
 Group:   Applications/Text
 #VCS: git:git://git.gnome.org/gnome-dictionary
-Source:  http://download.gnome.org/sources/gnome-dictionary/3.14/gnome-dictionary-%{version}.tar.xz
-URL:     http://www.gnome.org/
+Source:  https://download.gnome.org/sources/%{name}/3.20/%{name}-%{version}.tar.xz
+URL:     https://wiki.gnome.org/Apps/Dictionary
 
-Patch0: translations.patch
-
-BuildRequires: gtk3-devel
+BuildRequires: pkgconfig(gobject-introspection-1.0)
+BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: intltool
 BuildRequires: itstool
 BuildRequires: desktop-file-utils
 BuildRequires: docbook-dtds
+BuildRequires: /usr/bin/appstream-util
+
+Requires: %{name}-libs%{?_isa} = %{version}-%{release}
 
 Obsoletes: gnome-utils <= 1:3.3
 Obsoletes: gnome-utils-libs <= 1:3.3
@@ -24,6 +24,13 @@ Obsoletes: gnome-utils-devel <= 1:3.3
 
 %description
 gnome-dictionary lets you look up words in dictionary sources.
+
+%package libs
+Summary: Library for dictionary support
+License: LGPLv2+
+
+%description libs
+This package contains the libgdict library.
 
 %package devel
 Summary: Development files for using libgdict
@@ -36,22 +43,26 @@ are needed to build applications using the libgdict library.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure
 make %{_smp_mflags}
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT
+%make_install
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
-desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/*.desktop
 %find_lang %{name} --with-gnome
 
-%post -p /sbin/ldconfig
+
+%check
+appstream-util validate-relax --nonet $RPM_BUILD_ROOT%{_datadir}/appdata/*.appdata.xml
+desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/*.desktop
+
+
+%post libs -p /sbin/ldconfig
+%postun libs -p /sbin/ldconfig
 
 %postun
-/sbin/ldconfig
 if [ $1 -eq 0 ]; then
   glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 fi
@@ -59,25 +70,35 @@ fi
 %posttrans
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 
-%files -f %{name}.lang
-%doc NEWS AUTHORS README COPYING COPYING.libs COPYING.docs
+%files
+%doc NEWS AUTHORS README
+%license COPYING COPYING.docs COPYING.libs
 %{_bindir}/gnome-dictionary
-%{_datadir}/applications/gnome-dictionary.desktop
-%{_datadir}/appdata/gnome-dictionary.appdata.xml
-%{_datadir}/gdict-1.0
+%{_datadir}/appdata/org.gnome.Dictionary.appdata.xml
+%{_datadir}/applications/org.gnome.Dictionary.desktop
+%{_datadir}/dbus-1/services/org.gnome.Dictionary.service
 %{_datadir}/glib-2.0/schemas/org.gnome.dictionary.gschema.xml
-%{_datadir}/gnome-dictionary
-%{_mandir}/man1/gnome-dictionary.1.gz
+%{_mandir}/man1/gnome-dictionary.1*
+
+%files libs -f %{name}.lang
+%license COPYING.libs
+%{_libdir}/girepository-1.0/Gdict-1.0.typelib
 %{_libdir}/libgdict-1.0.so.*
+%{_datadir}/gdict-1.0/
 
 %files devel
 %{_includedir}/gdict-1.0/
 %{_libdir}/libgdict-1.0.so
 %{_libdir}/pkgconfig/gdict-1.0.pc
+%{_datadir}/gir-1.0/Gdict-1.0.gir
 %{_datadir}/gtk-doc/html/gdict
 
 
 %changelog
+* Wed Feb 22 2017 Matthias Clasen <mclasen@redhat.com> - 3.20.0-1
+- Rebase to 3.20.0
+  Resolves: rhbz#1386890
+
 * Wed Jun 29 2016 Matthias Clasen <mclasen@redhat.com> - 3.14.2-2
 - Update translations
 - Resolves: #1304290

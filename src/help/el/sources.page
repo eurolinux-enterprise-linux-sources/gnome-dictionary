@@ -20,8 +20,14 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc>Διαχείριση ποικίλων πηγών λεξικού.</desc>
+    <desc>Διαχειρστείτε ποικίλες πηγές λεξικού.</desc>
 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2006-2013</mal:years>
+    </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name> Νίκος Χαρωνιτάκης</mal:name>

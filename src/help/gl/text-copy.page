@@ -42,7 +42,9 @@
       <p>Seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Copiar</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Pegue o texto noutro aplicativo. Isto normalmente faise usando o atallo de teclado <keyseq><key>Ctrl</key><key>P</key></keyseq> ou mediante un dos menús.</p>
+      <p>Paste the text into another application. This can usually be done
+      using the <keyseq><key>Ctrl</key><key>V</key></keyseq> keyboard shortcut
+      or through one of the menus.</p>
     </item>
   </steps>
 

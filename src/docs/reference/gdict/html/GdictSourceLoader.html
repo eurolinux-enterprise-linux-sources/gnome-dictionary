@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GNOME Dictionary Library Reference Manual: GdictSourceLoader</title>
+<title>GdictSourceLoader: GNOME Dictionary Library Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="GNOME Dictionary Library Reference Manual">
 <link rel="up" href="sources.html" title="Dictionary Source">
 <link rel="prev" href="GdictSource.html" title="GdictSource">
 <link rel="next" href="gdict-utils.html" title="Gdict Utilities">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.24 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -67,7 +67,7 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <span class="returnvalue">GSList</span> *
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-paths" title="gdict_source_loader_get_paths ()">gdict_source_loader_get_paths</a> <span class="c_punctuation">()</span>
@@ -75,14 +75,14 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gchar</span> **
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
 </td>
 <td class="function_name">
 <a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-names" title="gdict_source_loader_get_names ()">gdict_source_loader_get_names</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
-<td class="function_type">const <span class="returnvalue">GSList</span> *
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-sources" title="gdict_source_loader_get_sources ()">gdict_source_loader_get_sources</a> <span class="c_punctuation">()</span>
@@ -98,7 +98,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GdictSourceLoader.html#gdict-source-loader-remove-source" title="gdict_source_loader_remove_source ()">gdict_source_loader_remove_source</a> <span class="c_punctuation">()</span>
@@ -106,7 +106,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GdictSourceLoader.html#gdict-source-loader-has-source" title="gdict_source_loader_has_source ()">gdict_source_loader_has_source</a> <span class="c_punctuation">()</span>
@@ -125,12 +125,12 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><span class="type">gpointer</span></td>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
 <td class="property_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader--paths" title="The “paths” property">paths</a></td>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gpointer</span></td>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
 <td class="property_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader--sources" title="The “sources” property">sources</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -148,7 +148,7 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader-source-loaded" title="The “source-loaded” signal">source-loaded</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -173,7 +173,7 @@
 </div>
 <div class="refsect1">
 <a name="GdictSourceLoader.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
     <span class="lineart">╰──</span> GdictSourceLoader
 </pre>
 </div>
@@ -194,9 +194,8 @@ more informations about the format of dictionary source files.</p>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.2.5"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object</p>
-<p></p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -220,14 +219,14 @@ gdict_source_loader_update (<em class="parameter"><code><a class="link" href="Gd
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-add-search-path"></a><h3>gdict_source_loader_add_search_path ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdict_source_loader_add_search_path (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
-                                     <em class="parameter"><code>const <span class="type">gchar</span> *path</code></em>);</pre>
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <p>Adds <em class="parameter"><code>path</code></em>
  to the search paths list of <em class="parameter"><code>loader</code></em>
 .</p>
@@ -253,12 +252,12 @@ gdict_source_loader_add_search_path (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-get-paths"></a><h3>gdict_source_loader_get_paths ()</h3>
-<pre class="programlisting">const <span class="returnvalue">GSList</span> *
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
 gdict_source_loader_get_paths (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>);</pre>
 <p>Gets the list of paths used by <em class="parameter"><code>loader</code></em>
  to search for dictionary source
@@ -280,18 +279,19 @@ files.</p>
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.5.6"></a><h4>Returns</h4>
-<p> a list containing the paths.  The returned list is owned
-by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object and should never be free or modified.</p>
-<p></p>
+<p> a list containing the paths.
+The returned list is owned by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object and should never
+be free or modified. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-get-names"></a><h3>gdict_source_loader_get_names ()</h3>
-<pre class="programlisting"><span class="returnvalue">gchar</span> **
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
 gdict_source_loader_get_names (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
-                               <em class="parameter"><code><span class="type">gsize</span> *length</code></em>);</pre>
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *length</code></em>);</pre>
 <p>Retrieves the list of dictionary source names available into the
 search paths of <em class="parameter"><code>loader</code></em>
 .</p>
@@ -311,24 +311,26 @@ search paths of <em class="parameter"><code>loader</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>length</p></td>
-<td class="parameter_description"><p>return location for the number of source names, or <code class="literal">NULL</code></p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p> return location for the number of
+source names, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.6.6"></a><h4>Returns</h4>
-<p> a newly allocated, <code class="literal">NULL</code> terminated array of strings.  You
-should free the returned string array with <code class="function">g_strfreev()</code></p>
-<p></p>
+<p> a newly allocated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated
+array of strings.  You should free the returned string array
+with <a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-get-sources"></a><h3>gdict_source_loader_get_sources ()</h3>
-<pre class="programlisting">const <span class="returnvalue">GSList</span> *
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
 gdict_source_loader_get_sources (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>);</pre>
 <p>Retrieves the list of dictionary sources available into the search
 paths of <em class="parameter"><code>loader</code></em>
@@ -350,19 +352,19 @@ paths of <em class="parameter"><code>loader</code></em>
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.7.6"></a><h4>Returns</h4>
-<p> a list of <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> objects.  The returned list
-is owned by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object, and should never be
-freed or modified.</p>
-<p></p>
+<p> a list of
+<a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> objects.  The returned list is owned by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a>
+object, and should never be freed or modified. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gdict.Source]</span></p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-get-source"></a><h3>gdict_source_loader_get_source ()</h3>
 <pre class="programlisting"><a class="link" href="GdictSource.html" title="GdictSource"><span class="returnvalue">GdictSource</span></a> *
 gdict_source_loader_get_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
 <p>Retrieves a dictionary source using <em class="parameter"><code>name</code></em>
 .  You can use the returned
 <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> object to create the right <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> for that
@@ -391,18 +393,17 @@ dictionary source.</p>
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.8.6"></a><h4>Returns</h4>
-<p> a referenced <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> object.  You should de-reference
-it using <code class="function">g_object_unref()</code> when you finished using it.</p>
-<p></p>
+<p> a referenced <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> object. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-remove-source"></a><h3>gdict_source_loader_remove_source ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdict_source_loader_remove_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
-                                   <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
 <p>Removes the dictionary source <em class="parameter"><code>name</code></em>
  from <em class="parameter"><code>loader</code></em>
 .  This function will
@@ -431,17 +432,16 @@ also remove the dictionary source definition file bound to it.</p>
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.9.6"></a><h4>Returns</h4>
-<p> <code class="literal">TRUE</code> if the dictionary source was successfully removed</p>
-<p></p>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the dictionary source was successfully removed</p>
 </div>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdict-source-loader-has-source"></a><h3>gdict_source_loader_has_source ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdict_source_loader_has_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *source_name</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source_name</code></em>);</pre>
 <p>Checks whether <em class="parameter"><code>loader</code></em>
  has a dictionary source with name <em class="parameter"><code>source_name</code></em>
 .</p>
@@ -469,10 +469,9 @@ gdict_source_loader_has_source (<em class="parameter"><code><a class="link" href
 </div>
 <div class="refsect3">
 <a name="id-1.3.4.5.9.10.6"></a><h4>Returns</h4>
-<p> <code class="literal">TRUE</code> if the dictionary source is known</p>
-<p></p>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the dictionary source is known</p>
 </div>
-<p class="since">Since 0.12</p>
+<p class="since">Since: 0.12</p>
 </div>
 </div>
 <div class="refsect1">
@@ -503,18 +502,18 @@ gdict_source_loader_has_source (<em class="parameter"><code><a class="link" href
 <a name="GdictSourceLoader.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GdictSourceLoader--paths"></a><h3>The <code class="literal">“paths”</code> property</h3>
-<pre class="programlisting">  “paths”                    <span class="type">gpointer</span></pre>
+<pre class="programlisting">  “paths”                    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
 <p>The search paths used by this object</p>
 <p>Flags: Read</p>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdictSourceLoader--sources"></a><h3>The <code class="literal">“sources”</code> property</h3>
-<pre class="programlisting">  “sources”                  <span class="type">gpointer</span></pre>
+<pre class="programlisting">  “sources”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
 <p>The <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> objects found by this object</p>
 <p>Flags: Read</p>
-<p class="since">Since 1.0</p>
+<p class="since">Since: 1.0</p>
 </div>
 </div>
 <div class="refsect1">
@@ -524,7 +523,7 @@ gdict_source_loader_has_source (<em class="parameter"><code><a class="link" href
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader,
                <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a>       *source,
-               <span class="type">gpointer</span>           user_data)</pre>
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
 <p>This signal is emitted when a new dictionary source has been added
 to the list.</p>
 <div class="refsect3">
@@ -554,13 +553,12 @@ to the list.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 1.0</p>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: 1.0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.24</div>
 </body>
 </html>

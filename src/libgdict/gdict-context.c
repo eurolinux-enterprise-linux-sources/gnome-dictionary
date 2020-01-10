@@ -137,6 +137,42 @@ gdict_context_class_init (gpointer g_iface)
                 G_TYPE_NONE, 1,
                 G_TYPE_POINTER);
   /**
+   * GdictContext::database-lookup-start
+   * @context: the object which received the signal
+   *
+   * This signal is emitted when a database look up operation has been issued
+   * using a #GdictContext.  Since every operation using a context is
+   * asynchronous, you can use this signal to know if the request has been
+   * issued or not.
+   *
+   * Since: 1.0
+   */
+  g_signal_new ("database-lookup-start",
+                iface_type,
+                G_SIGNAL_RUN_LAST,
+                G_STRUCT_OFFSET (GdictContextIface, database_lookup_start),
+                NULL, NULL,
+                gdict_marshal_VOID__VOID,
+                G_TYPE_NONE, 0);
+  /**
+   * GdictContext::database-lookup-end
+   * @context: the object which received the signal
+   *
+   * This signal is emitted when a database look up operation that has been
+   * issued using a #GdictContext has been completed.  Since every operation
+   * using a context is asynchronous, you can use this signal to know if the
+   * request has been completed or not.
+   *
+   * Since: 1.0
+   */
+  g_signal_new ("database-lookup-end",
+                iface_type,
+                G_SIGNAL_RUN_LAST,
+                G_STRUCT_OFFSET (GdictContextIface, database_lookup_end),
+                NULL, NULL,
+                gdict_marshal_VOID__VOID,
+                G_TYPE_NONE, 0);
+  /**
    * GdictContext::database-found
    * @context: the object which received the signal
    * @database: a #GdictDatabase
@@ -188,6 +224,42 @@ gdict_context_class_init (gpointer g_iface)
                 G_TYPE_NONE, 1,
                 GDICT_TYPE_MATCH);
   /**
+   * GdictContext::definition-lookup-start
+   * @context: the object which received the signal
+   *
+   * This signal is emitted when a definition look up operation has been
+   * issued using a #GdictContext.  Since every operation using a context
+   * is asynchronous, you can use this signal to know if the request has
+   * been issued or not.
+   *
+   * Since: 1.0
+   */
+  g_signal_new ("definition-lookup-start",
+                iface_type,
+                G_SIGNAL_RUN_LAST,
+                G_STRUCT_OFFSET (GdictContextIface, definition_lookup_start),
+                NULL, NULL,
+                gdict_marshal_VOID__VOID,
+                G_TYPE_NONE, 0);
+  /**
+   * GdictContext::definition-lookup-end
+   * @context: the object which received the signal
+   *
+   * This signal is emitted when a definition look up operation that has been
+   * issued using a #GdictContext has been completed.  Since every operation
+   * using a context is asynchronous, you can use this signal to know if the
+   * request has been completed or not.
+   *
+   * Since: 1.0
+   */
+  g_signal_new ("definition-lookup-end",
+                iface_type,
+                G_SIGNAL_RUN_LAST,
+                G_STRUCT_OFFSET (GdictContextIface, definition_lookup_end),
+                NULL, NULL,
+                gdict_marshal_VOID__VOID,
+                G_TYPE_NONE, 0);
+  /**
    * GdictContext::definition-found
    * @context: the object which received the signal
    * @definition: a #GdictDefinition
@@ -214,8 +286,8 @@ gdict_context_class_init (gpointer g_iface)
    */
   g_object_interface_install_property (g_iface,
   				       g_param_spec_boolean ("local-only",
-  				       			     _("Local Only"),
-  				       			     _("Whether the context uses only local dictionaries or not"),
+                                                             "Local Only",
+                                                             "Whether the context uses only local dictionaries or not",
   				       			     FALSE,
   				       			     (G_PARAM_READABLE | G_PARAM_WRITABLE)));
 }
@@ -330,9 +402,9 @@ gdict_context_lookup_strategies (GdictContext  *context,
 /**
  * gdict_context_match_word:
  * @context: a #GdictContext
- * @database: a database name to search into, or %NULL for the
+ * @database: (nullable): a database name to search into, or %NULL for the
  *    default database
- * @strategy: a strategy name to use for matching, or %NULL for
+ * @strategy: (nullable): a strategy name to use for matching, or %NULL for
  *    the default strategy
  * @word: the word to match
  * @error: return location for a #GError, or %NULL
@@ -374,7 +446,7 @@ gdict_context_match_word (GdictContext  *context,
 /**
  * gdict_context_define_word:
  * @context: a #GdictContext
- * @database: a database name to search into, or %NULL for the
+ * @database: (nullable): a database name to search into, or %NULL for the
  *    default database
  * @word: the word to search
  * @error: return location for a #GError, or %NULL

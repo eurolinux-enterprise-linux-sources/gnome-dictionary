@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 <book xmlns="http://www.devhelp.net/book" title="GNOME Dictionary Library Reference Manual" link="index.html" author="Emmanuele Bassi" name="gdict" version="2" language="c">
   <chapters>
     <sub name="Introduction" link="introduction.html"/>
@@ -34,6 +33,7 @@
     <sub name="Index of deprecated symbols" link="ix02.html"/>
     <sub name="Index of new symbols in 0.10" link="ix03.html"/>
     <sub name="Index of new symbols in 0.12" link="ix04.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
   </chapters>
   <functions>
     <keyword type="function" name="gdict_context_set_local_only ()" link="GdictContext.html#gdict-context-set-local-only" since="1.0"/>
@@ -84,7 +84,11 @@
     <keyword type="signal" name="The “connected” signal" link="GdictClientContext.html#GdictClientContext-connected"/>
     <keyword type="signal" name="The “disconnected” signal" link="GdictClientContext.html#GdictClientContext-disconnected"/>
     <keyword type="signal" name="The “database-found” signal" link="GdictClientContext.html#GdictContext-database-found"/>
+    <keyword type="signal" name="The “database-lookup-end” signal" link="GdictClientContext.html#GdictContext-database-lookup-end"/>
+    <keyword type="signal" name="The “database-lookup-start” signal" link="GdictClientContext.html#GdictContext-database-lookup-start"/>
     <keyword type="signal" name="The “definition-found” signal" link="GdictClientContext.html#GdictContext-definition-found"/>
+    <keyword type="signal" name="The “definition-lookup-end” signal" link="GdictClientContext.html#GdictContext-definition-lookup-end"/>
+    <keyword type="signal" name="The “definition-lookup-start” signal" link="GdictClientContext.html#GdictContext-definition-lookup-start"/>
     <keyword type="signal" name="The “error” signal" link="GdictClientContext.html#GdictContext-error"/>
     <keyword type="signal" name="The “lookup-end” signal" link="GdictClientContext.html#GdictContext-lookup-end"/>
     <keyword type="signal" name="The “lookup-start” signal" link="GdictClientContext.html#GdictContext-lookup-start"/>
@@ -114,6 +118,7 @@
     <keyword type="property" name="The “context” property" link="GdictSource.html#GdictSource--context"/>
     <keyword type="property" name="The “database” property" link="GdictSource.html#GdictSource--database"/>
     <keyword type="property" name="The “description” property" link="GdictSource.html#GdictSource--description"/>
+    <keyword type="property" name="The “editable” property" link="GdictSource.html#GdictSource--editable"/>
     <keyword type="property" name="The “filename” property" link="GdictSource.html#GdictSource--filename"/>
     <keyword type="property" name="The “name” property" link="GdictSource.html#GdictSource--name"/>
     <keyword type="property" name="The “strategy” property" link="GdictSource.html#GdictSource--strategy"/>
@@ -181,6 +186,7 @@
     <keyword type="signal" name="The “find-previous” signal" link="GdictDefbox.html#GdictDefbox-find-previous"/>
     <keyword type="signal" name="The “hide-find” signal" link="GdictDefbox.html#GdictDefbox-hide-find"/>
     <keyword type="signal" name="The “link-clicked” signal" link="GdictDefbox.html#GdictDefbox-link-clicked"/>
+    <keyword type="signal" name="The “selection-changed” signal" link="GdictDefbox.html#GdictDefbox-selection-changed"/>
     <keyword type="signal" name="The “show-find” signal" link="GdictDefbox.html#GdictDefbox-show-find"/>
     <keyword type="function" name="gdict_speller_new ()" link="GdictSpeller.html#gdict-speller-new" since=""/>
     <keyword type="function" name="gdict_speller_new_with_context ()" link="GdictSpeller.html#gdict-speller-new-with-context" since=""/>
@@ -257,5 +263,55 @@
     <keyword type="property" name="The “loader” property" link="GdictSourceChooser.html#GdictSourceChooser--loader"/>
     <keyword type="signal" name="The “selection-changed” signal" link="GdictSourceChooser.html#GdictSourceChooser-selection-changed"/>
     <keyword type="signal" name="The “source-activated” signal" link="GdictSourceChooser.html#GdictSourceChooser-source-activated"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_PARSE" link="GdictContext.html#GDICT-CONTEXT-ERROR-PARSE:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_NOT_IMPLEMENTED" link="GdictContext.html#GDICT-CONTEXT-ERROR-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_INVALID_DATABASE" link="GdictContext.html#GDICT-CONTEXT-ERROR-INVALID-DATABASE:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_INVALID_STRATEGY" link="GdictContext.html#GDICT-CONTEXT-ERROR-INVALID-STRATEGY:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_INVALID_COMMAND" link="GdictContext.html#GDICT-CONTEXT-ERROR-INVALID-COMMAND:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_NO_MATCH" link="GdictContext.html#GDICT-CONTEXT-ERROR-NO-MATCH:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_NO_DATABASES" link="GdictContext.html#GDICT-CONTEXT-ERROR-NO-DATABASES:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_ERROR_NO_STRATEGIES" link="GdictContext.html#GDICT-CONTEXT-ERROR-NO-STRATEGIES:CAPS"/>
+    <keyword type="constant" name="GDICT_CLIENT_CONTEXT_ERROR_SOCKET" link="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR-SOCKET:CAPS"/>
+    <keyword type="constant" name="GDICT_CLIENT_CONTEXT_ERROR_LOOKUP" link="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR-LOOKUP:CAPS"/>
+    <keyword type="constant" name="GDICT_CLIENT_CONTEXT_ERROR_NO_CONNECTION" link="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR-NO-CONNECTION:CAPS"/>
+    <keyword type="constant" name="GDICT_CLIENT_CONTEXT_ERROR_SERVER_DOWN" link="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR-SERVER-DOWN:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_ERROR_PARSE" link="GdictSource.html#GDICT-SOURCE-ERROR-PARSE:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_ERROR_INVALID_NAME" link="GdictSource.html#GDICT-SOURCE-ERROR-INVALID-NAME:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_ERROR_INVALID_TRANSPORT" link="GdictSource.html#GDICT-SOURCE-ERROR-INVALID-TRANSPORT:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_ERROR_INVALID_BAD_PARAMETER" link="GdictSource.html#GDICT-SOURCE-ERROR-INVALID-BAD-PARAMETER:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_TRANSPORT_DICTD" link="GdictSource.html#GDICT-SOURCE-TRANSPORT-DICTD:CAPS"/>
+    <keyword type="constant" name="GDICT_SOURCE_TRANSPORT_INVALID" link="GdictSource.html#GDICT-SOURCE-TRANSPORT-INVALID:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_PROP_FIRST" link="gdict-Gdict-Utilities.html#GDICT-CONTEXT-PROP-FIRST:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_PROP_LOCAL_ONLY" link="gdict-Gdict-Utilities.html#GDICT-CONTEXT-PROP-LOCAL-ONLY:CAPS"/>
+    <keyword type="constant" name="GDICT_CONTEXT_PROP_LAST" link="gdict-Gdict-Utilities.html#GDICT-CONTEXT-PROP-LAST:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_INVALID" link="gdict-Gdict-Utilities.html#GDICT-STATUS-INVALID:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_N_DATABASES_PRESENT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-N-DATABASES-PRESENT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_N_STRATEGIES_PRESENT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-N-STRATEGIES-PRESENT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_DATABASE_INFO" link="gdict-Gdict-Utilities.html#GDICT-STATUS-DATABASE-INFO:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_HELP_TEXT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-HELP-TEXT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_SERVER_INFO" link="gdict-Gdict-Utilities.html#GDICT-STATUS-SERVER-INFO:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_CHALLENGE" link="gdict-Gdict-Utilities.html#GDICT-STATUS-CHALLENGE:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_N_DEFINITIONS_RETRIEVED" link="gdict-Gdict-Utilities.html#GDICT-STATUS-N-DEFINITIONS-RETRIEVED:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_WORD_DB_NAME" link="gdict-Gdict-Utilities.html#GDICT-STATUS-WORD-DB-NAME:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_N_MATCHES_FOUND" link="gdict-Gdict-Utilities.html#GDICT-STATUS-N-MATCHES-FOUND:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_CONNECT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-CONNECT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_QUIT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-QUIT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_AUTH_OK" link="gdict-Gdict-Utilities.html#GDICT-STATUS-AUTH-OK:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_OK" link="gdict-Gdict-Utilities.html#GDICT-STATUS-OK:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_SEND_RESPONSE" link="gdict-Gdict-Utilities.html#GDICT-STATUS-SEND-RESPONSE:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_SERVER_DOWN" link="gdict-Gdict-Utilities.html#GDICT-STATUS-SERVER-DOWN:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_SHUTDOWN" link="gdict-Gdict-Utilities.html#GDICT-STATUS-SHUTDOWN:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_BAD_COMMAND" link="gdict-Gdict-Utilities.html#GDICT-STATUS-BAD-COMMAND:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_BAD_PARAMETERS" link="gdict-Gdict-Utilities.html#GDICT-STATUS-BAD-PARAMETERS:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_COMMAND_NOT_IMPLEMENTED" link="gdict-Gdict-Utilities.html#GDICT-STATUS-COMMAND-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_PARAMETER_NOT_IMPLEMENTED" link="gdict-Gdict-Utilities.html#GDICT-STATUS-PARAMETER-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_NO_ACCESS" link="gdict-Gdict-Utilities.html#GDICT-STATUS-NO-ACCESS:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_USE_SHOW_INFO" link="gdict-Gdict-Utilities.html#GDICT-STATUS-USE-SHOW-INFO:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_UNKNOWN_MECHANISM" link="gdict-Gdict-Utilities.html#GDICT-STATUS-UNKNOWN-MECHANISM:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_BAD_DATABASE" link="gdict-Gdict-Utilities.html#GDICT-STATUS-BAD-DATABASE:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_BAD_STRATEGY" link="gdict-Gdict-Utilities.html#GDICT-STATUS-BAD-STRATEGY:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_NO_MATCH" link="gdict-Gdict-Utilities.html#GDICT-STATUS-NO-MATCH:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_NO_DATABASES_PRESENT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-NO-DATABASES-PRESENT:CAPS"/>
+    <keyword type="constant" name="GDICT_STATUS_NO_STRATEGIES_PRESENT" link="gdict-Gdict-Utilities.html#GDICT-STATUS-NO-STRATEGIES-PRESENT:CAPS"/>
   </functions>
 </book>

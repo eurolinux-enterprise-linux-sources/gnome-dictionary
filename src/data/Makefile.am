@@ -7,20 +7,36 @@ man_MANS = gnome-dictionary.1
 EXTRA_DIST += $(man_MANS)
 
 gdictappdir = $(datadir)/applications
-gdictapp_in_files = gnome-dictionary.desktop.in
+gdictapp_in_files = org.gnome.Dictionary.desktop.in
 gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
-EXTRA_DIST += gnome-dictionary.desktop.in.in
+EXTRA_DIST += org.gnome.Dictionary.desktop.in.in
+CLEANFILES += $(gdictapp_in_files) $(gdictapp_DATA)
 
 $(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
 	$(AM_V_GEN)sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
 @INTLTOOL_DESKTOP_RULE@
 
+dbusservicedir = $(datadir)/dbus-1/services
+dbusservice_DATA = org.gnome.Dictionary.service
+
+org.gnome.Dictionary.service: Makefile
+	$(AM_V_GEN) (echo '[D-BUS Service]'; \
+		     echo 'Name=org.gnome.Dictionary'; \
+		     echo 'Exec=${bindir}/gnome-dictionary --gapplication-service') > $@.tmp && \
+		     mv $@.tmp $@
+
+CLEANFILES += $(dbusservice_DATA)
+
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
-appdata_in_files = gnome-dictionary.appdata.xml.in
-EXTRA_DIST += $(appdata_in_files)
+appdata_in_files = org.gnome.Dictionary.appdata.xml.in
+EXTRA_DIST += \
+							$(appdata_in_files) \
+							$(gsettings_SCHEMAS) \
+							$(NULL)
+CLEANFILES += $(appdata_DATA)
 
 # dictionary sources definitions
 dictsourcedir = $(datadir)/gdict-1.0/sources
@@ -33,25 +49,10 @@ dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 EXTRA_DIST += $(dictsource_in_files)
-
-builderdir = $(datadir)/gnome-dictionary
-builder_DATA = \
-	gnome-dictionary-preferences.ui	\
-	gnome-dictionary-source.ui	\
-	gnome-dictionary-menus.ui	\
-	$(NULL)
-
-EXTRA_DIST += \
-	$(builder_DATA) \
-	$(NULL)
+CLEANFILES += $(dictsource_DATA)
 
 gsettings_SCHEMAS = org.gnome.dictionary.gschema.xml
-CLEANFILES += $(gsettings_SCHEMAS) \
-	$(dictsource_DATA) \
-	$(gdictapp_in_files) \
-	$(gdictapp_DATA) \
-	$(appdata_DATA)
-	
+
 @GSETTINGS_RULES@
 
 -include $(top_srcdir)/git.mk

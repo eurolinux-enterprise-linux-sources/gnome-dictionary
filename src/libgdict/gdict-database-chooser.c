@@ -110,8 +110,7 @@ static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (GdictDatabaseChooser,
                gdict_database_chooser,
-               GTK_TYPE_VBOX);
-
+               GTK_TYPE_BOX)
 
 static void
 set_gdict_context (GdictDatabaseChooser *chooser,
@@ -329,11 +328,8 @@ gdict_database_chooser_constructor (GType                  type,
   chooser = GDICT_DATABASE_CHOOSER (object);
   priv = chooser->priv;
 
-  gtk_widget_push_composite_child ();
-
   sw = gtk_scrolled_window_new (NULL, NULL);
   gtk_widget_set_hexpand (sw, TRUE);
-  gtk_widget_set_composite_name (sw, "gdict-database-chooser-scrolled-window");
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
 		  		  GTK_POLICY_AUTOMATIC,
 				  GTK_POLICY_AUTOMATIC);
@@ -349,10 +345,10 @@ gdict_database_chooser_constructor (GType                  type,
                                                      "weight", DB_COLUMN_CURRENT,
 						     NULL);
   priv->treeview = gtk_tree_view_new ();
-  gtk_widget_set_composite_name (priv->treeview, "gdict-database-chooser-treeview");
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		  	   GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
+  gtk_tree_view_set_activate_on_single_click (GTK_TREE_VIEW (priv->treeview), TRUE);
   gtk_tree_view_append_column (GTK_TREE_VIEW (priv->treeview), column);
   g_signal_connect (gtk_tree_view_get_selection (GTK_TREE_VIEW (priv->treeview)),
                     "changed", G_CALLBACK (selection_changed_cb),
@@ -367,8 +363,8 @@ gdict_database_chooser_constructor (GType                  type,
 
   priv->refresh_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->refresh_button),
-		        gtk_image_new_from_stock (GTK_STOCK_REFRESH,
-						  GTK_ICON_SIZE_SMALL_TOOLBAR));
+		        gtk_image_new_from_icon_name ("view-refresh-symbolic",
+                                                      GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (priv->refresh_button, "clicked",
 		    G_CALLBACK (refresh_button_clicked_cb),
 		    chooser);
@@ -379,8 +375,8 @@ gdict_database_chooser_constructor (GType                  type,
 
   priv->clear_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->clear_button),
-		        gtk_image_new_from_stock (GTK_STOCK_CLEAR,
-						  GTK_ICON_SIZE_SMALL_TOOLBAR));
+		        gtk_image_new_from_icon_name ("edit-clear-symbolic",
+                                                      GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (priv->clear_button, "clicked",
 		    G_CALLBACK (clear_button_clicked_cb),
 		    chooser);
@@ -391,8 +387,6 @@ gdict_database_chooser_constructor (GType                  type,
 
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
-  
-  gtk_widget_pop_composite_child ();
 
   return object;
 }
@@ -487,6 +481,8 @@ gdict_database_chooser_init (GdictDatabaseChooser *chooser)
 
   chooser->priv = priv = GDICT_DATABASE_CHOOSER_GET_PRIVATE (chooser);
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
+
   priv->results = -1;
   priv->context = NULL;
 
@@ -547,7 +543,7 @@ gdict_database_chooser_new_with_context (GdictContext *context)
  *
  * Retrieves the #GdictContext used by @chooser.
  *
- * Return value: a #GdictContext or %NULL
+ * Return value: (transfer none): a #GdictContext or %NULL
  *
  * Since: 0.10
  */
@@ -588,7 +584,7 @@ gdict_database_chooser_set_context (GdictDatabaseChooser *chooser,
  *
  * Gets the list of available database names.
  *
- * Return value: a newly allocated, %NULL terminated string vector
+ * Return value: (transfer full): a newly allocated, %NULL terminated string vector
  *   containing database names. Use g_strfreev() to deallocate it.
  *
  * Since: 0.10
@@ -709,7 +705,11 @@ lookup_start_cb (GdictContext *context,
   GdictDatabaseChooserPrivate *priv = chooser->priv;
 
   if (!priv->busy_cursor)
-    priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (chooser));
+
+      priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
+    }
 
   if (gtk_widget_get_window (GTK_WIDGET (chooser)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (chooser)), priv->busy_cursor);
@@ -745,7 +745,10 @@ database_found_cb (GdictContext  *context,
   full_name = gdict_database_get_full_name (database);
 
   if (priv->current_db && !strcmp (priv->current_db, name))
-    weight = PANGO_WEIGHT_BOLD;
+    {
+      weight = PANGO_WEIGHT_BOLD;
+      gtk_widget_set_tooltip_text (GTK_WIDGET (chooser), full_name);
+    }
 
   GDICT_NOTE (CHOOSER, "DATABASE: `%s' (`%s')",
               name,
@@ -809,13 +812,13 @@ gdict_database_chooser_refresh (GdictDatabaseChooser *chooser)
 
   if (!priv->start_id)
     {
-      priv->start_id = g_signal_connect (priv->context, "lookup-start",
+      priv->start_id = g_signal_connect (priv->context, "database-lookup-start",
 		      			 G_CALLBACK (lookup_start_cb),
 					 chooser);
       priv->match_id = g_signal_connect (priv->context, "database-found",
 		      			 G_CALLBACK (database_found_cb),
 					 chooser);
-      priv->end_id = g_signal_connect (priv->context, "lookup-end",
+      priv->end_id = g_signal_connect (priv->context, "database-lookup-end",
 		      		       G_CALLBACK (lookup_end_cb),
 				       chooser);
     }
@@ -1059,8 +1062,6 @@ gdict_database_chooser_set_current_database (GdictDatabaseChooser *chooser,
       g_free (priv->current_db);
       priv->current_db = data.db_name;
     }
-  else
-    g_free (data.db_name);
 
   return retval;
 }
@@ -1107,10 +1108,9 @@ gdict_database_chooser_get_current_database (GdictDatabaseChooser *chooser)
  * @button_text: text of the button
  *
  * Adds a #GtkButton with @button_text to the button area on
- * the bottom of @chooser. The @button_text can also be a
- * stock ID.
+ * the bottom of @chooser.
  *
- * Return value: the newly packed button.
+ * Return value: (transfer none): the newly packed button.
  *
  * Since: 0.10
  */
@@ -1126,7 +1126,7 @@ gdict_database_chooser_add_button (GdictDatabaseChooser *chooser,
 
   priv = chooser->priv;
 
-  button = gtk_button_new_from_stock (button_text);
+  button = gtk_button_new_with_label (button_text);
 
   gtk_widget_set_can_default (button, TRUE);
 

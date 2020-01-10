@@ -1,33 +1,42 @@
 dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
-AC_INIT([gnome-dictionary], [3.14.2],
+AC_INIT([gnome-dictionary], [3.20.0],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary],
 	[gnome-dictionary],
 	[http://live.gnome.org/GnomeUtils])
 
 AC_CONFIG_HEADERS(config.h)
+AC_CONFIG_SRCDIR([src])
 AC_CONFIG_MACRO_DIR([m4])
 
 AC_CANONICAL_TARGET
 
-# require automake 1.10
-AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip foreign])
+AM_INIT_AUTOMAKE([1.14 subdir-objects tar-ustar dist-xz no-dist-gzip foreign])
 AM_SILENT_RULES([yes])
+AM_MAINTAINER_MODE([enable])
 
-GETTEXT_PACKAGE=AC_PACKAGE_NAME
-AC_SUBST(GETTEXT_PACKAGE)
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext domain])
-IT_PROG_INTLTOOL(0.40.0)
-PKG_PROG_PKG_CONFIG([0.22])
+AC_USE_SYSTEM_EXTENSIONS
 
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_PROG_CXX
-AC_ISC_POSIX
 AC_HEADER_STDC
+PKG_PROG_PKG_CONFIG([0.22])
 
-AC_PATH_PROG(GLIB_GENMARSHAL, [glib-genmarshal])
-AC_PATH_PROG(GLIB_MKENUMS, [glib-mkenums])
+IT_PROG_INTLTOOL([0.40])
+
+GETTEXT_PACKAGE=AC_PACKAGE_NAME
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext domain])
+AC_SUBST(GETTEXT_PACKAGE)
+
+AM_GLIB_GNU_GETTEXT
+
+GLIB_MKENUMS=`$PKG_CONFIG --variable glib_mkenums glib-2.0`
+GLIB_GENMARSHAL=`$PKG_CONFIG --variable glib_genmarshal glib-2.0`
+GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
+AC_SUBST(GLIB_MKENUMS)
+AC_SUBST(GLIB_GENMARSHAL)
+AC_SUBST(GLIB_COMPILE_RESOURCES)
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C:R:A.
@@ -36,15 +45,15 @@ AC_PATH_PROG(GLIB_MKENUMS, [glib-mkenums])
 # - If binary compatibility has been broken (eg removed or changed interfaces)
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
+LIBGDICT_LT_VERSION=10:0:0
+AC_SUBST(LIBGDICT_LT_VERSION)
 
 LT_PREREQ([2.2.6])
 LT_INIT([disable-static win32-dll])
+LT_LIB_M
 
 ## don't rerun to this point if we abort
 AC_CACHE_SAVE
-
-LIBGDICT_LT_VERSION=6:7:0
-AC_SUBST(LIBGDICT_LT_VERSION)
 
 # For each cycle:
 # 	first release: increment major += 1, minor = micro = 0;
@@ -54,7 +63,7 @@ AC_SUBST(LIBGDICT_LT_VERSION)
 # follow the same rules: no ABI breakage (unless unavoidable) and
 # no API breakage past the API freeze.
 m4_define([gdict_major_version], [0])
-m4_define([gdict_minor_version], [11])
+m4_define([gdict_minor_version], [12])
 m4_define([gdict_micro_version], [0])
 m4_define([gdict_version], [gdict_major_version.gdict_minor_version.gdict_micro_version])
 
@@ -151,11 +160,14 @@ GTK_DOC_CHECK([1.15], [--flavour no-tmpl])
 YELP_HELP_INIT
 
 GLIB_MIN_VERSION=2.39.0
-GTK_MIN_VERSION=3.0.0
+GTK_MIN_VERSION=3.16
 
 PKG_CHECK_MODULES(GDICT,
                   glib-2.0 >= $GLIB_MIN_VERSION
                   gtk+-3.0 >= $GTK_MIN_VERSION)
+
+# Introspection
+GOBJECT_INTROSPECTION_CHECK([1.42.0])
 
 AC_CONFIG_FILES([
         Makefile
@@ -163,7 +175,6 @@ AC_CONFIG_FILES([
         libgdict/gdict-version.h
         libgdict/gdict-1.0.pc
         data/Makefile
-        data/org.gnome.dictionary.gschema.xml.in
         docs/Makefile
         docs/reference/Makefile
         docs/reference/gdict/Makefile
