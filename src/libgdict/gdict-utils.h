@@ -81,6 +81,10 @@ void          gdict_init             (gint    *argc,
 void          gdict_debug_init       (gint    *argc,
                                       gchar ***argv);
 
+gboolean      gdict_check_version    (guint    major,
+                                      guint    minor,
+                                      guint    micro);
+
 G_END_DECLS
 
 #endif /* __GDICT_UTILS_H__ */

@@ -22,8 +22,7 @@
 #define __GDICT_APP_H__
 
 #include <gtk/gtk.h>
-#include <libgdict/gdict.h>
-
+#include "gdict.h"
 #include "gdict-window.h"
 
 G_BEGIN_DECLS

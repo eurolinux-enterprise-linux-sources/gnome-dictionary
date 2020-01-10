@@ -51,7 +51,7 @@
 #include "gdict-marshal.h"
 
 #define GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE(obj) \
-(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_DATABASE_CHOOSER_BUTTON, GdictDatabaseChooserButtonPrivate))
+  gdict_database_chooser_button_get_instance_private ((GdictDatabaseChooserButton *) (obj))
 
 struct _GdictDatabaseChooserButtonPrivate
 {
@@ -87,21 +87,24 @@ enum
 
 static guint db_chooser_button_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GdictDatabaseChooserButton,
-               gdict_database_chooser_button,
-               GTK_TYPE_MENU_BUTTON)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictDatabaseChooserButton,
+                            gdict_database_chooser_button,
+                            GTK_TYPE_MENU_BUTTON)
 
 static void
 set_gdict_context (GdictDatabaseChooserButton *chooser_button,
 		   GdictContext		      *context)
 {
-  GdictDatabaseChooserButtonPrivate *priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
   GdictContext *old_context;
 
   g_assert (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser_button));
-  priv = chooser_button->priv;
 
   old_context = gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
+  if (context == old_context)
+    return;
+
   if (old_context)
     {
       if (priv->start_id)
@@ -123,18 +126,17 @@ set_gdict_context (GdictDatabaseChooserButton *chooser_button,
       priv->is_loaded = FALSE;
     }
 
-  gdict_database_chooser_set_context (GDICT_DATABASE_CHOOSER (priv->db_chooser),
-				      context);
+  gdict_database_chooser_set_context (GDICT_DATABASE_CHOOSER (priv->db_chooser), context);
 }
 
 static void
 get_gdict_context (GdictDatabaseChooserButton *chooser_button,
 		   GValue		      *value)
 {
-  GdictDatabaseChooserButtonPrivate *priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
 
   g_assert (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser_button));
-  priv = chooser_button->priv;
 
   g_object_get (G_OBJECT (priv->db_chooser),
 		"context", value,
@@ -145,10 +147,10 @@ static void
 get_results_count (GdictDatabaseChooserButton *chooser_button,
 		   GValue		      *value)
 {
-  GdictDatabaseChooserButtonPrivate *priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
 
   g_assert (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser_button));
-  priv = chooser_button->priv;
 
   g_object_get (G_OBJECT (priv->db_chooser),
 		"count", value,
@@ -228,7 +230,6 @@ database_activated_cb (GdictDatabaseChooser *chooser,
 {
   GdictDatabaseChooserButton *chooser_button = user_data;
 
-  gtk_button_set_label (GTK_BUTTON (chooser_button), name);
   gtk_widget_set_tooltip_text (GTK_WIDGET (chooser_button), description);
 
   gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (chooser_button), FALSE);
@@ -237,56 +238,13 @@ database_activated_cb (GdictDatabaseChooser *chooser,
 		 name, description);
 }
 
-static GObject *
-gdict_database_chooser_button_constructor (GType		  type,
-					   guint		  n_params,
-					   GObjectConstructParam *params)
-{
-  GObjectClass *parent_class;
-  GObject *object;
-  GdictDatabaseChooserButton *chooser_button;
-  GdictDatabaseChooserButtonPrivate *priv;
-
-  parent_class = G_OBJECT_CLASS (gdict_database_chooser_button_parent_class);
-  object = parent_class->constructor (type, n_params, params);
-
-  chooser_button = GDICT_DATABASE_CHOOSER_BUTTON (object);
-  priv = chooser_button->priv;
-
-  priv->popover = gtk_popover_new (GTK_WIDGET (chooser_button));
-  gtk_menu_button_set_popover (GTK_MENU_BUTTON (chooser_button), priv->popover);
-
-  priv->stack = gtk_stack_new ();
-  gtk_container_add (GTK_CONTAINER (priv->popover), priv->stack);
-  gtk_widget_show (priv->stack);
-
-  priv->spinner = gtk_spinner_new ();
-  gtk_stack_add_named (GTK_STACK (priv->stack), priv->spinner, "spinner");
-  gtk_widget_show (priv->spinner);
-
-  priv->db_chooser = gdict_database_chooser_new ();
-  gtk_stack_add_named (GTK_STACK (priv->stack), priv->db_chooser, "chooser");
-  gtk_widget_show (priv->db_chooser);
-
-  g_signal_connect (priv->db_chooser,
-                    "selection-changed", G_CALLBACK (selection_changed_cb),
-                    chooser_button);
-
-  g_signal_connect (priv->db_chooser,
-                    "database-activated", G_CALLBACK (database_activated_cb),
-                    chooser_button);
-
-  priv->is_loaded = FALSE;
-
-  return object;
-}
-
 static void
 lookup_start_cb (GdictContext *context,
 		 gpointer      user_data)
 {
-  GdictDatabaseChooserButton *chooser_button = GDICT_DATABASE_CHOOSER_BUTTON (user_data);
-  GdictDatabaseChooserButtonPrivate *priv = chooser_button->priv;
+  GdictDatabaseChooserButton *chooser_button = user_data;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
 
   if (!priv->busy_cursor)
     {
@@ -306,8 +264,9 @@ static void
 lookup_end_cb (GdictContext *context,
 	       gpointer      user_data)
 {
-  GdictDatabaseChooserButton *chooser_button = GDICT_DATABASE_CHOOSER_BUTTON (user_data);
-  GdictDatabaseChooserButtonPrivate *priv = chooser_button->priv;
+  GdictDatabaseChooserButton *chooser_button = user_data;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
 
   if (gtk_widget_get_window (GTK_WIDGET (chooser_button)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (chooser_button)),
@@ -315,9 +274,6 @@ lookup_end_cb (GdictContext *context,
 
   gtk_spinner_stop (GTK_SPINNER (priv->spinner));
   gtk_stack_set_visible_child_name (GTK_STACK (priv->stack), "chooser");
-
-  gtk_widget_set_size_request (GTK_WIDGET (priv->popover), 300, -1);
-  gtk_widget_set_vexpand (GTK_WIDGET (priv->popover), TRUE);
 
   priv->is_loaded = TRUE;
 }
@@ -327,8 +283,8 @@ error_cb (GdictContext *context,
           const GError *error,
 	  gpointer      user_data)
 {
-  GdictDatabaseChooserButton *chooser_button = GDICT_DATABASE_CHOOSER_BUTTON (user_data);
-  GdictDatabaseChooserButtonPrivate *priv = chooser_button->priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (user_data);
 
   gtk_spinner_stop (GTK_SPINNER (priv->spinner));
 
@@ -357,11 +313,12 @@ gdict_database_chooser_button_clicked (GtkButton *button)
 
   if (active && !priv->is_loaded)
     {
+      context = gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
+
       gtk_stack_set_visible_child_name (GTK_STACK (priv->stack), "spinner");
 
-      if (!priv->start_id)
+      if (priv->start_id == 0)
 	{
-	  context = gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
 	  priv->start_id = g_signal_connect (context, "database-lookup-start",
 					     G_CALLBACK (lookup_start_cb),
 					     chooser_button);
@@ -370,7 +327,7 @@ gdict_database_chooser_button_clicked (GtkButton *button)
 					   chooser_button);
 	}
 
-      if (!priv->error_id)
+      if (priv->error_id == 0)
 	priv->error_id = g_signal_connect (context, "error",
 					   G_CALLBACK (error_cb),
 					   chooser_button);
@@ -389,7 +346,6 @@ gdict_database_chooser_button_class_init (GdictDatabaseChooserButtonClass *klass
   gobject_class->dispose = gdict_database_chooser_button_dispose;
   gobject_class->set_property = gdict_database_chooser_button_set_property;
   gobject_class->get_property = gdict_database_chooser_button_get_property;
-  gobject_class->constructor = gdict_database_chooser_button_constructor;
   button_class->clicked = gdict_database_chooser_button_clicked;
 
   /**
@@ -460,8 +416,6 @@ gdict_database_chooser_button_class_init (GdictDatabaseChooserButtonClass *klass
                   NULL, NULL,
                   gdict_marshal_VOID__VOID,
                   G_TYPE_NONE, 0);
-
-  g_type_class_add_private (gobject_class, sizeof (GdictDatabaseChooserButtonPrivate));
 }
 
 static void
@@ -469,14 +423,42 @@ gdict_database_chooser_button_init (GdictDatabaseChooserButton *chooser_button)
 {
   GdictDatabaseChooserButtonPrivate *priv;
 
-  chooser_button->priv = priv = GDICT_DATABASE_CHOOSER_BUTTON_GET_PRIVATE (chooser_button);
-
-  gtk_menu_button_set_use_popover (GTK_MENU_BUTTON (chooser_button), TRUE);
-  gtk_menu_button_set_direction (GTK_MENU_BUTTON (chooser_button), GTK_ARROW_NONE);
+  chooser_button->priv = priv =
+    gdict_database_chooser_button_get_instance_private (chooser_button);
 
   priv->start_id = 0;
   priv->end_id = 0;
   priv->error_id = 0;
+
+  gtk_button_set_image (GTK_BUTTON (chooser_button),
+                        gtk_image_new_from_icon_name ("view-list-symbolic",
+                                                      GTK_ICON_SIZE_BUTTON));
+
+  priv->popover = gtk_popover_new (GTK_WIDGET (chooser_button));
+  gtk_menu_button_set_direction (GTK_MENU_BUTTON (chooser_button), GTK_ARROW_NONE);
+  gtk_menu_button_set_popover (GTK_MENU_BUTTON (chooser_button), priv->popover);
+
+  priv->stack = gtk_stack_new ();
+  gtk_container_add (GTK_CONTAINER (priv->popover), priv->stack);
+  gtk_widget_show (priv->stack);
+
+  priv->spinner = gtk_spinner_new ();
+  gtk_stack_add_named (GTK_STACK (priv->stack), priv->spinner, "spinner");
+  gtk_widget_show (priv->spinner);
+
+  priv->db_chooser = gdict_database_chooser_new ();
+  gtk_stack_add_named (GTK_STACK (priv->stack), priv->db_chooser, "chooser");
+  gtk_widget_show (priv->db_chooser);
+
+  g_signal_connect (priv->db_chooser,
+                    "selection-changed", G_CALLBACK (selection_changed_cb),
+                    chooser_button);
+
+  g_signal_connect (priv->db_chooser,
+                    "database-activated", G_CALLBACK (database_activated_cb),
+                    chooser_button);
+
+  priv->is_loaded = FALSE;
 }
 
 /**
@@ -498,7 +480,7 @@ gdict_database_chooser_button_new (void)
 }
 
 /**
- * gdict_database_chooser_button_new_with_context:
+ * gdict_database_chooser_button_new_with_context: (constructor)
  * @context: a #GdictContext
  *
  * Creates a new #GdictDatabaseChooserButton, using @context as the representation
@@ -531,8 +513,10 @@ gdict_database_chooser_button_new_with_context (GdictContext *context)
 GdictContext *
 gdict_database_chooser_button_get_context (GdictDatabaseChooserButton *chooser)
 {
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
+
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), NULL);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
   return gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
 }
@@ -562,12 +546,12 @@ gdict_database_chooser_button_set_context (GdictDatabaseChooserButton *chooser,
 /**
  * gdict_database_chooser_button_get_databases:
  * @chooser: a #GdictDatabaseChooserButton
- * @length: return location for the length of the returned vector
+ * @length: (out): return location for the length of the returned vector
  *
  * Gets the list of available database names.
  *
- * Return value: (transfer full): a newly allocated, %NULL terminated string vector
- *   containing database names. Use g_strfreev() to deallocate it.
+ * Return value: (transfer full) (array zero-terminated=1): a newly allocated
+ *   string vector containing database names.
  *
  * Since: 0.10
  */
@@ -575,8 +559,10 @@ gchar **
 gdict_database_chooser_button_get_databases (GdictDatabaseChooserButton *chooser,
 					     gsize			*length)
 {
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
+
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), NULL);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
   return gdict_database_chooser_get_databases (GDICT_DATABASE_CHOOSER (priv->db_chooser),
 					       length);
@@ -594,14 +580,15 @@ gdict_database_chooser_button_get_databases (GdictDatabaseChooserButton *chooser
  * Since: 0.10
  */
 gboolean
-gdict_database_chooser_button_has_database (GdictDatabaseChooserButton	*chooser,
-					    const gchar			*database)
+gdict_database_chooser_button_has_database (GdictDatabaseChooserButton *chooser,
+                                            const gchar                *database)
 {
-  g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
 
-  return gdict_database_chooser_has_database (GDICT_DATABASE_CHOOSER (priv->db_chooser),
-					      database);
+  g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
+
+  return gdict_database_chooser_has_database (GDICT_DATABASE_CHOOSER (priv->db_chooser), database);
 }
 
 /**
@@ -617,8 +604,10 @@ gdict_database_chooser_button_has_database (GdictDatabaseChooserButton	*chooser,
 gint
 gdict_database_chooser_button_count_databases (GdictDatabaseChooserButton *chooser)
 {
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
+
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), -1);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
   return gdict_database_chooser_count_databases (GDICT_DATABASE_CHOOSER (priv->db_chooser));
 }
@@ -634,13 +623,13 @@ gdict_database_chooser_button_count_databases (GdictDatabaseChooserButton *choos
 void
 gdict_database_chooser_button_clear (GdictDatabaseChooserButton *chooser)
 {
-  GdictDatabaseChooserButtonPrivate *priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
 
   g_return_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser));
 
-  priv = chooser->priv;
-
   gdict_database_chooser_clear (GDICT_DATABASE_CHOOSER (priv->db_chooser));
+
   priv->is_loaded = FALSE;
 }
 
@@ -656,14 +645,15 @@ gdict_database_chooser_button_clear (GdictDatabaseChooserButton *chooser)
  * Since: 0.10
  */
 gboolean
-gdict_database_chooser_button_select_database (GdictDatabaseChooserButton	*chooser,
-					       const gchar			*db_name)
+gdict_database_chooser_button_select_database (GdictDatabaseChooserButton *chooser,
+					       const gchar                *db_name)
 {
-  g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
 
-  return gdict_database_chooser_select_database (GDICT_DATABASE_CHOOSER (priv->db_chooser),
-						 db_name);
+  g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
+
+  return gdict_database_chooser_select_database (GDICT_DATABASE_CHOOSER (priv->db_chooser), db_name);
 }
 
 /**
@@ -678,11 +668,13 @@ gdict_database_chooser_button_select_database (GdictDatabaseChooserButton	*choos
  * Since: 0.10
  */
 gboolean
-gdict_database_chooser_button_unselect_database (GdictDatabaseChooserButton	*chooser,
-                                          const gchar				*db_name)
+gdict_database_chooser_button_unselect_database (GdictDatabaseChooserButton *chooser,
+                                                 const gchar                *db_name)
 {
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
+
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
   return gdict_database_chooser_unselect_database (GDICT_DATABASE_CHOOSER (priv->db_chooser),
 						   db_name);
@@ -701,20 +693,15 @@ gdict_database_chooser_button_unselect_database (GdictDatabaseChooserButton	*cho
  * Since: 0.10
  */
 gboolean
-gdict_database_chooser_button_set_current_database (GdictDatabaseChooserButton	*chooser,
-                                             const gchar			*db_name)
+gdict_database_chooser_button_set_current_database (GdictDatabaseChooserButton *chooser,
+                                                    const gchar                *db_name)
 {
-  gboolean valid;
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
 
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
-  valid = gdict_database_chooser_set_current_database (GDICT_DATABASE_CHOOSER (priv->db_chooser),
-						       db_name);
-
-  gtk_button_set_label (GTK_BUTTON (chooser), db_name);
-
-  return valid;
+  return gdict_database_chooser_set_current_database (GDICT_DATABASE_CHOOSER (priv->db_chooser), db_name);
 }
 
 /**
@@ -723,16 +710,17 @@ gdict_database_chooser_button_set_current_database (GdictDatabaseChooserButton	*
  *
  * Retrieves the name of the currently selected database inside @chooser
  *
- * Return value: the name of the selected database. Use g_free() on the
- *   returned string when done using it
+ * Return value: (transfer full): the name of the selected database.
  *
  * Since: 0.10
  */
 gchar *
 gdict_database_chooser_button_get_current_database (GdictDatabaseChooserButton *chooser)
 {
+  GdictDatabaseChooserButtonPrivate *priv =
+    gdict_database_chooser_button_get_instance_private (chooser);
+
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), NULL);
-  GdictDatabaseChooserButtonPrivate *priv = chooser->priv;
 
   return gdict_database_chooser_get_current_database (GDICT_DATABASE_CHOOSER (priv->db_chooser));
 }

@@ -121,9 +121,18 @@ gdict_app_cmd_help (GSimpleAction *action,
   g_return_if_fail (GTK_IS_APPLICATION (app));
 
   window = GDICT_WINDOW (gtk_application_get_windows (app)->data);
+
+#if GTK_CHECK_VERSION (3, 22, 0)
+  gtk_show_uri_on_window (GTK_WINDOW (window),
+                          "help:gnome-dictionary",
+                          gtk_get_current_event_time (),
+                          &err);
+#else
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (window)),
                 "help:gnome-dictionary",
                 gtk_get_current_event_time (), &err);
+#endif
+
   if (err)
     {
       gdict_show_gerror_dialog (GTK_WINDOW (window),

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"POT-Creation-Date: 2016-03-11 20:57+0000\n"
-"PO-Revision-Date: 2016-03-12 14:35+0900\n"
+"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"PO-Revision-Date: 2017-08-27 16:57+0900\n"
 "Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.7\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "조성호 <shcho@gnome.org>, 2016."
+msgstr "조성호 <shcho@gnome.org>, 2016, 2017"
 
 #. (itstool) path: credit/name
 #: C/definition.page:11 C/dictionary-select.page:11 C/find.page:10
@@ -251,18 +251,6 @@ msgstr "기본 설정"
 msgid "Common problems and solutions"
 msgstr "일반 문제 및 해결책"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:38
-msgctxt "_"
-msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-msgstr ""
-
 #. (itstool) path: info/desc
 #: C/introduction.page:22
 msgid "What is <app>Dictionary</app>?"
@@ -298,6 +286,18 @@ msgstr ""
 #: C/introduction.page:37
 msgid "Dictionary"
 msgstr "사전"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+msgstr ""
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -708,7 +708,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/print.page:84
 msgid ""
-"Chose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
 msgstr ""
 "<link href=\"help:gnome-help/printing#paper\">인쇄 설정</link>을 선택하십시"
@@ -799,7 +799,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/save-definition.page:38
 msgid ""
-"Chose where you want to save the definition to and a name for the file. You "
+"Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
 "name."
 msgstr ""

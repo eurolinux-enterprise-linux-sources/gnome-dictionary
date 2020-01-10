@@ -1,0 +1,633 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sveinn í Felli <sv1@fellsnet.is>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-01-20 11:06+0000\n"
+"PO-Revision-Date: 2017-03-01 14:19+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "Sjálfgefinn orðasafnsmiðlari"
+
+#: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
+msgid "GNOME Dictionary"
+msgstr "Orðasafn GNOME"
+
+#: ../data/org.gnome.Dictionary.appdata.xml.in.h:2
+#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Fletta upp orðum og stafsetningu í orðasöfnum á netinu"
+
+#: ../data/org.gnome.Dictionary.appdata.xml.in.h:3
+msgid ""
+"GNOME Dictionary is a simple dictionary application that looks up "
+"definitions of words online. Though it looks up English definitions by "
+"default, you can easily switch to Spanish or add other online dictionaries "
+"using the DICT protocol to suit your needs."
+msgstr ""
+
+#: ../src/gdict-app-menus.ui.h:1
+msgid "_New Window"
+msgstr "_Nýr gluggi"
+
+#: ../src/gdict-app-menus.ui.h:2
+msgid "Preferences"
+msgstr "Kjörstillingar"
+
+#: ../src/gdict-app-menus.ui.h:3
+msgid "Help"
+msgstr "Hjálp"
+
+#: ../src/gdict-app-menus.ui.h:4
+msgid "About"
+msgstr "Um hugbúnaðinn"
+
+#: ../src/gdict-app-menus.ui.h:5
+msgid "Quit"
+msgstr "Hætta"
+
+#: ../src/gdict-app-menus.ui.h:6
+msgid "_Save a Copy..."
+msgstr "Vi_sta afrit..."
+
+#: ../src/gdict-app-menus.ui.h:7
+msgid "P_review"
+msgstr "Fo_rskoðun"
+
+#: ../src/gdict-app-menus.ui.h:8
+msgid "_Print"
+msgstr "_Prenta"
+
+#: ../src/gdict-app-menus.ui.h:9
+msgid "_Find"
+msgstr "_Finna"
+
+#: ../src/gdict-app-menus.ui.h:10
+msgid "_View"
+msgstr "S_koða"
+
+#: ../src/gdict-app-menus.ui.h:11
+msgid "_Sidebar"
+msgstr "Hliðar_spjald"
+
+#: ../src/gdict-app-menus.ui.h:12
+msgid "Similar _Words"
+msgstr "Lík _orð"
+
+#: ../src/gdict-app-menus.ui.h:13
+msgid "Dictionary Sources"
+msgstr "Uppruni/heimild orðasafna"
+
+#: ../src/gdict-app-menus.ui.h:14
+msgid "Available _Dictionaries"
+msgstr "Tiltæk orðasöfn"
+
+#: ../src/gdict-app-menus.ui.h:15
+msgid "Available St_rategies"
+msgstr "Tiltæka_r stefnumarkanir"
+
+#: ../src/gdict-app-menus.ui.h:16
+msgid "_Go"
+msgstr "_Fara"
+
+#: ../src/gdict-app-menus.ui.h:17
+msgid "_Previous Definition"
+msgstr "_Fyrri skilgreining"
+
+#: ../src/gdict-app-menus.ui.h:18
+msgid "_Next Definition"
+msgstr "_Næsta skilgreining"
+
+#: ../src/gdict-app-menus.ui.h:19
+msgid "_First Definition"
+msgstr "_Fyrsta skilgreiningin"
+
+#: ../src/gdict-app-menus.ui.h:20
+msgid "_Last Definition"
+msgstr "_Síðasta skilgreiningin"
+
+#: ../src/gdict-pref-dialog.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.ui.h:2
+msgid "Add a new dictionary source"
+msgstr "Bæta við nýjum orðasafnsgjafa"
+
+#: ../src/gdict-pref-dialog.ui.h:3
+msgid "Remove the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.ui.h:4
+msgid "Edit"
+msgstr "Breyta"
+
+#: ../src/gdict-pref-dialog.ui.h:5
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.ui.h:6 ../src/gdict-source-dialog.ui.h:8
+msgid "Source"
+msgstr "Heimild"
+
+#: ../src/gdict-pref-dialog.ui.h:7
+msgid "_Print font:"
+msgstr "_Prentletur:"
+
+#: ../src/gdict-pref-dialog.ui.h:8
+msgid "Set the font used for printing the definitions"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.ui.h:9
+msgid "Print"
+msgstr "Prenta"
+
+#: ../src/gdict-source-dialog.ui.h:1
+msgid "_Description"
+msgstr "_Lýsing"
+
+#: ../src/gdict-source-dialog.ui.h:2
+msgid "_Port"
+msgstr "_Gátt"
+
+#: ../src/gdict-source-dialog.ui.h:3
+msgid "_Hostname"
+msgstr "Vélar_heiti"
+
+#: ../src/gdict-source-dialog.ui.h:4
+msgid "_Transport"
+msgstr "Flu_tningsleið"
+
+#: ../src/gdict-source-dialog.ui.h:5
+msgid "2628"
+msgstr "2628"
+
+#: ../src/gdict-source-dialog.ui.h:6
+msgid "dict.org"
+msgstr "dict.org"
+
+#: ../src/gdict-source-dialog.ui.h:7
+msgid "Source Name"
+msgstr "Heiti heimildar"
+
+#: ../src/gdict-source-dialog.ui.h:9
+msgid "Dictionaries"
+msgstr "Orðasöfn"
+
+#: ../src/gdict-source-dialog.ui.h:10
+msgid "Strategies"
+msgstr "Stefnumarkanir"
+
+#: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+msgid "Dictionary"
+msgstr "Orðasafn"
+
+#: ../data/org.gnome.Dictionary.desktop.in.in.h:3
+msgid "word;synonym;definition;spelling;"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:1
+msgid "The default database to use"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:2
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:3
+msgid "The default search strategy to use"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:4
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:5
+msgid "The font to be used when printing"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:6
+msgid "The font to be used when printing a definition."
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:7
+msgid "The name of the dictionary source used"
+msgstr ""
+
+#: ../data/org.gnome.dictionary.gschema.xml.h:8
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr ""
+
+#: ../data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "Spænsk orðasöfn"
+
+#: ../data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Longdo Thai-Ensk orðasöfn"
+
+#: ../libgdict/gdict-client-context.c:775
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1058
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1089
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1123
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1175
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1194
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1223
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "Engar skilgreiningar fundust fyrir '%s‘"
+
+#: ../libgdict/gdict-client-context.c:1238
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "Ógildur gagnagrunnur '%s'"
+
+#: ../libgdict/gdict-client-context.c:1253
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1268
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Slæm skipun ‚%s‘"
+
+#: ../libgdict/gdict-client-context.c:1283
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1298
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1313
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1745
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1784
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1857
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1891
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1927
+#: ../libgdict/gdict-client-context.c:1942
+#, c-format
+msgid "Unable to create socket"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1968
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr ""
+
+#: ../libgdict/gdict-client-context.c:1983
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr ""
+
+#: ../libgdict/gdict-database-chooser.c:374
+msgid "Reload the list of available databases"
+msgstr ""
+
+#: ../libgdict/gdict-database-chooser.c:386
+msgid "Clear the list of available databases"
+msgstr ""
+
+#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-strategy-chooser.c:775
+msgid "Error while matching"
+msgstr "Villa við að samsvara"
+
+#: ../libgdict/gdict-defbox.c:2390
+msgid "Error while looking up definition"
+msgstr "Villa við að leita að skilgreiningu"
+
+#: ../libgdict/gdict-defbox.c:2432 ../libgdict/gdict-speller.c:725
+msgid "Another search is in progress"
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2433 ../libgdict/gdict-speller.c:726
+msgid "Please wait until the current search ends."
+msgstr ""
+
+#: ../libgdict/gdict-defbox.c:2472
+msgid "Error while retrieving the definition"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:433
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:461
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
+#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:575
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:769
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr ""
+
+#: ../libgdict/gdict-source.c:778
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr ""
+
+#: ../libgdict/gdict-source-chooser.c:280
+msgid "Reload the list of available sources"
+msgstr ""
+
+#: ../libgdict/gdict-speller.c:341
+msgid "Clear the list of similar words"
+msgstr "Tæma listann yfir svipuð orð"
+
+#: ../libgdict/gdict-strategy-chooser.c:350
+msgid "Reload the list of available strategies"
+msgstr ""
+
+#: ../libgdict/gdict-strategy-chooser.c:361
+msgid "Clear the list of available strategies"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:96
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
+msgid "FLAGS"
+msgstr "FLÖGG"
+
+#: ../libgdict/gdict-utils.c:98
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "Valkostir GDict"
+
+#: ../libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "Birta valkosti GDict"
+
+#: ../src/gdict-about.c:53
+msgid "translator-credits"
+msgstr "Sveinn í Felli, sv1@fellsnet.is"
+
+#: ../src/gdict-about.c:55
+msgid "Look up words in dictionaries"
+msgstr "Leita að orðum í orðasöfnum"
+
+#: ../src/gdict-app.c:47 ../src/gdict-app.c:76
+msgid "Words to look up"
+msgstr ""
+
+#: ../src/gdict-app.c:47 ../src/gdict-app.c:53
+msgid "WORD"
+msgstr "ORÐ"
+
+#: ../src/gdict-app.c:53
+msgid "Words to match"
+msgstr ""
+
+#: ../src/gdict-app.c:59
+msgid "Dictionary source to use"
+msgstr "Orðasafnsgjafi sem á að nota"
+
+#: ../src/gdict-app.c:59 ../src/gdict-app.c:65 ../src/gdict-app.c:71
+msgid "NAME"
+msgstr "NAFN"
+
+#: ../src/gdict-app.c:65
+msgid "Database to use"
+msgstr "Gagnagrunnur sem á að nota"
+
+#: ../src/gdict-app.c:71
+msgid "Strategy to use"
+msgstr "Stefnumörkun sem á að nota"
+
+#: ../src/gdict-app.c:76
+msgid "WORDS"
+msgstr "ORÐ"
+
+#: ../src/gdict-app.c:108
+msgid "Dictionary Preferences"
+msgstr "Stillingar orðasafns"
+
+#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
+msgid "There was an error while displaying help"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:262
+msgid "View Dictionary Source"
+msgstr "Skoða orðasafnsgjafa"
+
+#: ../src/gdict-pref-dialog.c:328
+msgid "Add Dictionary Source"
+msgstr "Bæta við orðasafnsgjafa"
+
+#: ../src/gdict-pref-dialog.c:372
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Fjarlægja „%s“?"
+
+#: ../src/gdict-pref-dialog.c:374
+msgid "This will permanently remove the dictionary source from the list."
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
+#: ../src/gdict-window.c:824
+msgid "_Cancel"
+msgstr "_Hætta við"
+
+#: ../src/gdict-pref-dialog.c:378
+msgid "_Remove"
+msgstr "_Fjarlægja"
+
+#: ../src/gdict-pref-dialog.c:396
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr ""
+
+#: ../src/gdict-pref-dialog.c:443
+msgid "Edit Dictionary Source"
+msgstr "Breyta orðasafnsgjafa"
+
+#: ../src/gdict-print.c:239 ../src/gdict-print.c:303
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr ""
+
+#: ../src/gdict-source-dialog.c:316 ../src/gdict-source-dialog.c:404
+msgid "Unable to create a source file"
+msgstr ""
+
+#: ../src/gdict-source-dialog.c:332 ../src/gdict-source-dialog.c:424
+msgid "Unable to save source file"
+msgstr ""
+
+#. we just allow closing the dialog
+#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
+msgid "_Close"
+msgstr "_Loka"
+
+#: ../src/gdict-source-dialog.c:565
+msgid "_Add"
+msgstr "_Bæta við"
+
+#: ../src/gdict-source-dialog.c:573
+msgid "C_ancel"
+msgstr "_Hætta við"
+
+#. The help button is always visible
+#: ../src/gdict-source-dialog.c:655
+msgid "_Help"
+msgstr "_Hjálp"
+
+#: ../src/gdict-window.c:415
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:419
+msgid "Unable to find dictionary source"
+msgstr ""
+
+#: ../src/gdict-window.c:435
+#, c-format
+msgid "No context available for source '%s'"
+msgstr ""
+
+#: ../src/gdict-window.c:439
+msgid "Unable to create a context"
+msgstr ""
+
+#: ../src/gdict-window.c:498
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - Orðasafn"
+
+#: ../src/gdict-window.c:821
+msgid "Save a Copy"
+msgstr "Vista afrit"
+
+#: ../src/gdict-window.c:825
+msgid "_Save"
+msgstr "_Vista"
+
+#: ../src/gdict-window.c:831
+msgid "Untitled document"
+msgstr "Ónefnt skjal"
+
+#: ../src/gdict-window.c:852
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Villa kom við að skrifa í ‚%s‘"
+
+#. speller
+#: ../src/gdict-window.c:1213
+msgid "Double-click on the word to look up"
+msgstr "Tvísmelltu á orðið til að fletta því upp"
+
+#. strat-chooser
+#: ../src/gdict-window.c:1219
+msgid "Double-click on the matching strategy to use"
+msgstr ""
+
+#. source-chooser
+#: ../src/gdict-window.c:1224
+msgid "Double-click on the source to use"
+msgstr ""
+
+#: ../src/gdict-window.c:1424
+msgid "Similar words"
+msgstr "Svipuð orð"
+
+#: ../src/gdict-window.c:1455
+msgid "Available strategies"
+msgstr "Tiltækar stefnumarkanir"
+
+#: ../src/gdict-window.c:1471
+msgid "Dictionary sources"
+msgstr "Uppruni/heimild orðasafna"
+

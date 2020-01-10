@@ -14,14 +14,16 @@
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013, 2015.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
 # Hajime Taira <htaira@redhat.com>, 2015.
+# Tsuji Kento <tuziemon@pclives.org>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-14 07:09+0000\n"
-"PO-Revision-Date: 2015-09-15 01:33+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-08-31 16:15+0000\n"
+"PO-Revision-Date: 2016-09-11 19:50+0900\n"
+"Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -34,8 +36,25 @@ msgid "Default Dictionary Server"
 msgstr "デフォルトの辞書サーバー"
 
 #: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
-msgid "GNOME Dictionary is a simple dictionary application that looks up definitions of words online. Though it looks up English definitions by default, you can easily switch to Spanish or add other online dictionaries using the DICT protocol to suit your needs."
-msgstr "GNOME 辞書は、言葉の意味をオンラインで調べられるシンプルな辞書アプリケーションです。デフォルトでは英語の辞書を引きますが、簡単にスペイン語の辞書に切り替えられます。また、DICT プロトコルに対応する他のオンライン辞書をあなたのニーズに合わせて追加することもできます。"
+msgid "GNOME Dictionary"
+msgstr "GNOME 辞書"
+
+#: ../data/org.gnome.Dictionary.appdata.xml.in.h:2
+#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "オンライン辞書を使って単語の意味や綴りを調べます"
+
+#: ../data/org.gnome.Dictionary.appdata.xml.in.h:3
+msgid ""
+"GNOME Dictionary is a simple dictionary application that looks up "
+"definitions of words online. Though it looks up English definitions by "
+"default, you can easily switch to Spanish or add other online dictionaries "
+"using the DICT protocol to suit your needs."
+msgstr ""
+"GNOME 辞書は、言葉の意味をオンラインで調べられるシンプルな辞書アプリケーショ"
+"ンです。デフォルトでは英語の辞書を引きますが、簡単にスペイン語の辞書に切り替"
+"えられます。また、DICT プロトコルに対応する他のオンライン辞書をあなたのニーズ"
+"に合わせて追加することもできます。"
 
 #: ../src/gdict-app-menus.ui.h:1
 msgid "_New Window"
@@ -90,30 +109,26 @@ msgid "Dictionary Sources"
 msgstr "辞書ソース"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "利用可能な辞書(_D)"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "利用可能な検索ルール(_R)"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "ジャンプ(_G)"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "前の意味へ(_P)"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "次の意味へ(_N)"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "先頭の意味へ(_F)"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "最後の意味へ(_L)"
 
@@ -137,7 +152,7 @@ msgstr "編集"
 msgid "Edit the currently selected dictionary source"
 msgstr "現在選択している辞書ソースを編集します"
 
-#: ../src/gdict-pref-dialog.ui.h:6 ../src/gdict-source-dialog.ui.h:6
+#: ../src/gdict-pref-dialog.ui.h:6 ../src/gdict-source-dialog.ui.h:8
 msgid "Source"
 msgstr "サーバー"
 
@@ -154,61 +169,77 @@ msgid "Print"
 msgstr "印刷"
 
 #: ../src/gdict-source-dialog.ui.h:1
-msgid "_Description:"
-msgstr "説明(_D):"
+msgid "_Description"
+msgstr "説明(_D)"
 
 #: ../src/gdict-source-dialog.ui.h:2
-msgid "_Transport:"
-msgstr "変換方法(_T):"
+msgid "_Port"
+msgstr "ポート(_P)"
 
 #: ../src/gdict-source-dialog.ui.h:3
-msgid "H_ostname:"
-msgstr "ホスト名(_O):"
+msgid "_Hostname"
+msgstr "ホスト名(_H)"
 
 #: ../src/gdict-source-dialog.ui.h:4
-msgid "_Port:"
-msgstr "ポート(_P):"
+msgid "_Transport"
+msgstr "変換方法(_T)"
 
 #: ../src/gdict-source-dialog.ui.h:5
+msgid "2628"
+msgstr "2628"
+
+#: ../src/gdict-source-dialog.ui.h:6
+msgid "dict.org"
+msgstr "dict.org"
+
+#: ../src/gdict-source-dialog.ui.h:7
 msgid "Source Name"
 msgstr "辞書の名前"
 
-#: ../src/gdict-source-dialog.ui.h:7
+#: ../src/gdict-source-dialog.ui.h:9
 msgid "Dictionaries"
 msgstr "辞書"
 
-#: ../src/gdict-source-dialog.ui.h:8
+#: ../src/gdict-source-dialog.ui.h:10
 msgid "Strategies"
 msgstr "検索ルール"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:499 ../src/gdict-window.c:1531
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "辞書"
 
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr "オンライン辞書を使って単語の意味や綴りを調べます"
-
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:3
 msgid "word;synonym;definition;spelling;"
-msgstr "word;synonym;definition;spelling;単語;同義語;類義語;定義;意味;スペリング;スペル;つづり;綴り;Dictionary;辞書;辞典;"
+msgstr ""
+"word;synonym;definition;spelling;単語;同義語;類義語;定義;意味;スペリング;スペ"
+"ル;つづり;綴り;Dictionary;辞書;辞典;"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:1
 msgid "The default database to use"
 msgstr "デフォルトで使用するデータベース"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
-msgid "The name of the default individual database or meta-database to use on a dictionary source. An exclamation mark (\"!\") means that all the databases present in a dictionary source should be searched"
-msgstr "辞書ソースで使用するデフォルトの個人用データベースまたは個人用メタデータベースの名前です。感嘆符 (\"!\") にすると、辞書ソースにあるすべてのデータベースを検索対象にします。"
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr ""
+"辞書ソースで使用するデフォルトの個人用データベースまたは個人用メタデータベー"
+"スの名前です。感嘆符 (\"!\") にすると、辞書ソースにあるすべてのデータベースを"
+"検索対象にします。"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:3
 msgid "The default search strategy to use"
 msgstr "デフォルトで使用する検索ルール"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
-msgid "The name of the default search strategy to use on a dictionary source, if available. The default strategy is 'exact', that is match exact words."
-msgstr "辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルールは 'exact' で、単語全体にマッチするものを検索します。"
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr ""
+"辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルールは 'exact' "
+"で、単語全体にマッチするものを検索します。"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:5
 msgid "The font to be used when printing"
@@ -223,7 +254,8 @@ msgid "The name of the dictionary source used"
 msgstr "使用する辞書ソースの名前"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:8
-msgid "The name of the dictionary source used to retrieve the definitions of words."
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
 msgstr "単語の意味を取得する際に使用する辞書ソースの名前です。"
 
 #: ../data/spanish.desktop.in.h:1
@@ -242,7 +274,8 @@ msgstr "'%s:%d' に接続している辞書サーバーはありません"
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "ホスト名 '%s' の検索に失敗しました: 適当なリソースが見つかりませんでした"
+msgstr ""
+"ホスト名 '%s' の検索に失敗しました: 適当なリソースが見つかりませんでした"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
@@ -256,8 +289,12 @@ msgstr "ホスト '%s' の検索に失敗しました: ホストが見つかり�
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'. The server replied with code %d (server down)"
-msgstr "'%s:%d' にある辞書サーバーに接続できません。そのサーバーがコード %d (サーバーがダウン) を返してきました"
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr ""
+"'%s:%d' にある辞書サーバーに接続できません。そのサーバーがコード %d (サーバー"
+"がダウン) を返してきました"
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
@@ -343,15 +380,15 @@ msgstr "チャンネルにブロック不可の属性を設定できません: %
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "'%s:%d' にある辞書サーバーに接続できません"
 
-#: ../libgdict/gdict-database-chooser.c:398
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "利用可能なデータベースを更新します"
 
-#: ../libgdict/gdict-database-chooser.c:410
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "利用可能なデータベースをクリアします"
 
-#: ../libgdict/gdict-database-chooser.c:905 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "検索中にエラーが発生しました"
@@ -390,7 +427,8 @@ msgstr "辞書ソースの定義内にある '%s' というキーを取得でき
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr "辞書ソースの定義ファイルにある '%s' というキーを取得できません: %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -457,94 +495,80 @@ msgstr ""
 msgid "Look up words in dictionaries"
 msgstr "辞書から単語を検索します。"
 
-#: ../src/gdict-app.c:46 ../src/gdict-app.c:75
+#: ../src/gdict-app.c:47 ../src/gdict-app.c:76
 msgid "Words to look up"
 msgstr "検索する単語を指定する"
 
-#: ../src/gdict-app.c:46 ../src/gdict-app.c:52
+#: ../src/gdict-app.c:47 ../src/gdict-app.c:53
 msgid "WORD"
 msgstr "WORD"
 
-#: ../src/gdict-app.c:52
+#: ../src/gdict-app.c:53
 msgid "Words to match"
 msgstr "単語そのものを検索する"
 
-#: ../src/gdict-app.c:58
+#: ../src/gdict-app.c:59
 msgid "Dictionary source to use"
 msgstr "使用する辞書ソースを指定する"
 
-#: ../src/gdict-app.c:58 ../src/gdict-app.c:64 ../src/gdict-app.c:70
+#: ../src/gdict-app.c:59 ../src/gdict-app.c:65 ../src/gdict-app.c:71
 msgid "NAME"
 msgstr "NAME"
 
-#: ../src/gdict-app.c:64
+#: ../src/gdict-app.c:65
 msgid "Database to use"
 msgstr "使用するデータベースを指定する"
 
-#: ../src/gdict-app.c:70
+#: ../src/gdict-app.c:71
 msgid "Strategy to use"
 msgstr "使用する検索ルールを指定する"
 
-#: ../src/gdict-app.c:75
+#: ../src/gdict-app.c:76
 msgid "WORDS"
 msgstr "WORDS"
 
-#: ../src/gdict-app.c:107
+#: ../src/gdict-app.c:108
 msgid "Dictionary Preferences"
 msgstr "辞書の設定"
 
-#: ../src/gdict-app.c:129 ../src/gdict-pref-dialog.c:511
-#: ../src/gdict-source-dialog.c:452
-#, c-format
+#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
 msgid "There was an error while displaying help"
 msgstr "ヘルプを表示する際にエラーが発生しました"
 
-#: ../src/gdict-pref-dialog.c:264
+#: ../src/gdict-pref-dialog.c:262
 msgid "View Dictionary Source"
 msgstr "辞書ソースの表示"
 
-#: ../src/gdict-pref-dialog.c:330
+#: ../src/gdict-pref-dialog.c:328
 msgid "Add Dictionary Source"
 msgstr "辞書ソースの追加"
 
-#: ../src/gdict-pref-dialog.c:374
+#: ../src/gdict-pref-dialog.c:372
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "\"%s\" を削除しますか?"
 
-#: ../src/gdict-pref-dialog.c:376
+#: ../src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "一覧から辞書ソースを完全に削除します。"
 
-#: ../src/gdict-pref-dialog.c:379 ../src/gdict-source-dialog.c:564
-#: ../src/gdict-window.c:822
+#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
+#: ../src/gdict-window.c:824
 msgid "_Cancel"
 msgstr "キャンセル(_C)"
 
-#: ../src/gdict-pref-dialog.c:380
+#: ../src/gdict-pref-dialog.c:378
 msgid "_Remove"
 msgstr "削除(_R)"
 
-#: ../src/gdict-pref-dialog.c:398
+#: ../src/gdict-pref-dialog.c:396
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "辞書 '%s' を削除できません"
 
-#: ../src/gdict-pref-dialog.c:445
+#: ../src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
 msgstr "辞書ソースの編集"
-
-#. add buttons
-#. The help button is always visible
-#: ../src/gdict-pref-dialog.c:634 ../src/gdict-source-dialog.c:655
-msgid "_Help"
-msgstr "ヘルプ(_H)"
-
-#. we just allow closing the dialog
-#: ../src/gdict-pref-dialog.c:635 ../src/gdict-source-dialog.c:560
-#: ../src/gdict-source-dialog.c:574
-msgid "_Close"
-msgstr "閉じる(_C)"
 
 #: ../src/gdict-print.c:239 ../src/gdict-print.c:303
 #, c-format
@@ -559,6 +583,11 @@ msgstr "ソースファイルを生成できません"
 msgid "Unable to save source file"
 msgstr "ソースファイルを保存できません"
 
+#. we just allow closing the dialog
+#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
+msgid "_Close"
+msgstr "閉じる(_C)"
+
 #: ../src/gdict-source-dialog.c:565
 msgid "_Add"
 msgstr "追加(_A)"
@@ -567,72 +596,83 @@ msgstr "追加(_A)"
 msgid "C_ancel"
 msgstr "キャンセル(_A)"
 
-#: ../src/gdict-window.c:414
+#. The help button is always visible
+#: ../src/gdict-source-dialog.c:655
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../src/gdict-window.c:415
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' という名前で利用できる辞書ソースはありません"
 
-#: ../src/gdict-window.c:418
+#: ../src/gdict-window.c:419
 msgid "Unable to find dictionary source"
 msgstr "辞書ソースが見つかりません"
 
-#: ../src/gdict-window.c:434
+#: ../src/gdict-window.c:435
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' というソースで利用できるコンテキストはありません"
 
-#: ../src/gdict-window.c:438
+#: ../src/gdict-window.c:439
 msgid "Unable to create a context"
 msgstr "コンテキストを生成できません"
 
-#: ../src/gdict-window.c:497
+#: ../src/gdict-window.c:498
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - 辞書"
 
-#: ../src/gdict-window.c:819
+#: ../src/gdict-window.c:821
 msgid "Save a Copy"
 msgstr "検索結果の保存"
 
-#: ../src/gdict-window.c:823
+#: ../src/gdict-window.c:825
 msgid "_Save"
 msgstr "保存(_S)"
 
-#: ../src/gdict-window.c:829
+#: ../src/gdict-window.c:831
 msgid "Untitled document"
 msgstr "編集中のドキュメント"
 
-#: ../src/gdict-window.c:850
+#: ../src/gdict-window.c:852
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s' へ書き込む際にエラーが発生しました"
 
 #. speller
-#: ../src/gdict-window.c:1211
+#: ../src/gdict-window.c:1213
 msgid "Double-click on the word to look up"
 msgstr "単語をダブルクリックすると検索します"
 
 #. strat-chooser
-#: ../src/gdict-window.c:1217
+#: ../src/gdict-window.c:1219
 msgid "Double-click on the matching strategy to use"
 msgstr "使用する検索ルールをダブルクリックしてください"
 
 #. source-chooser
-#: ../src/gdict-window.c:1222
+#: ../src/gdict-window.c:1224
 msgid "Double-click on the source to use"
 msgstr "使用する辞書をダブルクリックしてください"
 
-#: ../src/gdict-window.c:1428
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "類似語"
 
-#: ../src/gdict-window.c:1459
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "利用可能な検索ルール"
 
-#: ../src/gdict-window.c:1475
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "辞書ソース"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "利用可能な辞書(_D)"
+
+#~ msgid "H_ostname:"
+#~ msgstr "ホスト名(_O):"
 
 #~ msgid "_File"
 #~ msgstr "ファイル(_F)"
@@ -663,9 +703,6 @@ msgstr "辞書ソース"
 
 #~ msgid "The name of the client of the context object"
 #~ msgstr "コンテキストオブジェクトのクライアント名です"
-
-#~ msgid "Hostname"
-#~ msgstr "ホスト名"
 
 #~ msgid "The hostname of the dictionary server to connect to"
 #~ msgstr "接続する辞書サーバーのホスト名です"

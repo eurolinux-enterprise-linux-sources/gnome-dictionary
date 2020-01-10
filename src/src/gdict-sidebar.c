@@ -136,6 +136,8 @@ gdict_sidebar_dispose (GObject *object)
   G_OBJECT_CLASS (gdict_sidebar_parent_class)->dispose (object);
 }
 
+#if !GTK_CHECK_VERSION (3, 22, 0)
+/* We only use this with older versions of GTK+ */
 static void
 gdict_sidebar_menu_position_function (GtkMenu  *menu,
 				      gint     *x,
@@ -158,6 +160,7 @@ gdict_sidebar_menu_position_function (GtkMenu  *menu,
 
   *push_in = FALSE;
 }
+#endif /* !GTK_CHECK_VERSION (3, 22, 0) */
 
 static gboolean
 gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
@@ -181,10 +184,19 @@ gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
       gtk_widget_grab_focus (widget);
 
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), TRUE);
+
+#if GTK_CHECK_VERSION (3, 22, 0)
+      gtk_menu_popup_at_widget (GTK_MENU (sidebar->priv->menu),
+                                widget,
+                                GDK_GRAVITY_SOUTH_WEST,
+                                GDK_GRAVITY_NORTH_WEST,
+                                (GdkEvent *) event);
+#else
       gtk_menu_popup (GTK_MENU (sidebar->priv->menu),
 		      NULL, NULL,
 		      gdict_sidebar_menu_position_function, widget,
 		      event->button, event->time);
+#endif
 
       return TRUE;
     }
@@ -205,10 +217,19 @@ gdict_sidebar_select_key_press_cb (GtkWidget   *widget,
       event->keyval == GDK_KEY_KP_Enter)
     {
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), TRUE);
+
+#if GTK_CHECK_VERSION (3, 22, 0)
+      gtk_menu_popup_at_widget (GTK_MENU (sidebar->priv->menu),
+                                widget,
+                                GDK_GRAVITY_SOUTH_WEST,
+                                GDK_GRAVITY_NORTH_WEST,
+                                (GdkEvent *) event);
+#else
       gtk_menu_popup (GTK_MENU (sidebar->priv->menu),
 		      NULL, NULL,
 		      gdict_sidebar_menu_position_function, widget,
 		      1, event->time);
+#endif
 
       return TRUE;
     }

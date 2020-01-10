@@ -35,7 +35,7 @@
       <gui style="menuitem">Save a Copy…</gui></guiseq>.</p>
     </item>
     <item>
-      <p>Chose where you want to save the definition to and a name for the
+      <p>Choose where you want to save the definition to and a name for the
       file. You may want to add a <file>.txt</file> file extension to the end
       of the file name.</p>
     </item>

@@ -3,16 +3,16 @@
   <id>org.gnome.Dictionary.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+ AND LGPL-2.0+ AND GFDL-1.3</project_license>
-  <_name>GNOME Dictionary</_name>
-  <_summary>Check word definitions and spellings in an online dictionary</_summary>
+  <name>GNOME Dictionary</name>
+  <summary>Check word definitions and spellings in an online dictionary</summary>
   <description>
-    <_p>
+    <p>
       GNOME Dictionary is a simple dictionary application that looks up
       definitions of words online.
       Though it looks up English definitions by default, you can easily switch to
       Spanish or add other online dictionaries using the DICT protocol to suit your
       needs.
-    </_p>
+    </p>
   </description>
   <url type="homepage">https://wiki.gnome.org/Dictionary</url>
   <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary</url>
@@ -30,4 +30,14 @@
   </kudos>
   <project_group>GNOME</project_group>
   <translation type="gettext">gnome-dictionary</translation>
+  <releases>
+    <release version="3.26.0" date="2017-09-12">
+      <description>
+        <p>A new stable release of the venerable Dictionary for GNOME. This
+        time it's mostly build fixes to ensure a reliable experience for the
+        fine folks building applications for users; we also have documentation
+        fixes, and better localisation in many languages.</p>
+      </description>
+    </release>
+  </releases>
 </component>

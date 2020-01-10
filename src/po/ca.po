@@ -6,26 +6,45 @@
 # Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
 # Gil Forcada <gilforcada@guifi.net>, 2006, 2008, 2013.
 # Joan Duran <jodufi@gmail.com>, 2008-2011.
+# Carles Ferrando Garcia <carles.ferrando@gmail.com>, 2017.
+# Jordi Serratosa <jordis@softcatala.cat>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 17:30-0400\n"
-"PO-Revision-Date: 2015-03-17 17:30-0400\n"
-"Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-09 20:12+0000\n"
+"PO-Revision-Date: 2017-07-08 13:23+0200\n"
+"Last-Translator: Carles Ferrando Garcia <carles.ferrando@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/default.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/default.desktop.in:4
+msgid "Default"
+msgstr "Per defecte"
+
+#: data/default.desktop.in:5
 msgid "Default Dictionary Server"
 msgstr "Servidor de diccionari predeterminat"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
+#: data/org.gnome.Dictionary.appdata.xml.in:6
+msgid "GNOME Dictionary"
+msgstr "Diccionari GNOME"
+
+#: data/org.gnome.Dictionary.appdata.xml.in:7
+#: data/org.gnome.Dictionary.desktop.in:4
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr ""
+"Comprova les definicions de paraules i l'ortografia en un diccionari en línia"
+
+#: data/org.gnome.Dictionary.appdata.xml.in:9
 msgid ""
 "GNOME Dictionary is a simple dictionary application that looks up "
 "definitions of words online. Though it looks up English definitions by "
@@ -38,345 +57,164 @@ msgstr ""
 "diccionaris en línia fent servir el protocol DICT per adaptar-se a les "
 "vostres necessitats."
 
-#: ../src/gnome-dictionary-menus.ui.h:1
-msgid "Preferences"
-msgstr "Preferències"
-
-#: ../src/gnome-dictionary-menus.ui.h:2
-msgid "Help"
-msgstr "Ajuda"
-
-#: ../src/gnome-dictionary-menus.ui.h:3
-msgid "About"
-msgstr "Quant a"
-
-#: ../src/gnome-dictionary-menus.ui.h:4
-msgid "Quit"
-msgstr "Surt"
-
-#: ../src/gnome-dictionary-menus.ui.h:5
-msgid "_File"
-msgstr "_Filtre"
-
-#: ../src/gnome-dictionary-menus.ui.h:6
-msgid "_New"
-msgstr "_Nou"
-
-#: ../src/gnome-dictionary-menus.ui.h:7
-msgid "_Save a Copy..."
-msgstr "_Desa una còpia..."
-
-#: ../src/gnome-dictionary-menus.ui.h:8
-msgid "P_review"
-msgstr "P_revisualització"
-
-#: ../src/gnome-dictionary-menus.ui.h:9
-msgid "_Print"
-msgstr "_Imprimeix"
-
-#. we just allow closing the dialog
-#: ../src/gnome-dictionary-menus.ui.h:10 ../src/gdict-source-dialog.c:629
-#: ../src/gdict-source-dialog.c:641
-msgid "_Close"
-msgstr "_Tanca"
-
-#: ../src/gnome-dictionary-menus.ui.h:11
-msgid "_Edit"
-msgstr "_Edita"
-
-#: ../src/gnome-dictionary-menus.ui.h:12
-msgid "_Copy"
-msgstr "_Copia"
-
-#: ../src/gnome-dictionary-menus.ui.h:13
-msgid "Select _All"
-msgstr "_Selecciona-ho tot"
-
-#: ../src/gnome-dictionary-menus.ui.h:14
-msgid "_Find"
-msgstr "_Cerca"
-
-#: ../src/gnome-dictionary-menus.ui.h:15
-msgid "Find Ne_xt"
-msgstr "Cerca la se_güent"
-
-#: ../src/gnome-dictionary-menus.ui.h:16
-msgid "Find Pre_vious"
-msgstr "Cerca l'an_terior"
-
-#: ../src/gnome-dictionary-menus.ui.h:17
-msgid "_View"
-msgstr "_Mostra"
-
-#: ../src/gnome-dictionary-menus.ui.h:18
-msgid "_Sidebar"
-msgstr "Barra _lateral"
-
-#: ../src/gnome-dictionary-menus.ui.h:19
-msgid "S_tatusbar"
-msgstr "Barra d'_estat"
-
-#: ../src/gnome-dictionary-menus.ui.h:20
-msgid "Similar _Words"
-msgstr "_Paraules semblants"
-
-#: ../src/gnome-dictionary-menus.ui.h:21
-msgid "Dictionary Sources"
-msgstr "Fonts de diccionari"
-
-#: ../src/gnome-dictionary-menus.ui.h:22
-msgid "Available _Dictionaries"
-msgstr "Diccionaris _disponibles"
-
-#: ../src/gnome-dictionary-menus.ui.h:23
-msgid "Available St_rategies"
-msgstr "Est_ratègies disponibles"
-
-#: ../src/gnome-dictionary-menus.ui.h:24
-msgid "_Go"
-msgstr "_Vés"
-
-#: ../src/gnome-dictionary-menus.ui.h:25
-msgid "_Previous Definition"
-msgstr "Definició _anterior"
-
-#: ../src/gnome-dictionary-menus.ui.h:26
-msgid "_Next Definition"
-msgstr "Definició _següent"
-
-#: ../src/gnome-dictionary-menus.ui.h:27
-msgid "_First Definition"
-msgstr "_Primera definició"
-
-#: ../src/gnome-dictionary-menus.ui.h:28
-msgid "_Last Definition"
-msgstr "Ú_ltima definició"
-
-#: ../src/gnome-dictionary-preferences.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Seleccioneu una font de diccionari on cercar paraules:"
-
-#: ../src/gnome-dictionary-preferences.ui.h:2
-#: ../src/gnome-dictionary-source.ui.h:6
-msgid "Source"
-msgstr "Font"
-
-#: ../src/gnome-dictionary-preferences.ui.h:3
-msgid "_Print font:"
-msgstr "Ti_pus de lletra per imprimir:"
-
-#: ../src/gnome-dictionary-preferences.ui.h:4
-msgid "Print"
-msgstr "Imprimeix"
-
-#: ../src/gnome-dictionary-source.ui.h:1
-msgid "_Description:"
-msgstr "_Descripció:"
-
-#: ../src/gnome-dictionary-source.ui.h:2
-msgid "_Transport:"
-msgstr "_Transport:"
-
-#: ../src/gnome-dictionary-source.ui.h:3
-msgid "H_ostname:"
-msgstr "_Ordinador:"
-
-#: ../src/gnome-dictionary-source.ui.h:4
-msgid "_Port:"
-msgstr "_Port:"
-
-#: ../src/gnome-dictionary-source.ui.h:5
-msgid "Source Name"
-msgstr "Nom de la font"
-
-#: ../src/gnome-dictionary-source.ui.h:7
-msgid "Dictionaries"
-msgstr "Diccionaris"
-
-#: ../src/gnome-dictionary-source.ui.h:8
-msgid "Strategies"
-msgstr "Estratègies"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:546 ../src/gdict-window.c:1811
+#: data/org.gnome.Dictionary.desktop.in:3 src/gdict-about.c:60
+#: src/gdict-window.c:498 src/gdict-window.c:1500
 msgid "Dictionary"
 msgstr "Diccionari"
 
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr ""
-"Comprova les definicions de paraules i l'ortografia en un diccionari en línia"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:3
+#: data/org.gnome.Dictionary.desktop.in:5
 msgid "word;synonym;definition;spelling;"
 msgstr "paraula;sinònim;definició;ortografia;"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+#. Translators: Do not translate the Icon key
+#: data/org.gnome.Dictionary.desktop.in:10
+msgid "accessories-dictionary"
+msgstr "accessories-dictionary"
+
+#: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
 msgstr "La base de dades a utilitzar per defecte"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+#: data/org.gnome.dictionary.gschema.xml:7
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "El nom de la base de dades individual o metabase de dades a utilitzar en el "
 "servidor de diccionari. Un signe d'exclamació («!») indica que s'hauria de "
 "cercar totes en les bases de dades presents"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+#: data/org.gnome.dictionary.gschema.xml:11
 msgid "The default search strategy to use"
 msgstr "L'estratègia de cerca a utilitzar per defecte"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+#: data/org.gnome.dictionary.gschema.xml:12
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "El nom de l'estratègia de cerca per defecte a utilitzar en una font de "
 "diccionari, si està disponible. L'estratègia predeterminada és «exact», que "
 "cerca paraules exactes."
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+#: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
 msgstr "El tipus de lletra a utilitzar per imprimir"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+#: data/org.gnome.dictionary.gschema.xml:17
 msgid "The font to be used when printing a definition."
 msgstr "El tipus de lletra a utilitzar per imprimir una definició."
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+#: data/org.gnome.dictionary.gschema.xml:21
 msgid "The name of the dictionary source used"
 msgstr "El nom de la font de diccionari utilitzada"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+#: data/org.gnome.dictionary.gschema.xml:22
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
 "El nom de la font de diccionari utilitzada per obtenir les definicions de "
 "les paraules."
 
-#: ../data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "Diccionaris espanyols"
+#. Translators: Do not translate the Name key
+#: data/spanish.desktop.in:4
+msgid "spanish"
+msgstr "castellà"
 
-#: ../data/thai.desktop.in.h:1
+#: data/spanish.desktop.in:5
+msgid "Spanish Dictionaries"
+msgstr "Diccionaris de castellà"
+
+#. Translators: Do not translate the Name key
+#: data/thai.desktop.in:4
+msgid "Thai"
+msgstr "Tai"
+
+#: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Diccionaris Longdo Tailandès-Anglès"
 
-#: ../libgdict/gdict-client-context.c:282
-msgid "Client Name"
-msgstr "Nom del client"
-
-#: ../libgdict/gdict-client-context.c:283
-msgid "The name of the client of the context object"
-msgstr "El nom del client de l'objecte context"
-
-#: ../libgdict/gdict-client-context.c:296
-msgid "Hostname"
-msgstr "Nom de l'ordinador"
-
-#: ../libgdict/gdict-client-context.c:297
-msgid "The hostname of the dictionary server to connect to"
-msgstr "El nom de l'ordinador del servidor de diccionari a on connectar"
-
-#: ../libgdict/gdict-client-context.c:310
-msgid "Port"
-msgstr "Port"
-
-#: ../libgdict/gdict-client-context.c:311
-msgid "The port of the dictionary server to connect to"
-msgstr "El port del servidor de diccionari a on connectar"
-
-#: ../libgdict/gdict-client-context.c:326
-msgid "Status"
-msgstr "Estat"
-
-#: ../libgdict/gdict-client-context.c:327
-msgid "The status code as returned by the dictionary server"
-msgstr "El codi d'estat retornat pel servidor de diccionari"
-
-#: ../libgdict/gdict-client-context.c:775
+#: libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "No hi ha connexió al servidor de diccionari «%s:%d»"
 
-#: ../libgdict/gdict-client-context.c:1058
+#: libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "Ha fallat la cerca de l'ordinador «%s»: no s'ha trobat cap recurs adequat"
 
-#: ../libgdict/gdict-client-context.c:1089
+#: libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Ha fallat la cerca de l'ordinador «%s»: %s"
 
-#: ../libgdict/gdict-client-context.c:1123
+#: libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Ha fallat la cerca de l'ordinador «%s»: no s'ha trobat l'ordinador"
 
-#: ../libgdict/gdict-client-context.c:1175
+#: libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "No s'ha pogut connectar al servidor de diccionari «%s:%d». El servidor ha "
 "respost amb el codi %d (el servidor no funciona)"
 
-#: ../libgdict/gdict-client-context.c:1194
+#: libgdict/gdict-client-context.c:1194
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "No s'ha pogut analitzar la resposta del servidor de diccionari\n"
 ": «%s»"
 
-#: ../libgdict/gdict-client-context.c:1223
+#: libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "No s'ha trobat cap definició per a «%s»"
 
-#: ../libgdict/gdict-client-context.c:1238
+#: libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "La base de dades no és vàlida «%s»"
 
-#: ../libgdict/gdict-client-context.c:1253
+#: libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "L'estratègia no és vàlida «%s»"
 
-#: ../libgdict/gdict-client-context.c:1268
+#: libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "L'ordre no és correcta «%s»"
 
-#: ../libgdict/gdict-client-context.c:1283
+#: libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Els paràmetres per l'ordre «%s» no són correctes"
 
-#: ../libgdict/gdict-client-context.c:1298
+#: libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "No s'ha trobat cap base de dades al servidor de diccionari «%s»"
 
-#: ../libgdict/gdict-client-context.c:1313
+#: libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "No s'ha trobat cap estratègia al servidor de diccionari «%s»"
 
-#: ../libgdict/gdict-client-context.c:1738
+#: libgdict/gdict-client-context.c:1745
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Ha fallat la connexió al servidor de diccionari a %s:%d"
 
-#: ../libgdict/gdict-client-context.c:1777
+#: libgdict/gdict-client-context.c:1784
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -385,501 +223,637 @@ msgstr ""
 "S'ha produït un error en llegir la resposta del servidor:\n"
 "%s"
 
-#: ../libgdict/gdict-client-context.c:1850
+#: libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr ""
 "S'ha excedit el temps d'espera per a la connexió al servidor de diccionari a "
 "«%s:%d»"
 
-#: ../libgdict/gdict-client-context.c:1884
-#, c-format
+#: libgdict/gdict-client-context.c:1891
 msgid "No hostname defined for the dictionary server"
 msgstr "No s'ha definit cap nom d'ordinador per al servidor de diccionari"
 
-#: ../libgdict/gdict-client-context.c:1920
-#: ../libgdict/gdict-client-context.c:1935
-#, c-format
+#: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
 msgid "Unable to create socket"
 msgstr "No s'ha pogut crear el sòcol"
 
-#: ../libgdict/gdict-client-context.c:1961
+#: libgdict/gdict-client-context.c:1968
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "No s'ha pogut establir el canal a no blocant: %s"
 
-#: ../libgdict/gdict-client-context.c:1976
+#: libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "No s'ha pogut connectar al servidor de diccionari «%s:%d»"
 
-#: ../libgdict/gdict-context.c:217
-msgid "Local Only"
-msgstr "Només local"
-
-#: ../libgdict/gdict-context.c:218
-msgid "Whether the context uses only local dictionaries or not"
-msgstr "Si el context utilitza només diccionaris locals"
-
-#: ../libgdict/gdict-database-chooser.c:373
+#: libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "Torna a carregar la llista de bases de dades disponibles"
 
-#: ../libgdict/gdict-database-chooser.c:385
+#: libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "Neteja la llista de bases de dades disponibles"
 
-#: ../libgdict/gdict-database-chooser.c:836 ../libgdict/gdict-speller.c:767
-#: ../libgdict/gdict-strategy-chooser.c:775
+#: libgdict/gdict-database-chooser.c:842 libgdict/gdict-speller.c:767
+#: libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "S'ha produït un error en la coincidència"
 
-#: ../libgdict/gdict-defbox.c:1109 ../libgdict/gdict-defbox.c:1203
-#: ../libgdict/gdict-defbox.c:1237
-msgid "Not found"
-msgstr "No s'ha trobat"
-
-#: ../libgdict/gdict-defbox.c:1297
-msgid "F_ind:"
-msgstr "Ce_rca:"
-
-#: ../libgdict/gdict-defbox.c:1310
-msgid "_Previous"
-msgstr "_Anterior"
-
-#: ../libgdict/gdict-defbox.c:1317
-msgid "_Next"
-msgstr "_Següent"
-
-#: ../libgdict/gdict-defbox.c:2461
+#: libgdict/gdict-defbox.c:2390
 msgid "Error while looking up definition"
 msgstr "S'ha produït un error en cercar la definició"
 
-#: ../libgdict/gdict-defbox.c:2503 ../libgdict/gdict-speller.c:725
+#: libgdict/gdict-defbox.c:2432 libgdict/gdict-speller.c:725
 msgid "Another search is in progress"
 msgstr "S'està fent una altra cerca"
 
-#: ../libgdict/gdict-defbox.c:2504 ../libgdict/gdict-speller.c:726
+#: libgdict/gdict-defbox.c:2433 libgdict/gdict-speller.c:726
 msgid "Please wait until the current search ends."
 msgstr "Espereu que finalitzi la cerca actual."
 
-#: ../libgdict/gdict-defbox.c:2543
+#: libgdict/gdict-defbox.c:2472
 msgid "Error while retrieving the definition"
 msgstr "S'ha produït un error en obtenir la definició"
 
-#: ../libgdict/gdict-source.c:237
-msgid "Filename"
-msgstr "Nom del fitxer"
-
-#: ../libgdict/gdict-source.c:238
-msgid "The filename used by this dictionary source"
-msgstr "Nom de fitxer utilitzat per aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:251
-msgid "Name"
-msgstr "Nom"
-
-#: ../libgdict/gdict-source.c:252
-msgid "The display name of this dictionary source"
-msgstr "El nom d'aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:265
-msgid "Description"
-msgstr "Descripció"
-
-#: ../libgdict/gdict-source.c:266
-msgid "The description of this dictionary source"
-msgstr "Descripció d'aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:279
-msgid "Editable"
-msgstr "Editable"
-
-#: ../libgdict/gdict-source.c:280
-msgid "Whether the dictionary source is editable or not"
-msgstr "Si la font de diccionari és editable o no"
-
-#: ../libgdict/gdict-source.c:293 ../libgdict/gdict-speller.c:369
-msgid "Database"
-msgstr "Base de dades"
-
-#: ../libgdict/gdict-source.c:294
-msgid "The default database of this dictionary source"
-msgstr "La base de dades per defecte d'aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:307 ../libgdict/gdict-speller.c:376
-msgid "Strategy"
-msgstr "Estratègia"
-
-#: ../libgdict/gdict-source.c:308
-msgid "The default strategy of this dictionary source"
-msgstr "L'estratègia per defecte d'aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:321
-msgid "Transport"
-msgstr "Transport"
-
-#: ../libgdict/gdict-source.c:322
-msgid "The transport mechanism used by this dictionary source"
-msgstr "El mecanisme de transport d'aquesta font de diccionari"
-
-#: ../libgdict/gdict-source.c:336 ../libgdict/gdict-speller.c:362
-msgid "Context"
-msgstr "Context"
-
-#: ../libgdict/gdict-source.c:337
-msgid "The GdictContext bound to this source"
-msgstr "L'objecte GdictContext lligat a aquesta font"
-
-#: ../libgdict/gdict-source.c:433
+#: libgdict/gdict-source.c:434
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "El tipus de transport «%d» no és vàlid"
 
-#: ../libgdict/gdict-source.c:461
+#: libgdict/gdict-source.c:462
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr ""
 "No s'ha trobat cap grup «%s» dins la definició de la font de diccionari"
 
-#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
-#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
+#: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
+#: libgdict/gdict-source.c:535 libgdict/gdict-source.c:560
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
 "No s'ha pogut obtenir la clau «%s» dins la definició de la font de "
 "diccionari: %s"
 
-#: ../libgdict/gdict-source.c:575
+#: libgdict/gdict-source.c:585
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
 "No s'ha pogut obtenir la clau «%s» dins del fitxer de definició de la font "
 "de diccionari: %s"
 
-#: ../libgdict/gdict-source.c:769
-#, c-format
+#: libgdict/gdict-source.c:779
 msgid "Dictionary source does not have name"
 msgstr "La font de diccionari no té nom"
 
-#: ../libgdict/gdict-source.c:778
+#: libgdict/gdict-source.c:788
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "La font de diccionari «%s» utilitza un transport no vàlid «%s»"
 
-#: ../libgdict/gdict-source-chooser.c:280
+#: libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
 msgstr "Torna a carregar la llista de fonts disponibles"
 
-#: ../libgdict/gdict-source-loader.c:170
-msgid "Paths"
-msgstr "Camins"
-
-#: ../libgdict/gdict-source-loader.c:171
-msgid "Search paths used by this object"
-msgstr "Camins de cerca utilitzats per aquest objecte"
-
-#: ../libgdict/gdict-source-loader.c:183
-msgid "Sources"
-msgstr "Fonts"
-
-#: ../libgdict/gdict-source-loader.c:184
-msgid "Dictionary sources found"
-msgstr "Fonts de diccionaris trobades"
-
-#: ../libgdict/gdict-speller.c:341
+#: libgdict/gdict-speller.c:341
 msgid "Clear the list of similar words"
 msgstr "Neteja la llista de paraules semblants"
 
-#: ../libgdict/gdict-speller.c:363
-msgid "The GdictContext object used to get the word definition"
-msgstr ""
-"L'objecte GdictContext utilitzat per obtenir la definició de la paraula"
-
-#: ../libgdict/gdict-speller.c:370
-msgid "The database used to query the GdictContext"
-msgstr "La base de dades que vulgueu emprar per consultar el GdictContext"
-
-#: ../libgdict/gdict-speller.c:377
-msgid "The strategy used to query the GdictContext"
-msgstr "L'estratègia que vulgueu emprar per consultar el GdictContext"
-
-#: ../libgdict/gdict-strategy-chooser.c:350
+#: libgdict/gdict-strategy-chooser.c:350
 msgid "Reload the list of available strategies"
 msgstr "Torna a carregar la llista d'estratègies disponibles"
 
-#: ../libgdict/gdict-strategy-chooser.c:361
+#: libgdict/gdict-strategy-chooser.c:361
 msgid "Clear the list of available strategies"
 msgstr "Neteja la llista d'estratègies disponibles"
 
-#: ../libgdict/gdict-utils.c:96
+#: libgdict/gdict-utils.c:95
 msgid "GDict debugging flags to set"
 msgstr "Indicadors de depuració del GDict a activar"
 
-#: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:95 libgdict/gdict-utils.c:97
 msgid "FLAGS"
 msgstr "INDICADORS"
 
-#: ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to unset"
 msgstr "Indicadors de depuració del GDict a desactivar"
 
-#: ../libgdict/gdict-utils.c:156
+#: libgdict/gdict-utils.c:152
 msgid "GDict Options"
 msgstr "Opcions del GDict"
 
-#: ../libgdict/gdict-utils.c:157
+#: libgdict/gdict-utils.c:153
 msgid "Show GDict Options"
 msgstr "Mostra les opcions del GDict"
 
-#: ../src/gdict-about.c:53
+#: src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
 "Softcatalà <info@softcatala.org>\n"
 "Jordi Mallach <jordi@sindominio.net>\n"
 "Josep Puigdemont <josep.puigdemont@gmail.com>\n"
 "Gil Forcada <gilforcada@guifi.net>\n"
-"Joan Duran <jodufi@gmail.com>"
+"Joan Duran <jodufi@gmail.com>\n"
+"Pere Orga <pere@orga.cat>"
 
-#: ../src/gdict-about.c:55
+#: src/gdict-about.c:55
 msgid "Look up words in dictionaries"
 msgstr "Cerca paraules a diccionaris"
 
-#: ../src/gdict-app.c:53 ../src/gdict-app.c:82
+#: src/gdict-app-menus.ui:5
+msgid "_New Window"
+msgstr "Finestra _nova"
+
+#: src/gdict-app-menus.ui:12
+msgid "Preferences"
+msgstr "Preferències"
+
+#: src/gdict-app-menus.ui:18
+msgid "Help"
+msgstr "Ajuda"
+
+#: src/gdict-app-menus.ui:23
+msgid "About"
+msgstr "Quant a"
+
+#: src/gdict-app-menus.ui:27
+msgid "_Quit"
+msgstr "_Surt"
+
+#: src/gdict-app-menus.ui:37
+msgid "_Save a Copy…"
+msgstr "De_sa una còpia…"
+
+#: src/gdict-app-menus.ui:43
+msgid "P_review"
+msgstr "P_revisualització"
+
+#: src/gdict-app-menus.ui:48
+msgid "_Print"
+msgstr "_Imprimeix"
+
+#: src/gdict-app-menus.ui:55
+msgid "_Find"
+msgstr "_Cerca"
+
+#: src/gdict-app-menus.ui:62
+msgid "_View"
+msgstr "_Mostra"
+
+#: src/gdict-app-menus.ui:65
+msgid "_Sidebar"
+msgstr "Barra _lateral"
+
+#: src/gdict-app-menus.ui:72
+msgid "Similar _Words"
+msgstr "_Paraules semblants"
+
+#: src/gdict-app-menus.ui:77
+msgid "Dictionary Sources"
+msgstr "Fonts de diccionari"
+
+#: src/gdict-app-menus.ui:82
+msgid "Available St_rategies"
+msgstr "Est_ratègies disponibles"
+
+#: src/gdict-app-menus.ui:89
+msgid "_Go"
+msgstr "_Vés"
+
+#: src/gdict-app-menus.ui:92
+msgid "_Previous Definition"
+msgstr "Definició _anterior"
+
+#: src/gdict-app-menus.ui:97
+msgid "_Next Definition"
+msgstr "Definició _següent"
+
+#: src/gdict-app-menus.ui:104
+msgid "_First Definition"
+msgstr "_Primera definició"
+
+#: src/gdict-app-menus.ui:109
+msgid "_Last Definition"
+msgstr "Ú_ltima definició"
+
+#: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
 msgstr "Paraules a cercar"
 
-#: ../src/gdict-app.c:53 ../src/gdict-app.c:59
+#: src/gdict-app.c:47 src/gdict-app.c:53
 msgid "WORD"
 msgstr "PARAULA"
 
-#: ../src/gdict-app.c:59
+#: src/gdict-app.c:53
 msgid "Words to match"
 msgstr "Paraules a coincidir"
 
-#: ../src/gdict-app.c:65
+#: src/gdict-app.c:59
 msgid "Dictionary source to use"
 msgstr "Fonts de diccionaris a utilitzar"
 
-#: ../src/gdict-app.c:65 ../src/gdict-app.c:71 ../src/gdict-app.c:77
+#: src/gdict-app.c:59 src/gdict-app.c:65 src/gdict-app.c:71
 msgid "NAME"
 msgstr "NOM"
 
-#: ../src/gdict-app.c:71
+#: src/gdict-app.c:65
 msgid "Database to use"
 msgstr "Base de dades a utilitzar"
 
-#: ../src/gdict-app.c:77
+#: src/gdict-app.c:71
 msgid "Strategy to use"
 msgstr "Estratègia a utilitzar"
 
-#: ../src/gdict-app.c:82
+#: src/gdict-app.c:76
 msgid "WORDS"
 msgstr "PARAULES"
 
-#: ../src/gdict-app.c:99
+#: src/gdict-app.c:108
 msgid "Dictionary Preferences"
 msgstr "Preferències del diccionari"
 
-#: ../src/gdict-app.c:121 ../src/gdict-pref-dialog.c:521
-#: ../src/gdict-source-dialog.c:479
-#, c-format
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
 msgid "There was an error while displaying help"
 msgstr "S'ha produït un error en mostrar l'ajuda"
 
-#: ../src/gdict-pref-dialog.c:271
+#: src/gdict-pref-dialog.c:262
 msgid "View Dictionary Source"
 msgstr "Visualitza la font del diccionari"
 
-#: ../src/gdict-pref-dialog.c:338
+#: src/gdict-pref-dialog.c:328
 msgid "Add Dictionary Source"
 msgstr "Afegeix una font de diccionari"
 
-#: ../src/gdict-pref-dialog.c:383
+#: src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Voleu suprimir «%s»?"
 
-#: ../src/gdict-pref-dialog.c:385
+#: src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Això suprimirà per sempre la font de diccionari de la llista."
 
-#: ../src/gdict-pref-dialog.c:388 ../src/gdict-source-dialog.c:632
-#: ../src/gdict-window.c:916
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Cancel·la"
 
-#: ../src/gdict-pref-dialog.c:389
+#: src/gdict-pref-dialog.c:378
 msgid "_Remove"
 msgstr "_Suprimeix"
 
-#: ../src/gdict-pref-dialog.c:407
+#: src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "No s'ha pogut suprimir la font «%s»"
 
-#: ../src/gdict-pref-dialog.c:455
+#: src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
 msgstr "Edita la font del diccionari"
 
-#: ../src/gdict-pref-dialog.c:661
+#: src/gdict-pref-dialog.ui:34
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Seleccioneu una font de diccionari on cercar paraules:"
+
+#: src/gdict-pref-dialog.ui:96
 msgid "Add a new dictionary source"
 msgstr "Afegeix una font de diccionari"
 
-#: ../src/gdict-pref-dialog.c:667
+#: src/gdict-pref-dialog.ui:116
 msgid "Remove the currently selected dictionary source"
 msgstr "Suprimeix la font de diccionari seleccionada"
 
-#: ../src/gdict-pref-dialog.c:673
+#: src/gdict-pref-dialog.ui:136
+msgid "Edit"
+msgstr "Edita"
+
+#: src/gdict-pref-dialog.ui:137
 msgid "Edit the currently selected dictionary source"
 msgstr "Edita la font de diccionari seleccionada actualment"
 
-#: ../src/gdict-pref-dialog.c:681
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+msgid "Source"
+msgstr "Font"
+
+#: src/gdict-pref-dialog.ui:187
+msgid "_Print font:"
+msgstr "Ti_pus de lletra per imprimir:"
+
+#: src/gdict-pref-dialog.ui:216
 msgid "Set the font used for printing the definitions"
 msgstr "Estableix el tipus de lletra utilitzat en imprimir les definicions"
 
-#: ../src/gdict-print.c:239 ../src/gdict-print.c:303
+#: src/gdict-pref-dialog.ui:241
+msgid "Print"
+msgstr "Imprimeix"
+
+#: src/gdict-print.c:237 src/gdict-print.c:301
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "No s'ha pogut mostrar la previsualització: %s"
 
-#: ../src/gdict-source-dialog.c:340 ../src/gdict-source-dialog.c:432
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
 msgid "Unable to create a source file"
 msgstr "No s'ha pogut crear un fitxer font"
 
-#: ../src/gdict-source-dialog.c:356 ../src/gdict-source-dialog.c:452
+#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
 msgid "Unable to save source file"
 msgstr "No s'ha pogut desar un fitxer font"
 
-#. the help button is always visible
-#: ../src/gdict-source-dialog.c:603
-msgid "_Help"
-msgstr "_Ajuda"
+#. we just allow closing the dialog
+#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+msgid "_Close"
+msgstr "_Tanca"
 
-#: ../src/gdict-source-dialog.c:633
+#: src/gdict-source-dialog.c:572
 msgid "_Add"
 msgstr "A_fegeix"
 
-#: ../src/gdict-source-dialog.c:640
+#: src/gdict-source-dialog.c:580
 msgid "C_ancel"
 msgstr "_Cancel·la"
 
-#: ../src/gdict-window.c:256
-#, c-format
-msgid "Searching for '%s'..."
-msgstr "S'està cercant «%s»..."
+#. The help button is always visible
+#: src/gdict-source-dialog.c:662
+msgid "_Help"
+msgstr "_Ajuda"
 
-#: ../src/gdict-window.c:288 ../src/gdict-window.c:345
-msgid "No definitions found"
-msgstr "No s'ha trobat cap definició"
+#: src/gdict-source-dialog.ui:57
+msgid "_Description"
+msgstr "_Descripció"
 
-#: ../src/gdict-window.c:290
-#, c-format
-msgid "A definition found"
-msgid_plural "%d definitions found"
-msgstr[0] "S'ha trobat una definició"
-msgstr[1] "S'han trobat %d definicions"
+#: src/gdict-source-dialog.ui:72
+msgid "_Port"
+msgstr "_Port"
 
-#: ../src/gdict-window.c:461
+#: src/gdict-source-dialog.ui:86
+msgid "_Hostname"
+msgstr "_Nom de l'ordinador"
+
+#: src/gdict-source-dialog.ui:100
+msgid "_Transport"
+msgstr "_Transport"
+
+#: src/gdict-source-dialog.ui:114
+msgid "2628"
+msgstr "2628"
+
+#: src/gdict-source-dialog.ui:126
+msgid "dict.org"
+msgstr "dict.org"
+
+#: src/gdict-source-dialog.ui:138
+msgid "Source Name"
+msgstr "Nom de la font"
+
+#: src/gdict-source-dialog.ui:197
+msgid "Dictionaries"
+msgstr "Diccionaris"
+
+#: src/gdict-source-dialog.ui:222
+msgid "Strategies"
+msgstr "Estratègies"
+
+#: src/gdict-window.c:413
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "No hi ha cap font de diccionari amb el nom «%s»"
 
-#: ../src/gdict-window.c:465
+#: src/gdict-window.c:417
 msgid "Unable to find dictionary source"
 msgstr "No s'ha pogut trobar la font de diccionari"
 
-#: ../src/gdict-window.c:481
+#: src/gdict-window.c:433
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "No hi ha cap context disponible per a la font «%s»"
 
-#: ../src/gdict-window.c:485
+#: src/gdict-window.c:437
 msgid "Unable to create a context"
 msgstr "No s'ha pogut crear el context"
 
-#: ../src/gdict-window.c:544
+#: src/gdict-window.c:496
 #, c-format
-msgid "%s - Dictionary"
+msgid "%s — Dictionary"
 msgstr "%s - Diccionari"
 
-#: ../src/gdict-window.c:913
+#: src/gdict-window.c:819
 msgid "Save a Copy"
 msgstr "Desa una còpia"
 
-#: ../src/gdict-window.c:917
+#: src/gdict-window.c:823
 msgid "_Save"
 msgstr "_Desa"
 
-#: ../src/gdict-window.c:923
+#: src/gdict-window.c:829
 msgid "Untitled document"
 msgstr "Document sense títol"
 
-#: ../src/gdict-window.c:944
+#: src/gdict-window.c:850
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "S'ha produït un error en escriure a «%s»"
 
-#: ../src/gdict-window.c:1368
-#, c-format
-msgid "Dictionary source `%s' selected"
-msgstr "S'ha seleccionat la font de diccionari «%s»"
-
-#: ../src/gdict-window.c:1389
-#, c-format
-msgid "Strategy `%s' selected"
-msgstr "S'ha seleccionat l'estratègia «%s»"
-
-#: ../src/gdict-window.c:1409
-#, c-format
-msgid "Database `%s' selected"
-msgstr "S'ha seleccionat la base de dades «%s»"
-
-#: ../src/gdict-window.c:1429
-#, c-format
-msgid "Word `%s' selected"
-msgstr "S'ha seleccionat la paraula «%s»"
-
 #. speller
-#: ../src/gdict-window.c:1454
+#: src/gdict-window.c:1211
 msgid "Double-click on the word to look up"
 msgstr "Feu un doble clic a la paraula per cercar-la"
 
 #. strat-chooser
-#: ../src/gdict-window.c:1460
+#: src/gdict-window.c:1217
 msgid "Double-click on the matching strategy to use"
 msgstr "Feu un doble clic a l'estratègia de coincidència a emprar"
 
 #. source-chooser
-#: ../src/gdict-window.c:1465
+#: src/gdict-window.c:1222
 msgid "Double-click on the source to use"
 msgstr "Feu un doble clic a la font a utilitzar"
 
-#. db-chooser
-#: ../src/gdict-window.c:1474
-msgid "Double-click on the database to use"
-msgstr "Feu doble clic a la base de dades que vulgueu emprar"
-
-#: ../src/gdict-window.c:1622
-msgid "Look _up"
-msgstr "_Cerca"
-
-#: ../src/gdict-window.c:1696
+#: src/gdict-window.c:1408
 msgid "Similar words"
 msgstr "Paraules semblants"
 
-#: ../src/gdict-window.c:1709
-msgid "Available dictionaries"
-msgstr "Diccionaris disponibles"
-
-#: ../src/gdict-window.c:1727
+#: src/gdict-window.c:1439
 msgid "Available strategies"
 msgstr "Estratègies disponibles"
 
-#: ../src/gdict-window.c:1743
+#: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Fonts de diccionaris"
+
+#~ msgid "_File"
+#~ msgstr "_Filtre"
+
+#~ msgid "_New"
+#~ msgstr "_Nou"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Desa una còpia..."
+
+#~ msgid "_Copy"
+#~ msgstr "_Copia"
+
+#~ msgid "Select _All"
+#~ msgstr "_Selecciona-ho tot"
+
+#~ msgid "Find Ne_xt"
+#~ msgstr "Cerca la se_güent"
+
+#~ msgid "Find Pre_vious"
+#~ msgstr "Cerca l'an_terior"
+
+#~ msgid "S_tatusbar"
+#~ msgstr "Barra d'_estat"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Diccionaris _disponibles"
+
+#~ msgid "H_ostname:"
+#~ msgstr "_Ordinador:"
+
+#~ msgid "Client Name"
+#~ msgstr "Nom del client"
+
+#~ msgid "The name of the client of the context object"
+#~ msgstr "El nom del client de l'objecte context"
+
+#~ msgid "The hostname of the dictionary server to connect to"
+#~ msgstr "El nom de l'ordinador del servidor de diccionari a on connectar"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "The port of the dictionary server to connect to"
+#~ msgstr "El port del servidor de diccionari a on connectar"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#~ msgid "The status code as returned by the dictionary server"
+#~ msgstr "El codi d'estat retornat pel servidor de diccionari"
+
+#~ msgid "Local Only"
+#~ msgstr "Només local"
+
+#~ msgid "Whether the context uses only local dictionaries or not"
+#~ msgstr "Si el context utilitza només diccionaris locals"
+
+#~ msgid "Not found"
+#~ msgstr "No s'ha trobat"
+
+#~ msgid "F_ind:"
+#~ msgstr "Ce_rca:"
+
+#~ msgid "_Previous"
+#~ msgstr "_Anterior"
+
+#~ msgid "_Next"
+#~ msgstr "_Següent"
+
+#~ msgid "Filename"
+#~ msgstr "Nom del fitxer"
+
+#~ msgid "The filename used by this dictionary source"
+#~ msgstr "Nom de fitxer utilitzat per aquesta font de diccionari"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "The display name of this dictionary source"
+#~ msgstr "El nom d'aquesta font de diccionari"
+
+#~ msgid "Description"
+#~ msgstr "Descripció"
+
+#~ msgid "The description of this dictionary source"
+#~ msgstr "Descripció d'aquesta font de diccionari"
+
+#~ msgid "Editable"
+#~ msgstr "Editable"
+
+#~ msgid "Whether the dictionary source is editable or not"
+#~ msgstr "Si la font de diccionari és editable o no"
+
+#~ msgid "Database"
+#~ msgstr "Base de dades"
+
+#~ msgid "The default database of this dictionary source"
+#~ msgstr "La base de dades per defecte d'aquesta font de diccionari"
+
+#~ msgid "Strategy"
+#~ msgstr "Estratègia"
+
+#~ msgid "The default strategy of this dictionary source"
+#~ msgstr "L'estratègia per defecte d'aquesta font de diccionari"
+
+#~ msgid "Transport"
+#~ msgstr "Transport"
+
+#~ msgid "The transport mechanism used by this dictionary source"
+#~ msgstr "El mecanisme de transport d'aquesta font de diccionari"
+
+#~ msgid "Context"
+#~ msgstr "Context"
+
+#~ msgid "The GdictContext bound to this source"
+#~ msgstr "L'objecte GdictContext lligat a aquesta font"
+
+#~ msgid "Paths"
+#~ msgstr "Camins"
+
+#~ msgid "Search paths used by this object"
+#~ msgstr "Camins de cerca utilitzats per aquest objecte"
+
+#~ msgid "Sources"
+#~ msgstr "Fonts"
+
+#~ msgid "Dictionary sources found"
+#~ msgstr "Fonts de diccionaris trobades"
+
+#~ msgid "The GdictContext object used to get the word definition"
+#~ msgstr ""
+#~ "L'objecte GdictContext utilitzat per obtenir la definició de la paraula"
+
+#~ msgid "The database used to query the GdictContext"
+#~ msgstr "La base de dades que vulgueu emprar per consultar el GdictContext"
+
+#~ msgid "The strategy used to query the GdictContext"
+#~ msgstr "L'estratègia que vulgueu emprar per consultar el GdictContext"
+
+#~ msgid "Searching for '%s'..."
+#~ msgstr "S'està cercant «%s»..."
+
+#~ msgid "No definitions found"
+#~ msgstr "No s'ha trobat cap definició"
+
+#~ msgid "A definition found"
+#~ msgid_plural "%d definitions found"
+#~ msgstr[0] "S'ha trobat una definició"
+#~ msgstr[1] "S'han trobat %d definicions"
+
+#~ msgid "Dictionary source `%s' selected"
+#~ msgstr "S'ha seleccionat la font de diccionari «%s»"
+
+#~ msgid "Strategy `%s' selected"
+#~ msgstr "S'ha seleccionat l'estratègia «%s»"
+
+#~ msgid "Database `%s' selected"
+#~ msgstr "S'ha seleccionat la base de dades «%s»"
+
+#~ msgid "Word `%s' selected"
+#~ msgstr "S'ha seleccionat la paraula «%s»"
+
+#~ msgid "Double-click on the database to use"
+#~ msgstr "Feu doble clic a la base de dades que vulgueu emprar"
+
+#~ msgid "Look _up"
+#~ msgstr "_Cerca"
+
+#~ msgid "Available dictionaries"
+#~ msgstr "Diccionaris disponibles"
 
 #~ msgid " - Look up words in dictionaries"
 #~ msgstr " - Cerca paraules a diccionaris"

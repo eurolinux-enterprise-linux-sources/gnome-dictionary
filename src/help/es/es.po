@@ -1,31 +1,32 @@
 # translation of dictionary.HEAD.po to Español
 # translation of es.po to
-#
+# 
 # Jorge Gonzalez <jorge.gonzalez.gonzalez@hispalinux.es>, 2005.
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # FRancisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+# 
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2015., 2017.
 #
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: dictionary.HEAD\n"
-"POT-Creation-Date: 2015-05-28 18:53+0000\n"
-"PO-Revision-Date: 2015-05-29 \n"
+"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"PO-Revision-Date: 2017-07-25 10:07+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2013\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2017\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2005, 2007-2008.\n"
 "Francisco Javier F. Serrador <serrador@openshine.com> 2006."
 
@@ -265,20 +266,6 @@ msgstr "Preferencias"
 msgid "Common problems and solutions"
 msgstr "Problemas comunes y soluciones"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:38
-msgctxt "_"
-msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-
 #. (itstool) path: info/desc
 #: C/introduction.page:22
 msgid "What is <app>Dictionary</app>?"
@@ -315,6 +302,20 @@ msgstr ""
 #: C/introduction.page:37
 msgid "Dictionary"
 msgstr "Diccionario"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+msgstr ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -732,8 +733,11 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/print.page:84
+#| msgid ""
+#| "Chose your <link href=\"help:gnome-help/printing#paper\">printing "
+#| "settings</link>."
 msgid ""
-"Chose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
 msgstr ""
 "Elija la <link href=\"help:gnome-help/printing#paper\">configuración de "
@@ -826,13 +830,17 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
+#| msgid ""
+#| "Chose where you want to save the definition to and a name for the file. "
+#| "You may want to add a <file>.txt</file> file extension to the end of the "
+#| "file name."
 msgid ""
-"Chose where you want to save the definition to and a name for the file. You "
+"Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
 "name."
 msgstr ""
 "Elija dónde quiere guardar la definición y el nombre del archivo. Puede "
-"querer añadir la extensión <file>.txt</file>al archivo al final del nombre."
+"querer añadir la extensión <file>.txt</file> al archivo al final del nombre."
 
 #. (itstool) path: item/p
 #: C/save-definition.page:43
@@ -1155,10 +1163,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/text-copy.page:45
-#| msgid ""
-#| "Paste the text into another application. This can usually be done using "
-#| "the <keyseq><key>Ctrl</key><key>P</key></keyseq> keyboard shortcut or "
-#| "through one of the menus."
 msgid ""
 "Paste the text into another application. This can usually be done using the "
 "<keyseq><key>Ctrl</key><key>V</key></keyseq> keyboard shortcut or through "

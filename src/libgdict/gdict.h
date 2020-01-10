@@ -30,6 +30,5 @@
 #include "gdict-strategy-chooser.h"
 #include "gdict-utils.h"
 #include "gdict-enum-types.h"
-#include "gdict-version.h"
 
 #endif /* __GDICT_H__ */

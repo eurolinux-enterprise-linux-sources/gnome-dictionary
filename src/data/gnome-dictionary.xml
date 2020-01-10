@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+]>
+<refentry id="gnome-dictionary">
+
+<refentryinfo>
+  <title>gnome-dictionary</title>
+  <productname>GNOME</productname>
+  <authorgroup>
+    <author>
+      <contrib>Author</contrib>
+      <firstname>Emmanuele</firstname>
+      <surname>Bassi</surname>
+      <affiliation>
+        <orgname class="nonprofit">GNOME Project</orgname>
+      </affiliation>
+    </author>
+  </authorgroup>
+  <copyright>
+    <year>2012</year>
+    <holder>Emmanuele Bassi</holder>
+  </copyright>
+</refentryinfo>
+
+<refmeta>
+  <refentrytitle>gnome-dictionary</refentrytitle>
+  <manvolnum>1</manvolnum>
+  <refmiscinfo class="manual">User Commands</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+  <refname>gnome-dictionary</refname>
+  <refpurpose>Look up words in online dictionaries</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis>
+<command>gnome-dictionary</command>
+<group>
+  <arg choice="opt">--look-up <arg choice="plain"><replaceable>WORD</replaceable></arg></arg>
+  <arg choice="opt">--match <arg choice="plain"><replaceable>WORD</replaceable></arg></arg>
+</group>
+<arg choice="opt">--source <arg choice="plain"><replaceable>NAME</replaceable></arg></arg>
+<arg choice="opt">--database <arg choice="plain"><replaceable>NAME</replaceable></arg></arg>
+<arg choice="opt">--strategy <arg choice="plain"><replaceable>NAME</replaceable></arg></arg>
+<arg choice="opt">--help</arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1><title>Description</title>
+<para>
+  <command>gnome-dictionary</command> looks up words in online dictionaries
+  using the DICT protocol.
+</para>
+</refsect1>
+
+<refsect1><title>Options</title>
+<variablelist>
+  <varlistentry>
+    <term>--look-up <replaceable>WORD</replaceable></term>
+    <listitem><para>
+      Looks up the specified <replaceable>WORD</replaceable> using the default
+      dictionary source, or the one specified with the <option>--source</option>
+      command line option.
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>--match <replaceable>WORD</replaceable></term>
+    <listitem><para>
+      List all the entries in the dictionary source that match the specified
+      <replaceable>WORD</replaceable>.
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>--source=<replaceable>NAME</replaceable></term>
+    <term>-s <replaceable>NAME</replaceable></term>
+    <listitem><para>
+      Specifies the dictionary source to be used for looking up or matching
+      words.
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>--database=<replaceable>NAME</replaceable></term>
+    <term>-D <replaceable>NAME</replaceable></term>
+    <listitem><para>
+      Specifies the database in the dictionary source to be used for looking
+      up or matching words.
+    </para></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term>--strategy=<replaceable>NAME</replaceable></term>
+    <term>-S <replaceable>NAME</replaceable></term>
+    <listitem><para>
+      Specifies the matching strategy in the dictionary source to be used for
+      looking up or matching words.
+    </para></listitem>
+  </varlistentry>
+</variablelist>
+</refsect1>
+
+</refentry>

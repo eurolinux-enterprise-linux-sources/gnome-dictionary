@@ -24,8 +24,9 @@
         <attribute name="action">app.about</attribute>
       </item>
       <item>
-        <attribute name="label" translatable="yes">Quit</attribute>
+        <attribute name="label" translatable="yes">_Quit</attribute>
         <attribute name="action">app.quit</attribute>
+	<attribute name="accel">&lt;Primary&gt;Q</attribute>
       </item>
     </section>
   </menu>
@@ -33,7 +34,7 @@
   <menu id="popup">
     <section>
       <item>
-        <attribute name="label" translatable="yes">_Save a Copy...</attribute>
+        <attribute name="label" translatable="yes">_Save a Copy…</attribute>
         <attribute name="action">win.save-as</attribute>
       </item>
     </section>
@@ -76,11 +77,6 @@
             <attribute name="label" translatable="yes">Dictionary Sources</attribute>
             <attribute name="action">win.view-source</attribute>
             <attribute name="accel">&lt;Primary&gt;d</attribute>
-          </item>
-          <item>
-            <attribute name="label" translatable="yes">Available _Dictionaries</attribute>
-            <attribute name="action">win.view-db</attribute>
-            <attribute name="accel">&lt;Primary&gt;b</attribute>
           </item>
           <item>
             <attribute name="label" translatable="yes">Available St_rategies</attribute>

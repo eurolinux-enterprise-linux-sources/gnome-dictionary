@@ -2,11 +2,7 @@
 # Please keep this file sorted alphabetically.
 data/default.desktop.in
 data/org.gnome.Dictionary.appdata.xml.in
-[type: gettext/glade]src/gdict-app-menus.ui
-[type: gettext/glade]src/gdict-pref-dialog.ui
-[type: gettext/glade]src/gdict-source-dialog.ui
-[type: gettext/glade]src/gdict-app-window.ui
-data/org.gnome.Dictionary.desktop.in.in
+data/org.gnome.Dictionary.desktop.in
 data/org.gnome.dictionary.gschema.xml
 data/spanish.desktop.in
 data/thai.desktop.in
@@ -19,8 +15,12 @@ libgdict/gdict-speller.c
 libgdict/gdict-strategy-chooser.c
 libgdict/gdict-utils.c
 src/gdict-about.c
+src/gdict-app-menus.ui
+src/gdict-app-window.ui
 src/gdict-app.c
 src/gdict-pref-dialog.c
+src/gdict-pref-dialog.ui
 src/gdict-print.c
 src/gdict-source-dialog.c
+src/gdict-source-dialog.ui
 src/gdict-window.c

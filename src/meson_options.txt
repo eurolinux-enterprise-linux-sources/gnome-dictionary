@@ -1,0 +1,2 @@
+option('use_ipv6', type: 'boolean', value: true, description: 'Enable IPv6 support')
+option('build_man', type: 'boolean', value: true, description: 'Generate man page (requires xsltproc)')

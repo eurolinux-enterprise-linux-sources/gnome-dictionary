@@ -8,381 +8,214 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011.
 # Erwin Poeze <donnut@outlook.com>, 2014.
+# Nathan Follens <nthn@unseen.is>, 2017.
 #
 # side bar = side pane = zijpaneel
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.nl\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-04-02 18:53+0000\n"
-"PO-Revision-Date: 2015-04-02 22:36+0100\n"
-"Last-Translator: Nathan Follens <nathan@unseen.is>\n"
+"POT-Creation-Date: 2017-04-27 14:58+0000\n"
+"PO-Revision-Date: 2017-04-27 20:21+0200\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.12\n"
 
-#: ../data/default.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/default.desktop.in:4
+msgid "Default"
+msgstr "Standaard"
+
+#: data/default.desktop.in:5
 msgid "Default Dictionary Server"
-msgstr "Standaard woordenboekserver"
+msgstr "Standaardwoordenboekserver"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
+#: data/org.gnome.Dictionary.appdata.xml.in:6
+msgid "GNOME Dictionary"
+msgstr "Woordenboek"
+
+#: data/org.gnome.Dictionary.appdata.xml.in:7
+#: data/org.gnome.Dictionary.desktop.in:4
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Definities en spelling van woorden opzoeken in een online woordenboek"
+
+#: data/org.gnome.Dictionary.appdata.xml.in:9
 msgid ""
 "GNOME Dictionary is a simple dictionary application that looks up "
 "definitions of words online. Though it looks up English definitions by "
 "default, you can easily switch to Spanish or add other online dictionaries "
 "using the DICT protocol to suit your needs."
 msgstr ""
-"Gnome woordenboek is een eenvoudige woordenboektoepassing dat "
+"Gnome Woordenboek is een eenvoudige woordenboektoepassing die "
 "woorddefinities online opzoekt. Hoewel het standaard Engelstalige definities "
 "zoekt, kunt u eenvoudig omschakelen naar andere online woordenboeken door "
-"gebruikt te maken van het DICT-protocol."
+"gebruik te maken van het DICT-protocol."
 
-#: ../src/gnome-dictionary-menus.ui.h:1
-msgid "Preferences"
-msgstr "Voorkeuren"
-
-#: ../src/gnome-dictionary-menus.ui.h:2
-msgid "Help"
-msgstr "Hulp"
-
-#: ../src/gnome-dictionary-menus.ui.h:3
-msgid "About"
-msgstr "Info"
-
-#: ../src/gnome-dictionary-menus.ui.h:4
-msgid "Quit"
-msgstr "Afsluiten"
-
-#: ../src/gnome-dictionary-menus.ui.h:5
-msgid "_File"
-msgstr "_Bestand"
-
-#: ../src/gnome-dictionary-menus.ui.h:6
-msgid "_New"
-msgstr "_Nieuw"
-
-#: ../src/gnome-dictionary-menus.ui.h:7
-msgid "_Save a Copy..."
-msgstr "Een kopie op_slaan…"
-
-#: ../src/gnome-dictionary-menus.ui.h:8
-msgid "P_review"
-msgstr "Voor_beeld"
-
-#: ../src/gnome-dictionary-menus.ui.h:9
-msgid "_Print"
-msgstr "_Afdrukken"
-
-#. we just allow closing the dialog
-#: ../src/gnome-dictionary-menus.ui.h:10 ../src/gdict-source-dialog.c:629
-#: ../src/gdict-source-dialog.c:641
-msgid "_Close"
-msgstr "_Sluiten"
-
-#: ../src/gnome-dictionary-menus.ui.h:11
-msgid "_Edit"
-msgstr "Be_werken"
-
-#: ../src/gnome-dictionary-menus.ui.h:12
-msgid "_Copy"
-msgstr "_Kopiëren"
-
-#: ../src/gnome-dictionary-menus.ui.h:13
-msgid "Select _All"
-msgstr "_Alles selecteren"
-
-#: ../src/gnome-dictionary-menus.ui.h:14
-msgid "_Find"
-msgstr "_Vinden"
-
-#: ../src/gnome-dictionary-menus.ui.h:15
-msgid "Find Ne_xt"
-msgstr "V_olgende zoeken"
-
-#: ../src/gnome-dictionary-menus.ui.h:16
-msgid "Find Pre_vious"
-msgstr "Vo_rige zoeken"
-
-#: ../src/gnome-dictionary-menus.ui.h:17
-msgid "_View"
-msgstr "Beel_d"
-
-#: ../src/gnome-dictionary-menus.ui.h:18
-msgid "_Sidebar"
-msgstr "_Zijpaneel"
-
-#: ../src/gnome-dictionary-menus.ui.h:19
-msgid "S_tatusbar"
-msgstr "_Statusbalk"
-
-#: ../src/gnome-dictionary-menus.ui.h:20
-msgid "Similar _Words"
-msgstr "Vergelijkbare _woorden"
-
-#: ../src/gnome-dictionary-menus.ui.h:21
-msgid "Dictionary Sources"
-msgstr "Woordenboekbronnen"
-
-#: ../src/gnome-dictionary-menus.ui.h:22
-msgid "Available _Dictionaries"
-msgstr "Beschikbare _woordenboeken"
-
-#: ../src/gnome-dictionary-menus.ui.h:23
-msgid "Available St_rategies"
-msgstr "Beschikbare _strategieën"
-
-#: ../src/gnome-dictionary-menus.ui.h:24
-msgid "_Go"
-msgstr "_Ga naar"
-
-#: ../src/gnome-dictionary-menus.ui.h:25
-msgid "_Previous Definition"
-msgstr "Vo_rige definitie"
-
-#: ../src/gnome-dictionary-menus.ui.h:26
-msgid "_Next Definition"
-msgstr "V_olgende definitie"
-
-#: ../src/gnome-dictionary-menus.ui.h:27
-msgid "_First Definition"
-msgstr "_Eerste definitie"
-
-#: ../src/gnome-dictionary-menus.ui.h:28
-msgid "_Last Definition"
-msgstr "_Laatste definitie"
-
-#: ../src/gnome-dictionary-preferences.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Selecteer een woordenboekbron voor het opzoeken van woorden:"
-
-#: ../src/gnome-dictionary-preferences.ui.h:2
-#: ../src/gnome-dictionary-source.ui.h:6
-msgid "Source"
-msgstr "Bron"
-
-#: ../src/gnome-dictionary-preferences.ui.h:3
-msgid "_Print font:"
-msgstr "_Afdruklettertype:"
-
-#: ../src/gnome-dictionary-preferences.ui.h:4
-msgid "Print"
-msgstr "Afdrukken"
-
-#: ../src/gnome-dictionary-source.ui.h:1
-msgid "_Description:"
-msgstr "_Omschrijving"
-
-#: ../src/gnome-dictionary-source.ui.h:2
-msgid "_Transport:"
-msgstr "_Transport:"
-
-#: ../src/gnome-dictionary-source.ui.h:3
-msgid "H_ostname:"
-msgstr "_Hostnaam:"
-
-#: ../src/gnome-dictionary-source.ui.h:4
-msgid "_Port:"
-msgstr "_Poort:"
-
-#: ../src/gnome-dictionary-source.ui.h:5
-msgid "Source Name"
-msgstr "Naam van bron"
-
-#: ../src/gnome-dictionary-source.ui.h:7
-msgid "Dictionaries"
-msgstr "Woordenboeken"
-
-#: ../src/gnome-dictionary-source.ui.h:8
-msgid "Strategies"
-msgstr "Strategieën"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:551 ../src/gdict-window.c:1830
+#: data/org.gnome.Dictionary.desktop.in:3 src/gdict-about.c:60
+#: src/gdict-window.c:498 src/gdict-window.c:1500
 msgid "Dictionary"
 msgstr "Woordenboek"
 
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Definities en spelling van woorden opzoeken in een online woordenboek"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:3
+#: data/org.gnome.Dictionary.desktop.in:5
 msgid "word;synonym;definition;spelling;"
 msgstr "word;synonym;definition;spelling;woord;synoniem;definitie;"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:1
+#. Translators: Do not translate the Icon key
+#: data/org.gnome.Dictionary.desktop.in:10
+msgid "accessories-dictionary"
+msgstr "accessories-dictionary"
+
+#: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
 msgstr "De standaard database die gebruikt wordt"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:2
+#: data/org.gnome.dictionary.gschema.xml:7
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "De naam van de database of meta-database die standaard moet worden gebruikt "
 "bij een woordenboekbron. Een uitroepteken ‘!’ betekent dat alle beschikbare "
 "woordenboeken op de woordenboekbron moeten worden doorzocht"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:3
+#: data/org.gnome.dictionary.gschema.xml:11
 msgid "The default search strategy to use"
 msgstr "De standaard te volgen zoekstrategie"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:4
+#: data/org.gnome.dictionary.gschema.xml:12
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
-"De naam van de standaard zoekstrategie die gebruikt wordt op een "
+"De naam van de standaardzoekstrategie die gebruikt wordt op een "
 "woordenboekbron, indien beschikbaar. De standaardstrategie is ‘exact’, dat "
 "wil zeggen: de woorden moeten exact overeenkomen."
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:5
+#: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
 msgstr "Het lettertype dat bij het afdrukken gebruikt wordt"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:6
+#: data/org.gnome.dictionary.gschema.xml:17
 msgid "The font to be used when printing a definition."
 msgstr "Het lettertype dat gebruikt wordt bij het afdrukken van een definitie."
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:7
+#: data/org.gnome.dictionary.gschema.xml:21
 msgid "The name of the dictionary source used"
 msgstr "De naam van de gebruikte woordenboekbron"
 
-#: ../data/org.gnome.dictionary.gschema.xml.in.in.h:8
+#: data/org.gnome.dictionary.gschema.xml:22
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
 "de naam van de woordenboekbron die gebruikt wordt voor het ophalen van de "
 "definitie van woorden."
 
-#: ../data/spanish.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/spanish.desktop.in:4
+msgid "spanish"
+msgstr "spaans"
+
+#: data/spanish.desktop.in:5
 msgid "Spanish Dictionaries"
 msgstr "Spaanse woordenboeken"
 
-#: ../data/thai.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/thai.desktop.in:4
+msgid "Thai"
+msgstr "Thai"
+
+#: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Longdo Thais-Engelse woordenboeken"
 
-#: ../libgdict/gdict-client-context.c:282
-msgid "Client Name"
-msgstr "Clientnaam"
-
-#: ../libgdict/gdict-client-context.c:283
-msgid "The name of the client of the context object"
-msgstr "De naam van de client van het contextobject"
-
-#: ../libgdict/gdict-client-context.c:296
-msgid "Hostname"
-msgstr "Hostnaam"
-
-#: ../libgdict/gdict-client-context.c:297
-msgid "The hostname of the dictionary server to connect to"
-msgstr "De hostnaam van de woordenboekserver waarmee wordt verbonden"
-
-#: ../libgdict/gdict-client-context.c:310
-msgid "Port"
-msgstr "Poort"
-
-#: ../libgdict/gdict-client-context.c:311
-msgid "The port of the dictionary server to connect to"
-msgstr "De poort van de woordenboekserver waarmee wordt verbonden"
-
-# toestand
-#: ../libgdict/gdict-client-context.c:326
-msgid "Status"
-msgstr "Status"
-
-# terggegeven/doorgegeven
-#: ../libgdict/gdict-client-context.c:327
-msgid "The status code as returned by the dictionary server"
-msgstr "De statuscode die door de woordenboekserver wordt doorgegeven"
-
-#: ../libgdict/gdict-client-context.c:775
+#: libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Geen verbinding met de woordenboekserver op ‘%s:%d’"
 
-#: ../libgdict/gdict-client-context.c:1058
+#: libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "Zoekopdracht mislukt voor hostnaam ‘%s’: geen geschikte bronnen gevonden"
 
-#: ../libgdict/gdict-client-context.c:1089
+#: libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Zoekopdracht mislukt voor host ‘%s’: %s"
 
-#: ../libgdict/gdict-client-context.c:1123
+#: libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Zoekopdracht mislukt voor host ‘%s’: host niet gevonden"
 
-#: ../libgdict/gdict-client-context.c:1175
+#: libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Kon niet verbinden met de woordenboekserver op ‘%s:%d’. De server antwoordde "
 "met code %d (server down)"
 
-#: ../libgdict/gdict-client-context.c:1194
+#: libgdict/gdict-client-context.c:1194
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Kon het antwoord van de woordenboekserver niet verwerken\n"
 ": ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1223
+#: libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Geen definities gevonden voor ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1238
+#: libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Ongeldige database ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1253
+#: libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Ongeldige strategie ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1268
+#: libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Foutieve opdracht ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1283
+#: libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Foutieve parameters voor opdracht ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1298
+#: libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Geen database gevonden op woordenboekserver op ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1313
+#: libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Geen strategieën gevonden op woordenboekserver ‘%s’"
 
-#: ../libgdict/gdict-client-context.c:1738
+#: libgdict/gdict-client-context.c:1745
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Verbinding mislukt voor de woordenboekserver op %s:%d"
 
-#: ../libgdict/gdict-client-context.c:1777
+#: libgdict/gdict-client-context.c:1784
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -391,258 +224,134 @@ msgstr ""
 "Fout bij het lezen van het antwoord van server:\n"
 "%s"
 
-#: ../libgdict/gdict-client-context.c:1850
+#: libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr ""
 "Verbinding mislukt (tijdslimiet overschreden) voor de woordenboekserver op "
 "‘%s:%d’"
 
-#: ../libgdict/gdict-client-context.c:1884
-#, c-format
+#: libgdict/gdict-client-context.c:1891
 msgid "No hostname defined for the dictionary server"
 msgstr "Geen hostnaam opgegeven voor de woordenboekserver"
 
 # ontvanger?/socket/contactdoos
-#: ../libgdict/gdict-client-context.c:1920
-#: ../libgdict/gdict-client-context.c:1935
-#, c-format
+#: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
 msgid "Unable to create socket"
 msgstr "Kon geen socket aanmaken"
 
-#: ../libgdict/gdict-client-context.c:1961
+#: libgdict/gdict-client-context.c:1968
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Kon het kanaal niet instellen als non-blocking: %s"
 
-#: ../libgdict/gdict-client-context.c:1976
+#: libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Kon geen verbinding maken met de woordenboekserver op ‘%s:%d’"
 
-#: ../libgdict/gdict-context.c:217
-msgid "Local Only"
-msgstr "Alleen lokaal"
-
-#: ../libgdict/gdict-context.c:218
-msgid "Whether the context uses only local dictionaries or not"
-msgstr "Of de context alleen lokale woordenboeken gebruikt"
-
-#: ../libgdict/gdict-database-chooser.c:373
+#: libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "Lijst van beschikbare databases herladen"
 
-#: ../libgdict/gdict-database-chooser.c:385
+#: libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "Lijst van beschikbare databases wissen"
 
-#: ../libgdict/gdict-database-chooser.c:836 ../libgdict/gdict-speller.c:767
-#: ../libgdict/gdict-strategy-chooser.c:775
+#: libgdict/gdict-database-chooser.c:842 libgdict/gdict-speller.c:767
+#: libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Fout tijdens zoeken"
 
-# Geen overeenkomsten gevonden/niet gevonden
-#: ../libgdict/gdict-defbox.c:1110 ../libgdict/gdict-defbox.c:1204
-#: ../libgdict/gdict-defbox.c:1238
-msgid "Not found"
-msgstr "Niet gevonden"
-
-#: ../libgdict/gdict-defbox.c:1298
-msgid "F_ind:"
-msgstr "_Zoeken:"
-
-#: ../libgdict/gdict-defbox.c:1311
-msgid "_Previous"
-msgstr "Vo_rige"
-
-#: ../libgdict/gdict-defbox.c:1318
-msgid "_Next"
-msgstr "V_olgende"
-
-#: ../libgdict/gdict-defbox.c:2482
+#: libgdict/gdict-defbox.c:2390
 msgid "Error while looking up definition"
 msgstr "Fout bij het opzoeken van de definitie"
 
-#: ../libgdict/gdict-defbox.c:2524 ../libgdict/gdict-speller.c:725
+#: libgdict/gdict-defbox.c:2432 libgdict/gdict-speller.c:725
 msgid "Another search is in progress"
 msgstr "Er is nog een andere zoekopdracht actief"
 
-#: ../libgdict/gdict-defbox.c:2525 ../libgdict/gdict-speller.c:726
+#: libgdict/gdict-defbox.c:2433 libgdict/gdict-speller.c:726
 msgid "Please wait until the current search ends."
 msgstr "Wacht tot de huidige zoekopdracht is voltooid."
 
-#: ../libgdict/gdict-defbox.c:2564
+#: libgdict/gdict-defbox.c:2472
 msgid "Error while retrieving the definition"
 msgstr "Fout bij het ophalen van de definitie"
 
-#: ../libgdict/gdict-source.c:237
-msgid "Filename"
-msgstr "Bestandsnaam"
-
-#: ../libgdict/gdict-source.c:238
-msgid "The filename used by this dictionary source"
-msgstr "De bestandsnaam die gebruikt wordt voor deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:251
-msgid "Name"
-msgstr "Naam"
-
-#: ../libgdict/gdict-source.c:252
-msgid "The display name of this dictionary source"
-msgstr "De weergegeven naam voor deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:265
-msgid "Description"
-msgstr "Omschrijving"
-
-#: ../libgdict/gdict-source.c:266
-msgid "The description of this dictionary source"
-msgstr "De omschrijving van deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:279
-msgid "Editable"
-msgstr "Bewerkbaar"
-
-#: ../libgdict/gdict-source.c:280
-msgid "Whether the dictionary source is editable or not"
-msgstr "Geeft aan of de woordenboekbron bewerkbaar is of niet"
-
-#: ../libgdict/gdict-source.c:293 ../libgdict/gdict-speller.c:369
-msgid "Database"
-msgstr "Database"
-
-#: ../libgdict/gdict-source.c:294
-msgid "The default database of this dictionary source"
-msgstr "De standaarddatabase van deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:307 ../libgdict/gdict-speller.c:376
-msgid "Strategy"
-msgstr "Strategie"
-
-#: ../libgdict/gdict-source.c:308
-msgid "The default strategy of this dictionary source"
-msgstr "De standaardstrategie van deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:321
-msgid "Transport"
-msgstr "Transport"
-
-#: ../libgdict/gdict-source.c:322
-msgid "The transport mechanism used by this dictionary source"
-msgstr "Het transportmechanisme dat wordt gebruikt door deze woordenboekbron"
-
-#: ../libgdict/gdict-source.c:336 ../libgdict/gdict-speller.c:362
-msgid "Context"
-msgstr "Context"
-
-#: ../libgdict/gdict-source.c:337
-msgid "The GdictContext bound to this source"
-msgstr "De GdictContext die aan deze bron is verbonden"
-
-#: ../libgdict/gdict-source.c:433
+#: libgdict/gdict-source.c:434
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Ongeldig transporttype ‘%d’"
 
-#: ../libgdict/gdict-source.c:461
+#: libgdict/gdict-source.c:462
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Geen ‘%s’-groep gevonden binnen de woordenboekbron definitie"
+msgid "No “%s” group found inside the dictionary source definition"
+msgstr "Geen ‘%s’-groep gevonden binnen de woordenboekbrondefinitie"
 
 # wat een techno-babble!
-#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
-#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
+#: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
+#: libgdict/gdict-source.c:535 libgdict/gdict-source.c:560
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
-"Kon de ‘%s’-sleutel niet verkrijgen binnen de woordenboekbron definitie: %s"
+"Kon de ‘%s’-sleutel niet verkrijgen binnen de woordenboekbrondefinitie: %s"
 
-#: ../libgdict/gdict-source.c:575
+#: libgdict/gdict-source.c:585
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
-"Kon de ‘%s’-sleutel niet verkrijgen binnen het woordenboekbron "
-"definitiebestand: %s"
+"Kon de ‘%s’-sleutel niet verkrijgen binnen het "
+"woordenboekbrondefinitiebestand: %s"
 
-#: ../libgdict/gdict-source.c:769
-#, c-format
+#: libgdict/gdict-source.c:779
 msgid "Dictionary source does not have name"
 msgstr "Woordenboekbron heeft geen naam"
 
-#: ../libgdict/gdict-source.c:778
+#: libgdict/gdict-source.c:788
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Woordenboekbron ‘%s’ heeft een ongeldig transport ‘%s’"
 
-#: ../libgdict/gdict-source-chooser.c:280
+#: libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
 msgstr "Lijst met beschikbare bronnen herladen"
 
-#: ../libgdict/gdict-source-loader.c:170
-msgid "Paths"
-msgstr "Paden"
-
-#: ../libgdict/gdict-source-loader.c:171
-msgid "Search paths used by this object"
-msgstr "Zoekpaden die door dit object worden gebruikt"
-
-#: ../libgdict/gdict-source-loader.c:183
-msgid "Sources"
-msgstr "Bronnen"
-
-#: ../libgdict/gdict-source-loader.c:184
-msgid "Dictionary sources found"
-msgstr "Woordenboekbronnen gevonden"
-
-#: ../libgdict/gdict-speller.c:341
+#: libgdict/gdict-speller.c:341
 msgid "Clear the list of similar words"
 msgstr "Lijst van vergelijkbare woorden wissen"
 
-#: ../libgdict/gdict-speller.c:363
-msgid "The GdictContext object used to get the word definition"
-msgstr ""
-"Het GdictContext-object dat gebruikt wordt om de definitie van het woord te "
-"krijgen"
-
-#: ../libgdict/gdict-speller.c:370
-msgid "The database used to query the GdictContext"
-msgstr "De gebruikte database voor de zoekopdracht op GdictContext"
-
-#: ../libgdict/gdict-speller.c:377
-msgid "The strategy used to query the GdictContext"
-msgstr "De te gebruiken strategie voor de zoekopdracht op GdictContext"
-
-#: ../libgdict/gdict-strategy-chooser.c:350
+#: libgdict/gdict-strategy-chooser.c:350
 msgid "Reload the list of available strategies"
 msgstr "Lijst met beschikbare strategieën herladen"
 
-#: ../libgdict/gdict-strategy-chooser.c:361
+#: libgdict/gdict-strategy-chooser.c:361
 msgid "Clear the list of available strategies"
 msgstr "Lijst met beschikbare strategieën wissen"
 
-#: ../libgdict/gdict-utils.c:96
+#: libgdict/gdict-utils.c:95
 msgid "GDict debugging flags to set"
 msgstr "In te stellen GDict-debugvlaggen"
 
-#: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:95 libgdict/gdict-utils.c:97
 msgid "FLAGS"
 msgstr "VLAGGEN"
 
-#: ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to unset"
 msgstr "Niet in te stellen GDict-debugvlaggen"
 
-#: ../libgdict/gdict-utils.c:156
+#: libgdict/gdict-utils.c:152
 msgid "GDict Options"
 msgstr "GDict-opties"
 
 #
-#: ../libgdict/gdict-utils.c:157
+#: libgdict/gdict-utils.c:153
 msgid "Show GDict Options"
 msgstr "GDict-opties tonen"
 
-#: ../src/gdict-about.c:53
+#: src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -651,251 +360,514 @@ msgstr ""
 "Jan-Willem Harmanny\n"
 "Hannie Dumoleyn\n"
 "Erwin Poeze\n"
+"Nathan Follens\n"
 "\n"
 "Kijk voor meer informatie op http://nl.gnome.org/"
 
 # enkelvoud van woordenboek staat beter, meestal doorzoek
 # je maar 1 woordenboek tegelijk
-#: ../src/gdict-about.c:55
+#: src/gdict-about.c:55
 msgid "Look up words in dictionaries"
 msgstr "Woorden opzoeken in een woordenboek"
 
-#: ../src/gdict-app.c:53 ../src/gdict-app.c:82
+#: src/gdict-app-menus.ui:5
+msgid "_New Window"
+msgstr "_Nieuw venster"
+
+#: src/gdict-app-menus.ui:12
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/gdict-app-menus.ui:18
+msgid "Help"
+msgstr "Hulp"
+
+#: src/gdict-app-menus.ui:23
+msgid "About"
+msgstr "Info"
+
+#: src/gdict-app-menus.ui:27
+msgid "_Quit"
+msgstr "_Afsluiten"
+
+#: src/gdict-app-menus.ui:37
+msgid "_Save a Copy…"
+msgstr "Een kopie op_slaan…"
+
+#: src/gdict-app-menus.ui:43
+msgid "P_review"
+msgstr "Voor_beeld"
+
+#: src/gdict-app-menus.ui:48
+msgid "_Print"
+msgstr "_Afdrukken"
+
+#: src/gdict-app-menus.ui:55
+msgid "_Find"
+msgstr "_Vinden"
+
+#: src/gdict-app-menus.ui:62
+msgid "_View"
+msgstr "Beel_d"
+
+#: src/gdict-app-menus.ui:65
+msgid "_Sidebar"
+msgstr "_Zijpaneel"
+
+#: src/gdict-app-menus.ui:72
+msgid "Similar _Words"
+msgstr "Vergelijkbare _woorden"
+
+#: src/gdict-app-menus.ui:77
+msgid "Dictionary Sources"
+msgstr "Woordenboekbronnen"
+
+#: src/gdict-app-menus.ui:82
+msgid "Available St_rategies"
+msgstr "Beschikbare _strategieën"
+
+#: src/gdict-app-menus.ui:89
+msgid "_Go"
+msgstr "_Ga naar"
+
+#: src/gdict-app-menus.ui:92
+msgid "_Previous Definition"
+msgstr "Vo_rige definitie"
+
+#: src/gdict-app-menus.ui:97
+msgid "_Next Definition"
+msgstr "V_olgende definitie"
+
+#: src/gdict-app-menus.ui:104
+msgid "_First Definition"
+msgstr "_Eerste definitie"
+
+#: src/gdict-app-menus.ui:109
+msgid "_Last Definition"
+msgstr "_Laatste definitie"
+
+#: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
 msgstr "De op te zoeken woorden"
 
-#: ../src/gdict-app.c:53 ../src/gdict-app.c:59
+#: src/gdict-app.c:47 src/gdict-app.c:53
 msgid "WORD"
 msgstr "WOORD"
 
-#: ../src/gdict-app.c:59
+#: src/gdict-app.c:53
 msgid "Words to match"
 msgstr "Op te zoeken woorden"
 
-#: ../src/gdict-app.c:65
+#: src/gdict-app.c:59
 msgid "Dictionary source to use"
 msgstr "Te gebruiken woordenboekbron"
 
-#: ../src/gdict-app.c:65 ../src/gdict-app.c:71 ../src/gdict-app.c:77
+#: src/gdict-app.c:59 src/gdict-app.c:65 src/gdict-app.c:71
 msgid "NAME"
 msgstr "NAAM"
 
-#: ../src/gdict-app.c:71
+#: src/gdict-app.c:65
 msgid "Database to use"
 msgstr "Te gebruiken database"
 
-#: ../src/gdict-app.c:77
+#: src/gdict-app.c:71
 msgid "Strategy to use"
 msgstr "Te gebruiken strategie"
 
-#: ../src/gdict-app.c:82
+#: src/gdict-app.c:76
 msgid "WORDS"
 msgstr "WOORDEN"
 
-#: ../src/gdict-app.c:99
+#: src/gdict-app.c:108
 msgid "Dictionary Preferences"
 msgstr "Woordenboek-voorkeuren"
 
-#: ../src/gdict-app.c:121 ../src/gdict-pref-dialog.c:521
-#: ../src/gdict-source-dialog.c:479
-#, c-format
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
 msgid "There was an error while displaying help"
 msgstr "Er is een fout opgetreden bij het weergeven van de hulp"
 
-#: ../src/gdict-pref-dialog.c:271
+#: src/gdict-pref-dialog.c:262
 msgid "View Dictionary Source"
 msgstr "Woordenboekbron bekijken"
 
-#: ../src/gdict-pref-dialog.c:338
+#: src/gdict-pref-dialog.c:328
 msgid "Add Dictionary Source"
 msgstr "Woordenboekbron toevoegen"
 
-#: ../src/gdict-pref-dialog.c:383
+#: src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "‘%s’ verwijderen?"
 
-#: ../src/gdict-pref-dialog.c:385
+#: src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Dit zal de woordenboekbron definitief verwijderen uit de lijst."
 
-#: ../src/gdict-pref-dialog.c:388 ../src/gdict-source-dialog.c:632
-#: ../src/gdict-window.c:919
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Annuleren"
 
-#: ../src/gdict-pref-dialog.c:389
+#: src/gdict-pref-dialog.c:378
 msgid "_Remove"
 msgstr "_Verwijderen"
 
-#: ../src/gdict-pref-dialog.c:407
+#: src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Kan bron ‘%s’ niet verwijderen"
 
-#: ../src/gdict-pref-dialog.c:455
+#: src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
 msgstr "Woordenboekbron bewerken"
 
-#: ../src/gdict-pref-dialog.c:661
+#: src/gdict-pref-dialog.ui:34
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Selecteer een woordenboekbron voor het opzoeken van woorden:"
+
+#: src/gdict-pref-dialog.ui:96
 msgid "Add a new dictionary source"
 msgstr "Een nieuwe woordenboekbron toevoegen"
 
 # gebiedende wijs
-#: ../src/gdict-pref-dialog.c:667
+#: src/gdict-pref-dialog.ui:116
 msgid "Remove the currently selected dictionary source"
 msgstr "De geselecteerde woordenboekbron verwijderen"
 
+#: src/gdict-pref-dialog.ui:136
+msgid "Edit"
+msgstr "Bewerken"
+
 # gebiedende wijs
-#: ../src/gdict-pref-dialog.c:673
+#: src/gdict-pref-dialog.ui:137
 msgid "Edit the currently selected dictionary source"
 msgstr "De geselecteerde woordenboekbron bewerken"
 
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+msgid "Source"
+msgstr "Bron"
+
+#: src/gdict-pref-dialog.ui:187
+msgid "_Print font:"
+msgstr "_Afdruklettertype:"
+
 # stel in/geef
-#: ../src/gdict-pref-dialog.c:681
+#: src/gdict-pref-dialog.ui:216
 msgid "Set the font used for printing the definitions"
 msgstr "Het lettertype voor het afdrukken van de definities instellen"
 
-#: ../src/gdict-print.c:239 ../src/gdict-print.c:303
+#: src/gdict-pref-dialog.ui:241
+msgid "Print"
+msgstr "Afdrukken"
+
+#: src/gdict-print.c:237 src/gdict-print.c:301
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Kon voorbeeld niet weergeven: %s"
 
-#: ../src/gdict-source-dialog.c:340 ../src/gdict-source-dialog.c:432
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
 msgid "Unable to create a source file"
 msgstr "Kon geen bronbestand aanmaken"
 
-#: ../src/gdict-source-dialog.c:356 ../src/gdict-source-dialog.c:452
+#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
 msgid "Unable to save source file"
 msgstr "Kon bronbestand niet opslaan"
 
-#. the help button is always visible
-#: ../src/gdict-source-dialog.c:603
-msgid "_Help"
-msgstr "_Hulp"
+#. we just allow closing the dialog
+#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+msgid "_Close"
+msgstr "_Sluiten"
 
-#: ../src/gdict-source-dialog.c:633
+#: src/gdict-source-dialog.c:572
 msgid "_Add"
 msgstr "_Toevoegen"
 
-#: ../src/gdict-source-dialog.c:640
+#: src/gdict-source-dialog.c:580
 msgid "C_ancel"
 msgstr "A_nnuleren"
 
-#: ../src/gdict-window.c:261
-#, c-format
-msgid "Searching for '%s'..."
-msgstr "Zoeken naar ‘%s’…"
+#. The help button is always visible
+#: src/gdict-source-dialog.c:662
+msgid "_Help"
+msgstr "_Hulp"
 
-#: ../src/gdict-window.c:293 ../src/gdict-window.c:350
-msgid "No definitions found"
-msgstr "Geen definities gevonden"
+#: src/gdict-source-dialog.ui:57
+msgid "_Description"
+msgstr "_Beschrijving"
 
-#: ../src/gdict-window.c:295
-#, c-format
-msgid "A definition found"
-msgid_plural "%d definitions found"
-msgstr[0] "Eén definitie gevonden"
-msgstr[1] "%d definities gevonden"
+#: src/gdict-source-dialog.ui:72
+msgid "_Port"
+msgstr "_Poort"
 
-#: ../src/gdict-window.c:466
+#: src/gdict-source-dialog.ui:86
+msgid "_Hostname"
+msgstr "_Hostnaam"
+
+#: src/gdict-source-dialog.ui:100
+msgid "_Transport"
+msgstr "_Transport"
+
+#: src/gdict-source-dialog.ui:114
+msgid "2628"
+msgstr "2628"
+
+#: src/gdict-source-dialog.ui:126
+msgid "dict.org"
+msgstr "dict.org"
+
+#: src/gdict-source-dialog.ui:138
+msgid "Source Name"
+msgstr "Naam van bron"
+
+#: src/gdict-source-dialog.ui:197
+msgid "Dictionaries"
+msgstr "Woordenboeken"
+
+#: src/gdict-source-dialog.ui:222
+msgid "Strategies"
+msgstr "Strategieën"
+
+#: src/gdict-window.c:413
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Geen woordenboekbron beschikbaar met de naam ‘%s’"
 
-#: ../src/gdict-window.c:470
+#: src/gdict-window.c:417
 msgid "Unable to find dictionary source"
 msgstr "Kon geen woordenboekbron vinden"
 
-#: ../src/gdict-window.c:486
+#: src/gdict-window.c:433
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Geen context beschikbaar voor bron ‘%s’"
 
-#: ../src/gdict-window.c:490
+#: src/gdict-window.c:437
 msgid "Unable to create a context"
 msgstr "Kon geen context aanmaken"
 
-#: ../src/gdict-window.c:549
+#: src/gdict-window.c:496
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - Woordenboek"
+msgid "%s — Dictionary"
+msgstr "%s — Woordenboek"
 
-#: ../src/gdict-window.c:916
+#: src/gdict-window.c:819
 msgid "Save a Copy"
 msgstr "Een kopie opslaan"
 
-#: ../src/gdict-window.c:920
+#: src/gdict-window.c:823
 msgid "_Save"
 msgstr "_Opslaan"
 
-#: ../src/gdict-window.c:926
+#: src/gdict-window.c:829
 msgid "Untitled document"
 msgstr "Naamloos document"
 
-#: ../src/gdict-window.c:947
+#: src/gdict-window.c:850
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Er is een fout opgetreden bij het schrijven naar ‘%s’"
-
-#: ../src/gdict-window.c:1371
-#, c-format
-msgid "Dictionary source `%s' selected"
-msgstr "Woordenboekbron ‘%s’ geselecteerd"
-
-#: ../src/gdict-window.c:1392
-#, c-format
-msgid "Strategy `%s' selected"
-msgstr "Strategie ‘%s’ geselecteerd"
-
-#: ../src/gdict-window.c:1412
-#, c-format
-msgid "Database `%s' selected"
-msgstr "Database ‘%s’ geselecteerd"
-
-#: ../src/gdict-window.c:1432
-#, c-format
-msgid "Word `%s' selected"
-msgstr "Woord ‘%s’ geselecteerd"
 
 # dat/wat/welke
 #. speller
-#: ../src/gdict-window.c:1457
+#: src/gdict-window.c:1211
 msgid "Double-click on the word to look up"
 msgstr "Dubbelklik op het woord dat u wilt opzoeken"
 
 #. strat-chooser
-#: ../src/gdict-window.c:1463
+#: src/gdict-window.c:1217
 msgid "Double-click on the matching strategy to use"
 msgstr "Dubbelklik op de te gebruiken strategie"
 
 #. source-chooser
-#: ../src/gdict-window.c:1468
+#: src/gdict-window.c:1222
 msgid "Double-click on the source to use"
 msgstr "Dubbelklik op de te gebruiken bron"
 
-#. db-chooser
-#: ../src/gdict-window.c:1477
-msgid "Double-click on the database to use"
-msgstr "Dubbelklik op de te gebruiken database"
-
-# zoekopdracht/opzoeken
-#: ../src/gdict-window.c:1637
-msgid "Look _up"
-msgstr "_Opzoeken"
-
-#: ../src/gdict-window.c:1715
+#: src/gdict-window.c:1408
 msgid "Similar words"
 msgstr "Vergelijkbare woorden"
 
-#: ../src/gdict-window.c:1728
-msgid "Available dictionaries"
-msgstr "Beschikbare databases"
-
-#: ../src/gdict-window.c:1746
+#: src/gdict-window.c:1439
 msgid "Available strategies"
 msgstr "Beschikbare strategieën"
 
-#: ../src/gdict-window.c:1762
+#: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Woordenboekbronnen"
+
+#~ msgid "_File"
+#~ msgstr "_Bestand"
+
+#~ msgid "_New"
+#~ msgstr "_Nieuw"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "Een kopie op_slaan…"
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopiëren"
+
+#~ msgid "Select _All"
+#~ msgstr "_Alles selecteren"
+
+#~ msgid "Find Ne_xt"
+#~ msgstr "V_olgende zoeken"
+
+#~ msgid "Find Pre_vious"
+#~ msgstr "Vo_rige zoeken"
+
+#~ msgid "S_tatusbar"
+#~ msgstr "_Statusbalk"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Beschikbare _woordenboeken"
+
+#~ msgid "H_ostname:"
+#~ msgstr "_Hostnaam:"
+
+#~ msgid "Client Name"
+#~ msgstr "Clientnaam"
+
+#~ msgid "The name of the client of the context object"
+#~ msgstr "De naam van de client van het contextobject"
+
+#~ msgid "The hostname of the dictionary server to connect to"
+#~ msgstr "De hostnaam van de woordenboekserver waarmee wordt verbonden"
+
+#~ msgid "Port"
+#~ msgstr "Poort"
+
+#~ msgid "The port of the dictionary server to connect to"
+#~ msgstr "De poort van de woordenboekserver waarmee wordt verbonden"
+
+# toestand
+#~ msgid "Status"
+#~ msgstr "Status"
+
+# terggegeven/doorgegeven
+#~ msgid "The status code as returned by the dictionary server"
+#~ msgstr "De statuscode die door de woordenboekserver wordt doorgegeven"
+
+#~ msgid "Local Only"
+#~ msgstr "Alleen lokaal"
+
+#~ msgid "Whether the context uses only local dictionaries or not"
+#~ msgstr "Of de context alleen lokale woordenboeken gebruikt"
+
+# Geen overeenkomsten gevonden/niet gevonden
+#~ msgid "Not found"
+#~ msgstr "Niet gevonden"
+
+#~ msgid "F_ind:"
+#~ msgstr "_Zoeken:"
+
+#~ msgid "_Previous"
+#~ msgstr "Vo_rige"
+
+#~ msgid "_Next"
+#~ msgstr "V_olgende"
+
+#~ msgid "Filename"
+#~ msgstr "Bestandsnaam"
+
+#~ msgid "The filename used by this dictionary source"
+#~ msgstr "De bestandsnaam die gebruikt wordt voor deze woordenboekbron"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "The display name of this dictionary source"
+#~ msgstr "De weergegeven naam voor deze woordenboekbron"
+
+#~ msgid "Description"
+#~ msgstr "Omschrijving"
+
+#~ msgid "The description of this dictionary source"
+#~ msgstr "De omschrijving van deze woordenboekbron"
+
+#~ msgid "Editable"
+#~ msgstr "Bewerkbaar"
+
+#~ msgid "Whether the dictionary source is editable or not"
+#~ msgstr "Geeft aan of de woordenboekbron bewerkbaar is of niet"
+
+#~ msgid "Database"
+#~ msgstr "Database"
+
+#~ msgid "The default database of this dictionary source"
+#~ msgstr "De standaarddatabase van deze woordenboekbron"
+
+#~ msgid "Strategy"
+#~ msgstr "Strategie"
+
+#~ msgid "The default strategy of this dictionary source"
+#~ msgstr "De standaardstrategie van deze woordenboekbron"
+
+#~ msgid "Transport"
+#~ msgstr "Transport"
+
+#~ msgid "The transport mechanism used by this dictionary source"
+#~ msgstr ""
+#~ "Het transportmechanisme dat wordt gebruikt door deze woordenboekbron"
+
+#~ msgid "Context"
+#~ msgstr "Context"
+
+#~ msgid "The GdictContext bound to this source"
+#~ msgstr "De GdictContext die aan deze bron is verbonden"
+
+#~ msgid "Paths"
+#~ msgstr "Paden"
+
+#~ msgid "Search paths used by this object"
+#~ msgstr "Zoekpaden die door dit object worden gebruikt"
+
+#~ msgid "Sources"
+#~ msgstr "Bronnen"
+
+#~ msgid "Dictionary sources found"
+#~ msgstr "Woordenboekbronnen gevonden"
+
+#~ msgid "The GdictContext object used to get the word definition"
+#~ msgstr ""
+#~ "Het GdictContext-object dat gebruikt wordt om de definitie van het woord "
+#~ "te krijgen"
+
+#~ msgid "The database used to query the GdictContext"
+#~ msgstr "De gebruikte database voor de zoekopdracht op GdictContext"
+
+#~ msgid "The strategy used to query the GdictContext"
+#~ msgstr "De te gebruiken strategie voor de zoekopdracht op GdictContext"
+
+#~ msgid "Searching for '%s'..."
+#~ msgstr "Zoeken naar ‘%s’…"
+
+#~ msgid "No definitions found"
+#~ msgstr "Geen definities gevonden"
+
+#~ msgid "A definition found"
+#~ msgid_plural "%d definitions found"
+#~ msgstr[0] "Eén definitie gevonden"
+#~ msgstr[1] "%d definities gevonden"
+
+#~ msgid "Dictionary source `%s' selected"
+#~ msgstr "Woordenboekbron ‘%s’ geselecteerd"
+
+#~ msgid "Strategy `%s' selected"
+#~ msgstr "Strategie ‘%s’ geselecteerd"
+
+#~ msgid "Database `%s' selected"
+#~ msgstr "Database ‘%s’ geselecteerd"
+
+#~ msgid "Word `%s' selected"
+#~ msgstr "Woord ‘%s’ geselecteerd"
+
+#~ msgid "Double-click on the database to use"
+#~ msgstr "Dubbelklik op de te gebruiken database"
+
+# zoekopdracht/opzoeken
+#~ msgid "Look _up"
+#~ msgstr "_Opzoeken"
+
+#~ msgid "Available dictionaries"
+#~ msgstr "Beschikbare databases"

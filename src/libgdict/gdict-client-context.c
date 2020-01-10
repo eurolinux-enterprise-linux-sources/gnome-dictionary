@@ -772,7 +772,7 @@ gdict_client_context_send_command (GdictClientContext  *context,
       
       g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                    GDICT_CLIENT_CONTEXT_ERROR_NO_CONNECTION,
-                   _("No connection to the dictionary server at '%s:%d'"),
+                   _("No connection to the dictionary server at “%s:%d”"),
                    priv->hostname,
                    priv->port);
       
@@ -1055,7 +1055,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
             {
               g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                            GDICT_CLIENT_CONTEXT_ERROR_LOOKUP,
-                           _("Lookup failed for hostname '%s': no suitable resources found"),
+                           _("Lookup failed for hostname “%s”: no suitable resources found"),
                            priv->hostname);
                 
               return FALSE;
@@ -1086,9 +1086,9 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
         {
           g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                        GDICT_CLIENT_CONTEXT_ERROR_LOOKUP,
-                       _("Lookup failed for host '%s': %s"),
+                       _("Lookup failed for host “%s”: %s"),
                        priv->hostname,
-                       gai_strerror (errno));
+                       g_strerror (errno));
           
           return FALSE;
         }
@@ -1120,7 +1120,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
         {
           g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                        GDICT_CLIENT_CONTEXT_ERROR_LOOKUP,
-                       _("Lookup failed for host '%s': host not found"),
+                       _("Lookup failed for host “%s”: host not found"),
                        priv->hostname);
           
           return FALSE;
@@ -1173,7 +1173,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
           g_set_error (&server_error, GDICT_CLIENT_CONTEXT_ERROR,
                        GDICT_CLIENT_CONTEXT_ERROR_SERVER_DOWN,
                        _("Unable to connect to the dictionary server "
-                         "at '%s:%d'. The server replied with "
+                         "at “%s:%d”. The server replied with "
                          "code %d (server down)"),
                        priv->hostname,
                        priv->port,
@@ -1191,7 +1191,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
           
           g_set_error (&parse_error, GDICT_CONTEXT_ERROR,
                        GDICT_CONTEXT_ERROR_PARSE,
-                       _("Unable to parse the dictionary server reply\n: '%s'"),
+                       _("Unable to parse the dictionary server reply\n: “%s”"),
                        buffer);
           
           g_signal_emit_by_name (context, "error", parse_error);
@@ -1220,7 +1220,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_NO_MATCH:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_NO_MATCH,
-                   _("No definitions found for '%s'"),
+                   _("No definitions found for “%s”"),
                    priv->command->word);
 
       GDICT_NOTE (DICT, "No match: %s", server_error->message);
@@ -1235,7 +1235,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_BAD_DATABASE:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_INVALID_DATABASE,
-                   _("Invalid database '%s'"),
+                   _("Invalid database “%s”"),
                    priv->command->database);
 
       GDICT_NOTE (DICT, "Bad DB: %s", server_error->message);
@@ -1250,7 +1250,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_BAD_STRATEGY:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_INVALID_STRATEGY,
-                   _("Invalid strategy '%s'"),
+                   _("Invalid strategy “%s”"),
                    priv->command->strategy);
       
       GDICT_NOTE (DICT, "Bad strategy: %s", server_error->message);
@@ -1265,7 +1265,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_BAD_COMMAND:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_INVALID_COMMAND,
-                   _("Bad command '%s'"),
+                   _("Bad command “%s”"),
                    dict_command_strings[priv->command->cmd_type]);
       
       GDICT_NOTE (DICT, "Bad command: %s", server_error->message);
@@ -1280,7 +1280,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_BAD_PARAMETERS:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
 		   GDICT_CONTEXT_ERROR_INVALID_COMMAND,
-		   _("Bad parameters for command '%s'"),
+		   _("Bad parameters for command “%s”"),
 		   dict_command_strings[priv->command->cmd_type]);
 
       GDICT_NOTE (DICT, "Bad params: %s", server_error->message);
@@ -1295,7 +1295,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_NO_DATABASES_PRESENT:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_NO_DATABASES,
-                   _("No databases found on dictionary server at '%s'"),
+                   _("No databases found on dictionary server at “%s”"),
                    priv->hostname);
           
       GDICT_NOTE (DICT, "No DB: %s", server_error->message);
@@ -1310,7 +1310,7 @@ gdict_client_context_parse_line (GdictClientContext *context,
     case GDICT_STATUS_NO_STRATEGIES_PRESENT:
       g_set_error (&server_error, GDICT_CONTEXT_ERROR,
                    GDICT_CONTEXT_ERROR_NO_STRATEGIES,
-                   _("No strategies found on dictionary server at '%s'"),
+                   _("No strategies found on dictionary server at “%s”"),
                    priv->hostname);
           
       GDICT_NOTE (DICT, "No strategies: %s", server_error->message);
@@ -1854,7 +1854,7 @@ check_for_connection (gpointer data)
       
       g_set_error (&err, GDICT_CLIENT_CONTEXT_ERROR,
                    GDICT_CLIENT_CONTEXT_ERROR_SOCKET,
-                   _("Connection timeout for the dictionary server at '%s:%d'"),
+                   _("Connection timeout for the dictionary server at “%s:%d”"),
                    context->priv->hostname,
                    context->priv->port);
               
@@ -1980,7 +1980,7 @@ gdict_client_context_connect (GdictClientContext  *context,
     {
       g_set_error (error, GDICT_CLIENT_CONTEXT_ERROR,
                    GDICT_CLIENT_CONTEXT_ERROR_SOCKET,
-                   _("Unable to connect to the dictionary server at '%s:%d'"),
+                   _("Unable to connect to the dictionary server at “%s:%d”"),
                    priv->hostname,
                    priv->port);
 

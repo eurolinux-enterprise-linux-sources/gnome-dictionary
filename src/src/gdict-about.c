@@ -57,7 +57,7 @@ gdict_show_about_dialog (GtkWidget *parent)
   g_return_if_fail (GTK_IS_WIDGET (parent));
   
   gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
-  			 "name", _("Dictionary"),
+  			 "program-name", _("Dictionary"),
   			 "version", VERSION,
   			 "copyright", copyright,
   			 "comments", comments,

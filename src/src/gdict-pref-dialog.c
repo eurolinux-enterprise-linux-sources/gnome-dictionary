@@ -369,7 +369,7 @@ source_remove_clicked_cb (GdictPrefDialog *dialog)
       					       GTK_DIALOG_DESTROY_WITH_PARENT,
       					       GTK_MESSAGE_WARNING,
       					       GTK_BUTTONS_NONE,
-      					       _("Remove \"%s\"?"), description);
+      					       _("Remove “%s”?"), description);
       gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (confirm_dialog),
       						_("This will permanently remove the "
       						  "dictionary source from the list."));
@@ -393,7 +393,7 @@ source_remove_clicked_cb (GdictPrefDialog *dialog)
       GtkWidget *error_dialog;
       gchar *message;
       
-      message = g_strdup_printf (_("Unable to remove source '%s'"),
+      message = g_strdup_printf (_("Unable to remove source “%s”"),
       				 description);
       
       error_dialog = gtk_message_dialog_new (GTK_WINDOW (dialog),

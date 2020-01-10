@@ -19,6 +19,7 @@
     <property name="border_width">5</property>
     <property name="resizable">False</property>
     <property name="type_hint">dialog</property>
+    <signal name="response" handler="on_dialog_response" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkBox" id="source_root">
         <property name="visible">True</property>
@@ -107,7 +108,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEntry" id="port_entr">
+                  <object class="GtkEntry" id="port_entry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="hexpand">True</property>
@@ -119,7 +120,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEntry" id="hostname_entr">
+                  <object class="GtkEntry" id="hostname_entry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="hexpand">True</property>
@@ -131,7 +132,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkEntry" id="description_entr">
+                  <object class="GtkEntry" id="description_entry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="hexpand">True</property>

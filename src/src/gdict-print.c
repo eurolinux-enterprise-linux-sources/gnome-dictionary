@@ -30,8 +30,6 @@
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 
-#include <libgdict/gdict.h>
-
 #include "gdict-pref-dialog.h"
 #include "gdict-print.h"
 

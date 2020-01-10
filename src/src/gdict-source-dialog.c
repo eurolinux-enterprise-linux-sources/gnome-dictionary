@@ -310,7 +310,7 @@ build_new_source (GdictSourceDialog *dialog)
       
   error = NULL;
   data = gdict_source_to_data (source, &length, &error);
-  if (error)
+  if (error != NULL)
     {
       gdict_show_gerror_dialog (GTK_WINDOW (dialog),
 				_("Unable to create a source file"),
@@ -325,9 +325,15 @@ build_new_source (GdictSourceDialog *dialog)
   filename = g_build_filename (config_dir, name, NULL);
   g_free (config_dir);
   g_free (name);
-      
+
+  g_debug ("Saving new source '%s' (%s) at '%s'",
+           gdict_source_get_description (source),
+           gdict_source_get_name (source),
+           filename);
+
   g_file_set_contents (filename, data, length, &error);
-  if (error)
+
+  if (error != NULL)
     gdict_show_gerror_dialog (GTK_WINDOW (dialog),
        			      _("Unable to save source file"),
        			      error);
@@ -435,7 +441,7 @@ on_dialog_response (GtkDialog *dialog,
                     gpointer   user_data)
 {
   GError *err = NULL;
-  
+
   switch (response_id)
     {
     case GTK_RESPONSE_ACCEPT:
@@ -443,9 +449,16 @@ on_dialog_response (GtkDialog *dialog,
       break;
 
     case GTK_RESPONSE_HELP:
+#if GTK_CHECK_VERSION (3, 22, 0)
+      gtk_show_uri_on_window (GTK_WINDOW (dialog),
+                              "help:gnome-dictionary/gnome-dictionary-add-source",
+                              gtk_get_current_event_time (), &err);
+#else
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
                     "help:gnome-dictionary/gnome-dictionary-add-source",
                     gtk_get_current_event_time (), &err);
+#endif
+
       if (err)
         {
           gdict_show_gerror_dialog (GTK_WINDOW (dialog),

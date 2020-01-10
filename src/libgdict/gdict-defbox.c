@@ -1091,7 +1091,7 @@ find_prev_clicked_cb (GtkWidget *widget,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   const gchar *text;
-  gboolean found;
+  gboolean found G_GNUC_UNUSED;
 
   text = gtk_entry_get_text (GTK_ENTRY (priv->find_entry));
   if (!text)
@@ -1173,7 +1173,7 @@ find_next_clicked_cb (GtkWidget *widget,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   const gchar *text;
-  gboolean found;
+  gboolean found G_GNUC_UNUSED;
 
   text = gtk_entry_get_text (GTK_ENTRY (priv->find_entry));
   if (!text)
@@ -1195,7 +1195,7 @@ find_entry_changed_cb (GtkWidget *widget,
   GdictDefbox *defbox = GDICT_DEFBOX (user_data);
   GdictDefboxPrivate *priv = defbox->priv;
   gchar *text;
-  gboolean found;
+  gboolean found G_GNUC_UNUSED;
 
   text = gtk_editable_get_chars (GTK_EDITABLE (widget), 0, -1);
   if (!text)

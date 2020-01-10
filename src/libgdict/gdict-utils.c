@@ -40,7 +40,6 @@
 #include "gdict-context-private.h"
 #include "gdict-debug.h"
 #include "gdict-utils.h"
-#include "gdict-version.h"
 #include "gdict-private.h"
 
 guint gdict_major_version = GDICT_MAJOR_VERSION;
@@ -106,13 +105,11 @@ pre_parse_hook (GOptionContext  *context,
                 gpointer         data,
                 GError         **error)
 {
-  const char *env_string;
-
   if (gdict_is_initialized)
     return TRUE;
 
 #ifdef GDICT_ENABLE_DEBUG
-  env_string = g_getenv ("GDICT_DEBUG");
+  const char *env_string = g_getenv ("GDICT_DEBUG");
   if (env_string != NULL)
     {
       gdict_debug_flags =
@@ -120,8 +117,6 @@ pre_parse_hook (GOptionContext  *context,
                               gdict_debug_keys,
                               G_N_ELEMENTS (gdict_debug_keys));
     }
-#else
-  env_string = NULL;
 #endif /* GDICT_ENABLE_DEBUG */
 
   return TRUE;

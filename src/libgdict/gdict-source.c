@@ -51,7 +51,8 @@
 
 /* Common keys */
 #define SOURCE_KEY_NAME		"Name"
-#define SOURCE_KEY_DESCRIPTION	"Description"
+#define SOURCE_KEY_DESCRIPTION	"Description" /* Deprecated */
+#define SOURCE_KEY_COMMENT	"Comment"
 #define SOURCE_KEY_TRANSPORT	"Transport"
 #define SOURCE_KEY_DATABASE 	"Database"
 #define SOURCE_KEY_STRATEGY 	"Strategy"
@@ -430,7 +431,7 @@ gdict_source_create_context (GdictSource           *source,
     default:
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("Invalid transport type '%d'"),
+                   _("Invalid transport type “%d”"),
                    transport);
       return NULL;
     }
@@ -458,7 +459,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("No '%s' group found inside the dictionary source definition"),
+                   _("No “%s” group found inside the dictionary source definition"),
                    SOURCE_GROUP);
       
       return FALSE;
@@ -474,7 +475,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("Unable to get the '%s' key inside the dictionary "
+                   _("Unable to get the “%s” key inside the dictionary "
                      "source definition: %s"),
                    SOURCE_KEY_NAME,
                    parse_error->message);
@@ -487,20 +488,29 @@ gdict_source_parse (GdictSource  *source,
     }
   
   /* if present, fetch the localized description */
-  if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_DESCRIPTION, NULL))
+  const char *description_key;
+
+  if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_COMMENT, NULL))
+    description_key = SOURCE_KEY_COMMENT;
+  else if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_DESCRIPTION, NULL))
+    description_key = SOURCE_KEY_DESCRIPTION;
+  else
+    description_key = NULL;
+
+  if (description_key != NULL)
     {
       priv->description = g_key_file_get_locale_string (priv->keyfile,
                                                         SOURCE_GROUP,
-                                                        SOURCE_KEY_DESCRIPTION,
+                                                        description_key,
                                                         NULL,
                                                         &parse_error);
       if (parse_error)
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
-                       SOURCE_KEY_DESCRIPTION,
+                       description_key,
                        parse_error->message);
                        
           g_error_free (parse_error);
@@ -522,7 +532,7 @@ gdict_source_parse (GdictSource  *source,
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
                        SOURCE_KEY_DATABASE,
                        parse_error->message);
@@ -547,7 +557,7 @@ gdict_source_parse (GdictSource  *source,
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
                        SOURCE_KEY_STRATEGY,
                        parse_error->message);
@@ -572,7 +582,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
       		   GDICT_SOURCE_ERROR_PARSE,
-      		   _("Unable to get the '%s' key inside the dictionary "
+      		   _("Unable to get the “%s” key inside the dictionary "
       		     "source definition file: %s"),
       		   SOURCE_KEY_TRANSPORT,
       		   parse_error->message);
@@ -775,7 +785,7 @@ gdict_source_to_data (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_INVALID_TRANSPORT,
-                   _("Dictionary source '%s' has invalid transport '%s'"),
+                   _("Dictionary source “%s” has invalid transport “%s”"),
                    priv->name,
                    valid_transports[priv->transport]);
       

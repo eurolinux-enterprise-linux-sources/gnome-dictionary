@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnome-utils help.
 #
 # Petr Kovar <pknbe@volny.cz>, 2009.
-# Marek Černocký <marek@manet.cz>, 2009, 2014, 2015.
+# Marek Černocký <marek@manet.cz>, 2009, 2014, 2015, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils gnome-2-28\n"
-"POT-Creation-Date: 2015-03-22 19:36+0000\n"
-"PO-Revision-Date: 2015-03-22 23:05+0100\n"
+"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"PO-Revision-Date: 2017-08-07 13:24+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -32,9 +32,9 @@ msgstr "Marek Černocký <marek@manet.cz>"
 #: C/index.page:11 C/introduction.page:10 C/keyboard-shortcuts.page:11
 #: C/pref.page:9 C/print-font.page:11 C/print.page:12
 #: C/prob-retrieving-definition.page:11 C/save-definition.page:10
-#: C/similar-words.page:11 C/source-add-local.page:11
-#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
-#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+#: C/similar-words.page:11 C/source-add-local.page:11 C/sources-default.page:10
+#: C/sources-delete.page:11 C/sources-edit.page:10 C/sources.page:12
+#: C/sources-select.page:12 C/text-copy.page:11
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
@@ -261,20 +261,6 @@ msgstr "Předvolby"
 msgid "Common problems and solutions"
 msgstr "Běžné problémy a jejich řešení"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:38
-msgctxt "_"
-msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-
 #. (itstool) path: info/desc
 #: C/introduction.page:22
 msgid "What is <app>Dictionary</app>?"
@@ -310,6 +296,20 @@ msgstr ""
 #: C/introduction.page:37
 msgid "Dictionary"
 msgstr "Slovník"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+msgstr ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -725,7 +725,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/print.page:84
 msgid ""
-"Chose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
 msgstr ""
 "Podle potřeby upravte <link href=\"help:gnome-help/printing#paper"
@@ -817,7 +817,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/save-definition.page:38
 msgid ""
-"Chose where you want to save the definition to and a name for the file. You "
+"Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
 "name."
 msgstr ""
